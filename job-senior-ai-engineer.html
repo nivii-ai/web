@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior AI Engineer - Nivii Careers</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f8fafc;
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-green': '#6ABE9A',
+                        'brand-green-dark': '#56A887',
+                        'brand-gray-purple': '#848E97',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="main.html" class="text-2xl font-extrabold text-brand-green">
+                Nivii
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="main.html#product" class="text-gray-600 hover:text-brand-green transition duration-300">Product</a>
+                <a href="main.html#use-cases" class="text-gray-600 hover:text-brand-green transition duration-300">Use Cases</a>
+                <a href="main.html#faq" class="text-gray-600 hover:text-brand-green transition duration-300">FAQs</a>
+                <a href="main.html#about" class="text-gray-600 hover:text-brand-green transition duration-300">About</a>
+                <a href="main.html#team" class="text-gray-600 hover:text-brand-green transition duration-300">Team</a>
+                <a href="careers.html" class="text-brand-green font-semibold">Careers</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="main.html#demo-modal" class="demo-button hidden md:block bg-brand-green text-white font-semibold px-5 py-2 rounded-lg hover:bg-brand-green-dark transition duration-300">
+                    Request a Demo
+                </a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="main.html#product" class="block text-gray-600 hover:text-brand-green">Product</a>
+            <a href="main.html#use-cases" class="block text-gray-600 hover:text-brand-green">Use Cases</a>
+            <a href="main.html#faq" class="block text-gray-600 hover:text-brand-green">FAQs</a>
+            <a href="main.html#about" class="block text-gray-600 hover:text-brand-green">About</a>
+            <a href="main.html#team" class="block text-gray-600 hover:text-brand-green">Team</a>
+            <a href="careers.html" class="block text-brand-green font-semibold">Careers</a>
+            <a href="main.html#demo-modal" class="demo-button w-full mt-2 bg-brand-green text-white font-semibold px-5 py-2 rounded-lg hover:bg-brand-green-dark transition duration-300">
+                Request a Demo
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Breadcrumb -->
+                    <nav class="mb-8">
+                        <a href="careers.html" class="text-brand-green hover:text-brand-green-dark transition duration-300">
+                            ← Back to Careers
+                        </a>
+                    </nav>
+
+                    <!-- Job Header -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                            <div>
+                                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Senior AI Engineer</h1>
+                                <p class="text-brand-gray-purple text-lg">Remote • Full-time</p>
+                            </div>
+                            <div class="mt-4 md:mt-0">
+                                <button id="apply-button" class="bg-brand-green text-white font-semibold px-8 py-3 rounded-lg hover:bg-brand-green-dark transition duration-300 shadow-lg">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                    <!-- Job Content -->
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Main Content -->
+                        <div class="md:col-span-2">
+                            <div class="bg-white rounded-xl shadow-lg p-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">About the Role</h2>
+                                <p class="text-gray-600 mb-6">
+                                    As a Senior AI Engineer at Nivii, you'll be at the forefront of building the next generation of business intelligence tools. You'll work on cutting-edge machine learning models and AI systems that help businesses understand their data and make better decisions.
+                                </p>
+                                <p class="text-gray-600 mb-8">
+                                    You'll collaborate with our product, engineering, and data science teams to develop sophisticated AI solutions that power our analytics platform. This role offers the opportunity to work on challenging problems in natural language processing, predictive analytics, and automated insights generation.
+                                </p>
+
+                                <h3 class="text-xl font-bold text-gray-900 mb-4">What You'll Do</h3>
+                                <ul class="space-y-3 text-gray-600 mb-8">
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Design and implement advanced machine learning models for business analytics and insights generation
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Develop and optimize natural language processing systems for query understanding and response generation
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Build scalable AI infrastructure and pipelines for model training, deployment, and monitoring
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Collaborate with cross-functional teams to integrate AI capabilities into our product platform
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Conduct research and experimentation with new AI technologies and methodologies
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Mentor junior engineers and contribute to technical architecture decisions
+                                    </li>
+                                </ul>
+
+                                <h3 class="text-xl font-bold text-gray-900 mb-4">Required Skills</h3>
+                                <ul class="space-y-2 text-gray-600 mb-6">
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        5+ years of experience in machine learning, AI, or related fields
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Strong proficiency in Python and experience with ML frameworks (TensorFlow, PyTorch, scikit-learn)
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Experience with natural language processing and large language models
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Knowledge of cloud platforms (AWS, GCP, Azure) and MLOps practices
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Experience with data processing tools (Pandas, NumPy, Spark)
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Strong problem-solving skills and ability to work with large, complex datasets
+                                    </li>
+                                </ul>
+
+                                <h3 class="text-xl font-bold text-gray-900 mb-4">Nice to Have</h3>
+                                <ul class="space-y-2 text-gray-600 mb-8">
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Experience with business intelligence or analytics platforms
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Knowledge of SQL and database systems
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Experience with Docker, Kubernetes, and microservices architecture
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Published research or contributions to open-source ML projects
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Experience with A/B testing and model evaluation methodologies
+                                    </li>
+                                </ul>
+
+                                <h3 class="text-xl font-bold text-gray-900 mb-4">Benefits</h3>
+                                <ul class="space-y-3 text-gray-600">
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Competitive salary and equity package
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Remote-first work environment with flexible hours
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Comprehensive health, dental, and vision insurance
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Professional development budget for conferences and courses
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Latest hardware and software tools
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-brand-green mr-3 mt-1">•</span>
+                                        Collaborative and innovative team culture
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Sidebar -->
+                        <div class="space-y-6">
+                            <!-- Quick Info -->
+                            <div class="bg-white rounded-xl shadow-lg p-6">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Info</h3>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Location:</span>
+                                        <span class="font-medium">Remote</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Type:</span>
+                                        <span class="font-medium">Full-time</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Experience:</span>
+                                        <span class="font-medium">5+ years</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-600">Department:</span>
+                                        <span class="font-medium">Engineering</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Apply CTA -->
+                            <div class="bg-brand-green rounded-xl p-6 text-white">
+                                <h3 class="text-lg font-semibold mb-2">Ready to Apply?</h3>
+                                <p class="text-sm mb-4 opacity-90">
+                                    Join our team and help build the future of AI-powered business intelligence.
+                                </p>
+                                <button id="apply-button-sidebar" class="w-full bg-white text-brand-green font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-300">
+                                    Apply Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Nivii. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Apply button functionality
+        const applyButtons = document.querySelectorAll('#apply-button, #apply-button-sidebar');
+        applyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const subject = 'Application for Senior AI Engineer - Nivii';
+                const body = `
+Dear Hiring Team,
+
+I am interested in applying for the Senior AI Engineer position at Nivii.
+
+Please find my application details below:
+
+[Your application details here]
+
+Best regards,
+[Your name]
+                `;
+                
+                const mailtoLink = `mailto:careers@nivii.ai?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body.trim())}`;
+                window.location.href = mailtoLink;
+            });
+        });
+    </script>
+</body>
+</html> 
