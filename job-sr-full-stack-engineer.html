@@ -39,8 +39,8 @@
 
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="main.html" class="text-2xl font-extrabold text-brand-green">
-                Nivii
+            <a href="main.html" class="flex items-center">
+                <img src="assets/logo.png" alt="Nivii" class="h-8 w-auto">
             </a>
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="main.html#product" class="text-gray-600 hover:text-brand-green transition duration-300">Product</a>
@@ -279,22 +279,7 @@
         const applyButtons = document.querySelectorAll('#apply-button, #apply-button-sidebar');
         applyButtons.forEach(button => {
             button.addEventListener('click', () => {
-                const subject = 'Application for Sr. Full Stack Engineer - Nivii';
-                const body = `
-Dear Hiring Team,
-
-I am interested in applying for the Sr. Full Stack Engineer position at Nivii.
-
-Please find my application details below:
-
-[Your application details here]
-
-Best regards,
-[Your name]
-                `;
-                
-                const mailtoLink = `mailto:careers@nivii.ai?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body.trim())}`;
-                window.location.href = mailtoLink;
+                window.open('https://forms.gle/KqDc1NWXrj1e6F9Z6', '_blank');
             });
         });
     </script>
