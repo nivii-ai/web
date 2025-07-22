@@ -342,6 +342,9 @@
             <p data-translate="footer_text">&copy; 2025 Nivii. All rights reserved.</p>
         </div>
     </footer>
+    
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden-iframe" style="display: none;"></iframe>
 
     <div id="demo-modal" class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div id="modal-content" class="bg-white rounded-xl shadow-2xl w-full max-w-md transform transition-all opacity-0 -translate-y-10">
@@ -721,8 +724,8 @@
             }
         });
 
-        // --- Form Submission (mailto) ---
-        demoForm.addEventListener('submit', (event) => {
+        // --- Form Submission to Google Sheets and Email ---
+        demoForm.addEventListener('submit', async (event) => {
             event.preventDefault(); 
 
             const firstName = document.getElementById('first-name').value;
@@ -731,22 +734,45 @@
             const company = document.getElementById('company').value;
             const role = document.getElementById('role').value;
 
-            const subject = `Demo Request from ${company}`;
-            const body = `
-New demo request details:
+            const data = {
+                timestamp: new Date().toISOString(),
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                company: company,
+                role: role,
+                type: 'Demo Request'
+            };
 
-First Name: ${firstName}
-Last Name: ${lastName}
-Email: ${email}
-Company: ${company}
-Role: ${role}
-            `;
-
-            const mailtoLink = `mailto:alan@nivii.ai?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body.trim())}`;
-            
-            window.location.href = mailtoLink;
-            
-            closeModal();
+            try {
+                // Use a simple form submission approach that bypasses CORS
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = 'https://script.google.com/a/macros/nivii.ai/s/AKfycbxMyC4l8oHX69cza9r4116JD8yd0oVOr2DFjNwtmoldVQDoLpksEgEgDd2Cc4Zg0g-how/exec';
+                
+                // Add form fields
+                const fields = ['timestamp', 'firstName', 'lastName', 'email', 'company', 'role', 'type'];
+                fields.forEach(field => {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = field;
+                    input.value = data[field] || '';
+                    form.appendChild(input);
+                });
+                
+                // Submit the form
+                document.body.appendChild(form);
+                form.submit();
+                document.body.removeChild(form);
+                
+                // Show success message
+                alert('Thank you for your demo request! We\'ll get back to you soon.');
+                closeModal();
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('There was an error submitting your request. Please try again or contact us directly.');
+            }
         });
         
         // Set initial language on page load
