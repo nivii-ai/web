@@ -165,7 +165,7 @@
                             <p class="text-gray-600" data-translate="use_case_marketing_desc">Instantly understand campaign performance, identify your most profitable customer segments, and optimize your marketing spend. Ask Nivii which channels are delivering the highest ROI, and get an answer in seconds.</p>
                         </div>
                         <div class="bg-gray-100 rounded-xl shadow-lg p-4">
-                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Marketing+Dashboard" alt="Nivii for Marketing" class="rounded-lg w-full h-auto">
+                            <img src="assets/marketing_en.png" alt="Nivii for Marketing" class="rounded-lg w-full h-auto cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105" id="marketing-image" onclick="openImageModal(this.src, 'Nivii for Marketing')">
                         </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -174,7 +174,7 @@
                             <p class="text-gray-600" data-translate="use_case_sales_desc">Equip your sales team with the right information at the right time. Nivii can identify cross-sell and upsell opportunities, highlight at-risk accounts, and ensure your team is pitching the most relevant products to each client.</p>
                         </div>
                         <div class="bg-gray-100 rounded-xl shadow-lg p-4">
-                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Sales+Insights" alt="Nivii for Sales" class="rounded-lg w-full h-auto">
+                            <img src="assets/sales_en.png" alt="Nivii for Sales" class="rounded-lg w-full h-auto cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105" id="sales-image" onclick="openImageModal(this.src, 'Nivii for Sales')">
                         </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -183,7 +183,7 @@
                             <p class="text-gray-600" data-translate="use_case_ops_desc">Streamline your operations by getting immediate insights into supply chain bottlenecks, production inefficiencies, and resource allocation. Nivii helps you make data-driven decisions to improve efficiency and reduce costs.</p>
                         </div>
                         <div class="bg-gray-100 rounded-xl shadow-lg p-4">
-                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Operational+Efficiency" alt="Nivii for Operations" class="rounded-lg w-full h-auto">
+                            <img src="assets/operations_en.png" alt="Nivii for Operations" class="rounded-lg w-full h-auto cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105" id="operations-image" onclick="openImageModal(this.src, 'Nivii for Operations')">
                         </div>
                     </div>
                      <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -192,7 +192,7 @@
                             <p class="text-gray-600" data-translate="use_case_hr_desc">Uncover the hidden signals in your employee data. With Nivii, you can identify trends in employee attrition, understand the drivers of satisfaction, and make proactive decisions to build a stronger, more engaged workforce.</p>
                         </div>
                         <div class="bg-gray-100 rounded-xl shadow-lg p-4">
-                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=HR+Analytics" alt="Nivii for HR" class="rounded-lg w-full h-auto">
+                            <img src="assets/hr_en.png" alt="Nivii for HR" class="rounded-lg w-full h-auto cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105" id="hr-image" onclick="openImageModal(this.src, 'Nivii for HR')">
                         </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -201,7 +201,7 @@
                             <p class="text-gray-600" data-translate="use_case_finance_desc">Gain instant clarity into your company's financial health. Nivii allows you to ask complex financial questions in plain language, monitor cash flow in real-time, and identify potential risks before they become major issues.</p>
                         </div>
                         <div class="bg-gray-100 rounded-xl shadow-lg p-4">
-                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Financial+Clarity" alt="Nivii for Finance" class="rounded-lg w-full h-auto">
+                            <img src="assets/financial_en.png" alt="Nivii for Finance" class="rounded-lg w-full h-auto cursor-pointer transition-all duration-300 hover:shadow-2xl hover:scale-105" id="financial-image" onclick="openImageModal(this.src, 'Nivii for Finance')">
                         </div>
                     </div>
                 </div>
@@ -294,24 +294,31 @@
                 </div>
                 <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-center">
                     <div class="space-y-4">
-                        <img src="https://placehold.co/400x400/e2e8f0/334155?text=A" alt="Alex Hudson" class="w-40 h-40 mx-auto rounded-full shadow-lg">
+                        <img src="assets/alex.jpg" alt="Alex Ingberg" class="w-40 h-40 mx-auto rounded-full shadow-lg object-cover">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900" data-translate="team_member_1_name">Alex Hudson</h3>
-                            <p class="text-brand-gray-purple" data-translate="team_member_1_role">Founder & CEO</p>
+                            <h3 class="text-xl font-bold text-gray-900" data-translate="team_member_1_name">Alex Ingberg</h3>
+                            <p class="text-brand-gray-purple font-semibold" data-translate="team_member_1_role">CTO & Co-Founder</p>
+                            <p class="text-sm text-gray-600 mt-2" data-translate="team_member_1_desc">+8 years as Sr. Machine Learning Engineer in Israel hitech sector</p>
+                            <p class="text-sm text-gray-600" data-translate="team_member_1_education">MSc in Software Engineering</p>
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <img src="https://placehold.co/400x400/e2e8f0/334155?text=B" alt="Ben Carter" class="w-40 h-40 mx-auto rounded-full shadow-lg">
+                        <img src="assets/dani.png" alt="Daniel Stilerman" class="w-40 h-40 mx-auto rounded-full shadow-lg object-cover">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900" data-translate="team_member_2_name">Ben Carter</h3>
-                            <p class="text-brand-gray-purple" data-translate="team_member_2_role">Lead AI Engineer</p>
+                            <h3 class="text-xl font-bold text-gray-900" data-translate="team_member_2_name">Daniel Stilerman</h3>
+                            <p class="text-brand-gray-purple font-semibold" data-translate="team_member_2_role">CEO & Co-Founder</p>
+                            <p class="text-sm text-gray-600 mt-2" data-translate="team_member_2_desc">4 years as the Managing Director for Data & AI at Accenture Argentina managing up to 270 members organization</p>
+                            <p class="text-sm text-gray-600" data-translate="team_member_2_experience">10 years as Google head of Data & AI for Argentina and later for Splatam</p>
                         </div>
                     </div>
                     <div class="space-y-4">
-                        <img src="https://placehold.co/400x400/e2e8f0/334155?text=C" alt="Chloe Davis" class="w-40 h-40 mx-auto rounded-full shadow-lg">
+                        <img src="assets/jacho.png" alt="Alan Hazan" class="w-40 h-40 mx-auto rounded-full shadow-lg object-cover">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-900" data-translate="team_member_3_name">Chloe Davis</h3>
-                            <p class="text-brand-gray-purple" data-translate="team_member_3_role">Head of Product</p>
+                            <h3 class="text-xl font-bold text-gray-900" data-translate="team_member_3_name">Alan Hazan</h3>
+                            <p class="text-brand-gray-purple font-semibold" data-translate="team_member_3_role">CBO</p>
+                            <p class="text-sm text-gray-600 mt-2" data-translate="team_member_3_desc">Data Scientist turned Sales Executive</p>
+                            <p class="text-sm text-gray-600" data-translate="team_member_3_experience">+7 years at Google UK advising C & B Level in EMEA</p>
+                            <p class="text-sm text-gray-600" data-translate="team_member_3_education">Decision Science (Analytics) professor for Google worldwide</p>
                         </div>
                     </div>
                 </div>
@@ -389,6 +396,21 @@
         </div>
     </div>
 
+    <!-- Image Modal -->
+    <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4" role="dialog" aria-modal="true">
+        <div id="image-modal-content" class="relative max-w-7xl max-h-full transform transition-all opacity-0 scale-95">
+            <button id="close-image-modal-button" class="absolute -top-12 right-0 text-white hover:text-gray-300 text-4xl leading-none z-10">&times;</button>
+            <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+                <div class="p-4 bg-gray-50 border-b">
+                    <h3 id="image-modal-title" class="text-xl font-semibold text-gray-900">Dashboard Preview</h3>
+                </div>
+                <div class="p-4">
+                    <img id="modal-image" src="" alt="Dashboard Preview" class="w-full h-auto rounded-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const translations = {
             en: {
@@ -448,12 +470,19 @@
                 about_description: `<p>No matter how much is invested in data, too many decisions are made without looking at what it says. Sometimes it's because it takes too long; often because many don't have the skills for analysis.</p><p>How much is lost when a sales rep pitches the wrong product? How much risk is your company exposed to without instant financial clarity? How much is wasted in employee attrition when the signals were there, but obscured behind dashboards?</p><p class="font-semibold text-gray-800">We built Nivii to solve this. We believe your team needs trustworthy analysis, not more charts. They need insights to move to action immediately.</p>`,
                 team_title: "Meet the Team",
                 team_description: "We are a passionate team of innovators, thinkers, and builders dedicated to revolutionizing how businesses interact with their data.",
-                team_member_1_name: "Alex Hudson",
-                team_member_1_role: "Founder & CEO",
-                team_member_2_name: "Ben Carter",
-                team_member_2_role: "Lead AI Engineer",
-                team_member_3_name: "Chloe Davis",
-                team_member_3_role: "Head of Product",
+                team_member_1_name: "Alex Ingberg",
+                team_member_1_role: "CTO & Co-Founder",
+                team_member_1_desc: "+8 years as Sr. Machine Learning Engineer in Israeli high-tech sector",
+                team_member_1_education: "MSc in Software Engineering",
+                team_member_2_name: "Daniel Stilerman",
+                team_member_2_role: "CEO & Co-Founder",
+                team_member_2_desc: "4 years as the Managing Director for Data & AI at Accenture Argentina managing up to 270 members organization",
+                team_member_2_experience: "10 years as Google Head of Data & AI for Argentina and later for SPLATAM",
+                team_member_3_name: "Alan Hazan",
+                team_member_3_role: "CBO",
+                team_member_3_desc: "Data Scientist turned Sales Executive",
+                team_member_3_experience: "+7 years at Google UK advising C & B Level in EMEA",
+                team_member_3_education: "Decision Science (Analytics) professor for Google worldwide",
                 careers_title: "Join Our Team",
                 careers_description: "We're on a mission to empower businesses with actionable insights. If you're passionate about data, AI, and innovation, we'd love to hear from you.",
                 open_positions: "Open Positions",
@@ -535,12 +564,19 @@
                 about_description: `<p>No importa cuánto se invierta en datos, demasiadas decisiones se toman sin mirar lo que dicen. A veces es porque lleva demasiado tiempo; a menudo porque muchos no tienen las habilidades para el análisis.</p><p>¿Cuánto se pierde cuando un representante de ventas ofrece el producto equivocado? ¿A cuánto riesgo se expone tu empresa sin una claridad financiera instantánea? ¿Cuánto se desperdicia en la rotación de empleados cuando las señales estaban allí, pero ocultas detrás de dashboards?</p><p class="font-semibold text-gray-800">Construimos Nivii para resolver esto. Creemos que tu equipo necesita análisis fiables, no más gráficos. Necesitan información para pasar a la acción de inmediato.</p>`,
                 team_title: "Conoce al Equipo",
                 team_description: "Somos un equipo apasionado de innovadores, pensadores y creadores dedicados a revolucionar cómo las empresas interactúan con sus datos.",
-                team_member_1_name: "Alex Hudson",
-                team_member_1_role: "Fundador y CEO",
-                team_member_2_name: "Ben Carter",
-                team_member_2_role: "Ingeniero Principal de IA",
-                team_member_3_name: "Chloe Davis",
-                team_member_3_role: "Directora de Producto",
+                team_member_1_name: "Alex Ingberg",
+                team_member_1_role: "CTO & Co-Founder",
+                team_member_1_desc: "+8 años como Sr. Machine Learning engineer en el sector high-tech israelí",
+                team_member_1_education: "MSc en Ingeniería de Software",
+                team_member_2_name: "Daniel Stilerman",
+                team_member_2_role: "CEO & Co-Founder",
+                team_member_2_desc: "4 años como Managing Director de Data & AI en Accenture Argentina gestionando hasta 270 miembros de organización",
+                team_member_2_experience: "10 años como Google Head of Data & AI para Argentina y luego para SPLATAM",
+                team_member_3_name: "Alan Hazan",
+                team_member_3_role: "CBO",
+                team_member_3_desc: "Data Scientist convertido en Ejecutivo de Ventas",
+                team_member_3_experience: "+7 años en Google UK asesorando a nivel C & B en EMEA",
+                team_member_3_education: "Profesor de Decision Science (Analytics) para Google mundialmente",
                 careers_title: "Únete a Nuestro Equipo",
                 careers_description: "Estamos en una misión para empoderar a las empresas con información procesable. Si te apasionan los datos, la IA y la innovación, nos encantaría saber de ti.",
                 open_positions: "Posiciones Abiertas",
@@ -622,12 +658,19 @@
                 about_description: `<p>Não importa o quanto se invista em dados, muitas decisões são tomadas sem olhar o que eles dizem. Às vezes é porque demora muito; muitas vezes porque muitos não têm as habilidades para análise.</p><p>Quanto se perde quando um representante de vendas oferece o produto errado? A que risco sua empresa está exposta sem clareza financeira instantânea? Quanto é desperdiçado com a rotatividade de funcionários quando os sinais estavam lá, mas obscurecidos por trás de dashboards?</p><p class="font-semibold text-gray-800">Nós construímos a Nivii para resolver isso. Acreditamos que sua equipe precisa de análises confiáveis, não de mais gráficos. Eles precisam de insights para agir imediatamente.</p>`,
                 team_title: "Conheça a Equipe",
                 team_description: "Somos uma equipe apaixonada de inovadores, pensadores e construtores dedicados a revolucionar a forma como as empresas interagem com seus dados.",
-                team_member_1_name: "Alex Hudson",
-                team_member_1_role: "Fundador e CEO",
-                team_member_2_name: "Ben Carter",
-                team_member_2_role: "Engenheiro Principal de IA",
-                team_member_3_name: "Chloe Davis",
-                team_member_3_role: "Diretora de Produto",
+                team_member_1_name: "Alex Ingberg",
+                team_member_1_role: "CTO e Co-Fundador",
+                team_member_1_desc: "+8 anos como Engenheiro Sênior de Machine Learning no setor hitech de Israel",
+                team_member_1_education: "MSc em Engenharia de Software",
+                team_member_2_name: "Daniel Stilerman",
+                team_member_2_role: "CEO e Co-Fundador",
+                team_member_2_desc: "4 anos como Diretor Gerente de Data & AI na Accenture Argentina gerenciando até 270 membros da organização",
+                team_member_2_experience: "10 anos como chefe de Data & AI do Google para Argentina e depois para Splatam",
+                team_member_3_name: "Alan Hazan",
+                team_member_3_role: "CBO",
+                team_member_3_desc: "Cientista de Dados transformado em Executivo de Vendas",
+                team_member_3_experience: "+7 anos na Google UK aconselhando nível C & B na EMEA",
+                team_member_3_education: "Professor de Decision Science (Analytics) para Google mundialmente",
                 careers_title: "Junte-se à Nossa Equipe",
                 careers_description: "Estamos em uma missão para capacitar empresas com insights acionáveis. Se você é apaixonado por dados, IA e inovação, adoraríamos ouvir de você.",
                 open_positions: "Vagas Abertas",
@@ -670,6 +713,20 @@
                     }
                 }
             });
+            
+            // Update use case images based on language
+            const imageSuffix = language === 'es' ? '_sp' : language === 'pt' ? '_sp' : '_en';
+            const marketingImage = document.getElementById('marketing-image');
+            const salesImage = document.getElementById('sales-image');
+            const operationsImage = document.getElementById('operations-image');
+            const hrImage = document.getElementById('hr-image');
+            const financialImage = document.getElementById('financial-image');
+            
+            if (marketingImage) marketingImage.src = `assets/marketing${imageSuffix}.png`;
+            if (salesImage) salesImage.src = `assets/sales${imageSuffix}.png`;
+            if (operationsImage) operationsImage.src = `assets/operations${imageSuffix}.png`;
+            if (hrImage) hrImage.src = `assets/hr${imageSuffix}.png`;
+            if (financialImage) financialImage.src = `assets/financial${imageSuffix}.png`;
         };
 
         languageSelector.addEventListener('change', (event) => {
@@ -775,6 +832,46 @@
             }
         });
         
+        // --- Image Modal Logic ---
+        const imageModal = document.getElementById('image-modal');
+        const imageModalContent = document.getElementById('image-modal-content');
+        const modalImage = document.getElementById('modal-image');
+        const imageModalTitle = document.getElementById('image-modal-title');
+        const closeImageModalButton = document.getElementById('close-image-modal-button');
+
+        const openImageModal = (imageSrc, title) => {
+            modalImage.src = imageSrc;
+            imageModalTitle.textContent = title;
+            imageModal.classList.remove('hidden');
+            imageModal.classList.add('flex');
+            setTimeout(() => {
+                imageModalContent.classList.remove('opacity-0', 'scale-95');
+            }, 10);
+        };
+
+        const closeImageModal = () => {
+            imageModalContent.classList.add('opacity-0', 'scale-95');
+            setTimeout(() => {
+                imageModal.classList.add('hidden');
+                imageModal.classList.remove('flex');
+            }, 300);
+        };
+
+        closeImageModalButton.addEventListener('click', closeImageModal);
+        
+        imageModal.addEventListener('click', (event) => {
+            if (event.target === imageModal) {
+                closeImageModal();
+            }
+        });
+
+        // Close image modal with Escape key
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !imageModal.classList.contains('hidden')) {
+                closeImageModal();
+            }
+        });
+
         // Set initial language on page load
         document.addEventListener('DOMContentLoaded', () => {
             setLanguage('en');
