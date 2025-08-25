@@ -781,6 +781,13 @@
             }
         });
 
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentUrl = window.location.href;
+            if(currentUrl.includes('#demo-modal')) {
+                openModal();
+            }
+        }); 
+
         // --- Form Submission to Google Sheets and Email ---
         demoForm.addEventListener('submit', async (event) => {
             event.preventDefault(); 
