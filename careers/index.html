@@ -52,30 +52,32 @@
 </head>
 <body class="text-gray-800">
 
-    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 z-50 shadow-sm left-0 right-0">
+        <div class="container lg:max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="/" class="flex items-center">
                 <img src="/assets/logo.png" alt="Nivii" class="h-8 w-auto">
             </a>
-            <nav class="hidden lg:flex space-x-8 items-center">
-                <a href="/#product" class="text-gray-600 hover:text-brand-green transition duration-300">Product</a>
-                <a href="/#use-cases" class="text-gray-600 hover:text-brand-green transition duration-300">Use Cases</a>
-                <a href="/#faq" class="text-gray-600 hover:text-brand-green transition duration-300">FAQs</a>
-                <a href="/#about" class="text-gray-600 hover:text-brand-green transition duration-300">About</a>
-                <a href="/#team" class="text-gray-600 hover:text-brand-green transition duration-300">Team</a>
-                <a href="/careers/" class="text-brand-green font-semibold">Careers</a>
+            <nav class="hidden lg:flex space-x-8 items-center absolute left-1/2 -translate-x-1/2">
+                <a href="/#product" class="text-gray-600 hover:text-brand-green transition duration-300" data-translate="nav_product">Product</a>
+                <a href="/#use-cases" class="text-gray-600 hover:text-brand-green transition duration-300" data-translate="nav_use_cases">Use Cases</a>
+                <a href="/#faq" class="text-gray-600 hover:text-brand-green transition duration-300" data-translate="nav_faq">FAQs</a>
+                <a href="/#about" class="text-gray-600 hover:text-brand-green transition duration-300" data-translate="nav_about">About</a>
+                <a href="/#team" class="text-gray-600 hover:text-brand-green transition duration-300" data-translate="nav_team">Team</a>
+                <a href="/careers/" class="text-brand-green" data-translate="nav_careers">Careers</a>
             </nav>
-            <div class="flex items-center gap-4">
-                <a href="/#demo-modal" class="demo-button hidden lg:block bg-brand-green text-white font-semibold px-5 py-2 rounded-lg hover:bg-brand-green-dark transition duration-300" data-translate="btn_request_demo">
-                    Request a Demo
-                </a>
-                <div class="relative">
-                    <select id="language-selector" class="bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-gray-600 focus:outline-none focus:ring-brand-green focus:border-brand-green">
-                        <option value="en">English</option>
-                        <option value="es">Español</option>
-                        <option value="pt">Português</option>
+            <div class="flex items-center gap-2 ms-auto lg:ms-0">
+                <div class="relative flex items-center text-gray-600">
+                    <svg class="relative -top-[1px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"/> <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/> <path d="M2 12h20"/> </svg>
+                    <select id="language-selector" class="appearance-none bg-transparent rounded-md py-2 pl-3 pr-7 focus:ring-brand-green focus:border-brand-green">
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="pt">PT</option>
                     </select>
+                  <svg class="pointer-events-none absolute right-2 h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/> </svg>
                 </div>
+                <button class="demo-button hidden lg:block bg-brand-green text-white font-semibold px-5 py-2 rounded-lg hover:bg-brand-green-dark transition duration-300" data-translate="btn_request_demo">
+                    Request a Demo
+                </button>
             </div>
             <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -83,21 +85,21 @@
                 </svg>
             </button>
         </div>
-        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4 space-y-2">
-            <a href="/#product" class="block text-gray-600 hover:text-brand-green">Product</a>
-            <a href="/#use-cases" class="block text-gray-600 hover:text-brand-green">Use Cases</a>
-            <a href="/#faq" class="block text-gray-600 hover:text-brand-green">FAQs</a>
-            <a href="/#about" class="block text-gray-600 hover:text-brand-green">About</a>
-            <a href="/#team" class="block text-gray-600 hover:text-brand-green">Team</a>
-            <a href="/careers/" class="block text-brand-green font-semibold">Careers</a>
-            <a href="/#demo-modal" class="demo-button w-full mt-2 bg-brand-green text-white font-semibold px-5 py-2 rounded-lg hover:bg-brand-green-dark transition duration-300" data-translate="btn_request_demo_mobile">
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pt-2 pb-4 space-y-4 text-center">
+            <a href="/#product" class="block text-gray-600 hover:text-brand-green" data-translate="nav_product_mobile">Product</a>
+            <a href="/#use-cases" class="block text-gray-600 hover:text-brand-green" data-translate="nav_use_cases_mobile">Use Cases</a>
+            <a href="/#faq" class="block text-gray-600 hover:text-brand-green" data-translate="nav_faq_mobile">FAQs</a>
+            <a href="/#about" class="block text-gray-600 hover:text-brand-green" data-translate="nav_about_mobile">About</a>
+            <a href="/#team" class="block text-gray-600 hover:text-brand-green" data-translate="nav_team_mobile">Team</a>
+            <a href="/careers/" class="block text-gray-600 hover:text-brand-green" data-translate="nav_careers_mobile">Careers</a>
+            <button class="demo-button w-fit mt-2 bg-brand-green text-white font-semibold px-5 py-2 rounded-lg hover:bg-brand-green-dark transition duration-300" data-translate="btn_request_demo_mobile">
                 Request a Demo
-            </a>
+            </button>
         </div>
     </header>
 
     <main>
-        <section class="py-20 md:py-32">
+        <section class="pb-20 pt-[152px] md:pb-32 md:pt-[200px]">
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight" data-translate="careers_title">
                     Join Our Team
