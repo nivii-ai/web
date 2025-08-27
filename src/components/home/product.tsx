@@ -1,0 +1,61 @@
+import { getTranslations } from "next-intl/server";
+import { ProductCard } from "../ui/product-card";
+import { BotMessageSquare, ChartPie, Clock, Lock } from "lucide-react";
+import * as motion from "motion/react-client";
+
+export async function Product() {
+  const t = await getTranslations("home.product");
+
+  const productFeatures = [
+    {
+      icon: <Lock />,
+      title: t("securelyConnected"),
+      description: t("securelyConnectedDescription"),
+    },
+    {
+      icon: <ChartPie />,
+      title: t("knowsYourBusiness"),
+      description: t("knowsYourBusinessDescription"),
+    },
+    {
+      icon: <Clock />,
+      title: t("fromWeeksToMinutes"),
+      description: t("fromWeeksToMinutesDescription"),
+    },
+    {
+      icon: <BotMessageSquare />,
+      title: t("aiPoweredConversations"),
+      description: t("aiPoweredConversationsDescription"),
+    },
+  ];
+
+  return (
+    <section id="product" className="py-20">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <h2 className="text-balance text-3xl font-bold lg:text-4xl mb-6">
+          {t("title")}
+        </h2>
+        <p className="text-lg text-gray-700 mb-12  max-w-2xl mx-auto">
+          {t("description")}
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {productFeatures.map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.6 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+            >
+              <ProductCard
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
