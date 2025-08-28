@@ -26,7 +26,7 @@ export const ProductCard = ({ icon, title, description }: ProductCardProps) => (
       </div>
     </div>
 
-    <h3 className="mt-2 text-lg font-semibold px-8 text-pretty">{title}</h3>
+    <h3 className="mt-2 text-lg font-bold px-8 text-pretty">{title}</h3>
 
     <p className="mt-1 text-sm text-gray-800 px-8 text-pretty">{description}</p>
   </div>
