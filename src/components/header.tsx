@@ -16,7 +16,7 @@ export async function Header({ locale }: { locale: string }) {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="bg-white/80 backdrop-blur-lg fixed top-0 z-50 shadow-sm left-0 right-0"
     >
-      <div className="container lg:max-w-7xl mx-auto px-6 py-4 flex justify-between items-center flex-wrap font-semibold">
+      <div className="container lg:max-w-7xl mx-auto px-6 py-6 flex justify-between items-center flex-wrap font-semibold">
         <Link href="/#home" className="flex items-center">
           <Image
             src="/logo.png"
