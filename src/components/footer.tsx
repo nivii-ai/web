@@ -1,4 +1,4 @@
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
@@ -104,6 +104,12 @@ export async function Footer() {
                 </div>
                 {t("email")}
               </Link>
+              <div className="text-gray-400 hover:text-brand-green transition-colors flex items-center gap-3 group">
+                <div className="w-8 h-8 bg-gray-800 group-hover:bg-brand-green-dark rounded-lg flex items-center justify-center transition-colors text-background">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                {t("location")}
+              </div>
             </div>
           </div>
         </div>
