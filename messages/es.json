@@ -55,10 +55,10 @@
     },
     "useCases": {
       "title": "Casos de Uso",
-      "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua.",
       "description": "Desde marketing hasta finanzas, Nivii proporciona la claridad necesaria para tomar decisiones más inteligentes y rápidas en cada departamento.",
       "marketing": {
         "title": "Marketing",
+        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua.",
         "description": "Comprende al instante el rendimiento de las campañas, identifica tus segmentos de clientes más rentables y optimiza tu inversión en marketing. Pregúntale a Nivii qué canales ofrecen el mayor ROI y obtén una respuesta en segundos."
       },
       "sales": {
@@ -73,6 +73,7 @@
       },
       "hr": {
         "title": "RR.HH.",
+        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
         "description": "Descubre las señales ocultas en los datos de tus empleados. Con Nivii, puedes identificar tendencias en la rotación de personal, comprender los impulsores de la satisfacción y tomar decisiones proactivas para construir una fuerza laboral más fuerte y comprometida."
       },
       "finance": {
