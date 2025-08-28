@@ -29,37 +29,37 @@ export async function Header({ locale }: { locale: string }) {
         <nav className="hidden lg:flex space-x-8 items-center absolute left-1/2 -translate-x-1/2">
           <Link
             href="/#product"
-            className="text-gray-600 hover:text-brand-green transition duration-300"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
           >
             {t("product")}
           </Link>
           <Link
             href="/#use-cases"
-            className="text-gray-600 hover:text-brand-green transition duration-300"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
           >
             {t("useCases")}
           </Link>
           <Link
             href="/#faq"
-            className="text-gray-600 hover:text-brand-green transition duration-300"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
           >
             {t("faq")}
           </Link>
           <Link
-            href="/#about"
+            href="/#mission"
             className="text-gray-600 hover:text-brand-green transition duration-300"
           >
             {t("about")}
           </Link>
           <Link
             href="/#team"
-            className="text-gray-600 hover:text-brand-green transition duration-300"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
           >
             {t("team")}
           </Link>
           <Link
-            href="/#careers"
-            className="text-gray-600 hover:text-brand-green transition duration-300"
+            href="/careers/"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
           >
             {t("careers")}
           </Link>
