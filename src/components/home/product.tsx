@@ -8,22 +8,22 @@ export async function Product() {
 
   const productFeatures = [
     {
-      icon: <Lock />,
+      icon: <Lock className="size-10" />,
       title: t("securelyConnected"),
       description: t("securelyConnectedDescription"),
     },
     {
-      icon: <ChartPie />,
+      icon: <ChartPie className="size-10" />,
       title: t("knowsYourBusiness"),
       description: t("knowsYourBusinessDescription"),
     },
     {
-      icon: <Clock />,
+      icon: <Clock className="size-10" />,
       title: t("fromWeeksToMinutes"),
       description: t("fromWeeksToMinutesDescription"),
     },
     {
-      icon: <BotMessageSquare />,
+      icon: <BotMessageSquare className="size-10" />,
       title: t("aiPoweredConversations"),
       description: t("aiPoweredConversationsDescription"),
     },
