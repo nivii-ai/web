@@ -4,7 +4,6 @@ import { getMessages, getTranslations } from "next-intl/server";
 export async function Mission() {
   const t = await getTranslations("home.mission");
   const messages = await getMessages();
-  console.log("🚀 ~ Mission ~ messages:", messages);
 
   const missionDescription = messages.home.mission.description as string[];
 
