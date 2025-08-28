@@ -1,4 +1,5 @@
 import { getMessages, getTranslations } from "next-intl/server";
+import * as motion from "motion/react-client";
 import Image from "next/image";
 
 export async function Team() {
@@ -20,8 +21,16 @@ export async function Team() {
           {t("description")}
         </p>
         <div className="flex flex-wrap justify-center gap-12">
-          {members.map((member) => (
-            <div
+          {members.map((member, index) => (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                ease: "easeOut",
+                delay: 0.2 * index,
+              }}
               key={member.name}
               className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 w-80 flex-shrink-0"
             >
@@ -48,7 +57,7 @@ export async function Team() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
