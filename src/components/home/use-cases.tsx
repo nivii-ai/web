@@ -37,7 +37,7 @@ export async function UseCases() {
       desc: t("operations.description"),
       shortDesc: t("operations.shortDescription"),
       img: `/operations_${locale}.jpeg`,
-      gridLayout: "col-span-2",
+      gridLayout: "col-span-3 col-start-1 row-start-2",
     },
     {
       icon: <Users className="size-5" />,
@@ -45,7 +45,7 @@ export async function UseCases() {
       desc: t("hr.description"),
       shortDesc: t("hr.shortDescription"),
       img: `/hr_${locale}.jpeg`,
-      gridLayout: "col-span-3",
+      gridLayout: "col-span-2 col-start-6",
     },
     {
       icon: <Landmark className="size-5" />,

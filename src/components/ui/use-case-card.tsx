@@ -95,7 +95,7 @@ export function UseCaseCard({
             <div className="rounded-lg bg-gradient-to-b from-brand-green to-brand-green-dark p-2 text-background">
               {icon}
             </div>
-            {title}
+            <span className="text-3xl">{title}</span>
           </h3>
           <p
             className={cn(
