@@ -29,13 +29,24 @@ export function UseCaseCard({
   const handleOpen = () => {
     setIsAnimating(true);
     setIsOpen(true);
-    document.body.style.overflow = "hidden";
+    const scrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.overflowY = "scroll";
   };
 
   const handleClose = () => {
     setIsAnimating(true);
     setIsOpen(false);
-    document.body.style.overflow = "unset";
+    const scrollY = Math.abs(parseInt(document.body.style.top || "0", 10));
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.overflowY = "";
+    window.scrollTo(0, scrollY);
   };
 
   useEffect(() => {
@@ -98,13 +109,13 @@ export function UseCaseCard({
       {isOpen && (
         <div
           className={cn(
-            "fixed inset-0 z-50 bg-background/90 backdrop-blur-sm transition-all duration-500",
+            "fixed inset-0 z-50 bg-background/90 backdrop-blur-sm transition-all duration-500 h-full",
             isAnimating ? "opacity-0 scale-95" : "opacity-100 scale-100"
           )}
           ref={modalRef}
         >
           <div className="h-full overflow-y-auto">
-            <div className="min-h-full flex flex-col">
+            <div className="min-h-full flex flex-col overflow-hidden">
               <div className="container mx-auto flex justify-between items-center p-6 border-b border-gray-200">
                 <h1
                   className={cn(
@@ -140,16 +151,14 @@ export function UseCaseCard({
                     </p>
                   </div>
 
-                  <div className="relative">
-                    <div className="relative overflow-hidden rounded-lg shadow-lg">
-                      <Image
-                        src={image}
-                        alt={title}
-                        className="w-full h-auto"
-                        width={1200}
-                        height={800}
-                      />
-                    </div>
+                  <div className="relative overflow-hidden rounded-lg shadow-lg">
+                    <Image
+                      src={image}
+                      alt={title}
+                      className="w-full h-auto"
+                      width={1200}
+                      height={800}
+                    />
                   </div>
                 </div>
               </div>
