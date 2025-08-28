@@ -10,6 +10,7 @@ import { useFocusTrap } from "@/hooks/use-focus-trap";
 interface UseCaseCardProps {
   title: string;
   description: string;
+  shortDescription: string;
   image: string;
   icon: ReactNode;
 }
@@ -17,6 +18,7 @@ interface UseCaseCardProps {
 export function UseCaseCard({
   title,
   description,
+  shortDescription,
   image,
   icon,
 }: UseCaseCardProps) {
@@ -95,6 +97,14 @@ export function UseCaseCard({
             </div>
             {title}
           </h3>
+          <p
+            className={cn(
+              "pb-6 text-gray-500 transition-all duration-500 mb-auto",
+              isAnimating && isOpen && "opacity-0 transform translate-y-2"
+            )}
+          >
+            {shortDescription}
+          </p>
           <button
             onClick={handleOpen}
             className="w-fit text-brand-green hover:text-brand-green-dark p-2 cursor-pointer ms-auto transition-all flex gap-2 items-center"

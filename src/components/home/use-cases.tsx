@@ -19,6 +19,7 @@ export async function UseCases() {
       icon: <ChartScatter className="size-5" />,
       title: t("marketing.title"),
       desc: t("marketing.description"),
+      shortDesc: t("marketing.shortDescription"),
       img: `/marketing_${locale}.jpeg`,
       gridLayout: "col-span-3 col-start-3",
     },
@@ -26,13 +27,15 @@ export async function UseCases() {
       icon: <Briefcase className="size-5" />,
       title: t("sales.title"),
       desc: t("sales.description"),
+      shortDesc: t("sales.shortDescription"),
       img: `/sales_${locale}.jpeg`,
-      gridLayout: "col-span-2 row-span-2 col-start-1 row-start-1",
+      gridLayout: "col-span-2 col-start-1 row-start-1",
     },
     {
       icon: <Factory className="size-5" />,
       title: t("operations.title"),
       desc: t("operations.description"),
+      shortDesc: t("operations.shortDescription"),
       img: `/operations_${locale}.jpeg`,
       gridLayout: "col-span-2",
     },
@@ -40,15 +43,17 @@ export async function UseCases() {
       icon: <Users className="size-5" />,
       title: t("hr.title"),
       desc: t("hr.description"),
+      shortDesc: t("hr.shortDescription"),
       img: `/hr_${locale}.jpeg`,
-      gridLayout: "col-span-2",
+      gridLayout: "col-span-3",
     },
     {
       icon: <Landmark className="size-5" />,
       title: t("finance.title"),
       desc: t("finance.description"),
+      shortDesc: t("finance.shortDescription"),
       img: `/financial_${locale}.jpeg`,
-      gridLayout: "col-span-3",
+      gridLayout: "col-span-4",
     },
   ];
 
@@ -64,7 +69,7 @@ export async function UseCases() {
           </p>
         </div>
 
-        <div className="relative grid grid-cols-7 auto-rows-[200px] gap-4 max-w-4xl mx-auto">
+        <div className="relative grid grid-cols-7 auto-rows-[1fr] gap-4 max-w-4xl mx-auto">
           {useCases.map((item) => (
             <motion.div
               key={item.title}
@@ -80,6 +85,7 @@ export async function UseCases() {
               <UseCaseCard
                 title={item.title}
                 description={item.desc}
+                shortDescription={item.shortDesc}
                 image={item.img}
                 icon={item.icon}
               />

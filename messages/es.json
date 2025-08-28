@@ -55,6 +55,7 @@
     },
     "useCases": {
       "title": "Casos de Uso",
+      "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua.",
       "description": "Desde marketing hasta finanzas, Nivii proporciona la claridad necesaria para tomar decisiones más inteligentes y rápidas en cada departamento.",
       "marketing": {
         "title": "Marketing",
@@ -62,10 +63,12 @@
       },
       "sales": {
         "title": "Ventas",
+        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
         "description": "Equipa a tu equipo de ventas con la información correcta en el momento adecuado. Nivii puede identificar oportunidades de venta cruzada y adicional, destacar cuentas en riesgo y asegurar que tu equipo presente los productos más relevantes a cada cliente."
       },
       "operations": {
         "title": "Operaciones",
+        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
         "description": "Optimiza tus operaciones obteniendo información inmediata sobre cuellos de botella en la cadena de suministro, ineficiencias de producción y asignación de recursos. Nivii te ayuda a tomar decisiones basadas en datos para mejorar la eficiencia y reducir costos."
       },
       "hr": {
@@ -74,6 +77,7 @@
       },
       "finance": {
         "title": "Finanzas",
+        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
         "description": "Obtén una claridad instantánea sobre la salud financiera de tu empresa. Nivii te permite hacer preguntas financieras complejas en un lenguaje sencillo, monitorear el flujo de caja en tiempo real e identificar riesgos potenciales antes de que se conviertan en problemas mayores."
       }
     },
