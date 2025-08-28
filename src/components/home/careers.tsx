@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Button } from "../ui/button";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 export async function Careers() {
   const t = await getTranslations("home.careers");

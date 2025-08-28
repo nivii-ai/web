@@ -10,6 +10,8 @@ export default function LanguageSwitch({ locale }: { locale?: string }) {
   const t = useTranslations("header.languageSelector");
 
   const handleLanguageChange = (locale: string) => {
+    console.log("🚀 ~ handleLanguageChange ~ locale:", locale);
+    console.log("🚀 ~ handleLanguageChange ~ pathname:", pathname);
     router.replace(pathname, { locale });
     router.refresh();
   };
