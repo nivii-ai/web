@@ -10,7 +10,7 @@ export async function Hero() {
   return (
     <section
       id="home"
-      className="h-dvh min-h-[400px] relative backdrop-blur-xs"
+      className="min-h-[400px] pt-60 pb-24 relative backdrop-blur-xs"
     >
       <HeroBackground />
       <div className="mx-auto px-6 text-center flex items-center justify-center flex-col h-full backdrop-blur-3xl bg-background/50">

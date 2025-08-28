@@ -30,7 +30,7 @@ export async function Product() {
   ];
 
   return (
-    <section id="product" className="py-20">
+    <section id="product" className="py-12">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-balance text-3xl font-bold lg:text-4xl mb-6">
           {t("title")}

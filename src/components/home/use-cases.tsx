@@ -58,7 +58,7 @@ export async function UseCases() {
   ];
 
   return (
-    <section id="use-cases" className="relative py-32">
+    <section id="use-cases" className="relative py-12">
       <div className="container mx-auto px-6">
         <div className="text-center mx-auto mb-16">
           <h2 className="text-balance text-3xl font-bold lg:text-4xl tracking-tight text-foreground">

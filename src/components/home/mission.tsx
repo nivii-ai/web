@@ -8,7 +8,7 @@ export async function Mission() {
   const missionDescription = messages.home.mission.description as string[];
 
   return (
-    <section id="mission" className="py-32">
+    <section id="mission" className="py-16">
       <div className=" relative max-w-3xl mx-auto px-6">
         <div className="absolute opacity-5 top-20 -left-44 bg-[url('/goal.svg')] bg-no-repeat bg-contain w-2xl h-full" />
         <div className="text-left mx-auto mb-16">
