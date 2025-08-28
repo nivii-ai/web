@@ -91,7 +91,7 @@
           "answer": "Este é um cenário muito comum, e nossa metodologia é projetada para isso. Nenhuma empresa tem dados perfeitos. Começamos trabalhando com você para identificar as fontes de dados mais confiáveis e construir \"Domain Data Products\". Isso nos permite limpar, transformar e usar as partes mais confiáveis de seus dados primeiro, entregando valor e impacto imediatos enquanto criamos uma base para a melhoria contínua da qualidade dos dados."
         },
         {
-          "question": "Isso é como [ChatGPT/Claude/Gemini]?",
+          "question": "Isso é como ChatGPT/Claude/Gemini?",
           "answer": "Embora aproveitemos o poder dos principais Modelos de Linguagem Grandes (LLMs), a Nivii é muito mais do que uma simples interface de chat. Nossa tecnologia principal é uma orquestra proprietária de agentes de IA especializados. Esses agentes são treinados no contexto do seu negócio e trabalham juntos para realizar análises profundas e precisas. Ao contrário dos modelos de propósito geral, o objetivo da Nivii não é apenas gerar texto ou gráficos - é entregar insights validados e prontos para a decisão."
         },
         {
