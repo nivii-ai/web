@@ -11,6 +11,7 @@ export default function LanguageSwitch({ locale }: { locale?: string }) {
 
   const handleLanguageChange = (locale: string) => {
     router.replace(pathname, { locale });
+    router.refresh();
   };
 
   return (
