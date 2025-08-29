@@ -15,7 +15,7 @@ export async function Hero() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight"
+          className="text-4xl md:text-6xl font-extrabold text-foreground leading-tight tracking-tight"
         >
           <span>{t("title")}</span> <br className="hidden md:block" />
           <span className="text-brand-green text-nowrap">{t("subtitle")}</span>

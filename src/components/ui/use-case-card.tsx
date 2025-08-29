@@ -156,7 +156,7 @@ export function UseCaseCard({
               >
                 <div className="max-w-4xl mx-auto space-y-8">
                   <div className="prose prose-lg max-w-none">
-                    <p className="text-lg leading-relaxed text-gray-800">
+                    <p className="text-lg leading-relaxed text-foreground">
                       {description}
                     </p>
                   </div>

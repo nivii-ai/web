@@ -47,7 +47,7 @@ export async function Team() {
               </div>
 
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-foreground mb-2">
                   {member.name}
                 </h3>
                 <p className="text-brand-green font-bold mb-4">{member.role}</p>

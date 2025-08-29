@@ -30,7 +30,7 @@ export const ProductCard = ({ icon, title, description }: ProductCardProps) => (
       {title}
     </h3>
 
-    <p className="mt-1 text-base md:text-sm text-gray-800 px-8 text-pretty">
+    <p className="mt-1 text-base md:text-sm text-foreground px-8 text-pretty">
       {description}
     </p>
   </div>
