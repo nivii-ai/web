@@ -13,7 +13,11 @@ export default async function PositionPage({
   const messages = await getMessages();
 
   const openPositions = messages?.careers?.positions?.openPositions || [];
-  const position = openPositions.find((pos: any) => pos.slug === slug);
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const position = openPositions.find(
+    (pos: { slug: string }) => pos.slug === slug
+  );
 
   if (!position) {
     return (

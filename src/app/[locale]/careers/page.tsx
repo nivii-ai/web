@@ -37,6 +37,7 @@ export default async function Career() {
 
           <div className="max-w-2xl mx-auto">
             {hasOpenPositions ? (
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
               openPositions.map((position: any, index: number) => (
                 <div
                   key={index}
