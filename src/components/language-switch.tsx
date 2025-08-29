@@ -15,7 +15,7 @@ export default function LanguageSwitch({ locale }: { locale?: string }) {
   };
 
   return (
-    <div className="relative inline-flex">
+    <div className="relative inline-flex mr-4 lg:mr-2">
       <Globe className="w-4 h-4 text-gray-600 mr-2 relative top-[2px]" />
       <select
         onChange={(e) => handleLanguageChange(e.target.value)}

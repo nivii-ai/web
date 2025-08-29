@@ -152,6 +152,81 @@
       "applyNow": "Posiciones Abiertas"
     }
   },
+  "careers": {
+    "title": "Únete",
+    "titleHighlight": "a nuestro equipo",
+    "description": "Estamos en una misión para potenciar a las empresas con información accionable. Si te apasionan los datos, la IA y la innovación, nos encantaría conocerte.",
+    "openPositions": "Puestos Abiertos",
+    "openPositionsDescription": "Explora nuestras oportunidades actuales y encuentra el rol perfecto para tus habilidades y pasión.",
+    "noPositions": "No hay puestos abiertos en este momento.",
+    "generalApplication": "¿No ves un rol que encaje contigo? Siempre estamos buscando personas talentosas para unirse a nuestro equipo.",
+    "sendResumeLink": "Envíanos tu currículum",
+    "applyNow": "Postularse ahora",
+    "positions": {
+      "page": {
+        "applyNow": "Postularse Ahora",
+        "aboutRole": "Sobre el rol",
+        "backToCareers": "Volver a careers",
+        "responsibilities": "Lo que harás",
+        "requirements": "Lo que buscamos",
+        "bonusPoints": "Puntos extra",
+        "benefits": "Lo que ofrecemos",
+        "quickInfo": "Información rápida",
+        "cta": {
+          "title": "¿Listo para postularte?",
+          "description": "Únete a nuestro equipo y ayuda a construir el futuro de la inteligencia empresarial potenciada por IA.",
+          "button": "Postularse Ahora"
+        },
+        "notFoundPositionTitle": "¡Ups! Puesto No Encontrado",
+        "notFoundPositionDescription": "El puesto que estás buscando no existe o ya ha sido cubierto. Por favor, revisa nuestros puestos abiertos para otras oportunidades."
+      },
+      "openPositions": [
+        {
+          "slug": "senior-full-stack-engineer",
+          "title": "Ingeniero Sr. Full Stack",
+          "location": "Buenos Aires, Argentina (Híbrido) • Tiempo completo",
+          "aboutRole": [
+            "Estamos buscando un Ingeniero Senior Full Stack para liderar el desarrollo de nuestros principales sistemas de cara al usuario, tanto servicios backend como interfaces frontend. Trabajarás en estrecha colaboración con el cofundador/CTO y el equipo de ingeniería fundador para entregar funcionalidades de principio a fin, mejorar nuestras bases técnicas y dar forma a la evolución del producto.",
+            "Serás responsable de partes clave del stack, pero tendrás la libertad de replantear cómo se construyen las cosas. Ya sea refinando lo existente o proponiendo un nuevo frontend moderno desde cero, buscamos liderazgo técnico y una ejecución reflexiva."
+          ],
+          "responsibilities": [
+            "Desarrollar y mantener nuestros servicios web backend y la interfaz de usuario frontend",
+            "Diseñar e implementar funcionalidades full-stack con atención al rendimiento, claridad y mantenibilidad",
+            "Mejorar nuestra arquitectura y herramientas a medida que escalamos — CI/CD, testing, observabilidad, modularidad",
+            "Colaborar directamente en decisiones de producto y priorización del roadmap",
+            "Contribuir en todo el stack de ingeniería, desde la infraestructura hasta la lógica de la aplicación",
+            "Asegurar una integración sólida con nuestros sistemas basados en LLM y flujos de datos"
+          ],
+          "requirements": [
+            "5+ años de experiencia con frameworks modernos de frontend o full-stack como Vue, React, Node.js o similares",
+            "3+ años de experiencia profesional con Python, idealmente construyendo APIs o servicios backend",
+            "Sólido entendimiento de diseño de APIs RESTful, patrones de aplicaciones web y manejo de estado",
+            "Experiencia trabajando con Kubernetes en entornos productivos",
+            "Comodidad con despliegue en contenedores (Docker) y pipelines CI/CD (usamos GitHub Actions + AWS)",
+            "Autonomía y proactividad en equipos de rápido movimiento orientados a la responsabilidad",
+            "Residir en Buenos Aires, con disponibilidad para colaboración presencial algunos días a la semana",
+            "Fluidez en inglés y español"
+          ],
+          "bonusPoints": [
+            "Haber trabajado en una startup en etapa temprana o desarrollado productos con datos en tiempo real o streaming",
+            "Experiencia con LangGraph, APIs de OpenAI u otras herramientas relacionadas con LLM"
+          ],
+          "benefits": [
+            "Compensación competitiva",
+            "Alta participación accionaria — creemos en la propiedad compartida",
+            "Flexibilidad en horarios y modelo híbrido",
+            "Oportunidad de definir producto y arquitectura desde cero",
+            "La posibilidad de trabajar en algo significativo: hacer que los datos sean útiles para las personas, no solo para los analistas"
+          ],
+          "quickInfo": {
+            "location": "Buenos Aires (Híbrido)",
+            "experience": "5+ años",
+            "department": "Ingeniería"
+          }
+        }
+      ]
+    }
+  },
   "footer": {
     "description": "Nivii es el Agente de IA que se conecta de forma segura a tus datos, entiende tu negocio y responde con el análisis fiable que necesitas para tomar medidas inmediatamente.",
     "product": "Producto",

@@ -152,6 +152,81 @@
       "applyNow": "View open positions"
     }
   },
+  "careers": {
+    "title": "Join",
+    "titleHighlight": "our team",
+    "description": "We're on a mission to empower businesses with actionable insights. If you're passionate about data, AI, and innovation, we'd love to hear from you.",
+    "openPositions": "Open Positions",
+    "openPositionsDescription": "Explore our current opportunities and find the perfect role for your skills and passion.",
+    "noPositions": "There are no open positions at the moment.",
+    "generalApplication": "Don't see a role that fits? We're always looking for talented individuals to join our team.",
+    "sendResumeLink": "Send us your resume",
+    "applyNow": "Apply Now",
+    "positions": {
+      "page": {
+        "applyNow": "Apply Now",
+        "aboutRole": "About The Role",
+        "backToCareers": "Back to Careers",
+        "responsibilities": "What You'll Do",
+        "requirements": "What We're Looking For",
+        "bonusPoints": "Bonus Points",
+        "benefits": "What We Offer",
+        "quickInfo": "Quick Info",
+        "cta": {
+          "title": "Ready to Apply?",
+          "description": "Join our team and help build the future of AI-powered business intelligence.",
+          "button": "Apply Now"
+        },
+        "notFoundPositionTitle": "Ooops! Position Not Found",
+        "notFoundPositionDescription": "The position you are looking for does not exist or has been filled. Please check our open positions for other opportunities."
+      },
+      "openPositions": [
+        {
+          "slug": "senior-full-stack-engineer",
+          "title": "Sr. Full Stack Engineer",
+          "location": "Buenos Aires, Argentina (Hybrid) • Full-time",
+          "aboutRole": [
+            "We're looking for a Senior Full Stack Engineer to lead the development of our main user-facing systems - both backend services and frontend interfaces. You'll work closely with the co-founder/CTO and the founding engineering team to ship features end-to-end, improve our technical foundations, and shape the evolution of the product.",
+            "You'll own major parts of the stack but have freedom to reimagine how things are built. Whether that's refining what exists or proposing a new modern frontend from scratch, we're looking for technical leadership and thoughtful execution."
+          ],
+          "responsibilities": [
+            "Develop and maintain our web backend services and frontend UI",
+            "Design and implement full-stack features with attention to performance, clarity, and maintainability",
+            "Improve our architecture and tooling as we scale — CI/CD, testing, observability, modularity",
+            "Collaborate directly on product decisions and roadmap prioritization",
+            "Contribute across the engineering stack, from infra to application logic",
+            "Ensure solid integration with our LLM-based systems and data pipelines"
+          ],
+          "requirements": [
+            "5+ years of experience with modern frontend or full-stack frameworks such as Vue, React, Node.js, or similar",
+            "3+ years of professional experience with Python, ideally building APIs or backend services",
+            "Strong grasp of RESTful API design, web application patterns, and state management",
+            "Experience working with Kubernetes in production environments",
+            "Comfort with containerized deployment (Docker) and CI/CD pipelines (we use GitHub Actions + AWS)",
+            "A self-starter who thrives in fast-moving, ownership-driven teams",
+            "Based in Buenos Aires, with availability for in-person collaboration a few days per week",
+            "Fluent in English and Spanish"
+          ],
+          "bonusPoints": [
+            "Have worked at an early-stage startup or built products involving real-time or streaming data",
+            "Experience with LangGraph, OpenAI APIs, or other LLM-related tooling"
+          ],
+          "benefits": [
+            "Competitive compensation",
+            "A high equity stake — we believe in shared ownership",
+            "Flexibility in working hours and hybrid model",
+            "Opportunity to shape product and architecture from the ground up",
+            "A chance to work on something meaningful: making data useful to humans, not just analysts"
+          ],
+          "quickInfo": {
+            "location": "Buenos Aires (Hybrid)",
+            "experience": "5+ years",
+            "department": "Engineering"
+          }
+        }
+      ]
+    }
+  },
   "footer": {
     "description": "Nivii is the AI Agent that securely connects to your data, understands your business, and responds with the trustworthy analysis you need to take action immediately.",
     "product": "Product",
