@@ -9,6 +9,7 @@ import {
   DialogDescription,
 } from "./ui/dialog";
 import { Button } from "./ui/button";
+import { sendDemoRequest } from "@/actions/send-demo-request";
 
 export function DemoButton() {
   const t = useTranslations();
@@ -44,25 +45,14 @@ export function DemoButton() {
         formData.append(key, value ?? "");
       });
 
-      const response = await fetch(
-        "https://script.google.com/a/macros/nivii.ai/s/AKfycbxMyC4l8oHX69cza9r4116JD8yd0oVOr2DFjNwtmoldVQDoLpksEgEgDd2Cc4Zg0g-how/exec",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+      await sendDemoRequest(data);
 
-      if (response.ok) {
-        setMessage(t("demo.form.success"));
-        setOpen(false);
-        setFirstName("");
-        setLastName("");
-        setEmail("");
-        setCompany("");
-        setRole("");
-      } else {
-        setMessage(t("demo.form.error"));
-      }
+      setMessage(t("demo.form.success"));
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setCompany("");
+      setRole("");
     } catch {
       setMessage(t("demo.form.error"));
     } finally {
