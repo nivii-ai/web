@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme inline {
+  --breakpoint-lg: 68.125rem; /* 1090px */
+
   --color-background: #ffffff;
   --color-foreground: #1a1a1a;
   --color-brand-green: #3d977b;

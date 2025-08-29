@@ -8,10 +8,7 @@ export async function Hero() {
   const t = await getTranslations("home.hero");
 
   return (
-    <section
-      id="home"
-      className="min-h-[400px] pt-60 pb-24 relative backdrop-blur-xs"
-    >
+    <section id="home" className="min-h-[400px] pt-60 pb-24 relative">
       <HeroBackground />
       <div className="mx-auto px-6 text-center flex items-center justify-center flex-col h-full backdrop-blur-3xl bg-background/50">
         <motion.h1
@@ -40,7 +37,7 @@ export async function Hero() {
           <DemoButton />
           <Link
             href="#use-cases"
-            className="bg-white text-gray-700 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition duration-300 border border-gray-300"
+            className="bg-white text-gray-700 font-semibold px-5 py-2 rounded-lg hover:bg-gray-100 transition duration-300 cursor-pointer border border-gray-300"
           >
             {t("seeUseCases")}
           </Link>

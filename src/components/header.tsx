@@ -26,22 +26,22 @@ export async function Header({ locale }: { locale: string }) {
             height={32}
           />
         </Link>
-        <nav className="hidden lg:flex space-x-8 items-center absolute left-1/2 -translate-x-1/2">
+        <nav className="hidden lg:flex space-x-8 items-center absolute left-1/2 -translate-x-1/2 text-no">
           <Link
             href="/#product"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
           >
             {t("product")}
           </Link>
           <Link
             href="/#use-cases"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
           >
             {t("useCases")}
           </Link>
           <Link
             href="/#faq"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
           >
             {t("faq")}
           </Link>
@@ -53,13 +53,13 @@ export async function Header({ locale }: { locale: string }) {
           </Link>
           <Link
             href="/#team"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
           >
             {t("team")}
           </Link>
           <Link
             href="/careers/"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium"
+            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
           >
             {t("careers")}
           </Link>

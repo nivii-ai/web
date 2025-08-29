@@ -40,7 +40,7 @@ export function MenuMobile() {
         )}
         aria-hidden={!isOpen}
       >
-        <div className="space-y-4 px-6 pt-2 pb-4">
+        <div className="space-y-4 px-6 pt-6 pb-4 flex flex-col gap-4 items-center">
           <Link
             href="#product"
             className="block text-gray-600 hover:text-brand-green"

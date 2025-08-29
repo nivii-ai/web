@@ -10,7 +10,7 @@ export async function Mission() {
   return (
     <section id="mission" className="py-16">
       <div className=" relative max-w-3xl mx-auto px-6">
-        <div className="absolute opacity-5 top-20 -left-44 bg-[url('/goal.svg')] bg-no-repeat bg-contain w-2xl h-full" />
+        <div className="absolute opacity-5 top-20 -left-44 bg-[url('/goal.svg')] bg-no-repeat bg-contain w-2xs  md:w-2xl h-full" />
         <div className="text-left mx-auto mb-16">
           <h2 className="text-balance text-3xl font-bold lg:text-5xl tracking-tight text-brand-green">
             {t("title")}

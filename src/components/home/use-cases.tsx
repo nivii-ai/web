@@ -21,7 +21,7 @@ export async function UseCases() {
       desc: t("marketing.description"),
       shortDesc: t("marketing.shortDescription"),
       img: `/marketing_${locale}.jpeg`,
-      gridLayout: "col-span-3 col-start-3",
+      gridLayout: "col-span-1 md:col-start-1 md:col-span-3 lg:col-start-3",
     },
     {
       icon: <Briefcase className="size-5" />,
@@ -29,7 +29,8 @@ export async function UseCases() {
       desc: t("sales.description"),
       shortDesc: t("sales.shortDescription"),
       img: `/sales_${locale}.jpeg`,
-      gridLayout: "col-span-2 col-start-1 row-start-1",
+      gridLayout:
+        "col-span-1 md:col-start-4 md:col-span-4 lg:col-span-2 lg:col-start-1 lg:row-start-1",
     },
     {
       icon: <Factory className="size-5" />,
@@ -37,7 +38,8 @@ export async function UseCases() {
       desc: t("operations.description"),
       shortDesc: t("operations.shortDescription"),
       img: `/operations_${locale}.jpeg`,
-      gridLayout: "col-span-3 col-start-1 row-start-2",
+      gridLayout:
+        "col-span-1 md:col-span-4 lg:col-span-3 lg:col-start-1 lg:row-start-2",
     },
     {
       icon: <Users className="size-5" />,
@@ -45,7 +47,7 @@ export async function UseCases() {
       desc: t("hr.description"),
       shortDesc: t("hr.shortDescription"),
       img: `/hr_${locale}.jpeg`,
-      gridLayout: "col-span-2 col-start-6",
+      gridLayout: "col-span-1 md:col-span-3 lg:col-span-2 lg:col-start-6",
     },
     {
       icon: <Landmark className="size-5" />,
@@ -53,14 +55,14 @@ export async function UseCases() {
       desc: t("finance.description"),
       shortDesc: t("finance.shortDescription"),
       img: `/financial_${locale}.jpeg`,
-      gridLayout: "col-span-4",
+      gridLayout: "col-span-1 md:col-start-3 md:col-span-3 lg:col-span-4",
     },
   ];
 
   return (
     <section id="use-cases" className="relative py-12">
-      <div className="container mx-auto px-6">
-        <div className="text-center mx-auto mb-16">
+      <div className="mx-auto px-6">
+        <div className="container text-center mx-auto mb-16">
           <h2 className="text-balance text-3xl font-bold lg:text-4xl tracking-tight text-foreground">
             {t("title")}
           </h2>
@@ -69,7 +71,7 @@ export async function UseCases() {
           </p>
         </div>
 
-        <div className="relative grid grid-cols-7 auto-rows-[1fr] gap-4 max-w-4xl mx-auto">
+        <div className="w-full lg:container relative grid grid-cols-1 md:grid-cols-7 auto-rows-auto md:auto-rows-[1fr] gap-4 md:max-w-2xl lg:max-w-4xl mx-auto">
           {useCases.map((item) => (
             <motion.div
               key={item.title}

@@ -107,7 +107,7 @@ export function UseCaseCard({
           </p>
           <button
             onClick={handleOpen}
-            className="w-fit text-brand-green hover:text-brand-green-dark p-2 cursor-pointer ms-auto transition-all flex gap-2 items-center"
+            className="w-fit text-brand-green hover:text-brand-green-dark p-2 cursor-pointer ms-auto transition-all flex gap-2 items-center text-nowrap"
           >
             {t("learnMore")}
             <ChevronsRight className="size-3" />

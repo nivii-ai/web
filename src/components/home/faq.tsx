@@ -45,7 +45,7 @@ export async function Faq() {
                   </h3>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="mt-2 mb-8 text-gray-700 text-base">
+                  <p className="mt-2 mb-8 text-gray-700 text-lg md:text-base">
                     {item.answer}
                   </p>
                 </AccordionContent>
