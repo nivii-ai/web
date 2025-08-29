@@ -10,7 +10,7 @@ export async function Hero() {
   return (
     <section id="home" className="min-h-[400px] pt-60 pb-24 relative">
       <HeroBackground />
-      <div className="mx-auto px-6 text-center flex items-center justify-center flex-col h-full backdrop-blur-3xl bg-background/50">
+      <div className="mx-auto px-6 text-center flex items-center justify-center flex-col h-full">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
