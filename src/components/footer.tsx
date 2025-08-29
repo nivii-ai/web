@@ -6,7 +6,7 @@ import { getTranslations } from "next-intl/server";
 export async function Footer() {
   const t = await getTranslations("footer");
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white mt-auto">
       <div className="max-w-7xl mx-auto px-6">
         <div className="py-16 grid lg:grid-cols-4 md:grid-cols-2 gap-12">
           <div className="lg:col-span-1">

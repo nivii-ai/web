@@ -82,7 +82,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${nunito.variable} antialiased scroll-smooth`}>
+      <body
+        className={`${nunito.variable} antialiased scroll-smooth min-h-screen flex flex-col`}
+      >
         <NextIntlClientProvider messages={messages}>
           <Header locale={locale} />
           {children}
