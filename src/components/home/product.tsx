@@ -38,7 +38,7 @@ export async function Product() {
         <p className="text-lg text-gray-700 mb-12  max-w-2xl mx-auto">
           {t("description")}
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:max-lg:max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-sm md:max-lg:max-w-2xl mx-auto">
           {productFeatures.map((feature, index) => (
             <motion.div
               key={index}
