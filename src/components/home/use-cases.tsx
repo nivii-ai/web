@@ -71,7 +71,7 @@ export async function UseCases() {
           </p>
         </div>
 
-        <div className="w-full lg:container relative grid grid-cols-1 md:grid-cols-7 auto-rows-auto md:auto-rows-[1fr] gap-4 md:max-w-2xl lg:max-w-4xl mx-auto">
+        <div className="w-full lg:container relative grid grid-cols-1 md:grid-cols-7 auto-rows-auto md:auto-rows-[1fr] gap-4 max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto">
           {useCases.map((item) => (
             <motion.div
               key={item.title}
