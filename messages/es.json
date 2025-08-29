@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "Nivii.ai - ¿Qué dicen los datos?",
+    "description": "Nivii es el Agente de IA que se conecta de forma segura a tus datos, entiende tu negocio y responde con el análisis fiable que necesitas para tomar medidas inmediatamente."
+  },
   "header": {
     "logo": "Nivii",
     "product": "Producto",

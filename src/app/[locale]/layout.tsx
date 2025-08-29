@@ -15,46 +15,45 @@ import { setRequestLocale } from "next-intl/server";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-// export async function generateMetadata({
-//   params,
-// }: {
-//   params: Promise<{ locale: string }>;
-// }): Promise<Metadata> {
-//   const { locale } = await params;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
 
-//   // Set the locale for next-intl
-//   setRequestLocale(locale);
+  // Set the locale for next-intl
+  setRequestLocale(locale);
 
-//   const messages = await getMessages();
-//   const metadata = messages.Metadata as {
-//     title: string;
-//     description: string;
-//     keywords: string;
-//   };
+  const messages = await getMessages();
+  const metadata = messages.metadata as {
+    title: string;
+    description: string;
+  };
 
-//   return {
-//     title: metadata.title,
-//     description: metadata.description,
-//     keywords: metadata.keywords,
-//     openGraph: {
-//       title: metadata.title,
-//       description: metadata.description,
-//       locale: locale,
-//       type: "website",
-//     },
-//     twitter: {
-//       card: "summary_large_image",
-//       title: metadata.title,
-//       description: metadata.description,
-//     },
-//     alternates: {
-//       languages: {
-//         es: "/es",
-//         en: "/en",
-//       },
-//     },
-//   };
-// }
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+      locale: locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metadata.title,
+      description: metadata.description,
+    },
+    alternates: {
+      languages: {
+        es: "/es",
+        en: "/en",
+        pt: "/pt",
+      },
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
