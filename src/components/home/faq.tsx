@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionContent,
   AccordionTrigger,
-} from "../ui/acoordion";
+} from "../ui/accordion";
 
 type FaqItem = { question: string; answer: string };
 
