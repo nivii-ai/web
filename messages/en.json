@@ -62,27 +62,27 @@
       "description": "Nivii is transforming how teams across industries leverage their data to drive growth, efficiency, and innovation.",
       "marketing": {
         "title": "Marketing",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Instantly understand campaign performance.",
         "description": "Instantly understand campaign performance, identify your most profitable customer segments, and optimize your marketing spend. Ask Nivii which channels are delivering the highest ROI, and get an answer in seconds."
       },
       "sales": {
         "title": "Sales",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Equip your sales team with the right information at the right time.",
         "description": "Equip your sales team with the right information at the right time. Nivii can identify cross-sell and upsell opportunities, highlight at-risk accounts, and ensure your team is pitching the most relevant products to each client."
       },
       "operations": {
         "title": "Operations",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Streamline your operations with real-time insights.",
         "description": "Streamline your operations by getting immediate insights into supply chain bottlenecks, production inefficiencies, and resource allocation. Nivii helps you make data-driven decisions to improve efficiency and reduce costs."
       },
       "hr": {
         "title": "HR",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Uncover hidden signals in your employee data.",
         "description": "Uncover the hidden signals in your employee data. With Nivii, you can identify trends in employee attrition, understand the drivers of satisfaction, and make proactive decisions to build a stronger, more engaged workforce."
       },
       "finance": {
         "title": "Finance",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Gain a deeper understanding of your financial data.",
         "description": "Gain a deeper understanding of your financial data. Nivii can help you analyze cash flow, identify cost-saving opportunities, and optimize your budgeting process."
       }
     },

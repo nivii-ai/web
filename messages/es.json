@@ -62,27 +62,27 @@
       "description": "Desde marketing hasta finanzas, Nivii proporciona la claridad necesaria para tomar decisiones más inteligentes y rápidas en cada departamento.",
       "marketing": {
         "title": "Marketing",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua.",
+        "shortDescription": "Comprende al instante el rendimiento de las campañas.",
         "description": "Comprende al instante el rendimiento de las campañas, identifica tus segmentos de clientes más rentables y optimiza tu inversión en marketing. Pregúntale a Nivii qué canales ofrecen el mayor ROI y obtén una respuesta en segundos."
       },
       "sales": {
         "title": "Ventas",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Equipa a tu equipo de ventas con la información correcta en el momento adecuado.",
         "description": "Equipa a tu equipo de ventas con la información correcta en el momento adecuado. Nivii puede identificar oportunidades de venta cruzada y adicional, destacar cuentas en riesgo y asegurar que tu equipo presente los productos más relevantes a cada cliente."
       },
       "operations": {
         "title": "Operaciones",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Optimiza tus operaciones con información en tiempo real.",
         "description": "Optimiza tus operaciones obteniendo información inmediata sobre cuellos de botella en la cadena de suministro, ineficiencias de producción y asignación de recursos. Nivii te ayuda a tomar decisiones basadas en datos para mejorar la eficiencia y reducir costos."
       },
       "hr": {
         "title": "RR.HH.",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Descubre las señales ocultas en los datos de tus empleados.",
         "description": "Descubre las señales ocultas en los datos de tus empleados. Con Nivii, puedes identificar tendencias en la rotación de personal, comprender los impulsores de la satisfacción y tomar decisiones proactivas para construir una fuerza laboral más fuerte y comprometida."
       },
       "finance": {
         "title": "Finanzas",
-        "shortDescription": "eiusmod ea laborum proident eiusmod Lorem culpa esse est aliqua",
+        "shortDescription": "Obtén una claridad instantánea sobre la salud financiera de tu empresa.",
         "description": "Obtén una claridad instantánea sobre la salud financiera de tu empresa. Nivii te permite hacer preguntas financieras complejas en un lenguaje sencillo, monitorear el flujo de caja en tiempo real e identificar riesgos potenciales antes de que se conviertan en problemas mayores."
       }
     },
