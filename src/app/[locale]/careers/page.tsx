@@ -56,7 +56,7 @@ export default async function Career() {
                 </div>
               ))
             ) : (
-              <p className="w-2xl text-gray-500 text-center">
+              <p className="w-full text-gray-500 text-center">
                 {t("noPositions")}
               </p>
             )}
