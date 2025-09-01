@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "title": "Nivii.ai - ¿Qué dicen los datos?",
+    "description": "Nivii es el Agente de IA que se conecta de forma segura a tus datos, entiende tu negocio y responde con el análisis fiable que necesitas para tomar medidas inmediatamente."
+  },
+  "header": {
+    "logo": "Nivii",
+    "product": "Producto",
+    "useCases": "Casos de Uso",
+    "faq": "Preguntas",
+    "about": "Nosotros",
+    "team": "Equipo",
+    "careers": "Careers",
+    "openMenu": "Abrir Menú",
+    "closeMenu": "Cerrar Menú",
+    "languageSelector": {
+      "label": "Seleccionar Idioma",
+      "options": {
+        "es": "Español",
+        "en": "Inglés",
+        "pt": "Portugués"
+      }
+    }
+  },
+  "demo": {
+    "label": "Solicitar Demo",
+    "modalTitle": "Solicitar Demo",
+    "modalDescription": "Descubre cómo Nivii puede transformar tu negocio. Completa el formulario para empezar.",
+    "form": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo Electrónico",
+      "company": "Empresa",
+      "role": "Cargo",
+      "submit": "Enviar",
+      "submitting": "Enviando...",
+      "success": "¡Gracias por solicitar una demostración! Nos pondremos en contacto contigo pronto.",
+      "error": "Hubo un error al enviar tu solicitud. Por favor, inténtalo de nuevo o contáctanos directamente."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "¿Qué dicen los datos?",
+      "subtitle": "Solo pregunta.",
+      "description": "Nivii es el Agente de IA que se conecta de forma segura a tus datos, entiende tu negocio y responde con el análisis fiable que necesitas para tomar medidas inmediatamente.",
+      "seeUseCases": "Ver Casos de Uso"
+    },
+    "product": {
+      "title": "Análisis, no solo dashboards",
+      "description": "Tu equipo necesita información útil y procesable, no más dashboards que interpretar. La IA Generativa de Nivii va más allá de la visualización para proporcionar análisis claros, fiables y precisos para que puedas tomar decisiones con confianza.",
+      "securelyConnected": "Conexión Segura",
+      "securelyConnectedDescription": "Se integra de forma transparente y segura con tus fuentes de datos existentes, manteniendo la integridad y confidencialidad de tu información.",
+      "knowsYourBusiness": "Conoce tu Negocio",
+      "knowsYourBusinessDescription": "Nuestra IA está diseñada para entender tus KPIs y terminología específicos, proporcionando respuestas contextualizadas que son inmediatamente relevantes.",
+      "fromWeeksToMinutes": "De Semanas a Minutos",
+      "fromWeeksToMinutesDescription": "Capacita a tu equipo para actuar sobre oportunidades y abordar desafíos con una velocidad sin precedentes. Obtén la información que necesitas en minutos, no en semanas.",
+      "aiPoweredConversations": "Conversaciones con IA",
+      "aiPoweredConversationsDescription": "Una interfaz simple e intuitiva facilita que cualquier usuario haga preguntas sobre datos y obtenga respuestas de calidad en las que puede confiar."
+    },
+    "useCases": {
+      "title": "Casos de Uso",
+      "description": "Desde marketing hasta finanzas, Nivii proporciona la claridad necesaria para tomar decisiones más inteligentes y rápidas en cada departamento.",
+      "marketing": {
+        "title": "Marketing",
+        "shortDescription": "Comprende al instante el rendimiento de las campañas.",
+        "description": "Comprende al instante el rendimiento de las campañas, identifica tus segmentos de clientes más rentables y optimiza tu inversión en marketing. Pregúntale a Nivii qué canales ofrecen el mayor ROI y obtén una respuesta en segundos."
+      },
+      "sales": {
+        "title": "Ventas",
+        "shortDescription": "Equipa a tu equipo de ventas con la información correcta en el momento adecuado.",
+        "description": "Equipa a tu equipo de ventas con la información correcta en el momento adecuado. Nivii puede identificar oportunidades de venta cruzada y adicional, destacar cuentas en riesgo y asegurar que tu equipo presente los productos más relevantes a cada cliente."
+      },
+      "operations": {
+        "title": "Operaciones",
+        "shortDescription": "Optimiza tus operaciones con información en tiempo real.",
+        "description": "Optimiza tus operaciones obteniendo información inmediata sobre cuellos de botella en la cadena de suministro, ineficiencias de producción y asignación de recursos. Nivii te ayuda a tomar decisiones basadas en datos para mejorar la eficiencia y reducir costos."
+      },
+      "hr": {
+        "title": "RR.HH.",
+        "shortDescription": "Descubre las señales ocultas en los datos de tus empleados.",
+        "description": "Descubre las señales ocultas en los datos de tus empleados. Con Nivii, puedes identificar tendencias en la rotación de personal, comprender los impulsores de la satisfacción y tomar decisiones proactivas para construir una fuerza laboral más fuerte y comprometida."
+      },
+      "finance": {
+        "title": "Finanzas",
+        "shortDescription": "Obtén una claridad instantánea sobre la salud financiera de tu empresa.",
+        "description": "Obtén una claridad instantánea sobre la salud financiera de tu empresa. Nivii te permite hacer preguntas financieras complejas en un lenguaje sencillo, monitorear el flujo de caja en tiempo real e identificar riesgos potenciales antes de que se conviertan en problemas mayores."
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "description": "¿Tienes preguntas? Tenemos respuestas. Aquí están algunas de las cosas más comunes que nos preguntan.",
+      "faqs": [
+        {
+          "question": "¿Qué pasa si mis datos no están limpios?",
+          "answer": "Este es un escenario muy común y nuestra metodología está diseñada para ello. Ninguna empresa tiene datos perfectos. Empezamos trabajando contigo para identificar las fuentes de datos más fiables y construir \"Domain Data Products\". Esto nos permite limpiar, transformar y utilizar las partes más fiables de tus datos primero, entregando valor e impacto inmediatos mientras se crea una base para la mejora continua de la calidad de los datos."
+        },
+        {
+          "question": "¿Esto es como ChatGPT/Claude/Gemini?",
+          "answer": "Aunque aprovechamos el poder de los principales Modelos de Lenguaje Grandes (LLMs), Nivii es mucho más que una simple interfaz de chat. Nuestra tecnología principal es una orquesta patentada de agentes de IA especializados. Estos agentes están entrenados en el contexto de tu negocio y trabajan juntos para realizar análisis profundos y precisos. A diferencia de los modelos de propósito general, el objetivo de Nivii no es solo generar texto o gráficos, es entregar información validada y lista para la toma de decisiones."
+        },
+        {
+          "question": "¿Cómo aseguran la precisión?",
+          "answer": "La precisión es fundamental, especialmente cuando hay decisiones en juego. Nuestro enfoque de múltiples capas está diseñado para garantizarla. Primero, basamos todo el análisis en tus fuentes de datos más fiables. Segundo, nuestra orquesta de agentes de IA descompone preguntas complejas y asigna el agente correcto a cada parte del análisis. Finalmente, utilizamos un marco de validación patentado, que incluye agentes \"Jueces\", para verificar los resultados, minimizar errores y prevenir las alucinaciones a las que son propensos los modelos de IA generales."
+        },
+        {
+          "question": "¿Se pueden conectar a SAP/Salesforce/otros?",
+          "answer": "Nos podemos conectar a cualquier fuente de datos siempre que esté disponible en cualquiera de los 3 principales proveedores de nube (AWS, GCP, Azure)."
+        }
+      ]
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": [
+        "No importa cuánto se invierta en datos, demasiadas decisiones se toman sin mirar lo que dicen. A veces es porque lleva demasiado tiempo; a menudo porque muchos no tienen las habilidades para el análisis.",
+        "¿Cuánto se pierde cuando un representante de ventas ofrece el producto equivocado? ¿A cuánto riesgo se expone tu empresa sin una claridad financiera instantánea? ¿Cuánto se desperdicia en la rotación de empleados cuando las señales estaban allí, pero ocultas detrás de dashboards?",
+        "Construimos Nivii para resolver esto. Creemos que tu equipo necesita análisis fiables, no más gráficos. Necesitan información para pasar a la acción de inmediato."
+      ]
+    },
+    "team": {
+      "title": "Conoce al equipo",
+      "description": "Somos un equipo apasionado de innovadores, pensadores y creadores dedicados a revolucionar cómo las empresas interactúan con sus datos.",
+      "members": [
+        {
+          "name": "Alex Ingberg",
+          "photo": "/alex.jpeg",
+          "role": "CTO & Co-Founder",
+          "bio": [
+            "+8 años como Sr. Machine Learning engineer en el sector high-tech israelí",
+            "MSc en Ingeniería de Software"
+          ]
+        },
+        {
+          "name": "Daniel Stilerman ",
+          "photo": "/dani.jpeg",
+          "role": "CEO & Co-Founder",
+          "bio": [
+            "4 años como Managing Director de Data & AI en Accenture Argentina gestionando hasta 270 miembros de organización",
+            "10 años como Google Head of Data & AI para Argentina y luego para SPLATAM"
+          ]
+        },
+        {
+          "name": "Alan Hazan",
+          "photo": "/jacho.jpeg",
+          "role": "CBO",
+          "bio": [
+            "Data Scientist convertido en Ejecutivo de Ventas",
+            "+7 años en Google UK asesorando a nivel C & B en EMEA",
+            "Profesor de Decision Science (Analytics) para Google mundialmente"
+          ]
+        }
+      ]
+    },
+    "careers": {
+      "title": "Únete a nuestro equipo",
+      "description": "Estamos en una misión para empoderar a las empresas con información procesable. Si te apasionan los datos, la IA y la innovación, nos encantaría saber de ti.",
+      "applyNow": "Posiciones Abiertas"
+    }
+  },
+  "careers": {
+    "title": "Únete",
+    "titleHighlight": "a nuestro equipo",
+    "description": "Estamos en una misión para potenciar a las empresas con información accionable. Si te apasionan los datos, la IA y la innovación, nos encantaría conocerte.",
+    "openPositions": "Puestos Abiertos",
+    "openPositionsDescription": "Explora nuestras oportunidades actuales y encuentra el rol perfecto para tus habilidades y pasión.",
+    "noPositions": "No hay puestos abiertos en este momento.",
+    "generalApplication": "¿No ves un rol que encaje contigo? Siempre estamos buscando personas talentosas para unirse a nuestro equipo.",
+    "sendResumeLink": "Envíanos tu currículum",
+    "applyNow": "Postularse ahora",
+    "positions": {
+      "page": {
+        "applyNow": "Postularse Ahora",
+        "aboutRole": "Sobre el rol",
+        "backToCareers": "Volver a careers",
+        "responsibilities": "Lo que harás",
+        "requirements": "Lo que buscamos",
+        "bonusPoints": "Puntos extra",
+        "benefits": "Lo que ofrecemos",
+        "quickInfo": "Información rápida",
+        "cta": {
+          "title": "¿Listo para postularte?",
+          "description": "Únete a nuestro equipo y ayuda a construir el futuro de la inteligencia empresarial potenciada por IA.",
+          "button": "Postularse Ahora"
+        },
+        "notFoundPositionTitle": "¡Ups! Puesto No Encontrado",
+        "notFoundPositionDescription": "El puesto que estás buscando no existe o ya ha sido cubierto. Por favor, revisa nuestros puestos abiertos para otras oportunidades."
+      },
+      "openPositions": []
+    }
+  },
+  "footer": {
+    "description": "Nivii es el Agente de IA que se conecta de forma segura a tus datos, entiende tu negocio y responde con el análisis fiable que necesitas para tomar medidas inmediatamente.",
+    "product": "Producto",
+    "useCases": "Casos de Uso",
+    "faq": "Preguntas",
+    "company": "Compañía",
+    "about": "Nosotros",
+    "team": "Equipo",
+    "careers": "Careers",
+    "getInTouch": "Contáctanos",
+    "email": "contact@nivii.com",
+    "location": "Buenos Aires, Argentina",
+    "copyright": "© {year} NIVII. Todos los derechos reservados."
+  },
+  "common": {
+    "close": "Cerrar",
+    "learnMore": "Más información"
+  }
+}

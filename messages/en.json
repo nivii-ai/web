@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "title": "Nivii.ai - What does the data say?",
+    "description": "Nivii is the AI Agent that securely connects to your data, understands your business, and responds with the trustworthy analysis you need to take action immediately."
+  },
+  "header": {
+    "logo": "Nivii",
+    "product": "Product",
+    "useCases": "Use Cases",
+    "faq": "FAQ",
+    "about": "About",
+    "team": "Team",
+    "careers": "Careers",
+    "openMenu": "Open Menu",
+    "closeMenu": "Close Menu",
+    "languageSelector": {
+      "label": "Select Language",
+      "options": {
+        "es": "Spanish",
+        "en": "English",
+        "pt": "Portuguese"
+      }
+    }
+  },
+  "demo": {
+    "label": "Request a Demo",
+    "modalTitle": "Request a Demo",
+    "modalDescription": "See how Nivii can transform your business. Fill out the form below to get started.",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "company": "Company",
+      "role": "Role",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "success": "Thank you for your demo request! We'll get back to you soon.",
+      "error": "There was an error submitting your request. Please try again or contact us directly."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "What does the data say?",
+      "subtitle": "Just ask.",
+      "description": "Nivii is the AI Agent that securely connects to your data, understands your business, and responds with the trustworthy analysis you need to take action immediately.",
+      "seeUseCases": "See Use Cases"
+    },
+    "product": {
+      "title": "Analysis, not just dashboards",
+      "description": "Your team needs actionable insights, not more dashboards to interpret. Nivii's Generative AI goes beyond visualization to provide clear, trustworthy and accurate analysis so you can make confident decisions.",
+      "securelyConnected": "Securely Connected",
+      "securelyConnectedDescription": "Integrates seamlessly and securely with your existing data sources, maintaining the integrity and confidentiality of your information.",
+      "knowsYourBusiness": "Knows Your Business",
+      "knowsYourBusinessDescription": "Our AI is tailored to understand your specific KPIs and terminology, providing context-aware answers that are immediately relevant.",
+      "fromWeeksToMinutes": "From Weeks to Minutes",
+      "fromWeeksToMinutesDescription": "Empower your team to act on opportunities and address challenges with unprecedented speed. Get the insights you need in minutes, not weeks.",
+      "aiPoweredConversations": "AI-Powered Conversations",
+      "aiPoweredConversationsDescription": "A simple and intuitive interface makes it easy for any user to ask data questions and get quality answers they can trust."
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "description": "Nivii is transforming how teams across industries leverage their data to drive growth, efficiency, and innovation.",
+      "marketing": {
+        "title": "Marketing",
+        "shortDescription": "Instantly understand campaign performance.",
+        "description": "Instantly understand campaign performance, identify your most profitable customer segments, and optimize your marketing spend. Ask Nivii which channels are delivering the highest ROI, and get an answer in seconds."
+      },
+      "sales": {
+        "title": "Sales",
+        "shortDescription": "Equip your sales team with the right information at the right time.",
+        "description": "Equip your sales team with the right information at the right time. Nivii can identify cross-sell and upsell opportunities, highlight at-risk accounts, and ensure your team is pitching the most relevant products to each client."
+      },
+      "operations": {
+        "title": "Operations",
+        "shortDescription": "Streamline your operations with real-time insights.",
+        "description": "Streamline your operations by getting immediate insights into supply chain bottlenecks, production inefficiencies, and resource allocation. Nivii helps you make data-driven decisions to improve efficiency and reduce costs."
+      },
+      "hr": {
+        "title": "HR",
+        "shortDescription": "Uncover hidden signals in your employee data.",
+        "description": "Uncover the hidden signals in your employee data. With Nivii, you can identify trends in employee attrition, understand the drivers of satisfaction, and make proactive decisions to build a stronger, more engaged workforce."
+      },
+      "finance": {
+        "title": "Finance",
+        "shortDescription": "Gain a deeper understanding of your financial data.",
+        "description": "Gain a deeper understanding of your financial data. Nivii can help you analyze cash flow, identify cost-saving opportunities, and optimize your budgeting process."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Have questions? We have answers. Here are some of the most common things we get asked.",
+      "faqs": [
+        {
+          "question": "What happens if my data isn't clean?",
+          "answer": "This is a very common scenario, and our methodology is designed for it. No company has perfect data. We start by working with you to identify the most reliable data sources and build \"Domain Data Products.\" This allows us to clean, transform, and use the most trustworthy parts of your data first, delivering immediate value and impact while creating a foundation for ongoing data quality improvement."
+        },
+        {
+          "question": "Is this like ChatGPT/Claude/Gemini?",
+          "answer": "While we leverage the power of leading Large Language Models (LLMs), Nivii is much more than a simple chat interface. Our core technology is a proprietary orchestra of specialized AI agents. These agents are trained on your business context and work together to perform deep, accurate analysis. Unlike general-purpose models, Nivii's goal isn't just to generate text or charts—it's to deliver validated, decision-ready insights."
+        },
+        {
+          "question": "How do you ensure accuracy?",
+          "answer": "Accuracy is critical, especially when decisions are on the line. Our multi-layered approach is built to ensure it. First, we ground all analysis in your most trusted data sources. Second, our orchestra of AI agents breaks down complex questions and assigns the right agent to each part of the analysis. Finally, we use a proprietary validation framework, including \"Judge\" agents, to cross-check results, minimize errors, and prevent the hallucinations that general AI models are prone to."
+        },
+        {
+          "question": "Can you connect to SAP/Salesforce/others?",
+          "answer": "We can connect to any data source as long as it is available in either of the 3 main cloud providers (AWS, GCP, Azure)."
+        }
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": [
+        "No matter how much is invested in data, too many decisions are made without looking at what it says. Sometimes it's because it takes too long; often because many don't have the skills for analysis.",
+        "How much is lost when a sales rep pitches the wrong product? How much risk is your company exposed to without instant financial clarity? How much is wasted in employee attrition when the signals were there, but obscured behind dashboards?",
+        "We built Nivii to solve this. We believe your team needs trustworthy analysis, not more charts. They need insights to move to action immediately."
+      ]
+    },
+    "team": {
+      "title": "Meet the Team",
+      "description": "We are a passionate team of innovators, thinkers, and builders dedicated to revolutionizing how businesses interact with their data.",
+      "members": [
+        {
+          "name": "Alex Ingberg",
+          "photo": "/alex.jpeg",
+          "role": "CTO & Co-Founder",
+          "bio": [
+            "+8 years as Sr. Machine Learning Engineer in Israeli high-tech sector",
+            "MSc in Software Engineering"
+          ]
+        },
+        {
+          "name": "Daniel Stilerman ",
+          "photo": "/dani.jpeg",
+          "role": "CEO & Co-Founder",
+          "bio": [
+            "4 years as the Managing Director for Data & AI at Accenture Argentina managing up to 270 members organization",
+            "10 years as Google Head of Data & AI for Argentina and later for SPLATAM"
+          ]
+        },
+        {
+          "name": "Alan Hazan",
+          "photo": "/jacho.jpeg",
+          "role": "CBO",
+          "bio": [
+            "Data Scientist turned Sales Executive",
+            "+7 years at Google UK advising C & B Level in EMEA",
+            "Decision Science (Analytics) professor for Google worldwide"
+          ]
+        }
+      ]
+    },
+    "careers": {
+      "title": "Join Our Team",
+      "description": "We're on a mission to empower businesses with actionable insights. If you're passionate about data, AI, and innovation, we'd love to hear from you.",
+      "applyNow": "View open positions"
+    }
+  },
+  "careers": {
+    "title": "Join",
+    "titleHighlight": "our team",
+    "description": "We're on a mission to empower businesses with actionable insights. If you're passionate about data, AI, and innovation, we'd love to hear from you.",
+    "openPositions": "Open Positions",
+    "openPositionsDescription": "Explore our current opportunities and find the perfect role for your skills and passion.",
+    "noPositions": "There are no open positions at the moment.",
+    "generalApplication": "Don't see a role that fits? We're always looking for talented individuals to join our team.",
+    "sendResumeLink": "Send us your resume",
+    "applyNow": "Apply Now",
+    "positions": {
+      "page": {
+        "applyNow": "Apply Now",
+        "aboutRole": "About The Role",
+        "backToCareers": "Back to Careers",
+        "responsibilities": "What You'll Do",
+        "requirements": "What We're Looking For",
+        "bonusPoints": "Bonus Points",
+        "benefits": "What We Offer",
+        "quickInfo": "Quick Info",
+        "cta": {
+          "title": "Ready to Apply?",
+          "description": "Join our team and help build the future of AI-powered business intelligence.",
+          "button": "Apply Now"
+        },
+        "notFoundPositionTitle": "Ooops! Position Not Found",
+        "notFoundPositionDescription": "The position you are looking for does not exist or has been filled. Please check our open positions for other opportunities."
+      },
+      "openPositions": []
+    }
+  },
+  "footer": {
+    "description": "Nivii is the AI Agent that securely connects to your data, understands your business, and responds with the trustworthy analysis you need to take action immediately.",
+    "product": "Product",
+    "useCases": "Use Cases",
+    "faq": "FAQ",
+    "company": "Company",
+    "about": "About",
+    "team": "Team",
+    "careers": "Careers",
+    "getInTouch": "Get in Touch",
+    "email": "contact@nivii.com",
+    "location": "Buenos Aires, Argentina",
+    "copyright": "© {year} NIVII. All rights reserved."
+  },
+  "common": {
+    "close": "Close",
+    "learnMore": "Learn more"
+  }
+}
