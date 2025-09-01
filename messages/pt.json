@@ -184,51 +184,7 @@
         "notFoundPositionTitle": "Ops! Vaga Não Encontrada",
         "notFoundPositionDescription": "A vaga que você procura não existe ou já foi preenchida. Confira nossas vagas abertas para outras oportunidades."
       },
-      "openPositions": [
-        {
-          "slug": "senior-full-stack-engineer",
-          "title": "Engenheiro Sr. Full Stack",
-          "location": "Buenos Aires, Argentina (Híbrido) • Tempo integral",
-          "aboutRole": [
-            "Estamos procurando um Engenheiro Senior Full Stack para liderar o desenvolvimento de nossos principais sistemas voltados para o usuário — tanto serviços backend quanto interfaces frontend. Você trabalhará em estreita colaboração com o cofundador/CTO e o time de engenharia fundador para entregar funcionalidades de ponta a ponta, melhorar nossas bases técnicas e moldar a evolução do produto.",
-            "Você será responsável por partes importantes do stack, mas terá liberdade para repensar como as coisas são construídas. Seja refinando o que já existe ou propondo um novo frontend moderno do zero, buscamos liderança técnica e execução cuidadosa."
-          ],
-          "responsibilities": [
-            "Desenvolver e manter nossos serviços backend web e UI frontend",
-            "Projetar e implementar funcionalidades full-stack com foco em desempenho, clareza e manutenção",
-            "Melhorar nossa arquitetura e ferramentas à medida que escalamos — CI/CD, testes, observabilidade, modularidade",
-            "Colaborar diretamente nas decisões de produto e priorização do roadmap",
-            "Contribuir em todo o stack de engenharia, da infraestrutura à lógica da aplicação",
-            "Garantir integração sólida com nossos sistemas baseados em LLM e pipelines de dados"
-          ],
-          "requirements": [
-            "5+ anos de experiência com frameworks modernos de frontend ou full-stack, como Vue, React, Node.js ou similares",
-            "3+ anos de experiência profissional com Python, idealmente construindo APIs ou serviços backend",
-            "Bom entendimento de design de APIs RESTful, padrões de aplicações web e gerenciamento de estado",
-            "Experiência trabalhando com Kubernetes em ambientes de produção",
-            "Conforto com implantação em contêineres (Docker) e pipelines CI/CD (usamos GitHub Actions + AWS)",
-            "Autonomia e proatividade em times de rápido crescimento orientados à responsabilidade",
-            "Baseado em Buenos Aires, com disponibilidade para colaboração presencial alguns dias por semana",
-            "Fluência em inglês e espanhol"
-          ],
-          "bonusPoints": [
-            "Ter trabalhado em uma startup em estágio inicial ou desenvolvido produtos com dados em tempo real ou streaming",
-            "Experiência com LangGraph, APIs da OpenAI ou outras ferramentas relacionadas a LLM"
-          ],
-          "benefits": [
-            "Remuneração competitiva",
-            "Alta participação acionária — acreditamos em propriedade compartilhada",
-            "Flexibilidade de horários e modelo híbrido",
-            "Oportunidade de moldar produto e arquitetura desde o início",
-            "A chance de trabalhar em algo significativo: tornar os dados úteis para as pessoas, não apenas para analistas"
-          ],
-          "quickInfo": {
-            "location": "Buenos Aires (Híbrido)",
-            "experience": "5+ anos",
-            "department": "Engenharia"
-          }
-        }
-      ]
+      "openPositions": []
     }
   },
   "footer": {
