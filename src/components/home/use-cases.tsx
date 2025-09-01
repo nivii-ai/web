@@ -55,7 +55,7 @@ export async function UseCases() {
       desc: t("finance.description"),
       shortDesc: t("finance.shortDescription"),
       img: `/financial_${locale}.jpeg`,
-      gridLayout: "col-span-1 md:col-start-3 md:col-span-3 lg:col-span-4",
+      gridLayout: "col-span-1 md:col-start-2 md:col-span-5 lg:col-span-4",
     },
   ];
 
