@@ -44,36 +44,42 @@ export function MenuMobile() {
           <Link
             href="#product"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("product")}
           </Link>
           <Link
             href="#use-cases"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("useCases")}
           </Link>
           <Link
             href="#faq"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("faq")}
           </Link>
           <Link
             href="#about"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("about")}
           </Link>
           <Link
             href="#team"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("team")}
           </Link>
           <Link
             href="#careers"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("careers")}
           </Link>
