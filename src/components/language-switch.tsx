@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, usePathname } from "@/i18n/navigation";
-import { Globe } from "lucide-react";
+import { ChevronDown, Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function LanguageSwitch({ locale }: { locale?: string }) {
@@ -15,11 +15,11 @@ export default function LanguageSwitch({ locale }: { locale?: string }) {
   };
 
   return (
-    <div className="relative inline-flex mr-4 lg:mr-2">
-      <Globe className="w-4 h-4 text-gray-600 mr-2 relative top-[2px]" />
+    <div className="relative inline-flex mr-3 lg:mr-2">
+      <Globe className="w-4 h-4 text-gray-600 mr-2 relative" />
       <select
         onChange={(e) => handleLanguageChange(e.target.value)}
-        className="bg-transparent border-none text-sm text-gray-600 focus:outline-none cursor-pointer"
+        className="appearance-none bg-transparent border-none text-sm text-gray-600 focus:outline-none cursor-pointer min-w-10"
         defaultValue={locale}
         aria-label={t("label")}
       >
@@ -33,6 +33,7 @@ export default function LanguageSwitch({ locale }: { locale?: string }) {
           PT
         </option>
       </select>
+      <ChevronDown className=" absolute right-px top-px w-4 h-4 text-gray-600 ml-2" />
     </div>
   );
 }
