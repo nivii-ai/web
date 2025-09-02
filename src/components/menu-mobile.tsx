@@ -17,17 +17,17 @@ export function MenuMobile() {
         className="relative flex flex-col justify-between w-10 h-8 lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 cursor-pointer"
         aria-label={isOpen ? t("closeMenu") : t("openMenu")}
       >
-        <span
-          className={`block h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded-2xl ${
+        <div
+          className={`block h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded-2xl w-full ${
             isOpen ? "rotate-45 translate-y-2" : ""
           }`}
         />
-        <span
-          className={`block h-0.5 bg-gray-600 transition-opacity duration-300 ease-in-out rounded-2xl ${
+        <div
+          className={`block h-0.5 bg-gray-600 transition-opacity duration-300 ease-in-out rounded-2xl w-full ${
             isOpen ? "opacity-0" : "opacity-100"
           }`}
         />
-        <span
+        <div
           className={`block h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded-2xl ms-auto ${
             isOpen ? "-rotate-45 -translate-y-[6px] w-full " : "w-6/8"
           }`}
@@ -44,36 +44,42 @@ export function MenuMobile() {
           <Link
             href="#product"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("product")}
           </Link>
           <Link
             href="#use-cases"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("useCases")}
           </Link>
           <Link
             href="#faq"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("faq")}
           </Link>
           <Link
             href="#about"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("about")}
           </Link>
           <Link
             href="#team"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("team")}
           </Link>
           <Link
             href="#careers"
             className="block text-gray-600 hover:text-brand-green"
+            onNavigate={() => setIsOpen(false)}
           >
             {t("careers")}
           </Link>

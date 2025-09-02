@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionContent,
   AccordionTrigger,
-} from "../ui/acoordion";
+} from "../ui/accordion";
 
 type FaqItem = { question: string; answer: string };
 
@@ -24,7 +24,7 @@ export async function Faq() {
   return (
     <section
       id="faq"
-      className="py-16 bg-gradient-to-b from-transparent to-brand-green/20"
+      className="py-16 bg-gradient-to-b from-transparent to-brand-green/20 scroll-m-28"
     >
       <div className="max-w-2xl mx-auto px-6">
         <div className="text-center mb-16">

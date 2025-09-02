@@ -16,7 +16,7 @@ export async function UseCases() {
 
   const useCases = [
     {
-      icon: <ChartScatter className="size-5" />,
+      icon: <ChartScatter className="size-5 scroll-m-28" />,
       title: t("marketing.title"),
       desc: t("marketing.description"),
       shortDesc: t("marketing.shortDescription"),
