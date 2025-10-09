@@ -121,6 +121,16 @@
       "description": "Somos un equipo apasionado de innovadores, pensadores y creadores dedicados a revolucionar cómo las empresas interactúan con sus datos.",
       "members": [
         {
+          "name": "Sergio Kaufman",
+          "photo": "/sergio.jpeg",
+          "role": "Chairman of the Board",
+          "bio": [
+            "Ex Senior Managing Director de Accenture y miembro del Global Management Committee",
+            "Roles de Crecimiento y Estrategia en India, China, Japón, Singapur y Latam de 2022 a 2024, liderando Argentina y la región Hispana de América del Sur desde 2013"
+          ],
+          "linkedin": "https://www.linkedin.com/in/sergiokaufman/"
+        },
+        {
           "name": "Alex Ingberg",
           "photo": "/alex.jpeg",
           "role": "CTO & Co-Founder",
@@ -150,16 +160,6 @@
             "Profesor de Decision Science (Analytics) para Google mundialmente"
           ],
           "linkedin": "https://www.linkedin.com/in/alan-hazan-41784a51/"
-        },
-        {
-          "name": "Sergio Kaufman",
-          "photo": "/sergio.jpeg",
-          "role": "Chairman of the Board",
-          "bio": [
-            "Ex Senior Managing Director de Accenture y miembro del Global Management Committee",
-            "Roles de Crecimiento y Estrategia en India, China, Japón, Singapur y Latam de 2022 a 2024, liderando Argentina y la región Hispana de América del Sur desde 2013"
-          ],
-          "linkedin": "https://www.linkedin.com/in/sergiokaufman/"
         }
       ]
     },
