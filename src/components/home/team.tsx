@@ -14,14 +14,14 @@ export async function Team() {
   }[];
   return (
     <section id="team" className="py-16 scroll-m-28">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-balance text-3xl font-bold lg:text-4xl mb-6">
           {t("title")}
         </h2>
         <p className="text-lg text-gray-700 mb-12  max-w-2xl mx-auto">
           {t("description")}
         </p>
-        <div className="flex flex-col lg:flex-row lg:items-stretch justify-center gap-6 lg:gap-6">
+        <div className="grid grid-cols-1 grid-flow-row-dense md:grid-cols-2 gap-8 lg:gap-12 mb-8 lg:mb-16">
           {members.map((member, index) => {
             const CardWrapper = member.linkedin ? "a" : "div";
             const cardProps = member.linkedin
@@ -43,7 +43,7 @@ export async function Team() {
                   delay: 0.2 * index,
                 }}
                 key={member.name}
-                className="w-full lg:w-72 flex-shrink-0 mx-auto lg:mx-0 max-w-sm h-full"
+                className="w-full flex-shrink-0 mx-auto max-w-sm h-full"
               >
                 <CardWrapper
                   {...cardProps}
@@ -51,29 +51,31 @@ export async function Team() {
                     member.linkedin ? "cursor-pointer" : ""
                   }`}
                 >
-              <div className="relative mb-6">
-                <div className="w-40 h-40 mx-auto rounded-full overflow-hidden ring-3 ring-brand-green group-hover:ring-brand-green-dark transition-all">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    width={250}
-                    height={250}
-                  />
-                </div>
-              </div>
+                  <div className="relative mb-6">
+                    <div className="w-40 h-40 mx-auto rounded-full overflow-hidden ring-3 ring-brand-green group-hover:ring-brand-green-dark transition-all">
+                      <Image
+                        src={member.photo}
+                        alt={member.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        width={250}
+                        height={250}
+                      />
+                    </div>
+                  </div>
 
-              <div className="text-center flex-grow flex flex-col">
-                <h3 className="text-2xl font-bold text-foreground mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-brand-green font-bold mb-4">{member.role}</p>
-                <ul className="text-gray-600 text-sm leading-relaxed text-left mb-2 flex flex-col gap-2 flex-grow">
-                  {member.bio.map((paragraph, index) => (
-                    <li key={index}>{paragraph}</li>
-                  ))}
-                </ul>
-              </div>
+                  <div className="text-center flex-grow flex flex-col">
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      {member.name}
+                    </h3>
+                    <p className="text-brand-green font-bold mb-4">
+                      {member.role}
+                    </p>
+                    <ul className="text-gray-600 text-sm leading-relaxed text-left mb-2 flex flex-col gap-2 flex-grow">
+                      {member.bio.map((paragraph, index) => (
+                        <li key={index}>{paragraph}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </CardWrapper>
               </motion.div>
             );
