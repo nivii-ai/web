@@ -10,30 +10,47 @@ export async function Team() {
     photo: string;
     role: string;
     bio: string[];
+    linkedin?: string;
   }[];
   return (
     <section id="team" className="py-16 scroll-m-28">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-balance text-3xl font-bold lg:text-4xl mb-6">
           {t("title")}
         </h2>
         <p className="text-lg text-gray-700 mb-12  max-w-2xl mx-auto">
           {t("description")}
         </p>
-        <div className="flex flex-wrap justify-center gap-12">
-          {members.map((member, index) => (
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                ease: "easeOut",
-                delay: 0.2 * index,
-              }}
-              key={member.name}
-              className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 w-80 flex-shrink-0"
-            >
+        <div className="flex flex-col lg:flex-row lg:items-stretch justify-center gap-6 lg:gap-6">
+          {members.map((member, index) => {
+            const CardWrapper = member.linkedin ? "a" : "div";
+            const cardProps = member.linkedin
+              ? {
+                  href: member.linkedin,
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                }
+              : {};
+
+            return (
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeOut",
+                  delay: 0.2 * index,
+                }}
+                key={member.name}
+                className="w-full lg:w-72 flex-shrink-0 mx-auto lg:mx-0 max-w-sm h-full"
+              >
+                <CardWrapper
+                  {...cardProps}
+                  className={`group bg-white rounded-3xl p-6 lg:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 flex flex-col h-full min-h-[550px] ${
+                    member.linkedin ? "cursor-pointer" : ""
+                  }`}
+                >
               <div className="relative mb-6">
                 <div className="w-40 h-40 mx-auto rounded-full overflow-hidden ring-3 ring-brand-green group-hover:ring-brand-green-dark transition-all">
                   <Image
@@ -46,19 +63,21 @@ export async function Team() {
                 </div>
               </div>
 
-              <div className="text-center">
+              <div className="text-center flex-grow flex flex-col">
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   {member.name}
                 </h3>
                 <p className="text-brand-green font-bold mb-4">{member.role}</p>
-                <ul className="text-gray-600 text-sm leading-relaxed text-left mb-2 flex flex-col gap-2">
+                <ul className="text-gray-600 text-sm leading-relaxed text-left mb-2 flex flex-col gap-2 flex-grow">
                   {member.bio.map((paragraph, index) => (
                     <li key={index}>{paragraph}</li>
                   ))}
                 </ul>
               </div>
-            </motion.div>
-          ))}
+                </CardWrapper>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -125,9 +125,10 @@
           "photo": "/alex.jpeg",
           "role": "CTO & Co-Founder",
           "bio": [
-            "+8 years as Sr. Machine Learning Engineer in Israeli high-tech sector",
+            "+8 years as Sr. and Lead Machine Learning Engineer in Israeli high-tech, scaling ML and AI production-grade models from research to market",
             "MSc in Software Engineering"
-          ]
+          ],
+          "linkedin": "https://www.linkedin.com/in/alexingberg/"
         },
         {
           "name": "Daniel Stilerman ",
@@ -136,7 +137,8 @@
           "bio": [
             "4 years as the Managing Director for Data & AI at Accenture Argentina managing up to 270 members organization",
             "10 years as Google Head of Data & AI for Argentina and later for SPLATAM"
-          ]
+          ],
+          "linkedin": "https://www.linkedin.com/in/daniel-stilerman/"
         },
         {
           "name": "Alan Hazan",
@@ -146,7 +148,18 @@
             "Data Scientist turned Sales Executive",
             "+7 years at Google UK advising C & B Level in EMEA",
             "Decision Science (Analytics) professor for Google worldwide"
-          ]
+          ],
+          "linkedin": "https://www.linkedin.com/in/alan-hazan-41784a51/"
+        },
+        {
+          "name": "Sergio Kaufman",
+          "photo": "/sergio.jpeg",
+          "role": "Chairman of the Board",
+          "bio": [
+            "Former Accenture Senior Managing Director and member of the Global Management Committee",
+            "Growth and Strategy roles in India, China, Japan, Singapore and Latam from 2022 to 2024, leading Argentina and the Hispanic South America region since 2013"
+          ],
+          "linkedin": "https://www.linkedin.com/in/sergiokaufman/"
         }
       ]
     },
