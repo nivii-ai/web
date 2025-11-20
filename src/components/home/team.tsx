@@ -1,6 +1,7 @@
 import { getMessages, getTranslations } from "next-intl/server";
 import * as motion from "motion/react-client";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 export async function Team() {
   const t = await getTranslations("home.team");
@@ -43,11 +44,16 @@ export async function Team() {
                   delay: 0.2 * index,
                 }}
                 key={member.name}
-                className="w-full flex-shrink-0 mx-auto max-w-sm h-full"
+                className={cn(
+                  "w-full mx-auto md:mx-0 flex-shrink-0 flex max-w-sm h-full",
+                  index % 2 === 0
+                    ? "md:justify-self-end"
+                    : "md:justify-self-start"
+                )}
               >
                 <CardWrapper
                   {...cardProps}
-                  className={`group bg-white rounded-3xl p-6 lg:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 flex flex-col h-full min-h-[550px] ${
+                  className={`group bg-white rounded-3xl p-6 lg:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 flex flex-col h-full min-h-[450px] ${
                     member.linkedin ? "cursor-pointer" : ""
                   }`}
                 >
