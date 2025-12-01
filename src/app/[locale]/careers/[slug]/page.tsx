@@ -62,9 +62,14 @@ export default async function PositionPage({
                 </div>
                 <div className="mt-4 md:mt-0">
                   <Link
-                    href={`mailto:careers@nivii.ai?subject=Application for ${position.title}`}
+                    href={
+                      position.applicationUrl ||
+                      `mailto:careers@nivii.ai?subject=Application for ${position.title}`
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    `<Button>{t("applyNow")}</Button>
+                    <Button>{t("applyNow")}</Button>
                   </Link>
                 </div>
               </div>
@@ -210,7 +215,12 @@ export default async function PositionPage({
                     {t("positions.page.cta.description")}
                   </p>
                   <Link
-                    href={`mailto:careers@nivii.ai?subject=Application for ${position.title}`}
+                    href={
+                      position.applicationUrl ||
+                      `mailto:careers@nivii.ai?subject=Application for ${position.title}`
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Button>{t("positions.page.cta.button")}</Button>
                   </Link>
