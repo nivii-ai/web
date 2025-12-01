@@ -197,7 +197,54 @@
         "notFoundPositionTitle": "Ooops! Position Not Found",
         "notFoundPositionDescription": "The position you are looking for does not exist or has been filled. Please check our open positions for other opportunities."
       },
-      "openPositions": []
+      "openPositions": [
+        {
+          "slug": "decision-scientist-data-ai",
+          "title": "Decision Scientist – Data & AI Implementation",
+          "location": "Buenos Aires (Hybrid) • Full-time",
+          "aboutNivii": [
+            "Imagine you are the leader of an area in a large company and it's monday morning. The results from last month have just come in and they are not what we were expecting... maybe margins are down, stock has gone up, talent is leaving faster or our products quality is suffering. What happened is something most companies know how to find, but why and what to do is much much harder and slower. You needed instant answers from deep within your data, but without them you keep using only your intuition.",
+            "At Nivii, we're rethinking how people interact with business data. Our conversational AI system lets users ask questions in natural language and receive clear, actionable answers—instantly and visually. By combining language models, data orchestration, and chart generation into a seamless interface, we help teams move from data to decisions faster than ever before. We haven't built a chatbot or another \"talk to your data\" — we've built a thinking partner, an evolution of consulting.",
+            "Our product is already live, serving real users across LATAM, with early traction from teams that need answers, not dashboards. We're a small, hands-on team based in Buenos Aires, passionate about usability, clarity, and helping people reason better with data."
+          ],
+          "aboutRole": [
+            "We're looking for someone to join Nivii's Decision Science team. We are the team that makes sure our agents give back really insightful answers. To do that we usually need to make sure they have clean, reliable inputs, sharp reasoning pathways and the right business context.",
+            "This is a hybrid role: part data, part analysis, part AI experimentation. Perfect for someone who loves variety and thrives in early-stage environments but who loves being able to have a material impact in our product and our client's business."
+          ],
+          "responsibilities": [
+            "Conduct data analysis: Look at the numbers, find meaningful patterns, and translate them into clear, actionable insights for the business",
+            "Iterate on agent development: Adjust prompts, refine reasoning, test improvements, run evaluations, and help our agents answer each day a little better",
+            "Design and develop creative internal tools: Build inventive, lightweight utilities and frameworks that push our data analysis forward—whether that's automating investigative workflows, surfacing insights faster, or crafting new ways for the team to interact with data",
+            "Help shape the product: Work closely with Engineering on product features and with our Commercial team to understand client needs and tune our AI systems to solve them effectively",
+            "Build and maintain data pipelines: Connect sources, model tables, ensure data quality, and keep our agents well-fed with clean, structured information"
+          ],
+          "requirements": [
+            "Really strong analytical background. Often people in this area have engineering, economist, planning or other data-driven roles",
+            "You are a very curious person who self teaches whenever is needed. In the cutting edge of Gen AI we often find that to solve a problem we need to learn new things",
+            "You tend to excel at breaking down problems and when you see something we could do better you try to fix it",
+            "You are an early adopter of AI (doesn't matter if you like ChatGPT, Claude or Grok) and you use it frequently... hopefully every day",
+            "You have a point of view about business. Maybe you could have gone into strategy consulting (maybe you did!) but at least with some group of people in your life you tend to have conversations about business",
+            "You are based in Buenos Aires, with availability for in-person collaboration once a week",
+            "Fluent in English and Spanish"
+          ],
+          "bonusPoints": [
+            "Experience with Python or SQL",
+            "Experience with AI/LLMs (prompting, evaluations, LangChain/LangGraph, etc.)",
+            "Experience in data engineering (modeling, ETL/ELT, warehouse tools)"
+          ],
+          "benefits": [
+            "Competitive compensation",
+            "A meaningful equity stake—shared ownership matters",
+            "Flexibility within a hybrid model",
+            "The chance to shape a product and an AI system from the ground up",
+            "A meaningful mission: making data useful to humans, not just analysts"
+          ],
+          "quickInfo": {
+            "location": "Buenos Aires (Hybrid)",
+            "department": "Decision Science"
+          }
+        }
+      ]
     }
   },
   "footer": {
