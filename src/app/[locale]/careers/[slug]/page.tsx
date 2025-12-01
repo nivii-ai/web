@@ -75,9 +75,23 @@ export default async function PositionPage({
               {/* Main Content */}
               <div className="md:col-span-2">
                 <div className="bg-white rounded-xl shadow-lg p-8">
+                  {/* About Nivii */}
+                  {position.aboutNivii && (
+                    <>
+                      <h2 className="text-2xl font-bold text-foreground mb-6">
+                        {position.aboutNiviiTitle || "About Nivii"}
+                      </h2>
+                      {position.aboutNivii.map((p: string, i: number) => (
+                        <p key={i} className="text-gray-600 mb-6">
+                          {p}
+                        </p>
+                      ))}
+                    </>
+                  )}
+
                   {/* About Role */}
                   <h2 className="text-2xl font-bold text-foreground mb-6">
-                    {t("positions.page.aboutRole")}
+                    {position.aboutRoleTitle || t("positions.page.aboutRole")}
                   </h2>
                   {position.aboutRole.map((p: string, i: number) => (
                     <p key={i} className="text-gray-600 mb-6">
@@ -87,7 +101,8 @@ export default async function PositionPage({
 
                   {/* Responsibilities */}
                   <h3 className="text-xl font-bold text-foreground mb-4">
-                    {t("positions.page.responsibilities")}
+                    {position.responsibilitiesTitle ||
+                      t("positions.page.responsibilities")}
                   </h3>
                   <ul className="space-y-3 text-gray-600 mb-8">
                     {position.responsibilities.map(
@@ -104,7 +119,8 @@ export default async function PositionPage({
 
                   {/* Requirements */}
                   <h3 className="text-xl font-bold text-foreground mb-4">
-                    {t("positions.page.requirements")}
+                    {position.requirementsTitle ||
+                      t("positions.page.requirements")}
                   </h3>
                   <ul className="space-y-2 text-gray-600 mb-8">
                     {position.requirements.map((item: string, i: number) => (
@@ -121,7 +137,8 @@ export default async function PositionPage({
                   {position.bonusPoints && (
                     <>
                       <h3 className="text-xl font-bold text-foreground mb-4">
-                        {t("positions.page.bonusPoints")}
+                        {position.bonusPointsTitle ||
+                          t("positions.page.bonusPoints")}
                       </h3>
                       <ul className="space-y-2 text-gray-600 mb-8">
                         {position.bonusPoints.map((item: string, i: number) => (
@@ -138,7 +155,7 @@ export default async function PositionPage({
 
                   {/* Benefits */}
                   <h3 className="text-xl font-bold text-foreground mb-4">
-                    {t("positions.page.benefits")}
+                    {position.benefitsTitle || t("positions.page.benefits")}
                   </h3>
                   <ul className="space-y-3 text-gray-600">
                     {position.benefits.map((item: string, i: number) => (
@@ -167,12 +184,14 @@ export default async function PositionPage({
                         {position.quickInfo.location}
                       </span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Experience:</span>
-                      <span className="font-medium">
-                        {position.quickInfo.experience}
-                      </span>
-                    </div>
+                    {position.quickInfo.experience && (
+                      <div className="flex justify-between">
+                        <span className="text-gray-600">Experience:</span>
+                        <span className="font-medium">
+                          {position.quickInfo.experience}
+                        </span>
+                      </div>
+                    )}
                     <div className="flex justify-between">
                       <span className="text-gray-600">Department:</span>
                       <span className="font-medium">

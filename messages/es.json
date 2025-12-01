@@ -197,7 +197,54 @@
         "notFoundPositionTitle": "¡Ups! Puesto No Encontrado",
         "notFoundPositionDescription": "El puesto que estás buscando no existe o ya ha sido cubierto. Por favor, revisa nuestros puestos abiertos para otras oportunidades."
       },
-      "openPositions": []
+      "openPositions": [
+        {
+          "slug": "decision-scientist-data-ai",
+          "title": "Decision Science – Data & AI Implementation",
+          "location": "Buenos Aires (Híbrido) • Full-time",
+          "aboutNivii": [
+            "Imaginá que sos líder de un área en una gran compañía y es lunes a la mañana. Llegaron los resultados del mes pasado y no son los que esperábamos… tal vez bajaron los márgenes, subió el stock, el talento está rotando más rápido o la calidad del producto está sufriendo. Qué pasó es algo que la mayoría de las empresas sabe encontrar, pero el por qué y qué hacer es mucho más difícil y lento. Necesitabas respuestas profundas de tu data de manera instantánea, pero sin ellas volvés a depender solo de la intuición.",
+            "En Nivii estamos repensando cómo las personas interactúan con los datos de negocio. Nuestro sistema de AI conversacional permite hacer preguntas en lenguaje natural y recibir respuestas claras, accionables, instantáneas y visuales. Combinando language models, data orchestration y generación de gráficos en una sola interfaz, ayudamos a los equipos a pasar de datos a decisiones más rápido que nunca. No construimos un chatbot ni otro \"talk to your data\": construimos un thinking partner, una evolución del consulting tradicional.",
+            "Nuestro producto ya está en producción, con usuarios reales en toda LATAM y tracción temprana de equipos que necesitan respuestas, no dashboards. Somos un equipo pequeño, práctico, basado en Buenos Aires, apasionado por la usabilidad, la claridad y por ayudar a las personas a razonar mejor con datos."
+          ],
+          "aboutRole": [
+            "Buscamos a alguien para sumarse al equipo de Decision Science. Somos el equipo que se asegura de que nuestros agentes devuelvan respuestas realmente profundas y útiles. Para lograrlo, necesitamos garantizar que tengan insumos limpios y confiables, caminos de razonamiento bien diseñados y el contexto de negocio adecuado.",
+            "Es un rol híbrido: parte data, parte análisis, parte experimentación con AI. Ideal para alguien que disfrute la variedad, prospere en entornos early-stage y quiera generar un impacto material en nuestro producto y en el negocio de nuestros clientes."
+          ],
+          "responsibilities": [
+            "Hacer análisis de datos: Leer los números, encontrar patrones relevantes y traducirlos en insights claros y accionables",
+            "Iterar en el desarrollo de agentes: Ajustar prompts, refinar razonamientos, testear mejoras, correr evaluaciones y ayudar a que los agentes respondan cada día mejor",
+            "Diseñar y desarrollar herramientas internas creativas: Crear utilidades y frameworks livianos que impulsen nuestro trabajo con data: automatizar workflows investigativos, acelerar la detección de patrones o diseñar nuevas formas de interactuar con la información",
+            "Ayudar a dar forma al producto: Trabajar con el equipo de ingeniería en features de producto y con el equipo comercial en entender necesidades de clientes y ajustar nuestros sistemas de AI para resolverlas de la mejor manera",
+            "Construir y mantener data pipelines: Conectar fuentes, modelar tablas, asegurar calidad de datos y alimentar a nuestros agentes con información limpia y estructurada"
+          ],
+          "requirements": [
+            "Formación analítica muy sólida. Muchas personas en este equipo vienen de ingeniería, economía, planificación o roles fuertemente orientados a data",
+            "Sos una persona muy curiosa que se auto-enseña cuando hace falta. En la frontera del Gen AI esto pasa seguido: para resolver un problema hay que aprender algo nuevo",
+            "Tenés facilidad para desarmar problemas y, cuando ves algo que podría funcionar mejor, intentás mejorarlo",
+            "Sos un early adopter de AI (ya seas usuario de ChatGPT, Claude o Grok) y la usás con frecuencia… idealmente todos los días",
+            "Tenés un punto de vista sobre negocios. Quizás podrías haber ido a consultoría estratégica (o tal vez fuiste), pero al menos con algunas personas de tu entorno solés tener conversaciones sobre negocio",
+            "Vivís en Buenos Aires y podés venir a la oficina una vez por semana",
+            "Dominio de inglés y español"
+          ],
+          "bonusPoints": [
+            "Experiencia con Python o SQL",
+            "Experiencia con AI/LLMs (prompting, evaluations, LangChain/LangGraph, etc.)",
+            "Experiencia en data engineering (modeling, ETL/ELT, data warehouse tools, etc.)"
+          ],
+          "benefits": [
+            "Compensación competitiva",
+            "Equity significativo — creemos en ownership compartido",
+            "Flexibilidad dentro de un modelo híbrido",
+            "La oportunidad de dar forma a un producto y a un sistema de AI desde cero",
+            "Una misión significativa: hacer que los datos sean útiles para las personas, no solo para analistas"
+          ],
+          "quickInfo": {
+            "location": "Buenos Aires (Híbrido)",
+            "department": "Decision Science"
+          }
+        }
+      ]
     }
   },
   "footer": {
