@@ -131,16 +131,6 @@
           "linkedin": "https://www.linkedin.com/in/sergiokaufman/"
         },
         {
-          "name": "Alex Ingberg",
-          "photo": "/alex.jpeg",
-          "role": "CTO e Co-Fundador",
-          "bio": [
-            "+8 anos como Sr. e Lead Machine Learning Engineer no setor high-tech israelense, escalando modelos de ML e IA production-grade desde research até o mercado",
-            "MSc em Engenharia de Software"
-          ],
-          "linkedin": "https://www.linkedin.com/in/alexingberg/"
-        },
-        {
           "name": "Daniel Stilerman ",
           "photo": "/dani.jpeg",
           "role": "CEO e Co-Fundador",
@@ -149,6 +139,16 @@
             "10 anos como chefe de Data & AI do Google para Argentina e depois para Splatam"
           ],
           "linkedin": "https://www.linkedin.com/in/daniel-stilerman/"
+        },
+        {
+          "name": "Alex Ingberg",
+          "photo": "/alex.jpeg",
+          "role": "CTO e Co-Fundador",
+          "bio": [
+            "+8 anos como Sr. e Lead Machine Learning Engineer no setor high-tech israelense, escalando modelos de ML e IA production-grade desde research até o mercado",
+            "MSc em Engenharia de Software"
+          ],
+          "linkedin": "https://www.linkedin.com/in/alexingberg/"
         },
         {
           "name": "Alan Hazan",
