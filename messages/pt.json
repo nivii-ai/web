@@ -122,7 +122,7 @@
       "members": [
         {
           "name": "Sergio Kaufman",
-          "photo": "/sergio.jpeg",
+          "photo": "/sergio.jpg",
           "role": "Chairman of the Board",
           "bio": [
             "Ex-Senior Managing Director da Accenture e membro do Global Management Committee",
@@ -132,7 +132,7 @@
         },
         {
           "name": "Alex Ingberg",
-          "photo": "/alex.jpeg",
+          "photo": "/alex.jpg",
           "role": "CTO e Co-Fundador",
           "bio": [
             "+8 anos como Sr. e Lead Machine Learning Engineer no setor high-tech israelense, escalando modelos de ML e IA production-grade desde research até o mercado",
@@ -142,7 +142,7 @@
         },
         {
           "name": "Daniel Stilerman ",
-          "photo": "/dani.jpeg",
+          "photo": "/dani.jpg",
           "role": "CEO e Co-Fundador",
           "bio": [
             "4 anos como Diretor Gerente de Data & AI na Accenture Argentina gerenciando até 270 membros da organização",
@@ -152,8 +152,8 @@
         },
         {
           "name": "Alan Hazan",
-          "photo": "/jacho.jpeg",
-          "role": "CBO",
+          "photo": "/jacho.jpg",
+          "role": "CBO & Co-Founder",
           "bio": [
             "Cientista de Dados transformado em Executivo de Vendas",
             "+7 anos na Google UK aconselhando nível C & B na EMEA",
