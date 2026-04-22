@@ -199,50 +199,53 @@
       },
       "openPositions": [
         {
-          "slug": "decision-scientist-data-ai",
-          "title": "Decision Science – Data & AI Implementation",
+          "slug": "software-engineer-ai-llm",
+          "title": "Software Engineer, AI/LLM Platform",
           "location": "Buenos Aires (Híbrido) • Full-time",
-          "applicationUrl": "https://forms.gle/grhyoFSdbetVZZvCA",
+          "applicationUrl": "https://forms.gle/vbuJnRVXUoShqc8M9",
           "aboutNivii": [
-            "Imagine que você é líder de uma área em uma grande empresa e é segunda-feira de manhã. Chegaram os resultados do mês passado e não são os que esperávamos... talvez as margens caíram, o estoque subiu, o talento está rotando mais rápido ou a qualidade do produto está sofrendo. O que aconteceu é algo que a maioria das empresas sabe encontrar, mas o porquê e o que fazer é muito mais difícil e lento. Você precisava de respostas profundas da sua data de maneira instantânea, mas sem elas você volta a depender apenas da intuição.",
-            "Na Nivii estamos repensando como as pessoas interagem com os dados de negócio. Nosso sistema de AI conversacional permite fazer perguntas em linguagem natural e receber respostas claras, acionáveis, instantâneas e visuais. Combinando language models, data orchestration e geração de gráficos em uma única interface, ajudamos as equipes a passar de dados a decisões mais rápido do que nunca. Não construímos um chatbot nem outro \"talk to your data\": construímos um thinking partner, uma evolução do consulting tradicional.",
-            "Nosso produto já está em produção, com usuários reais em toda LATAM e tração inicial de equipes que precisam de respostas, não dashboards. Somos uma equipe pequena, prática, baseada em Buenos Aires, apaixonada pela usabilidade, clareza e por ajudar as pessoas a raciocinar melhor com dados."
+            "Na Nivii.ai, estamos construindo uma nova forma de trabalhar com dados. Em vez de dashboards e BI tradicional, estamos criando uma AI-powered platform que permite fazer perguntas complexas em linguagem natural e obter respostas estruturadas, explicáveis e acionáveis.",
+            "Ao longo do último ano, passamos do conceito para produção: hoje contamos com um sistema multi-agent que já é utilizado em fluxos reais de tomada de decisão. Agora buscamos adicionar um(a) Software Engineer, AI/LLM Platform para nos ajudar a escalar, fortalecer e evoluir os sistemas core que fazem a plataforma funcionar."
           ],
           "aboutRole": [
-            "Buscamos alguém para se juntar à equipe de Decision Science. Somos a equipe que garante que nossos agentes retornem respostas realmente profundas e úteis. Para conseguir isso, precisamos garantir que tenham insumos limpos e confiáveis, caminhos de raciocínio bem desenhados e o contexto de negócio adequado.",
-            "É um papel híbrido: parte data, parte análise, parte experimentação com AI. Ideal para alguém que goste de variedade, prospere em ambientes early-stage e queira gerar um impacto material no nosso produto e no negócio dos nossos clientes."
+            "Este é um papel software-engineering-first, com AI e LLM como building blocks centrais. Você vai trabalhar muito próximo do produto e dos founders, com ownership end-to-end sobre partes críticas do sistema."
           ],
           "responsibilities": [
-            "Fazer análise de dados: Ler os números, encontrar padrões relevantes e traduzi-los em insights claros e acionáveis",
-            "Iterar no desenvolvimento de agentes: Ajustar prompts, refinar raciocínios, testar melhorias, rodar avaliações e ajudar os agentes a responderem cada dia melhor",
-            "Desenhar e desenvolver ferramentas internas criativas: Criar utilidades e frameworks leves que impulsionem nosso trabalho com data: automatizar workflows investigativos, acelerar a detecção de padrões ou desenhar novas formas de interagir com a informação",
-            "Ajudar a dar forma ao produto: Trabalhar com a equipe de engenharia em features de produto e com a equipe comercial em entender necessidades de clientes e ajustar nossos sistemas de AI para resolvê-las da melhor maneira",
-            "Construir e manter data pipelines: Conectar fontes, modelar tabelas, assegurar qualidade de dados e alimentar nossos agentes com informação limpa e estruturada"
+            "Projetar, construir e operar serviços core da platform que suportam nossos fluxos de AI/LLM",
+            "Desenvolver e rodar LLM-based systems (por exemplo text-to-SQL, reasoning agents, planners), com foco em confiabilidade, performance e custos",
+            "Construir e manter backend services e APIs que orquestram pipelines complexos e multi-step",
+            "Trabalhar hands-on com infra baseada em Kubernetes, incluindo deployments, scaling e debugging em produção",
+            "Contribuir para workflows de DevOps e MLOps: CI/CD, environments, monitoring, logging e boas práticas operacionais",
+            "Participar de decisões de arquitetura relacionadas a observability, failure handling, avaliação e trade-offs do sistema",
+            "Colaborar diretamente com founders e produto para transformar problemas reais de negócio em soluciones técnicas robustas"
           ],
           "requirements": [
-            "Formação analítica muito sólida. Muitas pessoas nesta equipe vêm de engenharia, economia, planejamento ou papéis fortemente orientados a data",
-            "Você é uma pessoa muito curiosa que se auto-ensina quando precisa. Na fronteira do Gen AI isso acontece frequentemente: para resolver um problema é preciso aprender algo novo",
-            "Você tem facilidade para desmontar problemas e, quando vê algo que poderia funcionar melhor, tenta melhorá-lo",
-            "Você é um early adopter de AI (seja usuário de ChatGPT, Claude ou Grok) e a usa com frequência... idealmente todos os dias",
-            "Você tem um ponto de vista sobre negócios. Talvez você poderia ter ido para consultoria estratégica (ou talvez foi), mas pelo menos com algumas pessoas do seu entorno você costuma ter conversas sobre negócio",
-            "Você mora em Buenos Aires e pode vir ao escritório uma vez por semana",
-            "Domínio de inglês e espanhol"
+            "4+ anos de experiência como software engineer em backend, ML ou sistemas data-intensive",
+            "Forte software engineering mindset, com experiência comprovada levando sistemas para produção e mantendo-os ao longo do tempo",
+            "Excelente domínio de Python e experiência construindo backend services (FastAPI ou similar)",
+            "Experiência prática com Docker e Kubernetes em ambientes reais",
+            "Conhecimentos básicos a sólidos de DevOps: CI/CD, cloud environments, logging, monitoring e deployments",
+            "Experiência trabalhando com cloud platforms (AWS é um diferencial)",
+            "Experiência prática com LLMs em contextos aplicados (text-to-SQL, RAG, agent-based systems, etc.)",
+            "Capacidade de raciocinar e gerenciar trade-offs (qualidade vs latência, custo vs performance, simplicidade vs flexibilidade)",
+            "Bom nível de comunicação em inglês"
           ],
           "bonusPoints": [
-            "Experiência com Python ou SQL",
-            "Experiência com AI/LLMs (prompting, evaluations, LangChain/LangGraph, etc.)",
-            "Experiência em data engineering (modeling, ETL/ELT, data warehouse tools, etc.)"
+            "Experiência com SQL databases, data platforms ou vector databases",
+            "Experiência desenhando frameworks de avaliação para ML ou LLM systems",
+            "Experiência prévia em early-stage startups ou equipes com alto ownership"
           ],
           "benefits": [
-            "Compensação competitiva",
-            "Equity significativo — acreditamos em ownership compartilhado",
-            "Flexibilidade dentro de um modelo híbrido",
-            "A oportunidade de dar forma a um produto e a um sistema de AI desde o início",
-            "Uma missão significativa: fazer com que os dados sejam úteis para as pessoas, não só para analistas"
+            "Trabalhar em uma AI/LLM platform real em produção, não demos ou research projects",
+            "Alto nível de ownership e impacto direto no core tecnológico e no produto",
+            "Equity + salário competitivo",
+            "Caminho de crescimento acelerado para posições senior ou de liderança à medida que o time cresce",
+            "Modelo de trabalho híbrido em Buenos Aires"
           ],
           "quickInfo": {
             "location": "Buenos Aires (Híbrido)",
-            "department": "Decision Science"
+            "experience": "4+ anos",
+            "department": "Engineering"
           }
         }
       ]
