@@ -247,6 +247,51 @@
             "experience": "4+ years",
             "department": "Engineering"
           }
+        },
+        {
+          "slug": "business-operations-manager",
+          "title": "Business Operations Manager",
+          "location": "Buenos Aires (Hybrid) • Full-time",
+          "aboutNivii": [
+            "Imagine you are the leader of an area in a large company and it's monday morning. The results from last month have just come in and they are not what we were expecting... maybe margins are down, stock has gone up, talent is leaving faster or our products quality is suffering. What happened is something most companies know how to find, but why and what to do is much much harder and slower. You needed instant answers from deep within your data, but without them you keep using only your intuition.",
+            "At Nivii, we're rethinking how people interact with business data. Our conversational AI system lets users ask questions in natural language and receive clear, actionable answers—instantly and visually. By combining language models, data orchestration, and chart generation into a seamless interface, we help teams move from data to decisions faster than ever before. We haven't built a chatbot or another \"talk to your data\" — we've built a thinking partner, an evolution of consulting.",
+            "Our product is already live, serving real users across LATAM, with early traction from teams that need answers, not dashboards. We're a small, hands-on team based in Buenos Aires, passionate about usability, clarity, and helping people reason better with data."
+          ],
+          "aboutRole": [
+            "We're looking for a Business Operations Manager to work side by side with our CBO. This is the person who makes sure the engine runs — that clients are being served well, that internal teams are moving in sync, and that the operational and administrative backbone of the company holds up as we scale.",
+            "This is a hybrid role: part project management, part operations, part client success. Perfect for someone who thrives with variety, owns problems end-to-end, and gets satisfaction from seeing things actually get done."
+          ],
+          "responsibilities": [
+            "Keep projects on track: Coordinate internal teams to ensure client delivery happens on time and with quality. Track progress, flag blockers early, and make sure commitments turn into results.",
+            "Own the operational backbone: Manage client billing, coordinate with our legal and accounting firms, and keep the administrative side of the business running smoothly.",
+            "Drive client success: Be an active point of contact for clients throughout their projects — giving them visibility, handling escalations, and making sure their experience is seamless from kickoff to delivery.",
+            "Make things better: Spot process gaps and fix them. We're an early-stage company and there's always room to build smarter workflows."
+          ],
+          "requirements": [
+            "2 to 4 years of experience in operations, project management, or account management — ideally in a B2B services or consulting environment.",
+            "You're the kind of person who sees something broken and fixes it before being asked.",
+            "Strong communicator — equally comfortable sending a clear whatsapp message to an internal team and getting on a call with a client.",
+            "You can hold multiple balls in the air without dropping any, and you know how to prioritize when everything feels urgent.",
+            "Detail-oriented but never loses sight of the bigger picture.",
+            "Based in Buenos Aires, with availability for in-person collaboration."
+          ],
+          "bonusPoints": [
+            "Experience coordinating with legal or accounting firms.",
+            "Familiarity with billing processes and basic financial administration.",
+            "Advanced English."
+          ],
+          "benefits": [
+            "Competitive compensation.",
+            "A meaningful equity stake — shared ownership matters.",
+            "Flexibility within a hybrid model.",
+            "A front-row seat to how an AI company operates and scales.",
+            "Real ownership over a critical function from day one."
+          ],
+          "quickInfo": {
+            "location": "Buenos Aires (Hybrid)",
+            "experience": "2-4 years",
+            "department": "Operations"
+          }
         }
       ]
     }
