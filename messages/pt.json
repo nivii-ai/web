@@ -247,52 +247,6 @@
             "experience": "4+ anos",
             "department": "Engineering"
           }
-        },
-        {
-          "slug": "business-operations-manager",
-          "title": "Business Operations Manager",
-          "location": "Buenos Aires (Híbrido) • Full-time",
-          "applicationUrl": "https://forms.gle/BvHs3JQsnARc1ZJE6",
-          "aboutNivii": [
-            "Imagine que você é líder de uma área em uma grande empresa e é segunda-feira de manhã. Chegaram os resultados do mês passado e não são os que esperávamos... talvez as margens caíram, o estoque subiu, o talento está rotando mais rápido ou a qualidade do produto está sofrendo. O que aconteceu é algo que a maioria das empresas sabe encontrar, mas o porquê e o que fazer é muito mais difícil e lento. Você precisava de respostas profundas da sua data de maneira instantânea, mas sem elas você volta a depender apenas da intuição.",
-            "Na Nivii estamos repensando como as pessoas interagem com os dados de negócio. Nosso sistema de AI conversacional permite fazer perguntas em linguagem natural e receber respostas claras, acionáveis, instantâneas e visuais. Combinando language models, data orchestration e geração de gráficos em uma única interface, ajudamos as equipes a passar de dados a decisões mais rápido do que nunca. Não construímos um chatbot nem outro \"talk to your data\": construímos um thinking partner, uma evolução do consulting tradicional.",
-            "Nosso produto já está em produção, com usuários reais em toda LATAM e tração inicial de equipes que precisam de respostas, não dashboards. Somos uma equipe pequena, prática, baseada em Buenos Aires, apaixonada pela usabilidade, clareza e por ajudar as pessoas a raciocinar melhor com dados."
-          ],
-          "aboutRole": [
-            "Buscamos um(a) Business Operations Manager para trabalhar lado a lado com nosso CBO. É a pessoa que garante que o motor funcione — que os clientes estejam bem atendidos, que as equipes internas estejam sincronizadas e que o backbone operacional e administrativo da empresa aguente à medida que escalamos.",
-            "É um papel híbrido: parte project management, parte operations, parte client success. Ideal para alguém que gosta de variedade, assume ownership end-to-end dos problemas e se satisfaz ao ver as coisas realmente serem feitas."
-          ],
-          "responsibilities": [
-            "Manter os projetos on track: Coordenar equipes internas para garantir que a entrega ao cliente aconteça no prazo e com qualidade. Acompanhar o progresso, sinalizar blockers cedo e garantir que os compromissos se transformem em resultados.",
-            "Ser dono(a) do backbone operacional: Gerenciar o faturamento dos clientes, coordenar com nossos escritórios jurídicos e contábeis e manter o lado administrativo do negócio rodando sem fricção.",
-            "Impulsionar o client success: Ser um ponto de contato ativo com os clientes durante seus projetos — dando visibilidade, lidando com escalações e garantindo que a experiência seja seamless do kickoff à entrega.",
-            "Melhorar as coisas: Identificar gaps nos processos e resolvê-los. Somos uma empresa early-stage e sempre há espaço para construir workflows mais inteligentes."
-          ],
-          "requirements": [
-            "2 a 4 anos de experiência em operations, project management ou account management — idealmente em um ambiente B2B de serviços ou consulting.",
-            "Você é o tipo de pessoa que quando vê algo quebrado, conserta antes de alguém pedir.",
-            "Excelente comunicador(a) — igualmente confortável enviando uma mensagem clara por WhatsApp para uma equipe interna e entrando em uma call com um cliente.",
-            "Consegue segurar várias bolas no ar sem deixar nenhuma cair e sabe priorizar quando tudo parece urgente.",
-            "Atento(a) aos detalhes, mas sem perder de vista o panorama geral.",
-            "Baseado(a) em Buenos Aires, com disponibilidade para colaboração presencial."
-          ],
-          "bonusPoints": [
-            "Experiência coordenando com escritórios jurídicos ou contábeis.",
-            "Familiaridade com processos de faturamento e administração financeira básica.",
-            "Inglês avançado."
-          ],
-          "benefits": [
-            "Compensação competitiva.",
-            "Equity significativo — o ownership compartilhado importa.",
-            "Flexibilidade dentro de um modelo híbrido.",
-            "Um assento na primeira fila para ver como opera e escala uma empresa de AI.",
-            "Ownership real sobre uma função crítica desde o primeiro dia."
-          ],
-          "quickInfo": {
-            "location": "Buenos Aires (Híbrido)",
-            "experience": "2-4 anos",
-            "department": "Operations"
-          }
         }
       ]
     }
