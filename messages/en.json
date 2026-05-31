@@ -197,58 +197,7 @@
         "notFoundPositionTitle": "Ooops! Position Not Found",
         "notFoundPositionDescription": "The position you are looking for does not exist or has been filled. Please check our open positions for other opportunities."
       },
-      "openPositions": [
-        {
-          "slug": "software-engineer-ai-llm",
-          "title": "Software Engineer, AI/LLM Platform",
-          "location": "Buenos Aires (Hybrid) • Full-time",
-          "applicationUrl": "https://forms.gle/WVC4sHzKW2VfwALX9",
-          "aboutNivii": [
-            "At Nivii.ai, we're building a new way for teams to work with data. Instead of dashboards and traditional BI, we're creating an AI-powered platform that allows users to ask complex business questions in natural language and receive structured, explainable, and actionable answers.",
-            "Over the past year, we've moved from concept to production: a multi-agent system that is already being used in real decision-making workflows. We're now looking for a Software Engineer, AI/LLM Platform to help us scale, harden, and evolve the core systems that power this platform."
-          ],
-          "aboutRole": [
-            "This role is software-engineering-first, with AI and LLMs as core building blocks. You'll work very close to the product and the founders, owning critical parts of the platform end-to-end."
-          ],
-          "responsibilities": [
-            "Design, build, and own core platform services that power our AI/LLM workflows",
-            "Develop and operate LLM-based systems (e.g. text-to-SQL, reasoning agents, planners), with a strong focus on reliability, performance, and cost",
-            "Build and maintain backend services and APIs that orchestrate complex, multi-step AI pipelines",
-            "Work hands-on with Kubernetes-based infrastructure, including deployments, scaling, and debugging production issues",
-            "Contribute to DevOps and MLOps workflows: CI/CD, environments, monitoring, logging, and operational best practices",
-            "Collaborate on architectural decisions around observability, failure handling, evaluation, and system trade-offs",
-            "Work closely with founders and product to translate real business problems into robust technical solutions"
-          ],
-          "requirements": [
-            "4+ years of experience as a software engineer in backend, ML, or data-intensive systems",
-            "Strong software engineering mindset with proven experience shipping and maintaining production systems",
-            "Excellent Python skills and experience building backend services (FastAPI or similar)",
-            "Solid hands-on experience with Docker and Kubernetes in real-world environments",
-            "Basic to solid DevOps knowledge: CI/CD pipelines, cloud environments, logging, monitoring, and deployments",
-            "Experience with cloud platforms (AWS preferred)",
-            "Practical experience working with LLMs in applied settings (text-to-SQL, RAG, agent-based systems, or similar)",
-            "Ability to reason about and manage trade-offs (quality vs latency, cost vs performance, simplicity vs flexibility)",
-            "Strong communication skills in English"
-          ],
-          "bonusPoints": [
-            "Experience with SQL databases, data platforms, or vector databases",
-            "Experience designing evaluation frameworks for ML or LLM systems",
-            "Previous experience in early-stage startups or high-ownership teams"
-          ],
-          "benefits": [
-            "Work on a real AI/LLM platform in production, not demos or research projects",
-            "High ownership and direct impact on the core technology and product direction",
-            "Equity + competitive salary",
-            "Fast growth path into senior or leadership responsibilities as the team scales",
-            "Hybrid work model based in Buenos Aires"
-          ],
-          "quickInfo": {
-            "location": "Buenos Aires (Hybrid)",
-            "experience": "4+ years",
-            "department": "Engineering"
-          }
-        }
-      ]
+      "openPositions": []
     }
   },
   "footer": {
