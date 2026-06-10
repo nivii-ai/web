@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Linkedin, Mail, MapPin, Youtube } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
@@ -94,22 +94,38 @@ export async function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold mb-6">{t("getInTouch")}</h3>
-            <div className="space-y-4 mb-6">
+            <div className="flex items-center gap-3 mb-4">
               <Link
                 href={`mailto:${t("email")}`}
-                className="text-gray-400 hover:text-brand-green transition-colors flex items-center gap-3 group"
+                aria-label={t("email")}
+                className="w-8 h-8 bg-gray-800 hover:bg-brand-green-dark rounded-lg flex items-center justify-center transition-colors text-gray-400 hover:text-background"
               >
-                <div className="w-8 h-8 bg-gray-800 group-hover:bg-brand-green-dark rounded-lg flex items-center justify-center transition-colors text-background">
-                  <Mail className="w-4 h-4" />
-                </div>
-                {t("email")}
+                <Mail className="w-4 h-4" />
               </Link>
-              <div className="text-gray-400 hover:text-brand-green transition-colors flex items-center gap-3 group">
-                <div className="w-8 h-8 bg-gray-800 group-hover:bg-brand-green-dark rounded-lg flex items-center justify-center transition-colors text-background">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                {t("location")}
+              <Link
+                href={t("linkedin")}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-8 h-8 bg-gray-800 hover:bg-brand-green-dark rounded-lg flex items-center justify-center transition-colors text-gray-400 hover:text-background"
+              >
+                <Linkedin className="w-4 h-4" />
+              </Link>
+              <Link
+                href={t("youtube")}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="w-8 h-8 bg-gray-800 hover:bg-brand-green-dark rounded-lg flex items-center justify-center transition-colors text-gray-400 hover:text-background"
+              >
+                <Youtube className="w-4 h-4" />
+              </Link>
+            </div>
+            <div className="text-gray-400 flex items-center gap-3">
+              <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center text-background">
+                <MapPin className="w-4 h-4" />
               </div>
+              {t("location")}
             </div>
           </div>
         </div>
