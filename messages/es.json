@@ -212,6 +212,9 @@
     "getInTouch": "Contáctanos",
     "email": "contact@nivii.ai",
     "location": "Buenos Aires, Argentina",
+    "followUs": "Seguinos",
+    "linkedin": "https://www.linkedin.com/company/nivii-ai/",
+    "youtube": "https://www.youtube.com/@Nivii-ai",
     "copyright": "© {year} NIVII. Todos los derechos reservados."
   },
   "common": {
