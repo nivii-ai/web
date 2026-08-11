@@ -1,7 +1,6 @@
 import { getMessages, getTranslations } from "next-intl/server";
 import * as motion from "motion/react-client";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 
 export async function Team() {
   const t = await getTranslations("home.team");
@@ -22,7 +21,7 @@ export async function Team() {
         <p className="text-lg text-gray-700 mb-12  max-w-2xl mx-auto">
           {t("description")}
         </p>
-        <div className="grid grid-cols-1 grid-flow-row-dense md:grid-cols-2 gap-8 lg:gap-12 mb-8 lg:mb-16">
+        <div className="flex flex-wrap justify-center gap-8 lg:gap-12 mb-8 lg:mb-16">
           {members.map((member, index) => {
             const CardWrapper = member.linkedin ? "a" : "div";
             const cardProps = member.linkedin
@@ -44,12 +43,7 @@ export async function Team() {
                   delay: 0.2 * index,
                 }}
                 key={member.name}
-                className={cn(
-                  "w-full mx-auto md:mx-0 flex-shrink-0 flex max-w-sm h-full",
-                  index % 2 === 0
-                    ? "md:justify-self-end"
-                    : "md:justify-self-start"
-                )}
+                className="flex flex-shrink-0 max-w-sm w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-2rem)]"
               >
                 <CardWrapper
                   {...cardProps}
