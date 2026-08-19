@@ -6,6 +6,11 @@
   "header": {
     "logo": "Nivii",
     "product": "Produto",
+    "products": "Produtos",
+    "beacon": "Beacon",
+    "beaconDescription": "Inteligência comercial para empresas em crescimento.",
+    "enterprise": "Enterprise",
+    "enterpriseDescription": "O agente roda dentro da sua própria nuvem.",
     "useCases": "Casos de Uso",
     "faq": "Perguntas",
     "about": "Sobre Nós",

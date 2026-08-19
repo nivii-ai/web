@@ -3,75 +3,62 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { DemoButton } from "./demo-button";
 import { MenuMobile } from "./menu-mobile";
-import * as motion from "motion/react-client";
+import { ProductsMenu } from "./products-menu";
 import LanguageSwitch from "./language-switch";
+
+const links = [
+  { href: "/#use-cases", key: "useCases" },
+  { href: "/#team", key: "team" },
+  { href: "/careers/", key: "careers" },
+] as const;
 
 export async function Header({ locale }: { locale: string }) {
   const t = await getTranslations("header");
 
   return (
-    <motion.header
-      initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className="bg-white/80 backdrop-blur-lg fixed top-0 z-50 shadow-sm left-0 right-0"
-    >
-      <div className="container lg:max-w-7xl mx-auto px-6 py-6 flex justify-between items-center flex-wrap font-semibold">
-        <Link href="/#home" className="flex items-center">
+    <header className="site-header fixed inset-x-0 top-0 z-50 px-6 lg:px-12">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center">
+        <Link
+          href="/#home"
+          className="mr-auto flex items-center transition-transform duration-100 active:scale-[0.97]"
+        >
           <Image
             src="/logo.png"
-            alt="Nivii"
-            className="h-8 w-auto"
+            alt={t("logo")}
+            className="h-6 w-auto"
             width={114}
             height={32}
+            priority
           />
         </Link>
-        <nav className="hidden lg:flex space-x-8 items-center absolute left-1/2 -translate-x-1/2 text-no">
-          <Link
-            href="/#product"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
-          >
-            {t("product")}
-          </Link>
-          <Link
-            href="/#use-cases"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
-          >
-            {t("useCases")}
-          </Link>
-          <Link
-            href="/#faq"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
-          >
-            {t("faq")}
-          </Link>
-          <Link
-            href="/#mission"
-            className="text-gray-600 hover:text-brand-green transition duration-300"
-          >
-            {t("about")}
-          </Link>
-          <Link
-            href="/#team"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
-          >
-            {t("team")}
-          </Link>
-          <Link
-            href="/careers/"
-            className="text-gray-600 hover:text-brand-green transition duration-300 font-medium text-nowrap"
-          >
-            {t("careers")}
-          </Link>
+
+        <nav className="hidden items-center gap-1 lg:flex">
+          <ProductsMenu />
+          {links.map(({ href, key }) => (
+            <Link
+              key={key}
+              href={href}
+              className="rounded-md px-3 py-2 text-body-s font-medium text-ink-muted transition-colors duration-200 hover:text-ink"
+            >
+              {t(key)}
+            </Link>
+          ))}
         </nav>
-        <div className="flex items-center gap-4 ms-auto lg:ms-0">
+
+        <span
+          aria-hidden
+          className="mx-4 hidden h-4 w-px bg-hairline lg:block"
+        />
+
+        <div className="ml-auto flex items-center gap-3 lg:ml-0">
           <LanguageSwitch locale={locale} />
           <div className="hidden lg:block">
             <DemoButton />
           </div>
         </div>
+
         <MenuMobile />
       </div>
-    </motion.header>
+    </header>
   );
 }

@@ -20,7 +20,7 @@ export function Button({
   return (
     <button
       className={clsx(
-        "bg-brand-green text-white font-semibold px-5 py-2 rounded-lg hover:bg-brand-green-dark transition duration-300 cursor-pointer",
+        "bg-brand-green text-white text-body-s font-semibold px-4 py-2 rounded-lg hover:bg-brand-green-dark transition-all duration-100 active:scale-[0.97] cursor-pointer",
         fullWidth ? "w-full" : "w-fit"
       )}
       onClick={onClick}

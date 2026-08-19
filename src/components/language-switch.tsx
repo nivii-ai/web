@@ -15,11 +15,11 @@ export default function LanguageSwitch({ locale }: { locale?: string }) {
   };
 
   return (
-    <div className="relative inline-flex mr-3 lg:mr-2">
-      <Globe className="w-4 h-4 text-gray-600 mr-2 relative" />
+    <div className="relative inline-flex items-center px-2">
+      <Globe className="w-4 h-4 text-ink-muted mr-1.5 relative" />
       <select
         onChange={(e) => handleLanguageChange(e.target.value)}
-        className="appearance-none bg-transparent border-none text-sm text-gray-600 focus:outline-none cursor-pointer min-w-10"
+        className="appearance-none bg-transparent border-none text-body-s text-ink-muted focus:outline-none cursor-pointer min-w-10"
         defaultValue={locale}
         aria-label={t("label")}
       >
@@ -33,7 +33,7 @@ export default function LanguageSwitch({ locale }: { locale?: string }) {
           PT
         </option>
       </select>
-      <ChevronDown className=" absolute right-px top-px w-4 h-4 text-gray-600 ml-2" />
+      <ChevronDown className="pointer-events-none absolute right-0 w-4 h-4 text-ink-muted" />
     </div>
   );
 }

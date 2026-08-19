@@ -1,13 +1,77 @@
 @import "tailwindcss";
 
-@theme inline {
+/* `static` emite todos los tokens: con `@theme` a secas Tailwind descarta los que
+   ninguna utilidad usa todavía. */
+@theme static {
   --breakpoint-lg: 68.125rem; /* 1090px */
 
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-display: var(--font-bricolage), var(--font-plex-sans), sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+
   --color-background: #ffffff;
-  --color-foreground: #1a1a1a;
-  --color-brand-green: #3d977b;
+  --color-foreground: #1f2937;
+  --color-surface-sunken: #f7f9f9;
+  --color-ink: #1f2937;
+  --color-ink-text: #374151;
+  --color-ink-muted: #6b7280;
+  --color-hairline: #e5e7eb;
+
+  --color-nivii-green: #00b26b;
+  --color-brand-green: #3c967b;
   --color-brand-green-dark: #317963;
+  --color-brand-green-tint: #e6f5ef;
+
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+  --color-info: #2563eb;
+
+  --color-panel: #0b0f0e;
+  --color-panel-ink: #f4f6f5;
+  --color-panel-hairline: rgba(255, 255, 255, 0.12);
+
   --color-brand-gray-purple: #848e97;
+
+  --text-display-xl: clamp(2.75rem, 6vw, 5rem);
+  --text-display-xl--line-height: 1.02;
+  --text-display-xl--letter-spacing: -0.03em;
+
+  --text-display-l: clamp(2.25rem, 4.5vw, 3.5rem);
+  --text-display-l--line-height: 1.05;
+  --text-display-l--letter-spacing: -0.025em;
+
+  --text-display-m: clamp(1.75rem, 3vw, 2.5rem);
+  --text-display-m--line-height: 1.1;
+  --text-display-m--letter-spacing: -0.02em;
+
+  --text-heading: 1.375rem;
+  --text-heading--line-height: 1.25;
+  --text-heading--letter-spacing: -0.01em;
+
+  --text-body-l: 1.125rem;
+  --text-body-l--line-height: 1.6;
+
+  --text-body-s: 0.875rem;
+  --text-body-s--line-height: 1.5;
+  --text-body-s--letter-spacing: 0.005em;
+
+  --text-eyebrow: 0.625rem;
+  --text-eyebrow--line-height: 1;
+  --text-eyebrow--letter-spacing: 0.2em;
+
+  --text-code: 0.8125rem;
+  --text-code--line-height: 1.5;
+
+  --radius-bezel: 1.75rem;
+  --radius-core: 1.375rem;
+  --radius-product: 0.375rem;
+
+  --shadow-ambient-sm: 0 1px 2px rgba(31, 41, 55, 0.04);
+  --shadow-ambient-md:
+    0 1px 2px rgba(31, 41, 55, 0.04), 0 8px 24px -8px rgba(31, 41, 55, 0.1);
+  --shadow-ambient-lg:
+    0 1px 2px rgba(31, 41, 55, 0.04), 0 8px 24px -8px rgba(31, 41, 55, 0.1),
+    0 32px 64px -32px rgba(31, 41, 55, 0.16);
 
   --animate-in: fade-in 0.3s ease-out;
   --animate-out: fade-out 0.2s ease-in;
@@ -66,6 +130,126 @@
   @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }
 
+@utility glass {
+  background: color-mix(in srgb, var(--color-background) 80%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* El fondo vive en un pseudo-elemento para animar sólo su opacidad al scrollear,
+   y no `background` ni `backdrop-filter`. */
+.site-header {
+  isolation: isolate;
+  padding-block: 0.75rem;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: color-mix(in srgb, var(--color-background) 70%, transparent);
+  backdrop-filter: blur(16px) saturate(150%);
+  border-bottom: 1px solid var(--color-hairline);
+  box-shadow: var(--shadow-ambient-sm);
+}
+
+@supports (animation-timeline: scroll()) {
+  .site-header::before {
+    animation: header-settle linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 4rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .site-header {
+      animation: header-shrink linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 4rem;
+    }
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .site-header::before {
+    background: var(--color-background);
+    backdrop-filter: none;
+  }
+}
+
+@keyframes header-settle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes header-shrink {
+  from {
+    padding-block: 1rem;
+  }
+  to {
+    padding-block: 0.625rem;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry calc(var(--reveal-order, 0) * 8%)
+        entry calc(60% + var(--reveal-order, 0) * 8%);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .glass {
+    background: var(--color-background);
+    backdrop-filter: none;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --color-hairline: #6b7280;
+    --color-ink-muted: #374151;
+  }
+}
+
 body {
-  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
+  color: var(--color-ink-text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  color: var(--color-ink);
+}
+
+table,
+.tabular {
+  font-variant-numeric: tabular-nums;
 }
