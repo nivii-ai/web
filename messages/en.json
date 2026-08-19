@@ -43,6 +43,79 @@
       "error": "There was an error submitting your request. Please try again or contact us directly."
     }
   },
+  "console": {
+    "rows": "{count} rows",
+    "recommendation": "Recommendation",
+    "chart": "Visualization",
+    "scenarios": [
+      {
+        "id": "crecimiento-real",
+        "question": "How much did we really grow, once you strip out inflation?",
+        "queries": [
+          {
+            "question": "Monthly revenue, gross and net of discounts, 2024 and 2025",
+            "rows": 24,
+            "seconds": 9.4
+          },
+          {
+            "question": "Consumer price index by month, 2024 and 2025",
+            "rows": 24,
+            "seconds": 6.1
+          },
+          {
+            "question": "Gross margin by month and share of units sold on discount",
+            "rows": 24,
+            "seconds": 11.2
+          }
+        ],
+        "answer": {
+          "title": "Nominal growth vs. real growth",
+          "lead": "Revenue grew 19.4% year over year, but once you strip out inflation the business shrank 2.5%.",
+          "table": {
+            "columns": [
+              "Metric",
+              "2024",
+              "2025",
+              "Change"
+            ],
+            "rows": [
+              [
+                "Nominal revenue",
+                "$2,480M",
+                "$2,961M",
+                "+19.4%"
+              ],
+              [
+                "Revenue in 2024 prices",
+                "$2,480M",
+                "$2,417M",
+                "−2.5%"
+              ],
+              [
+                "Gross margin",
+                "41.2%",
+                "37.8%",
+                "−3.4 pp"
+              ],
+              [
+                "Units sold on discount",
+                "28%",
+                "41%",
+                "+13 pp"
+              ]
+            ]
+          },
+          "alert": {
+            "title": "Alert: discounting is eating the growth",
+            "body": "The share of units sold on discount went from 28% to 41%. That jump explains almost the entire margin drop: without it, gross margin would have closed at 40.6%."
+          },
+          "conclusion": "Bottom line: volume grew, but it was bought with price. The growth showing on the revenue dashboard never reached the result.",
+          "followUp": "Want me to break the effect down by category, to see where discounting did drive incremental volume?"
+        },
+        "recommendation": "Stop automatic discounting in the three categories where margin fell more than 5 points without unit growth: Urban footwear, Outerwear and Accessories. Together they hold $712M of revenue and 4.2 points of the margin drop, about $101M of result. Start with Outerwear, already running at 61% of units sold on discount with last season's stock still unsold."
+      }
+    ]
+  },
   "home": {
     "hero": {
       "title": "What does the data say?",

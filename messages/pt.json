@@ -43,6 +43,79 @@
       "error": "Ocorreu um erro ao enviar sua solicitação. Por favor, tente novamente ou entre em contato diretamente conosco."
     }
   },
+  "console": {
+    "rows": "{count} linhas",
+    "recommendation": "Recomendação",
+    "chart": "Visualização",
+    "scenarios": [
+      {
+        "id": "crecimiento-real",
+        "question": "Quanto crescemos de verdade, descontando a inflação?",
+        "queries": [
+          {
+            "question": "Faturamento mensal bruto e líquido de descontos, 2024 e 2025",
+            "rows": 24,
+            "seconds": 9.4
+          },
+          {
+            "question": "Índice de preços ao consumidor por mês, 2024 e 2025",
+            "rows": 24,
+            "seconds": 6.1
+          },
+          {
+            "question": "Margem bruta por mês e participação de unidades vendidas com desconto",
+            "rows": 24,
+            "seconds": 11.2
+          }
+        ],
+        "answer": {
+          "title": "Crescimento nominal vs. crescimento real",
+          "lead": "O faturamento cresceu 19,4% na comparação anual, mas descontando a inflação o negócio encolheu 2,5%.",
+          "table": {
+            "columns": [
+              "Indicador",
+              "2024",
+              "2025",
+              "Variação"
+            ],
+            "rows": [
+              [
+                "Faturamento nominal",
+                "$2.480M",
+                "$2.961M",
+                "+19,4%"
+              ],
+              [
+                "Faturamento a preços de 2024",
+                "$2.480M",
+                "$2.417M",
+                "−2,5%"
+              ],
+              [
+                "Margem bruta",
+                "41,2%",
+                "37,8%",
+                "−3,4 pp"
+              ],
+              [
+                "Unidades vendidas com desconto",
+                "28%",
+                "41%",
+                "+13 pp"
+              ]
+            ]
+          },
+          "alert": {
+            "title": "Alerta: o desconto está comendo o crescimento",
+            "body": "A proporção de unidades vendidas com desconto passou de 28% para 41%. Esse salto explica quase toda a queda de margem: sem ele, a margem bruta teria fechado em 40,6%."
+          },
+          "conclusion": "Conclusão: o volume cresceu, mas foi comprado com preço. O crescimento que aparece no painel de faturamento não chegou ao resultado.",
+          "followUp": "Quer que eu separe o efeito por categoria, para ver onde o desconto de fato gerou volume incremental?"
+        },
+        "recommendation": "Interrompa os descontos automáticos nas três categorias em que a margem caiu mais de 5 pontos sem crescimento de unidades: Calçado urbano, Agasalhos e Acessórios. Juntas concentram $712M de faturamento e 4,2 pontos da queda de margem, cerca de $101M de resultado. Comece por Agasalhos, que já está com 61% das unidades vendidas com desconto e estoque da temporada passada sem liquidar."
+      }
+    ]
+  },
   "home": {
     "hero": {
       "title": "O que os dados dizem?",

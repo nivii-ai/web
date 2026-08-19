@@ -211,6 +211,96 @@
   background: linear-gradient(to bottom, transparent, var(--color-background));
 }
 
+@keyframes spin-ring {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-ring-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulse-opacity {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s steps(1) infinite;
+}
+
+/* Espeja .fade-word de wald-face. `both` deja el estado inicial aplicado antes
+   del delay, así la coreografía es sólo CSS y no necesita JS ni estado. */
+@keyframes word-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-word {
+  animation: word-fade-in 450ms ease both;
+}
+
+/* Cada línea de la traza entra, se sostiene y sale; la última se queda. */
+@keyframes info-cycle {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  12%,
+  88% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+.console-info {
+  animation: info-cycle 1.5s ease both;
+}
+
+.console-info:last-child {
+  animation-name: word-fade-in;
+  animation-duration: 450ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-word,
+  .console-info {
+    animation: none;
+    opacity: 1;
+  }
+
+  .console-info:not(:last-child) {
+    display: none;
+  }
+}
+
 @keyframes reveal {
   from {
     opacity: 0;
@@ -236,6 +326,11 @@
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .animate-blink,
+  [style*="spin-ring"] {
+    animation: none !important;
   }
 }
 

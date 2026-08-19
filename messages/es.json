@@ -43,6 +43,79 @@
       "error": "Hubo un error al enviar tu solicitud. Por favor, inténtalo de nuevo o contáctanos directamente."
     }
   },
+  "console": {
+    "rows": "{count} filas",
+    "recommendation": "Recomendación",
+    "chart": "Visualización",
+    "scenarios": [
+      {
+        "id": "crecimiento-real",
+        "question": "¿Cuánto crecimos en serio, descontando inflación?",
+        "queries": [
+          {
+            "question": "Facturación mensual bruta y neta de descuentos, 2024 y 2025",
+            "rows": 24,
+            "seconds": 9.4
+          },
+          {
+            "question": "Índice de precios al consumidor por mes, 2024 y 2025",
+            "rows": 24,
+            "seconds": 6.1
+          },
+          {
+            "question": "Margen bruto por mes y participación de unidades vendidas con descuento",
+            "rows": 24,
+            "seconds": 11.2
+          }
+        ],
+        "answer": {
+          "title": "Crecimiento nominal vs. crecimiento real",
+          "lead": "La facturación creció 19,4% interanual, pero descontando inflación el negocio se achicó 2,5%.",
+          "table": {
+            "columns": [
+              "Concepto",
+              "2024",
+              "2025",
+              "Variación"
+            ],
+            "rows": [
+              [
+                "Facturación nominal",
+                "$2.480M",
+                "$2.961M",
+                "+19,4%"
+              ],
+              [
+                "Facturación a precios de 2024",
+                "$2.480M",
+                "$2.417M",
+                "−2,5%"
+              ],
+              [
+                "Margen bruto",
+                "41,2%",
+                "37,8%",
+                "−3,4 pp"
+              ],
+              [
+                "Unidades vendidas con descuento",
+                "28%",
+                "41%",
+                "+13 pp"
+              ]
+            ]
+          },
+          "alert": {
+            "title": "Alerta: el descuento se está comiendo el crecimiento",
+            "body": "La proporción de unidades vendidas con descuento pasó de 28% a 41%. Ese salto explica casi toda la caída de margen: sin él, el margen bruto habría cerrado en 40,6%."
+          },
+          "conclusion": "Conclusión: el volumen creció, pero se compró con precio. El crecimiento que se ve en el tablero de facturación no llegó al resultado.",
+          "followUp": "¿Querés que separe el efecto por categoría, para ver dónde el descuento sí generó volumen incremental?"
+        },
+        "recommendation": "Frená los descuentos automáticos en las tres categorías donde el margen cayó más de 5 puntos sin que crecieran las unidades: Calzado urbano, Abrigo y Accesorios. Concentran $712M de facturación y 4,2 puntos de la caída de margen, unos $101M de resultado. Empezá por Abrigo, que ya va con 61% de las unidades vendidas con descuento y stock de la temporada pasada sin liquidar."
+      }
+    ]
+  },
   "home": {
     "hero": {
       "title": "¿Qué dicen los datos?",
