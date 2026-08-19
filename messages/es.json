@@ -355,10 +355,10 @@
       ]
     },
     "enterprise": {
-      "eyebrow": "Nivii Enterprise",
+      "eyebrow": "Enterprise",
       "title": "La IA empresarial es, ante todo, una decisión de <accent>confianza</accent>.",
       "description": "Por eso Nivii corre dentro de tu perímetro, aprende qué significa cada definición en tu empresa y ordena tus datos antes de responder. Nada sale de tu nube, y nada espera a que los datos estén perfectos.",
-      "cta": "Ver Enterprise",
+      "cta": "Saber más",
       "cardLabel": "Dentro de tu nube"
     },
     "useCases": {
@@ -397,11 +397,11 @@
       ]
     },
     "beacon": {
-      "eyebrow": "Nivii Beacon",
+      "eyebrow": "Beacon",
       "title": "Cada mes se te escapa <accent>margen</accent>. Beacon lo encuentra.",
       "description": "Corre en la nube de Nivii, así que no necesitás servidores ni equipo propio. Le entregás los datos como están —planillas, tu sistema de gestión, el punto de venta— y él los ordena, los cruza y te responde en lenguaje simple.",
       "cta": "Reservá tu piloto gratuito",
-      "secondary": "Ver Beacon",
+      "secondary": "Saber más",
       "note": "Sin costo. Sin tarjeta. Con tus propios datos."
     },
     "mission": {

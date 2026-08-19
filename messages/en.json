@@ -355,10 +355,10 @@
       ]
     },
     "enterprise": {
-      "eyebrow": "Nivii Enterprise",
+      "eyebrow": "Enterprise",
       "title": "Enterprise AI is a <accent>trust</accent> decision first.",
       "description": "That's why Nivii runs inside your perimeter, learns what each definition means at your company, and puts your data in order before it answers. Nothing leaves your cloud, and nothing waits for the data to be perfect.",
-      "cta": "See Enterprise",
+      "cta": "Learn more",
       "cardLabel": "Inside your cloud"
     },
     "useCases": {
@@ -397,11 +397,11 @@
       ]
     },
     "beacon": {
-      "eyebrow": "Nivii Beacon",
+      "eyebrow": "Beacon",
       "title": "Every month you're leaking <accent>margin</accent>. Beacon finds it.",
       "description": "It runs in Nivii's cloud, so you need no servers and no team of your own. You hand over the data as it is — spreadsheets, your ERP, the point of sale — and it cleans it, joins it and answers in plain language.",
       "cta": "Book your free pilot",
-      "secondary": "See Beacon",
+      "secondary": "Learn more",
       "note": "No cost. No card. On your own data."
     },
     "mission": {

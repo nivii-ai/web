@@ -368,6 +368,8 @@
     font-family: var(--font-display);
     font-optical-sizing: auto;
     color: var(--color-ink);
+    /* Reparte las líneas: sin esto los titulares dejan una palabra sola abajo. */
+    text-wrap: balance;
   }
 
   table,
