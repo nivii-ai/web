@@ -17,8 +17,7 @@ export async function EnterpriseBanner() {
     <section className="bg-panel px-6 py-24 text-panel-ink lg:px-12 lg:py-32">
       <Reveal className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-2">
         <div>
-          <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-eyebrow font-medium text-panel-ink uppercase">
-            <ShieldCheck className="size-3.5" />
+          <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-eyebrow font-medium text-panel-ink uppercase">
             {t("eyebrow")}
           </span>
 
