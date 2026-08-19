@@ -14,7 +14,6 @@ export async function Footer({ locale }: { locale: string }) {
         { href: "/beacon", label: h("beacon") },
         { href: "/enterprise", label: h("enterprise") },
         { href: "/#use-cases", label: t("useCases") },
-        { href: "/#faq", label: t("faq") },
       ],
     },
     {

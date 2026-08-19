@@ -2,7 +2,6 @@ import { BeaconBanner } from "@/components/home/beacon-banner";
 import { Careers } from "@/components/home/careers";
 import { Clients } from "@/components/home/clients";
 import { EnterpriseBanner } from "@/components/home/enterprise-banner";
-import { Faq } from "@/components/home/faq";
 import { Hero } from "@/components/home/hero";
 import { HowItWorks } from "@/components/home/how-it-works";
 import { Mission } from "@/components/home/mission";
@@ -19,7 +18,6 @@ export default function Home() {
         <EnterpriseBanner />
         <UseCases />
         <BeaconBanner />
-        <Faq />
         <Mission />
         <Team />
         <Careers />

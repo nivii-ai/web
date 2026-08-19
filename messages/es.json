@@ -404,28 +404,6 @@
       "secondary": "Ver Beacon",
       "note": "Sin costo. Sin tarjeta. Con tus propios datos."
     },
-    "faq": {
-      "title": "Preguntas Frecuentes",
-      "description": "¿Tienes preguntas? Tenemos respuestas. Aquí están algunas de las cosas más comunes que nos preguntan.",
-      "faqs": [
-        {
-          "question": "¿Qué pasa si mis datos no están limpios?",
-          "answer": "Este es un escenario muy común y nuestra metodología está diseñada para ello. Ninguna empresa tiene datos perfectos. Empezamos trabajando contigo para identificar las fuentes de datos más fiables y construir \"Domain Data Products\". Esto nos permite limpiar, transformar y utilizar las partes más fiables de tus datos primero, entregando valor e impacto inmediatos mientras se crea una base para la mejora continua de la calidad de los datos."
-        },
-        {
-          "question": "¿Esto es como ChatGPT/Claude/Gemini?",
-          "answer": "Aunque aprovechamos el poder de los principales Modelos de Lenguaje Grandes (LLMs), Nivii es mucho más que una simple interfaz de chat. Nuestra tecnología principal es una orquesta patentada de agentes de IA especializados. Estos agentes están entrenados en el contexto de tu negocio y trabajan juntos para realizar análisis profundos y precisos. A diferencia de los modelos de propósito general, el objetivo de Nivii no es solo generar texto o gráficos, es entregar información validada y lista para la toma de decisiones."
-        },
-        {
-          "question": "¿Cómo aseguran la precisión?",
-          "answer": "La precisión es fundamental, especialmente cuando hay decisiones en juego. Nuestro enfoque de múltiples capas está diseñado para garantizarla. Primero, basamos todo el análisis en tus fuentes de datos más fiables. Segundo, nuestra orquesta de agentes de IA descompone preguntas complejas y asigna el agente correcto a cada parte del análisis. Finalmente, utilizamos un marco de validación patentado, que incluye agentes \"Jueces\", para verificar los resultados, minimizar errores y prevenir las alucinaciones a las que son propensos los modelos de IA generales."
-        },
-        {
-          "question": "¿Se pueden conectar a SAP/Salesforce/otros?",
-          "answer": "Nos podemos conectar a cualquier fuente de datos siempre que esté disponible en cualquiera de los 3 principales proveedores de nube (AWS, GCP, Azure)."
-        }
-      ]
-    },
     "mission": {
       "title": "Nuestra Misión",
       "description": [
@@ -580,7 +558,6 @@
     "description": "Nivii es el Agente de IA que se conecta de forma segura a tus datos, entiende tu negocio y responde con el análisis fiable que necesitas para tomar medidas inmediatamente.",
     "product": "Producto",
     "useCases": "Casos de Uso",
-    "faq": "Preguntas",
     "company": "Compañía",
     "about": "Nosotros",
     "team": "Equipo",
