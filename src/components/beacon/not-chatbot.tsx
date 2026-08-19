@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "./section-heading";
@@ -28,12 +27,10 @@ export async function NotChatbot() {
 
         <Reveal
           order={1}
-          className="mt-14 grid gap-10 rounded-bezel bg-background p-8 ring-1 ring-hairline lg:grid-cols-[auto_minmax(0,1fr)] lg:items-center lg:gap-16 lg:p-12"
+          className="mt-14 grid gap-10 rounded-core border border-hairline p-8 lg:grid-cols-[auto_minmax(0,1fr)] lg:items-center lg:gap-16 lg:p-12"
         >
-          <p className="flex items-center gap-4 font-display text-display-m whitespace-nowrap text-ink-muted">
-            {t("statFrom")}
-            <ArrowRight className="size-6 text-brand-green" />
-            <span className="text-brand-green">{t("statTo")}</span>
+          <p className="font-display text-display-m whitespace-nowrap text-brand-green">
+            {t("stat")}
           </p>
 
           <div className="max-w-2xl">

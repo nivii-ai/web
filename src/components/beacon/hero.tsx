@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Answer } from "@/components/console/answer";
+import { ConsoleShell } from "@/components/console/console-shell";
 import { QuestionBubble } from "@/components/console/question-bubble";
 import { Recommendation } from "@/components/console/recommendation";
 import { StreamInfo } from "@/components/console/stream-info";
@@ -47,13 +48,20 @@ export async function BeaconHero() {
           <p className="mt-5 text-body-s text-ink-muted">{t("note")}</p>
         </div>
 
-        <div className="min-w-0 rounded-bezel bg-surface-sunken p-1.5 shadow-ambient-lg ring-1 ring-hairline">
-          <div className="flex flex-col gap-4 rounded-core bg-background p-6">
-            <QuestionBubble>{scenario.question}</QuestionBubble>
-            <StreamInfo text={c("ready")} done />
-            <Answer answer={scenario.answer} delay={0} compact />
-            <Recommendation text={scenario.recommendation} />
-          </div>
+        <div className="min-w-0 lg:perspective-[1200px]">
+          <ConsoleShell className="lg:rotate-y-[-12deg] lg:shadow-tilt">
+            <div className="fade-word">
+              <QuestionBubble>{scenario.question}</QuestionBubble>
+            </div>
+            <StreamInfo
+              className="fade-word"
+              style={{ animationDelay: "0.4s" }}
+              text={c("ready")}
+              done
+            />
+            <Answer answer={scenario.answer} delay={0.7} compact />
+            <Recommendation text={scenario.recommendation} delay={1.6} />
+          </ConsoleShell>
         </div>
       </div>
     </section>

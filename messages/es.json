@@ -501,8 +501,7 @@
       "eyebrow": "Por qué no alcanza un chat genérico",
       "title": "ChatGPT no resuelve esto, y <accent>no lo decimos sólo nosotros</accent>",
       "description": "Conectar un modelo de lenguaje directo a una base de datos no alcanza para responder preguntas de negocio con confianza. Lo documentó públicamente Anthropic, la compañía detrás de Claude, sobre su propia analítica interna.",
-      "statFrom": "21%",
-      "statTo": "95%",
+      "stat": "21% → 95%",
       "statLead": "Así de baja fue al principio la precisión de un modelo conectado en crudo a una base de datos.",
       "statBody": "La diferencia la hicieron capas de contexto de negocio, definiciones claras y validación constante: exactamente lo que Beacon construye antes de responder tu primera pregunta.",
       "cards": [
@@ -710,7 +709,7 @@
       "title": "Empezá con tus propios datos, <accent>sin costo</accent>.",
       "description": "Dos reuniones de una hora. Sin compromiso. Vas a ver, con tu propia información, lo que Beacon puede responder.",
       "button": "Reservá tu piloto gratuito",
-      "bridge": "Para el análisis a escala enterprise, en tu propia nube y con el código a tu nombre, conocé Nivii Enterprise.",
+      "bridge": "Para el análisis a escala enterprise, dentro de tu propia nube y bajo tu gobierno de datos, conocé Nivii Enterprise.",
       "bridgeLink": "Ver Nivii Enterprise"
     }
   },
