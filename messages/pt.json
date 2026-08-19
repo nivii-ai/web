@@ -19,22 +19,35 @@
         "en": "Inglês",
         "pt": "Português"
       }
-    }
+    },
+    "demo": "Solicitar Demo"
   },
   "demo": {
     "label": "Solicitar Demo",
-    "modalTitle": "Solicitar uma Demo",
-    "modalDescription": "Veja como a Nivii pode transformar o seu negócio. Preencha o formulário abaixo para começar.",
+    "title": "Traga uma pergunta. Mostramos <accent>o que o agente faz</accent> com ela.",
+    "metaTitle": "Solicitar demo",
+    "description": "Uma sessão de trabalho de 30 minutos, sobre os seus dados e dentro do seu ambiente. Sem apresentação enlatada.",
+    "reassurance": [
+      "Meia hora, com alguém da equipe que construiu o produto.",
+      "Seus dados não precisam estar organizados: esse é o ponto de partida.",
+      "Se preferir começar sem custo, o Beacon tem um piloto gratuito."
+    ],
     "form": {
-      "firstName": "Nome",
-      "lastName": "Sobrenome",
-      "email": "Endereço de Email",
+      "name": "Nome e sobrenome",
+      "email": "Email de trabalho",
       "company": "Empresa",
-      "role": "Cargo",
-      "submit": "Enviar",
-      "submitting": "Enviando...",
-      "success": "Obrigado pela sua solicitação de demonstração! Entraremos em contato em breve.",
-      "error": "Ocorreu um erro ao enviar sua solicitação. Por favor, tente novamente ou entre em contato diretamente conosco."
+      "question": "Que pergunta você gostaria de conseguir responder?",
+      "questionHint": "Opcional, mas é o que faz a sessão valer a pena.",
+      "submit": "Solicitar demo",
+      "submitting": "Enviando…",
+      "successTitle": "Pronto. Escrevemos para você em até 24 horas.",
+      "successBody": "Enquanto isso, o detalhe de arquitetura e segurança está na página da Enterprise.",
+      "error": "Houve um erro ao enviar. Escreva para contact@nivii.ai e resolvemos.",
+      "errors": {
+        "name": "Escreva seu nome e sobrenome.",
+        "email": "Informe um e-mail de trabalho válido.",
+        "company": "Conte em qual empresa você trabalha."
+      }
     }
   },
   "console": {

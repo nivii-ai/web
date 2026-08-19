@@ -1,15 +1,20 @@
 "use server";
 
 export async function sendDemoRequest(data: {
-  firstName: string;
-  lastName: string;
+  name: string;
   email: string;
   company: string;
-  role: string;
+  question: string;
 }) {
+  const [firstName, ...rest] = data.name.trim().split(/\s+/);
   const formData = new FormData();
 
-  Object.entries(data).forEach(([key, value]) => {
+  // El webhook de Make espera los nombres separados desde la versión anterior del formulario.
+  Object.entries({
+    ...data,
+    firstName,
+    lastName: rest.join(" "),
+  }).forEach(([key, value]) => {
     formData.append(key, value ?? "");
   });
 

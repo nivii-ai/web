@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, type PanInfo } from "motion/react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { DemoButton } from "./demo-button";
 import { spring, springSheet } from "@/lib/motion";
 import { useFocusTrap } from "@/hooks/use-focus-trap";
 
@@ -124,7 +123,13 @@ export function MenuMobile() {
                 transition={{ ...spring, delay: 0.04 * (links.length + 1) }}
                 className="mt-6"
               >
-                <DemoButton />
+                <Link
+                  href="/demo"
+                  onNavigate={() => setIsOpen(false)}
+                  className="inline-block rounded-lg bg-brand-green px-4 py-2 text-body-s font-semibold text-white transition-all duration-100 active:scale-[0.97]"
+                >
+                  {t("demo")}
+                </Link>
               </motion.div>
             </nav>
 

@@ -19,22 +19,35 @@
         "en": "English",
         "pt": "Portuguese"
       }
-    }
+    },
+    "demo": "Request a Demo"
   },
   "demo": {
     "label": "Request a Demo",
-    "modalTitle": "Request a Demo",
-    "modalDescription": "See how Nivii can transform your business. Fill out the form below to get started.",
+    "title": "Bring a question. We'll show you <accent>what the agent does</accent> with it.",
+    "metaTitle": "Request a demo",
+    "description": "A 30-minute working session on your data, inside your environment. No canned deck.",
+    "reassurance": [
+      "Half an hour, with someone from the team that built the product.",
+      "Your data doesn't need to be in order: that's the starting point.",
+      "If you'd rather start at no cost, Beacon comes with a free pilot."
+    ],
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
-      "email": "Email",
+      "name": "Full name",
+      "email": "Work email",
       "company": "Company",
-      "role": "Role",
-      "submit": "Submit",
-      "submitting": "Submitting...",
-      "success": "Thank you for your demo request! We'll get back to you soon.",
-      "error": "There was an error submitting your request. Please try again or contact us directly."
+      "question": "What question would you like to be able to answer?",
+      "questionHint": "Optional, but it's what makes the session worth having.",
+      "submit": "Request demo",
+      "submitting": "Sending…",
+      "successTitle": "Done. We'll write to you within 24 hours.",
+      "successBody": "In the meantime, the architecture and security detail lives on the Enterprise page.",
+      "error": "Something went wrong. Write to contact@nivii.ai and we'll sort it out.",
+      "errors": {
+        "name": "Enter your full name.",
+        "email": "Enter a valid work email.",
+        "company": "Tell us where you work."
+      }
     }
   },
   "console": {
