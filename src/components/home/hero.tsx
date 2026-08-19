@@ -1,47 +1,39 @@
-import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { DemoButton } from "../demo-button";
-import { HeroBackground } from "./hero-background";
-import * as motion from "motion/react-client";
+import { ConsoleStage } from "./console-stage";
+import { HeroMotif } from "./hero-motif";
 
 export async function Hero() {
   const t = await getTranslations("home.hero");
 
   return (
-    <section id="home" className="min-h-[400px] pt-60 pb-24 relative">
-      <HeroBackground />
-      <div className="mx-auto px-6 text-center flex items-center justify-center flex-col h-full">
-        <motion.h1
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-4xl md:text-6xl font-extrabold text-foreground leading-tight tracking-tight"
-        >
-          <span>{t("title")}</span> <br className="hidden md:block" />
-          <span className="text-brand-green text-nowrap">{t("subtitle")}</span>
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-6 max-w-2xl mx-auto text-lg text-gray-600"
-        >
-          {t("description")}
-        </motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-10 flex flex-wrap justify-center gap-4"
-        >
-          <DemoButton />
-          <Link
-            href="#use-cases"
-            className="bg-white text-gray-700 font-semibold px-5 py-2 rounded-lg hover:bg-gray-100 transition duration-300 cursor-pointer border border-gray-300"
-          >
-            {t("seeUseCases")}
-          </Link>
-        </motion.div>
+    <section
+      id="home"
+      className="hero-band relative isolate scroll-m-28 overflow-hidden px-6 pt-32 pb-20 lg:px-12 lg:pt-40 lg:pb-28"
+    >
+      <HeroMotif />
+      <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <h1 className="text-display-xl">
+            {t("title")}
+            <span className="block text-brand-green">{t("subtitle")}</span>
+          </h1>
+          <p className="mt-6 max-w-xl text-body-l text-ink-muted">
+            {t("description")}
+          </p>
+          <div className="mt-9 flex flex-wrap gap-3">
+            <DemoButton />
+            <Link
+              href="/#use-cases"
+              className="rounded-lg border border-hairline px-4 py-2 text-body-s font-semibold text-ink transition-all duration-100 hover:bg-surface-sunken active:scale-[0.97]"
+            >
+              {t("seeUseCases")}
+            </Link>
+          </div>
+        </div>
+
+        <ConsoleStage />
       </div>
     </section>
   );
