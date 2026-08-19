@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Answer } from "@/components/console/answer";
+import { ConsoleChoreography } from "@/components/console/console-choreography";
 import { ConsoleShell } from "@/components/console/console-shell";
 import { QuestionBubble } from "@/components/console/question-bubble";
 import { Recommendation } from "@/components/console/recommendation";
@@ -8,6 +9,10 @@ import type { Scenario } from "@/components/console/types";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "./section-heading";
 
+const QUESTION_AT = 0.2;
+const INFO_AT = 0.9;
+const INFO_STEP = 1.5;
+
 export async function Pilot() {
   const t = await getTranslations("beacon.pilot");
   const c = await getTranslations("console");
@@ -15,6 +20,7 @@ export async function Pilot() {
   const scenario = (c.raw("scenarios") as Scenario[]).find(
     (item) => item.id === "stock-inmovilizado",
   );
+  const answerAt = scenario ? INFO_AT + scenario.queries.length * INFO_STEP : 0;
 
   return (
     <section
@@ -66,12 +72,35 @@ export async function Pilot() {
               <p className="text-eyebrow font-medium text-ink-muted uppercase">
                 {t("consoleLabel")}
               </p>
-              <ConsoleShell className="mt-6">
-                <QuestionBubble>{scenario.question}</QuestionBubble>
-                <StreamInfo text={c("ready")} done />
-                <Answer answer={scenario.answer} delay={0} />
-                <Recommendation text={scenario.recommendation} />
-              </ConsoleShell>
+              <ConsoleChoreography className="mt-6">
+                <ConsoleShell>
+                  <div
+                    className="fade-word"
+                    style={{ animationDelay: `${QUESTION_AT}s` }}
+                  >
+                    <QuestionBubble>{scenario.question}</QuestionBubble>
+                  </div>
+
+                  <div className="relative h-5">
+                    {scenario.queries.map((query, i) => (
+                      <StreamInfo
+                        key={query.question}
+                        text={query.question}
+                        className="console-info absolute inset-x-0 top-0"
+                        style={{
+                          animationDelay: `${INFO_AT + i * INFO_STEP}s`,
+                        }}
+                      />
+                    ))}
+                  </div>
+
+                  <Answer answer={scenario.answer} delay={answerAt} />
+                  <Recommendation
+                    text={scenario.recommendation}
+                    delay={answerAt + 3.2}
+                  />
+                </ConsoleShell>
+              </ConsoleChoreography>
             </Reveal>
           ) : null}
         </div>

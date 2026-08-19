@@ -38,7 +38,8 @@ export function AnswerChart({ spec }: { spec: ChartSpec }) {
 
       <svg
         viewBox={`0 0 ${W} ${H}`}
-        className="w-full"
+        // El SVG escala con el ancho: sin tope, las etiquetas crecen fuera de escala.
+        className="w-full max-w-md"
         role="img"
         aria-label={`${spec.title}: ${spec.points.map((p) => `${p.label} ${p.display ?? p.value}${p.display ? "" : (spec.unit ?? "")}`).join(", ")}`}
       >

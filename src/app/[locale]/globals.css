@@ -263,6 +263,11 @@
   animation: word-fade-in 450ms ease both;
 }
 
+[data-choreo="paused"] .fade-word,
+[data-choreo="paused"] .console-info {
+  animation-play-state: paused;
+}
+
 /* Cada línea de la traza entra, se sostiene y sale; la última se queda. */
 @keyframes info-cycle {
   0% {
