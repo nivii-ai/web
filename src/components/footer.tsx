@@ -28,8 +28,8 @@ export async function Footer({ locale }: { locale: string }) {
 
   return (
     <footer className="mt-auto border-t border-hairline">
-      <div className="mx-auto max-w-7xl px-6 pt-16 pb-10 lg:px-12">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-6 pt-24 pb-12 lg:px-12">
+        <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:pr-8">
             <Link href="/#home" className="mb-5 flex items-center">
               <Image
@@ -101,7 +101,7 @@ export async function Footer({ locale }: { locale: string }) {
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col-reverse items-center justify-between gap-4 border-t border-hairline pt-8 md:flex-row">
+        <div className="mt-20 flex flex-col-reverse items-center justify-between gap-4 border-t border-hairline pt-8 md:flex-row">
           <p className="text-body-s text-ink-muted">
             {t("copyright", { year: new Date().getFullYear() })}
           </p>
