@@ -3,12 +3,13 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { DemoButton } from "./demo-button";
 import { MenuMobile } from "./menu-mobile";
-import { ProductsMenu } from "./products-menu";
 import LanguageSwitch from "./language-switch";
 
 const links = [
+  { href: "/beacon", key: "beacon" },
+  { href: "/enterprise", key: "enterprise" },
   { href: "/#use-cases", key: "useCases" },
-  { href: "/#team", key: "team" },
+  { href: "/#mission", key: "about" },
   { href: "/careers/", key: "careers" },
 ] as const;
 
@@ -33,7 +34,6 @@ export async function Header({ locale }: { locale: string }) {
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
-          <ProductsMenu />
           {links.map(({ href, key }) => (
             <Link
               key={key}

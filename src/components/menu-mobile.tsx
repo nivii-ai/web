@@ -12,7 +12,7 @@ const links = [
   { href: "/beacon", key: "beacon" },
   { href: "/enterprise", key: "enterprise" },
   { href: "/#use-cases", key: "useCases" },
-  { href: "/#team", key: "team" },
+  { href: "/#mission", key: "about" },
   { href: "/careers/", key: "careers" },
 ] as const;
 
