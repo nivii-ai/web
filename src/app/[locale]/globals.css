@@ -263,6 +263,15 @@
   animation: word-fade-in 450ms ease both;
 }
 
+/* En las páginas oscuras el header se re-tinta redefiniendo los tokens que ya
+   usan sus utilidades, en vez de duplicar cada regla. */
+body:has(.page-dark) .site-header {
+  --color-background: var(--color-panel);
+  --color-ink: var(--color-panel-ink);
+  --color-ink-muted: color-mix(in srgb, var(--color-panel-ink) 70%, transparent);
+  --color-hairline: var(--color-panel-hairline);
+}
+
 [data-choreo="paused"] .fade-word,
 [data-choreo="paused"] .console-info {
   animation-play-state: paused;

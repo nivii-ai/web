@@ -767,6 +767,222 @@
       "bridgeLink": "See Nivii Enterprise"
     }
   },
+  "enterprise": {
+    "meta": {
+      "title": "Nivii Enterprise — a decision agent that runs inside your own cloud",
+      "description": "Nivii Enterprise deploys a decision-intelligence agent on your data, inside your own perimeter. Live pilot in about 12 weeks: no ROI, no contract."
+    },
+    "hero": {
+      "eyebrow": "Nivii Enterprise",
+      "title": "A decision agent that runs <accent>inside your own cloud</accent>.",
+      "description": "It learns how your business works, takes on the messy data you already have and returns trustworthy analysis with a clear recommendation. Your data never leaves your perimeter.",
+      "cta": "Request a demo",
+      "secondary": "See architecture and security",
+      "note": "A live pilot on your real data in about 12 weeks, at cost.",
+      "sectorsLabel": "Data-heavy operations",
+      "sectors": [
+        "Steel & metals",
+        "Agriculture",
+        "Oil & gas",
+        "Manufacturing",
+        "CPG",
+        "Energy"
+      ]
+    },
+    "product": {
+      "eyebrow": "What it is",
+      "title": "Not a dashboard. <accent>Not a rental either.</accent>",
+      "description": "Most analytics projects end in more charts and a bill that never stops. Here we deploy a decision agent on your own data, inside your own environment, and train your team to run it along the way. The shortcut to a capability that takes 18 to 24 months to build from scratch.",
+      "pillars": [
+        {
+          "label": "Week 12",
+          "title": "You prove it first",
+          "description": "A live pilot on your real data, at cost, before you sign anything."
+        },
+        {
+          "label": "Month 4",
+          "title": "In production, in your cloud",
+          "description": "The agent runs inside your perimeter, with your team trained alongside."
+        },
+        {
+          "label": "Month 12",
+          "title": "Your team runs it alone",
+          "description": "Architecture, prompts and documentation handed over. No forced dependency."
+        }
+      ]
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "title": "Prove it in a pilot before signing anything",
+      "description": "Building this capability in-house usually takes 18 to 24 months. The pilot puts real answers on your own data in front of you in about 12 weeks.",
+      "phasePilot": "Pilot · ~12 weeks · at cost, in Nivii's cloud",
+      "phaseProduction": "Production · in your own cloud",
+      "steps": [
+        {
+          "when": "Start",
+          "description": "NDA and letter of intent. You hand over a read-only extract of your data."
+        },
+        {
+          "when": "Week 10",
+          "description": "A live pilot on your real data, solving one concrete use case."
+        },
+        {
+          "when": "Weeks 11–12",
+          "description": "Fine-tuning workshops with your team and a testing week, up to the go / no-go decision."
+        },
+        {
+          "when": "Month 4",
+          "description": "In production inside your own cloud, with your team operating the agent."
+        },
+        {
+          "when": "Month 12",
+          "description": "Full handover: architecture, prompts, documentation and a team already trained."
+        }
+      ],
+      "roiTitle": "No ROI, no contract",
+      "roiBody": "The pilot runs at cost and works roughly 95% like the production system. The business case has to write itself before you sign.",
+      "modelTitle": "Commercial model",
+      "modelItems": [
+        "A one-time build, then fixed-term support.",
+        "No recurring per-seat license fees.",
+        "Knowledge transfer from day one, not at the end."
+      ]
+    },
+    "trust": {
+      "eyebrow": "Why Nivii",
+      "title": "Enterprise AI is, above all, <accent>a trust decision</accent>.",
+      "items": [
+        {
+          "title": "Your data never leaves your cloud",
+          "description": "Deployment happens inside your own environment: AWS, GCP, Azure, on-prem or SAP BTP. The only outbound call is to the model provider, and even that goes away with in-cloud models."
+        },
+        {
+          "title": "It speaks your business",
+          "description": "It learns your KPIs and your terminology, so “margin” or “active customer” mean what they mean inside your company."
+        },
+        {
+          "title": "Messy data is the starting point",
+          "description": "Disconnected, imperfect sources are the norm. Dedicated cleaning agents put the most reliable ones to work first: value in weeks, not a data project that never ends."
+        },
+        {
+          "title": "From weeks to minutes",
+          "description": "The analysis that meant pulling data from three teams, a BI ticket and a week of waiting comes back in minutes, in plain language, showing the source and the logic."
+        },
+        {
+          "title": "Proactive, not only reactive",
+          "description": "It surfaces the insight before anyone thinks to ask: the failure signal before the downtime, the attrition risk before the resignation, the margin leak before quarter-end."
+        }
+      ]
+    },
+    "useCases": {
+      "eyebrow": "Use cases",
+      "title": "Built for large, data-heavy operations",
+      "description": "The questions change with the operation, but the pattern repeats: the data already exists, scattered, and the decision cannot wait for the next report.",
+      "items": [
+        {
+          "sector": "Steel & metals",
+          "title": "Industrial maintenance",
+          "description": "It reads maintenance and sensor data to flag at-risk equipment and preventive-maintenance gaps before they turn into unplanned downtime."
+        },
+        {
+          "sector": "Agriculture & agtech",
+          "title": "Commercial effectiveness",
+          "description": "It turns scattered commercial data into next-best-action guidance reps can use in the field, with the right offer for each customer."
+        },
+        {
+          "sector": "Oil & gas and industrial",
+          "title": "Workforce & HR",
+          "description": "It surfaces the signals hidden in workforce data while there is still time to act, before a key resignation lands."
+        },
+        {
+          "sector": "Electronics & manufacturing",
+          "title": "Supply chain",
+          "description": "It forecasts demand and stock with the data you already have, turning fragmented information into forecasts planners can trust."
+        },
+        {
+          "sector": "CPG",
+          "title": "Distribution & sell-through",
+          "description": "It connects distribution and sell-through data into answers you can act on today: what is moving, where and why."
+        },
+        {
+          "sector": "Energy",
+          "title": "Energy operations",
+          "description": "A vertical under development with operators across the region. Write to us if you want to know what we are building."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Proof & security",
+      "title": "Enterprises trust Nivii because <accent>the architecture earns it</accent>.",
+      "stats": [
+        {
+          "value": "12 weeks",
+          "description": "to the first pilot on your real data, not quarters."
+        },
+        {
+          "value": "100%",
+          "description": "inside your own cloud: your data stays in your perimeter."
+        },
+        {
+          "value": "Read-only",
+          "description": "the pilot works on an extract, without touching your production systems."
+        }
+      ],
+      "checklist": [
+        "Runs in your cloud",
+        "Your own SSO",
+        "Model-agnostic",
+        "Encryption at rest and in transit",
+        "No data shared across clients"
+      ],
+      "compliance": "Architecture aligned with SOC 2 and HIPAA controls. Formal certifications in progress."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "What technical teams ask us",
+      "items": [
+        {
+          "question": "Is this like ChatGPT, Claude or Gemini?",
+          "answer": "No, and the difference matters. Those are the engine: foundation models built by a handful of companies. Nivii is everything around the engine: the architecture that connects securely to your data, learns your business, checks its own accuracy and returns answers you can trust enough to act on. It is the same reason tools like Cursor or Harvey are valuable without building their own models. And it runs inside your own cloud, on your own data: something a public chatbot cannot do."
+        },
+        {
+          "question": "How do you ensure accuracy?",
+          "answer": "Accuracy is engineered in, not assumed. The agent works from governed, cleaned data rather than the open web, validates its own outputs and shows its work: the query, the source and the logic behind every answer. When a number is a benchmark and not your own data, it says so."
+        },
+        {
+          "question": "Do you connect to SAP, Salesforce or other systems?",
+          "answer": "Yes. Nivii connects to the systems you already run — SAP, Salesforce, data warehouses, spreadsheets and more — and works with your data where it lives, inside your own cloud. Disconnected sources are the starting point, not a blocker."
+        },
+        {
+          "question": "Does our data ever leave our environment?",
+          "answer": "No. Nivii runs inside your own cloud and your data stays within your perimeter. The only outbound call is to the model provider, and even that can be eliminated with in-cloud models like Bedrock, Azure OpenAI, Vertex AI or SAP AI Foundry."
+        },
+        {
+          "question": "What if our data is not clean?",
+          "answer": "Every company's data is messy: that is our starting point, not a blocker. Dedicated cleaning agents identify your most reliable sources first, so you get trustworthy answers in weeks while data quality keeps improving underneath."
+        },
+        {
+          "question": "How long until we see value?",
+          "answer": "About 12 weeks to a live pilot on your real data, and it works roughly 95% like the production system. From there you are in production in your own cloud by month 4, and by month 12 your team runs the agent on its own. The pilot is not a proof of concept: it is the real product, already most of the way there."
+        },
+        {
+          "question": "What do we commit to for the pilot?",
+          "answer": "Very little. The pilot runs at cost and on a read-only extract of your data, in Nivii's cloud, so you can prove the value before signing anything. Our rule is simple: no ROI, no contract."
+        },
+        {
+          "question": "What does our IT team need to sustain it?",
+          "answer": "During the pilot, nothing beyond the read-only extract. In production the agent runs in your cloud with your own SSO and your access policies; your team trains alongside throughout, so operations stay in-house and do not depend on us."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Bring one business question you <accent>cannot get answered fast enough</accent>.",
+      "description": "In a 30-minute working session we will show you what the agent does with it, on your data and inside your environment.",
+      "button": "Request a demo",
+      "bridge": "Is your operation smaller and without its own infrastructure? Beacon solves the same problem from Nivii's cloud, with a free pilot.",
+      "bridgeLink": "See Nivii Beacon"
+    }
+  },
   "careers": {
     "title": "Join",
     "titleHighlight": "our team",

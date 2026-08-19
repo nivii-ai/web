@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/reveal";
-import { SectionHeading } from "./section-heading";
+import { SectionHeading } from "@/components/ui/section-heading";
 
 const SOURCE_URL =
   "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude";

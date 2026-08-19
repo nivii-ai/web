@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/reveal";
-import { SectionHeading } from "./section-heading";
+import { SectionHeading } from "@/components/ui/section-heading";
 
 type Row = { label: string; own: string; beacon: string };
 

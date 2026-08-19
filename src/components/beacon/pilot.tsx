@@ -7,7 +7,7 @@ import { Recommendation } from "@/components/console/recommendation";
 import { StreamInfo } from "@/components/console/stream-info";
 import type { Scenario } from "@/components/console/types";
 import { Reveal } from "@/components/ui/reveal";
-import { SectionHeading } from "./section-heading";
+import { SectionHeading } from "@/components/ui/section-heading";
 
 const QUESTION_AT = 0.2;
 const INFO_AT = 0.9;

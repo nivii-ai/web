@@ -767,6 +767,222 @@
       "bridgeLink": "Ver Nivii Enterprise"
     }
   },
+  "enterprise": {
+    "meta": {
+      "title": "Nivii Enterprise — um agente de decisão dentro da sua própria nuvem",
+      "description": "O Nivii Enterprise implanta um agente de inteligência de decisão sobre seus dados, dentro do seu perímetro. Piloto ao vivo em cerca de 12 semanas: sem ROI, não há contrato."
+    },
+    "hero": {
+      "eyebrow": "Nivii Enterprise",
+      "title": "Um agente de decisão que roda <accent>dentro da sua própria nuvem</accent>.",
+      "description": "Ele aprende como o seu negócio funciona, trabalha com os dados bagunçados que você já tem e devolve análise confiável com uma recomendação clara. Seus dados nunca saem do seu perímetro.",
+      "cta": "Solicitar uma demo",
+      "secondary": "Ver arquitetura e segurança",
+      "note": "Um piloto ao vivo sobre seus dados reais em cerca de 12 semanas, a custo.",
+      "sectorsLabel": "Operações intensivas em dados",
+      "sectors": [
+        "Aço e metais",
+        "Agro",
+        "Óleo e gás",
+        "Manufatura",
+        "CPG",
+        "Energia"
+      ]
+    },
+    "product": {
+      "eyebrow": "O que é",
+      "title": "Não é um dashboard. <accent>Nem um aluguel.</accent>",
+      "description": "A maioria dos projetos de analytics termina em mais gráficos e uma fatura que não acaba. Aqui implantamos um agente de decisão sobre os seus próprios dados, dentro do seu próprio ambiente, e treinamos o seu time para operá-lo no caminho. O atalho para uma capacidade que construir do zero leva de 18 a 24 meses.",
+      "pillars": [
+        {
+          "label": "Semana 12",
+          "title": "Primeiro você comprova",
+          "description": "Um piloto ao vivo sobre seus dados reais, a custo, antes de assinar qualquer coisa."
+        },
+        {
+          "label": "Mês 4",
+          "title": "Em produção, na sua nuvem",
+          "description": "O agente roda dentro do seu perímetro, com o seu time treinado em paralelo."
+        },
+        {
+          "label": "Mês 12",
+          "title": "Seu time opera sozinho",
+          "description": "Arquitetura, prompts e documentação transferidos. Sem dependência forçada."
+        }
+      ]
+    },
+    "howItWorks": {
+      "eyebrow": "Como funciona",
+      "title": "Comprove em um piloto antes de assinar nada",
+      "description": "Construir essa capacidade internamente costuma levar de 18 a 24 meses. O piloto coloca respostas reais sobre os seus próprios dados na sua frente em cerca de 12 semanas.",
+      "phasePilot": "Piloto · ~12 semanas · a custo, na nuvem da Nivii",
+      "phaseProduction": "Produção · na sua própria nuvem",
+      "steps": [
+        {
+          "when": "Início",
+          "description": "NDA e carta de intenção. Você entrega um extrato somente leitura dos seus dados."
+        },
+        {
+          "when": "Semana 10",
+          "description": "Um piloto ao vivo sobre seus dados reais, resolvendo um caso de uso concreto."
+        },
+        {
+          "when": "Semanas 11 e 12",
+          "description": "Workshops de ajuste com o seu time e uma semana de testes, até a decisão de avançar ou não."
+        },
+        {
+          "when": "Mês 4",
+          "description": "Em produção dentro da sua própria nuvem, com o seu time operando o agente."
+        },
+        {
+          "when": "Mês 12",
+          "description": "Transferência completa: arquitetura, prompts, documentação e um time já capacitado."
+        }
+      ],
+      "roiTitle": "Sem ROI, não há contrato",
+      "roiBody": "O piloto é feito a custo e funciona cerca de 95% como o sistema em produção. O caso de negócio precisa se escrever sozinho antes de você assinar.",
+      "modelTitle": "Modelo comercial",
+      "modelItems": [
+        "Um único build e depois suporte a prazo fixo.",
+        "Sem licenças recorrentes por usuário.",
+        "Transferência de conhecimento desde o primeiro dia, não no final."
+      ]
+    },
+    "trust": {
+      "eyebrow": "Por que a Nivii",
+      "title": "IA corporativa é, antes de tudo, <accent>uma decisão de confiança</accent>.",
+      "items": [
+        {
+          "title": "Seus dados nunca saem da sua nuvem",
+          "description": "A implantação acontece dentro do seu próprio ambiente: AWS, GCP, Azure, on-premise ou SAP BTP. A única chamada de saída é para o provedor do modelo, e até isso desaparece com modelos in-cloud."
+        },
+        {
+          "title": "Fala a língua do seu negócio",
+          "description": "Aprende seus KPIs e sua terminologia, para que “margem” ou “cliente ativo” signifiquem o que significam dentro da sua empresa."
+        },
+        {
+          "title": "Dados bagunçados são o ponto de partida",
+          "description": "Fontes desconectadas e imperfeitas são o normal. Agentes dedicados de limpeza colocam as mais confiáveis para trabalhar primeiro: valor em semanas, não um projeto de dados infinito."
+        },
+        {
+          "title": "De semanas a minutos",
+          "description": "A análise que antes era pedir dados a três áreas, um chamado para BI e uma semana de espera volta em minutos, em linguagem clara, mostrando a fonte e a lógica."
+        },
+        {
+          "title": "Proativo, não só reativo",
+          "description": "Levanta o insight antes de alguém pensar em perguntar: o sinal de falha antes da parada, o risco de rotatividade antes do pedido de demissão, a fuga de margem antes do fechamento."
+        }
+      ]
+    },
+    "useCases": {
+      "eyebrow": "Casos de uso",
+      "title": "Feito para operações grandes e intensivas em dados",
+      "description": "As perguntas mudam conforme a operação, mas o padrão se repete: o dado já existe, disperso, e a decisão não pode esperar o próximo relatório.",
+      "items": [
+        {
+          "sector": "Aço e metais",
+          "title": "Manutenção industrial",
+          "description": "Lê dados de manutenção e de sensores para marcar equipamentos em risco e lacunas de manutenção preventiva antes que virem uma parada não planejada."
+        },
+        {
+          "sector": "Agro e agtech",
+          "title": "Efetividade comercial",
+          "description": "Transforma dados comerciais dispersos em recomendações de próxima melhor ação que o vendedor usa em campo, com a oferta certa para cada cliente."
+        },
+        {
+          "sector": "Óleo e gás e indústria",
+          "title": "Pessoas e RH",
+          "description": "Revela os sinais escondidos nos dados do seu time enquanto ainda dá para agir, antes que chegue um pedido de demissão importante."
+        },
+        {
+          "sector": "Eletrônica e manufatura",
+          "title": "Cadeia de suprimentos",
+          "description": "Projeta demanda e estoque com os dados que você já tem, transformando informação fragmentada em previsões em que os planejadores confiam."
+        },
+        {
+          "sector": "CPG",
+          "title": "Distribuição e sell-through",
+          "description": "Conecta dados de distribuição e sell-through em respostas acionáveis hoje: o que gira, onde e por quê."
+        },
+        {
+          "sector": "Energia",
+          "title": "Operações de energia",
+          "description": "Um vertical em desenvolvimento junto a operadores da região. Escreva para nós se quiser saber no que estamos trabalhando."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Prova e segurança",
+      "title": "As empresas confiam na Nivii porque <accent>a arquitetura merece</accent>.",
+      "stats": [
+        {
+          "value": "12 semanas",
+          "description": "até o primeiro piloto sobre seus dados reais, não trimestres."
+        },
+        {
+          "value": "100%",
+          "description": "dentro da sua própria nuvem: seus dados ficam no seu perímetro."
+        },
+        {
+          "value": "Somente leitura",
+          "description": "o piloto trabalha sobre um extrato, sem tocar nos seus sistemas produtivos."
+        }
+      ],
+      "checklist": [
+        "Roda na sua nuvem",
+        "Seu próprio SSO",
+        "Agnóstico ao modelo",
+        "Criptografia em repouso e em trânsito",
+        "Sem dados compartilhados entre clientes"
+      ],
+      "compliance": "Arquitetura alinhada aos controles de SOC 2 e HIPAA. Certificações formais em andamento."
+    },
+    "faq": {
+      "eyebrow": "Perguntas frequentes",
+      "title": "O que os times técnicos perguntam",
+      "items": [
+        {
+          "question": "É como o ChatGPT, o Claude ou o Gemini?",
+          "answer": "Não, e a diferença importa. Esses são o motor: modelos de base construídos por poucas empresas no mundo. A Nivii é tudo o que cerca o motor: a arquitetura que se conecta com segurança aos seus dados, aprende o seu negócio, verifica a própria precisão e devolve respostas em que você pode confiar para agir. É a mesma razão pela qual ferramentas como Cursor ou Harvey são valiosas sem construir seus próprios modelos. E roda dentro da sua própria nuvem, sobre os seus dados: algo que um chatbot público não pode fazer."
+        },
+        {
+          "question": "Como vocês garantem a precisão?",
+          "answer": "A precisão é projetada, não presumida. O agente trabalha sobre dados governados e limpos, não sobre a web aberta, valida as próprias saídas e mostra o trabalho: a consulta, a fonte e a lógica por trás de cada resposta. Quando um número é um benchmark e não o seu dado, ele deixa claro."
+        },
+        {
+          "question": "Vocês se conectam a SAP, Salesforce ou outros sistemas?",
+          "answer": "Sim. A Nivii se conecta aos sistemas que você já usa — SAP, Salesforce, data warehouses, planilhas e mais — e trabalha com seus dados onde eles estão, dentro da sua própria nuvem. Fontes desconectadas são o ponto de partida, não um obstáculo."
+        },
+        {
+          "question": "Nossos dados saem em algum momento do nosso ambiente?",
+          "answer": "Não. A Nivii roda dentro da sua própria nuvem e seus dados ficam dentro do seu perímetro. A única chamada de saída é para o provedor do modelo, e até isso pode ser eliminado com modelos in-cloud como Bedrock, Azure OpenAI, Vertex AI ou SAP AI Foundry."
+        },
+        {
+          "question": "E se nossos dados não estiverem limpos?",
+          "answer": "Os dados de toda empresa estão bagunçados: esse é o nosso ponto de partida, não um obstáculo. Agentes dedicados de limpeza identificam primeiro suas fontes mais confiáveis, assim você tem respostas confiáveis em semanas enquanto a qualidade do dado segue melhorando por baixo."
+        },
+        {
+          "question": "Quanto tempo até vermos valor?",
+          "answer": "Cerca de 12 semanas até um piloto ao vivo sobre seus dados reais, e ele funciona perto de 95% como o sistema em produção. De lá você está em produção na sua própria nuvem no mês 4, e no mês 12 o seu time opera o agente por conta própria. O piloto não é uma prova de conceito: é o produto real, já quase pronto."
+        },
+        {
+          "question": "Com o que nos comprometemos para o piloto?",
+          "answer": "Com muito pouco. O piloto é feito a custo e sobre um extrato somente leitura dos seus dados, na nuvem da Nivii, para que você comprove o valor antes de assinar nada. Nossa regra é simples: sem ROI, não há contrato."
+        },
+        {
+          "question": "O que o nosso time de TI precisa para sustentar isso?",
+          "answer": "Durante o piloto, nada além do extrato somente leitura. Em produção o agente roda na sua nuvem com o seu próprio SSO e suas políticas de acesso; seu time se treina em paralelo durante todo o processo, então a operação fica dentro de casa e não depende de nós."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Traga uma pergunta de negócio que hoje você <accent>não consegue responder a tempo</accent>.",
+      "description": "Em uma sessão de trabalho de 30 minutos mostramos o que o agente faz com ela, sobre os seus dados e dentro do seu ambiente.",
+      "button": "Solicitar uma demo",
+      "bridge": "Sua operação é menor e não precisa de infraestrutura própria? O Beacon resolve o mesmo a partir da nuvem da Nivii, com um piloto gratuito.",
+      "bridgeLink": "Ver Nivii Beacon"
+    }
+  },
   "careers": {
     "title": "Junte-se",
     "titleHighlight": "ao nosso time",
