@@ -269,6 +269,50 @@
           }
         },
         "recommendation": "Revisá la lista del núcleo húmedo antes del próximo pedido de distribuidores: esos tres herbicidas concentran $2.140M de facturación de campaña y cada punto de participación recuperado vale unos $67M."
+      },
+      {
+        "id": "fuga-margen",
+        "question": "¿Dónde se me está yendo el margen este mes?",
+        "queries": [
+          {
+            "question": "Margen por categoría y descuentos autorizados en caja, últimos 30 días",
+            "rows": 86,
+            "seconds": 6.4
+          }
+        ],
+        "answer": {
+          "title": "Fuga de margen, últimos 30 días",
+          "lead": "El 71% de la caída está en dos categorías, y casi toda en descuentos autorizados en el mostrador.",
+          "table": {
+            "columns": [
+              "Categoría",
+              "Margen",
+              "Var. mes",
+              "Descuento prom."
+            ],
+            "rows": [
+              [
+                "Bebidas",
+                "22,4%",
+                "−4,1 pp",
+                "11,8%"
+              ],
+              [
+                "Limpieza",
+                "28,9%",
+                "−2,6 pp",
+                "7,4%"
+              ],
+              [
+                "Almacén",
+                "31,5%",
+                "−0,3 pp",
+                "2,1%"
+              ]
+            ]
+          }
+        },
+        "recommendation": "Poné un tope de descuento en caja para Bebidas y Limpieza: son $4,3M de margen perdido en el mes y el 84% de los casos superó el 10% sin autorización de un supervisor."
       }
     ],
     "ready": "Respuesta lista"
@@ -351,6 +395,14 @@
           "description": "Lo que la gente pedía no coincidía con lo que había disponible. Se perdían ventas que no dejaban rastro en ningún reporte."
         }
       ]
+    },
+    "beacon": {
+      "eyebrow": "Nivii Beacon",
+      "title": "Cada mes se te escapa <accent>margen</accent>. Beacon lo encuentra.",
+      "description": "Corre en la nube de Nivii, así que no necesitás servidores ni equipo propio. Le entregás los datos como están —planillas, tu sistema de gestión, el punto de venta— y él los ordena, los cruza y te responde en lenguaje simple.",
+      "cta": "Reservá tu piloto gratuito",
+      "secondary": "Ver Beacon",
+      "note": "Sin costo. Sin tarjeta. Con tus propios datos."
     },
     "faq": {
       "title": "Preguntas Frecuentes",

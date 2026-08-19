@@ -269,6 +269,50 @@
           }
         },
         "recommendation": "Revisit the core region price list before the next distributor order: those three herbicides hold $2,140M of season revenue and every point of share recovered is worth about $67M."
+      },
+      {
+        "id": "fuga-margen",
+        "question": "Where is my margin going this month?",
+        "queries": [
+          {
+            "question": "Margin by category and discounts approved at the register, last 30 days",
+            "rows": 86,
+            "seconds": 6.4
+          }
+        ],
+        "answer": {
+          "title": "Margin leak, last 30 days",
+          "lead": "71% of the drop sits in two categories, and almost all of it in discounts approved at the counter.",
+          "table": {
+            "columns": [
+              "Category",
+              "Margin",
+              "Month change",
+              "Avg. discount"
+            ],
+            "rows": [
+              [
+                "Beverages",
+                "22.4%",
+                "−4.1 pp",
+                "11.8%"
+              ],
+              [
+                "Cleaning",
+                "28.9%",
+                "−2.6 pp",
+                "7.4%"
+              ],
+              [
+                "Grocery",
+                "31.5%",
+                "−0.3 pp",
+                "2.1%"
+              ]
+            ]
+          }
+        },
+        "recommendation": "Cap register discounts on Beverages and Cleaning: that's $4.3M of margin lost this month, and 84% of the cases went over 10% without a supervisor signing off."
       }
     ],
     "ready": "Answer ready"
@@ -351,6 +395,14 @@
           "description": "What people asked for didn't match what was on hand. Sales were lost without leaving a trace in any report."
         }
       ]
+    },
+    "beacon": {
+      "eyebrow": "Nivii Beacon",
+      "title": "Every month you're leaking <accent>margin</accent>. Beacon finds it.",
+      "description": "It runs in Nivii's cloud, so you need no servers and no team of your own. You hand over the data as it is — spreadsheets, your ERP, the point of sale — and it cleans it, joins it and answers in plain language.",
+      "cta": "Book your free pilot",
+      "secondary": "See Beacon",
+      "note": "No cost. No card. On your own data."
     },
     "faq": {
       "title": "Frequently Asked Questions",

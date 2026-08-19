@@ -269,6 +269,50 @@
           }
         },
         "recommendation": "Revise a tabela de preços da região central antes do próximo pedido dos distribuidores: esses três herbicidas concentram $2.140M de faturamento de safra e cada ponto de participação recuperado vale cerca de $67M."
+      },
+      {
+        "id": "fuga-margen",
+        "question": "Para onde está indo a minha margem este mês?",
+        "queries": [
+          {
+            "question": "Margem por categoria e descontos autorizados no caixa, últimos 30 dias",
+            "rows": 86,
+            "seconds": 6.4
+          }
+        ],
+        "answer": {
+          "title": "Vazamento de margem, últimos 30 dias",
+          "lead": "71% da queda está em duas categorias, e quase tudo em descontos autorizados no balcão.",
+          "table": {
+            "columns": [
+              "Categoria",
+              "Margem",
+              "Var. mês",
+              "Desconto méd."
+            ],
+            "rows": [
+              [
+                "Bebidas",
+                "22,4%",
+                "−4,1 pp",
+                "11,8%"
+              ],
+              [
+                "Limpeza",
+                "28,9%",
+                "−2,6 pp",
+                "7,4%"
+              ],
+              [
+                "Mercearia",
+                "31,5%",
+                "−0,3 pp",
+                "2,1%"
+              ]
+            ]
+          }
+        },
+        "recommendation": "Coloque um teto de desconto no caixa para Bebidas e Limpeza: são $4,3M de margem perdida no mês, e 84% dos casos passaram de 10% sem aprovação de um supervisor."
       }
     ],
     "ready": "Resposta pronta"
@@ -351,6 +395,14 @@
           "description": "O que as pessoas pediam não batia com o que havia disponível. Perdiam-se vendas sem deixar rastro em nenhum relatório."
         }
       ]
+    },
+    "beacon": {
+      "eyebrow": "Nivii Beacon",
+      "title": "Todo mês escapa <accent>margem</accent>. O Beacon encontra.",
+      "description": "Roda na nuvem da Nivii, então você não precisa de servidores nem de equipe própria. Você entrega os dados como estão — planilhas, seu ERP, o ponto de venda — e ele organiza, cruza e responde em linguagem simples.",
+      "cta": "Reserve seu piloto gratuito",
+      "secondary": "Ver Beacon",
+      "note": "Sem custo. Sem cartão. Com seus próprios dados."
     },
     "faq": {
       "title": "Perguntas frequentes",
