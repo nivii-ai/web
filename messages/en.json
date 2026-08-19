@@ -123,6 +123,10 @@
       "description": "Nivii is the AI Agent that securely connects to your data, understands your business, and responds with the trustworthy analysis you need to take action immediately.",
       "seeUseCases": "See Use Cases"
     },
+    "clients": {
+      "title": "Companies that trust us",
+      "logoPending": "Logo pending"
+    },
     "product": {
       "title": "Analysis, not just dashboards",
       "description": "Your team needs actionable insights, not more dashboards to interpret. Nivii's Generative AI goes beyond visualization to provide clear, trustworthy and accurate analysis so you can make confident decisions.",

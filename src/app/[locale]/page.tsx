@@ -1,4 +1,5 @@
 import { Careers } from "@/components/home/careers";
+import { Clients } from "@/components/home/clients";
 import { Faq } from "@/components/home/faq";
 import { Hero } from "@/components/home/hero";
 import { Mission } from "@/components/home/mission";
@@ -11,6 +12,7 @@ export default function Home() {
     <div className="min-h-screen">
       <main>
         <Hero />
+        <Clients />
         <Product />
         <UseCases />
         <Faq />

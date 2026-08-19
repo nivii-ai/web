@@ -123,6 +123,10 @@
       "description": "Nivii é o Agente de IA que se conecta de forma segura aos seus dados, entende o seu negócio e responde com a análise confiável que você precisa para agir imediatamente.",
       "seeUseCases": "Ver Casos de Uso"
     },
+    "clients": {
+      "title": "Empresas que confiam em nós",
+      "logoPending": "Logo pendente"
+    },
     "product": {
       "title": "Análise, não apenas dashboards",
       "description": "Sua equipe precisa de insights acionáveis, não de mais dashboards para interpretar. A IA Generativa da Nivii vai além da visualização para fornecer análises claras, confiáveis e precisas para que você possa tomar decisões com confiança.",
