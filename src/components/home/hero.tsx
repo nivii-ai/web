@@ -17,7 +17,7 @@ export async function Hero() {
         <div>
           <h1 className="text-display-xl">
             {t("title")}
-            <span className="block text-brand-green">{t("subtitle")}</span>
+            <span className="block text-brand-green italic">{t("subtitle")}</span>
           </h1>
           <p className="mt-6 max-w-xl text-body-l text-ink-muted">
             {t("description")}
