@@ -876,34 +876,28 @@
       "description": "The questions change with the operation, but the pattern repeats: the data already exists, scattered, and the decision cannot wait for the next report.",
       "items": [
         {
-          "sector": "Steel & metals",
           "title": "Industrial maintenance",
           "description": "It reads maintenance and sensor data to flag at-risk equipment and preventive-maintenance gaps before they turn into unplanned downtime."
         },
         {
-          "sector": "Agriculture & agtech",
           "title": "Commercial effectiveness",
           "description": "It turns scattered commercial data into next-best-action guidance reps can use in the field, with the right offer for each customer."
         },
         {
-          "sector": "Oil & gas and industrial",
           "title": "Workforce & HR",
           "description": "It surfaces the signals hidden in workforce data while there is still time to act, before a key resignation lands."
         },
         {
-          "sector": "Electronics & manufacturing",
           "title": "Supply chain",
           "description": "It forecasts demand and stock with the data you already have, turning fragmented information into forecasts planners can trust."
         },
         {
-          "sector": "CPG",
           "title": "Distribution & sell-through",
           "description": "It connects distribution and sell-through data into answers you can act on today: what is moving, where and why."
         },
         {
-          "sector": "Energy",
           "title": "Energy operations",
-          "description": "A vertical under development with operators across the region. Write to us if you want to know what we are building."
+          "description": "A vertical under development. Write to us if you want to know what we are building."
         }
       ]
     },

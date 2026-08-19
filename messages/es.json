@@ -876,34 +876,28 @@
       "description": "Las preguntas que el agente resuelve cambian según la operación, pero el patrón se repite: el dato ya existe, disperso, y la decisión no puede esperar al próximo reporte.",
       "items": [
         {
-          "sector": "Acero y metales",
           "title": "Mantenimiento industrial",
           "description": "Lee datos de mantenimiento y de sensores para marcar equipos en riesgo y brechas de mantenimiento preventivo antes de que terminen en una parada no planificada."
         },
         {
-          "sector": "Agro y agtech",
           "title": "Efectividad comercial",
           "description": "Convierte datos comerciales dispersos en recomendaciones de próxima mejor acción que el vendedor usa en el campo, con la oferta correcta para cada cliente."
         },
         {
-          "sector": "Oil & Gas e industrial",
           "title": "Gente y RR.HH.",
           "description": "Revela las señales escondidas en los datos de tu gente mientras todavía se puede actuar, antes de que llegue una renuncia clave."
         },
         {
-          "sector": "Electrónica y manufactura",
           "title": "Cadena de suministro",
           "description": "Proyecta demanda y stock con los datos que ya tenés, convirtiendo información fragmentada en pronósticos en los que los planificadores pueden confiar."
         },
         {
-          "sector": "CPG",
           "title": "Distribución y sell-through",
           "description": "Conecta datos de distribución y sell-through en respuestas accionables hoy: qué se mueve, dónde y por qué."
         },
         {
-          "sector": "Energía",
           "title": "Operaciones de energía",
-          "description": "Un vertical en desarrollo junto a operadores de la región. Escribinos si querés saber en qué estamos trabajando."
+          "description": "Un vertical en desarrollo. Escribinos si querés saber en qué estamos trabajando."
         }
       ]
     },

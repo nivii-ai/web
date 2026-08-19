@@ -3,7 +3,7 @@ import { Reveal } from "@/components/ui/reveal";
 import { cn } from "@/lib/utils";
 import { SectionHeading } from "@/components/ui/section-heading";
 
-type UseCase = { sector: string; title: string; description: string };
+type UseCase = { title: string; description: string };
 
 export async function UseCases() {
   const t = await getTranslations("enterprise.useCases");
@@ -35,12 +35,9 @@ export async function UseCases() {
                   : "border border-panel-hairline",
               )}
             >
-              <p className="text-eyebrow font-medium text-panel-ink/60 uppercase">
-                {item.sector}
-              </p>
               <h3
                 className={cn(
-                  "mt-5 text-panel-ink",
+                  "text-panel-ink",
                   i === 0 ? "text-display-m" : "text-heading",
                 )}
               >

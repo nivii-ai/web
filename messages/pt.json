@@ -876,34 +876,28 @@
       "description": "As perguntas mudam conforme a operação, mas o padrão se repete: o dado já existe, disperso, e a decisão não pode esperar o próximo relatório.",
       "items": [
         {
-          "sector": "Aço e metais",
           "title": "Manutenção industrial",
           "description": "Lê dados de manutenção e de sensores para marcar equipamentos em risco e lacunas de manutenção preventiva antes que virem uma parada não planejada."
         },
         {
-          "sector": "Agro e agtech",
           "title": "Efetividade comercial",
           "description": "Transforma dados comerciais dispersos em recomendações de próxima melhor ação que o vendedor usa em campo, com a oferta certa para cada cliente."
         },
         {
-          "sector": "Óleo e gás e indústria",
           "title": "Pessoas e RH",
           "description": "Revela os sinais escondidos nos dados do seu time enquanto ainda dá para agir, antes que chegue um pedido de demissão importante."
         },
         {
-          "sector": "Eletrônica e manufatura",
           "title": "Cadeia de suprimentos",
           "description": "Projeta demanda e estoque com os dados que você já tem, transformando informação fragmentada em previsões em que os planejadores confiam."
         },
         {
-          "sector": "CPG",
           "title": "Distribuição e sell-through",
           "description": "Conecta dados de distribuição e sell-through em respostas acionáveis hoje: o que gira, onde e por quê."
         },
         {
-          "sector": "Energia",
           "title": "Operações de energia",
-          "description": "Um vertical em desenvolvimento junto a operadores da região. Escreva para nós se quiser saber no que estamos trabalhando."
+          "description": "Um vertical em desenvolvimento. Escreva para nós se quiser saber no que estamos trabalhando."
         }
       ]
     },
