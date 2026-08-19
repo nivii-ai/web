@@ -39,8 +39,8 @@ export async function Examples() {
               order={i + 1}
               className={cn(
                 "flex flex-col rounded-bezel p-8",
-                WIDE.has(i) && "lg:col-span-2 lg:p-12",
-                i === 0 && "lg:justify-center",
+                WIDE.has(i) && "lg:col-span-2",
+                i === 0 && "lg:justify-center lg:p-12",
                 i === 0
                   ? "bg-brand-green-tint"
                   : "border border-hairline"
