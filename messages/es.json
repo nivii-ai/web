@@ -320,6 +320,59 @@
           }
         },
         "recommendation": "Poné un tope de descuento en caja para Bebidas y Limpieza: son $4,3M de margen perdido en el mes y el 84% de los casos superó el 10% sin autorización de un supervisor."
+      },
+      {
+        "id": "stock-inmovilizado",
+        "question": "¿Cuánto capital tengo parado en stock?",
+        "queries": [
+          {
+            "question": "Inventario valorizado por referencia y última venta",
+            "rows": 8940,
+            "seconds": 15.3
+          },
+          {
+            "question": "Reposiciones vs. ventas por categoría, últimos 6 meses",
+            "rows": 3120,
+            "seconds": 9.7
+          }
+        ],
+        "answer": {
+          "title": "Stock sin rotación, corte de febrero",
+          "lead": "El 54% del inventario valorizado no tuvo ventas en los últimos seis meses: $128M inmovilizados.",
+          "chart": {
+            "title": "Capital inmovilizado, por mes",
+            "unit": "M",
+            "points": [
+              {
+                "label": "Sep",
+                "value": 96.4
+              },
+              {
+                "label": "Oct",
+                "value": 101.2
+              },
+              {
+                "label": "Nov",
+                "value": 108.7
+              },
+              {
+                "label": "Dic",
+                "value": 104.9
+              },
+              {
+                "label": "Ene",
+                "value": 119.5
+              },
+              {
+                "label": "Feb",
+                "value": 128.3,
+                "display": "$128,3M"
+              }
+            ]
+          },
+          "conclusion": "Casi todo el crecimiento del período viene de tres categorías que se siguieron reponiendo con la misma frecuencia que las que sí rotan."
+        },
+        "recommendation": "Arrancá la liquidación por antigüedad con las referencias de más de doce meses: son $71M a precio de costo y ocupan el 38% del depósito."
       }
     ],
     "ready": "Respuesta lista"
@@ -630,7 +683,8 @@
           "title": "Reunión 2: revisión de respuestas",
           "description": "Una hora. Te mostramos, con tus propios datos, las respuestas reales que Beacon puede darle a tu equipo todos los días. Ahí decidís si avanzás."
         }
-      ]
+      ],
+      "consoleLabel": "Así se ve la revisión de la reunión 2, con datos reales"
     },
     "audience": {
       "eyebrow": "Para quién es",

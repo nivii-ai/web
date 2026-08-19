@@ -320,6 +320,59 @@
           }
         },
         "recommendation": "Cap register discounts on Beverages and Cleaning: that's $4.3M of margin lost this month, and 84% of the cases went over 10% without a supervisor signing off."
+      },
+      {
+        "id": "stock-inmovilizado",
+        "question": "How much capital is sitting still in stock?",
+        "queries": [
+          {
+            "question": "Valued inventory by SKU and last sale",
+            "rows": 8940,
+            "seconds": 15.3
+          },
+          {
+            "question": "Restocking vs. sales by category, last 6 months",
+            "rows": 3120,
+            "seconds": 9.7
+          }
+        ],
+        "answer": {
+          "title": "Non-moving stock, February cut",
+          "lead": "54% of valued inventory had no sales in the last six months: $128M immobilized.",
+          "chart": {
+            "title": "Immobilized capital, by month",
+            "unit": "M",
+            "points": [
+              {
+                "label": "Sep",
+                "value": 96.4
+              },
+              {
+                "label": "Oct",
+                "value": 101.2
+              },
+              {
+                "label": "Nov",
+                "value": 108.7
+              },
+              {
+                "label": "Dec",
+                "value": 104.9
+              },
+              {
+                "label": "Jan",
+                "value": 119.5
+              },
+              {
+                "label": "Feb",
+                "value": 128.3,
+                "display": "$128.3M"
+              }
+            ]
+          },
+          "conclusion": "Almost all of the period's growth comes from three categories that kept being restocked at the same rate as the ones that do turn over."
+        },
+        "recommendation": "Start the clearance by stock age with SKUs older than twelve months: that is $71M at cost and 38% of the warehouse."
       }
     ],
     "ready": "Answer ready"
@@ -630,7 +683,8 @@
           "title": "Meeting 2: reviewing the answers",
           "description": "One hour. We show you, on your own data, the real answers Beacon can give your team every day. That is where you decide whether to move forward."
         }
-      ]
+      ],
+      "consoleLabel": "This is what the meeting 2 review looks like, on real data"
     },
     "audience": {
       "eyebrow": "Who it is for",

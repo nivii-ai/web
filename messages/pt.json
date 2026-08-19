@@ -320,6 +320,59 @@
           }
         },
         "recommendation": "Coloque um teto de desconto no caixa para Bebidas e Limpeza: são $4,3M de margem perdida no mês, e 84% dos casos passaram de 10% sem aprovação de um supervisor."
+      },
+      {
+        "id": "stock-inmovilizado",
+        "question": "Quanto capital está parado em estoque?",
+        "queries": [
+          {
+            "question": "Estoque valorizado por referência e última venda",
+            "rows": 8940,
+            "seconds": 15.3
+          },
+          {
+            "question": "Reposições vs. vendas por categoria, últimos 6 meses",
+            "rows": 3120,
+            "seconds": 9.7
+          }
+        ],
+        "answer": {
+          "title": "Estoque sem giro, corte de fevereiro",
+          "lead": "54% do estoque valorizado não teve vendas nos últimos seis meses: $128M imobilizados.",
+          "chart": {
+            "title": "Capital imobilizado, por mês",
+            "unit": "M",
+            "points": [
+              {
+                "label": "Set",
+                "value": 96.4
+              },
+              {
+                "label": "Out",
+                "value": 101.2
+              },
+              {
+                "label": "Nov",
+                "value": 108.7
+              },
+              {
+                "label": "Dez",
+                "value": 104.9
+              },
+              {
+                "label": "Jan",
+                "value": 119.5
+              },
+              {
+                "label": "Fev",
+                "value": 128.3,
+                "display": "$128,3M"
+              }
+            ]
+          },
+          "conclusion": "Quase todo o crescimento do período vem de três categorias que seguiram sendo repostas na mesma frequência das que giram."
+        },
+        "recommendation": "Comece a liquidação por idade de estoque pelas referências com mais de doze meses: são $71M a preço de custo e ocupam 38% do depósito."
       }
     ],
     "ready": "Resposta pronta"
@@ -630,7 +683,8 @@
           "title": "Reunião 2: revisão das respostas",
           "description": "Uma hora. Mostramos, com seus próprios dados, as respostas reais que o Beacon pode dar ao seu time todos os dias. É aí que você decide se avança."
         }
-      ]
+      ],
+      "consoleLabel": "É assim que fica a revisão da reunião 2, com dados reais"
     },
     "audience": {
       "eyebrow": "Para quem é",
