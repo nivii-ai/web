@@ -1,75 +1,121 @@
-import { Button } from "@/components/ui/button";
+import type { Metadata } from "next";
+import { ArrowRight } from "lucide-react";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getMessages, getTranslations } from "next-intl/server";
+import { Reveal } from "@/components/ui/reveal";
 
-export default async function Career() {
+type Position = {
+  slug: string;
+  title: string;
+  location: string;
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("careers");
+  return {
+    title: `${t("title")} ${t("titleHighlight")}`,
+    description: t("description"),
+  };
+}
+
+export default async function Careers({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   const t = await getTranslations("careers");
   const messages = await getMessages();
-
-  const openPositions = messages?.careers?.positions?.openPositions || [];
-
-  const hasOpenPositions = openPositions.length > 0;
+  const positions = (messages.careers.positions.openPositions ??
+    []) as Position[];
 
   return (
-    <>
-      <section className="pb-20 pt-[152px] md:pb-32 md:pt-[200px]">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-foreground leading-tight">
+    <main>
+      <section className="px-6 pt-40 pb-24 lg:px-12">
+        <Reveal className="mx-auto max-w-7xl">
+          <h1 className="max-w-4xl text-display-xl text-ink">
             {t("title")}{" "}
-            <span className="text-brand-green">{t("titleHighlight")}</span>
+            <span className="text-brand-green italic">
+              {t("titleHighlight")}
+            </span>
           </h1>
-          <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-600">
+          <p className="mt-8 max-w-2xl text-body-l text-ink-muted">
             {t("description")}
           </p>
-        </div>
+        </Reveal>
       </section>
 
-      <section className="pt-20 pb-40 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              {t("openPositions")}
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              {t("openPositionsDescription")}
-            </p>
-          </div>
+      <section className="border-t border-hairline bg-surface-sunken px-6 py-24 lg:px-12 lg:py-32">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-24">
+          <p className="text-eyebrow font-medium text-ink-muted uppercase lg:sticky lg:top-32 lg:self-start">
+            {t("openPositions")}
+          </p>
 
-          <div className="max-w-2xl mx-auto">
-            {hasOpenPositions ? (
-              // eslint-disable-next-line @typescript-eslint/no-explicit-any
-              openPositions.map((position: any, index: number) => (
-                <div
-                  key={index}
-                  className="border border-gray-200 rounded-lg p-6 mb-6 bg-background shadow-sm flex flex-col"
-                >
-                  <h3 className="text-2xl font-semibold text-foreground mb-2">
-                    {position.title}
-                  </h3>
-                  <p className="text-gray-700 mb-4">{position.location}</p>
-                  <Link
-                    className="md:ms-auto"
-                    href={`/careers/${position.slug}`}
+          <div className="max-w-3xl">
+            <Reveal>
+              <p className="text-display-m text-ink">
+                {t("openPositionsDescription")}
+              </p>
+            </Reveal>
+
+            {positions.length > 0 ? (
+              <ul className="mt-14">
+                {positions.map((position, i) => (
+                  <Reveal
+                    as="li"
+                    key={position.slug}
+                    order={i + 1}
+                    className="border-t border-hairline last:border-b"
                   >
-                    <Button>{t("applyNow")}</Button>
-                  </Link>
-                </div>
-              ))
+                    <Link
+                      href={`/careers/${position.slug}`}
+                      className="group flex flex-wrap items-center justify-between gap-x-8 gap-y-2 py-7"
+                    >
+                      <span>
+                        <span className="block text-heading text-ink">
+                          {position.title}
+                        </span>
+                        <span className="mt-1 block text-body-s text-ink-muted">
+                          {position.location}
+                        </span>
+                      </span>
+                      <span className="inline-flex items-center gap-2 text-body-s font-semibold text-brand-green">
+                        {t("viewPosition")}
+                        <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+                      </span>
+                    </Link>
+                  </Reveal>
+                ))}
+              </ul>
             ) : (
-              <p className="w-full text-gray-500 text-center">
+              <p className="mt-14 border-t border-hairline pt-7 text-body-l text-ink-muted">
                 {t("noPositions")}
               </p>
             )}
-          </div>
 
-          <div className="mt-16 text-center max-w-xl mx-auto">
-            <p className="text-gray-700 mb-6">{t("generalApplication")}</p>
-            <Link href="mailto:careers@nivii.ai?subject=General Application">
-              <Button>{t("sendResumeLink")}</Button>
-            </Link>
+            <Reveal order={positions.length + 1} className="mt-16">
+              <p className="max-w-xl text-body-l text-ink-text">
+                {t("generalApplication")}
+              </p>
+              <a
+                href="mailto:careers@nivii.ai?subject=General Application"
+                className="group mt-6 inline-flex items-center gap-2 rounded-lg border border-hairline bg-background px-4 py-2 text-body-s font-semibold text-ink transition-all duration-100 hover:border-brand-green/30 active:scale-[0.97]"
+              >
+                {t("sendResumeLink")}
+                <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+              </a>
+            </Reveal>
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }

@@ -510,7 +510,12 @@
           "button": "Postularse Ahora"
         },
         "notFoundPositionTitle": "¡Ups! Puesto No Encontrado",
-        "notFoundPositionDescription": "El puesto que estás buscando no existe o ya ha sido cubierto. Por favor, revisa nuestros puestos abiertos para otras oportunidades."
+        "notFoundPositionDescription": "El puesto que estás buscando no existe o ya ha sido cubierto. Por favor, revisa nuestros puestos abiertos para otras oportunidades.",
+        "quickInfoLabels": {
+          "location": "Ubicación",
+          "experience": "Experiencia",
+          "department": "Área"
+        }
       },
       "openPositions": [
         {
@@ -561,7 +566,8 @@
           }
         }
       ]
-    }
+    },
+    "viewPosition": "Ver puesto"
   },
   "footer": {
     "description": "El analista que ordena tus datos y responde con la decisión, no con el gráfico.",

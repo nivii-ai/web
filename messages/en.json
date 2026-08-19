@@ -510,7 +510,12 @@
           "button": "Apply Now"
         },
         "notFoundPositionTitle": "Ooops! Position Not Found",
-        "notFoundPositionDescription": "The position you are looking for does not exist or has been filled. Please check our open positions for other opportunities."
+        "notFoundPositionDescription": "The position you are looking for does not exist or has been filled. Please check our open positions for other opportunities.",
+        "quickInfoLabels": {
+          "location": "Location",
+          "experience": "Experience",
+          "department": "Department"
+        }
       },
       "openPositions": [
         {
@@ -561,7 +566,8 @@
           }
         }
       ]
-    }
+    },
+    "viewPosition": "View role"
   },
   "footer": {
     "description": "The analyst that puts your data in order and answers with the decision, not the chart.",

@@ -510,7 +510,12 @@
           "button": "Candidatar-se Agora"
         },
         "notFoundPositionTitle": "Ops! Vaga Não Encontrada",
-        "notFoundPositionDescription": "A vaga que você procura não existe ou já foi preenchida. Confira nossas vagas abertas para outras oportunidades."
+        "notFoundPositionDescription": "A vaga que você procura não existe ou já foi preenchida. Confira nossas vagas abertas para outras oportunidades.",
+        "quickInfoLabels": {
+          "location": "Localização",
+          "experience": "Experiência",
+          "department": "Área"
+        }
       },
       "openPositions": [
         {
@@ -561,7 +566,8 @@
           }
         }
       ]
-    }
+    },
+    "viewPosition": "Ver vaga"
   },
   "footer": {
     "description": "O analista que organiza seus dados e responde com a decisão, não com o gráfico.",
