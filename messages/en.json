@@ -471,10 +471,10 @@
         }
       ]
     },
-    "careers": {
-      "title": "Join Our Team",
-      "description": "We're on a mission to empower businesses with actionable insights. If you're passionate about data, AI, and innovation, we'd love to hear from you.",
-      "applyNow": "View open positions"
+    "cta": {
+      "title": "See Nivii answer a real question. <accent>On your own data.</accent>",
+      "description": "Bring one business question you can't get answered fast enough today. In a 30-minute working session we'll show you what the agent does with it, on your data and inside your environment.",
+      "secondary": "CIO, CTO or CDO? See the architecture and security overview"
     }
   },
   "careers": {

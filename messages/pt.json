@@ -471,10 +471,10 @@
         }
       ]
     },
-    "careers": {
-      "title": "Junte-se à nossa equipe",
-      "description": "Estamos em uma missão para capacitar empresas com insights acionáveis. Se você é apaixonado por dados, IA e inovação, adoraríamos ouvir de você.",
-      "applyNow": "Vagas Abertas"
+    "cta": {
+      "title": "Veja a Nivii responder uma pergunta real. <accent>Sobre os seus próprios dados.</accent>",
+      "description": "Traga uma pergunta de negócio que hoje você não consegue responder a tempo. Em uma sessão de 30 minutos mostramos o que o agente faz com ela, sobre os seus dados e dentro do seu ambiente.",
+      "secondary": "CIO, CTO ou CDO? Veja a arquitetura e a segurança"
     }
   },
   "careers": {

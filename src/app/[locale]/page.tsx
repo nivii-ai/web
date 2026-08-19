@@ -1,6 +1,6 @@
 import { BeaconBanner } from "@/components/home/beacon-banner";
-import { Careers } from "@/components/home/careers";
 import { Clients } from "@/components/home/clients";
+import { FinalCta } from "@/components/home/final-cta";
 import { EnterpriseBanner } from "@/components/home/enterprise-banner";
 import { Hero } from "@/components/home/hero";
 import { HowItWorks } from "@/components/home/how-it-works";
@@ -20,7 +20,7 @@ export default function Home() {
         <BeaconBanner />
         <Mission />
         <Team />
-        <Careers />
+        <FinalCta />
       </main>
     </div>
   );

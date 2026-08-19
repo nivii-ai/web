@@ -471,10 +471,10 @@
         }
       ]
     },
-    "careers": {
-      "title": "Únete a nuestro equipo",
-      "description": "Estamos en una misión para empoderar a las empresas con información procesable. Si te apasionan los datos, la IA y la innovación, nos encantaría saber de ti.",
-      "applyNow": "Posiciones Abiertas"
+    "cta": {
+      "title": "Mirá a Nivii responder una pregunta real. <accent>Sobre tus propios datos.</accent>",
+      "description": "Traé una pregunta de negocio que hoy no logres responder a tiempo. En una sesión de 30 minutos te mostramos qué hace el agente con ella, sobre tus datos y dentro de tu entorno.",
+      "secondary": "¿CIO, CTO o CDO? Mirá la arquitectura y la seguridad"
     }
   },
   "careers": {
