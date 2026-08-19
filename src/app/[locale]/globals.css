@@ -241,6 +241,12 @@ body {
   color: var(--color-ink-text);
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-brand-green);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 h1,
 h2,
 h3 {

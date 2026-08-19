@@ -108,7 +108,7 @@ export default async function LocaleLayout({
           <MotionProvider>
             <Header locale={locale} />
             {children}
-            <Footer />
+            <Footer locale={locale} />
           </MotionProvider>
         </NextIntlClientProvider>
       </body>

@@ -20,7 +20,7 @@ export async function Header({ locale }: { locale: string }) {
       <div className="mx-auto flex max-w-7xl flex-wrap items-center">
         <Link
           href="/#home"
-          className="mr-auto flex items-center transition-transform duration-100 active:scale-[0.97]"
+          className="relative z-50 mr-auto flex items-center transition-transform duration-100 active:scale-[0.97]"
         >
           <Image
             src="/logo.png"
@@ -50,7 +50,7 @@ export async function Header({ locale }: { locale: string }) {
           className="mx-4 hidden h-4 w-px bg-hairline lg:block"
         />
 
-        <div className="ml-auto flex items-center gap-3 lg:ml-0">
+        <div className="relative z-50 ml-auto flex items-center gap-3 lg:ml-0">
           <LanguageSwitch locale={locale} />
           <div className="hidden lg:block">
             <DemoButton />
