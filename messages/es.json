@@ -205,28 +205,28 @@
       "logoPending": "Logo pendiente"
     },
     "howItWorks": {
-      "title": "Una pregunta. Una decisión.",
-      "description": "Sin SQL, sin tickets, sin esperar a que alguien tenga tiempo. Estos son los cinco momentos que separan lo que necesitás saber de lo que vas a hacer.",
+      "title": "Preguntá. Y ya está.",
+      "description": "Sin esperar el reporte. Sin interpretar el gráfico. Sin dudar del número.",
       "steps": [
         {
-          "title": "Preguntá en tu idioma",
-          "description": "Como se lo preguntarías a alguien de tu equipo. Sin SQL, sin tickets, sin esperar al próximo sprint."
+          "title": "Preguntá.",
+          "description": "En tu idioma, como se lo dirías a alguien de tu equipo."
         },
         {
-          "title": "Trabaja sobre tus datos",
-          "description": "Cruza tus sistemas, aprende qué significa “margen” en tu empresa y hace el trabajo que nadie tiene tiempo de hacer."
+          "title": "Busca.",
+          "description": "En todos tus sistemas, aunque no se hablen entre ellos."
         },
         {
-          "title": "Responde, y muestra cómo",
-          "description": "El número, y de dónde salió. Podés discutir la respuesta porque podés ver el razonamiento."
+          "title": "Responde.",
+          "description": "Con el número y de dónde salió."
         },
         {
-          "title": "Te dice qué hacer",
-          "description": "No un gráfico para interpretar: una acción concreta, sobre qué producto, y cuánta plata hay en juego."
+          "title": "Recomienda.",
+          "description": "Qué hacer, sobre qué, y cuánta plata hay en juego."
         },
         {
-          "title": "Y la conversación sigue",
-          "description": "Repreguntás y no empieza de cero. Como alguien que de verdad conoce tu negocio."
+          "title": "Seguí.",
+          "description": "La conversación no se corta en la primera respuesta."
         }
       ]
     },

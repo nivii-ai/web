@@ -205,28 +205,28 @@
       "logoPending": "Logo pending"
     },
     "howItWorks": {
-      "title": "One question. One decision.",
-      "description": "No SQL, no tickets, no waiting for someone to free up. These are the five moments between what you need to know and what you'll do about it.",
+      "title": "Just ask. That's it.",
+      "description": "No waiting for the report. No interpreting the chart. No second-guessing the number.",
       "steps": [
         {
-          "title": "Ask in your own words",
-          "description": "The way you'd ask someone on your team. No SQL, no tickets, no waiting for the next sprint."
+          "title": "Ask.",
+          "description": "In your own words, the way you'd ask someone on your team."
         },
         {
-          "title": "It works on your data",
-          "description": "It joins your systems, learns what “margin” means at your company, and does the work nobody has time for."
+          "title": "It searches.",
+          "description": "Across every system you run, even the ones that don't talk to each other."
         },
         {
-          "title": "It answers, and shows how",
-          "description": "The number, and where it came from. You can argue with the answer because you can see the reasoning."
+          "title": "It answers.",
+          "description": "With the number and where it came from."
         },
         {
-          "title": "It tells you what to do",
-          "description": "Not a chart to interpret: a specific action, on a specific product, with the money at stake."
+          "title": "It recommends.",
+          "description": "What to do, on what, and how much money is at stake."
         },
         {
-          "title": "And the conversation continues",
-          "description": "Ask again and it doesn't start over. Like someone who actually knows your business."
+          "title": "Keep going.",
+          "description": "The conversation doesn't end at the first answer."
         }
       ]
     },

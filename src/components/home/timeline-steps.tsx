@@ -9,6 +9,7 @@ import {
 } from "motion/react";
 import { ConsoleShell } from "@/components/console/console-shell";
 import { ScrollBinder } from "@/components/scroll-binder";
+import { ParticleField } from "@/components/console/particle-field";
 import { spring } from "@/lib/motion";
 
 type Step = { title: string; description: string };
@@ -28,8 +29,15 @@ export function TimelineSteps({
   // La consola arranca desmontada para que lo primero que se anime sea la pregunta.
   const [started, setStarted] = useState(false);
   const prefersReducedMotion = useReducedMotion();
+  const [moving, setMoving] = useState(false);
   const pane = useRef<HTMLDivElement>(null);
   const mobilePane = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setMoving(true);
+    const id = setTimeout(() => setMoving(false), 620);
+    return () => clearTimeout(id);
+  }, [active]);
 
   // Al llegar una pieza nueva la conversación se sigue sola, como un chat.
   useEffect(() => {
@@ -76,7 +84,12 @@ export function TimelineSteps({
       {/* Columna absoluta: le da al sticky un rango que termina con la sección,
           así la consola nunca se pasa del contenedor. */}
       <div className="pointer-events-none absolute inset-0 z-10 hidden lg:block">
-        <div className="sticky top-[calc(50vh-16rem)]">
+        <div className="sticky top-[calc(50vh-16rem)] isolate">
+          <ParticleField
+            count={80}
+            drift={moving ? (consoleOnRight ? 1 : -1) : 0}
+            className="pointer-events-none absolute -inset-x-24 -inset-y-20 -z-10 h-[calc(100%+10rem)] w-[calc(100%+12rem)] [mask-image:radial-gradient(closest-side,black_60%,transparent)]"
+          />
           <motion.div
             animate={{ x: consoleOnRight ? "117%" : "0%" }}
             transition={prefersReducedMotion ? { duration: 0 } : spring}

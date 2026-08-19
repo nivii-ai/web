@@ -205,28 +205,28 @@
       "logoPending": "Logo pendente"
     },
     "howItWorks": {
-      "title": "Uma pergunta. Uma decisão.",
-      "description": "Sem SQL, sem chamados, sem esperar alguém ter tempo. Estes são os cinco momentos entre o que você precisa saber e o que vai fazer.",
+      "title": "Pergunte. E pronto.",
+      "description": "Sem esperar o relatório. Sem interpretar o gráfico. Sem duvidar do número.",
       "steps": [
         {
-          "title": "Pergunte com suas palavras",
-          "description": "Do jeito que você perguntaria a alguém do seu time. Sem SQL, sem chamados, sem esperar a próxima sprint."
+          "title": "Pergunte.",
+          "description": "Com suas palavras, do jeito que perguntaria a alguém do seu time."
         },
         {
-          "title": "Trabalha sobre seus dados",
-          "description": "Cruza seus sistemas, aprende o que “margem” significa na sua empresa e faz o trabalho que ninguém tem tempo de fazer."
+          "title": "Ele busca.",
+          "description": "Em todos os seus sistemas, mesmo os que não conversam entre si."
         },
         {
-          "title": "Responde, e mostra como",
-          "description": "O número, e de onde saiu. Você pode discutir a resposta porque consegue ver o raciocínio."
+          "title": "Ele responde.",
+          "description": "Com o número e de onde ele saiu."
         },
         {
-          "title": "Diz o que fazer",
-          "description": "Não um gráfico para interpretar: uma ação concreta, sobre qual produto, e quanto dinheiro está em jogo."
+          "title": "Ele recomenda.",
+          "description": "O que fazer, sobre o quê, e quanto dinheiro está em jogo."
         },
         {
-          "title": "E a conversa continua",
-          "description": "Você repergunta e não recomeça do zero. Como alguém que realmente conhece seu negócio."
+          "title": "Continue.",
+          "description": "A conversa não termina na primeira resposta."
         }
       ]
     },

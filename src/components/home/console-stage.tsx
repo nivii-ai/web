@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Answer } from "@/components/console/answer";
 import { ConsoleShell } from "@/components/console/console-shell";
+import { ParticleField } from "@/components/console/particle-field";
 import { Recommendation } from "@/components/console/recommendation";
 import { QuestionBubble } from "@/components/console/question-bubble";
 import { StreamInfo } from "@/components/console/stream-info";
@@ -16,7 +17,8 @@ export async function ConsoleStage() {
   const answerAt = INFO_AT + scenario.queries.length * INFO_STEP;
 
   return (
-    <div className="min-w-0 lg:perspective-[1200px]">
+    <div className="relative isolate min-w-0 lg:perspective-[1200px]">
+      <ParticleField className="pointer-events-none absolute -inset-x-40 -inset-y-28 -z-10 h-[calc(100%+14rem)] w-[calc(100%+20rem)] [mask-image:radial-gradient(closest-side,black_55%,transparent)]" />
       <ConsoleShell className="lg:rotate-y-[-12deg] lg:shadow-tilt">
         <div
           className="fade-word"
