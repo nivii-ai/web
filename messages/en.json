@@ -302,7 +302,7 @@
         },
         {
           "title": "It recommends.",
-          "description": "What to do, on what, and how much money is at stake."
+          "description": "Not a chart to interpret: what to do, on what, and how much money is at stake."
         },
         {
           "title": "Keep going.",
@@ -316,18 +316,6 @@
       "description": "That's why Nivii runs inside your perimeter, learns what each definition means at your company, and puts your data in order before it answers. Nothing leaves your cloud, and nothing waits for the data to be perfect.",
       "cta": "See Enterprise",
       "cardLabel": "Inside your cloud"
-    },
-    "product": {
-      "title": "Analysis, not just dashboards",
-      "description": "Your team needs actionable insights, not more dashboards to interpret. Nivii's Generative AI goes beyond visualization to provide clear, trustworthy and accurate analysis so you can make confident decisions.",
-      "securelyConnected": "Securely Connected",
-      "securelyConnectedDescription": "Integrates seamlessly and securely with your existing data sources, maintaining the integrity and confidentiality of your information.",
-      "knowsYourBusiness": "Knows Your Business",
-      "knowsYourBusinessDescription": "Our AI is tailored to understand your specific KPIs and terminology, providing context-aware answers that are immediately relevant.",
-      "fromWeeksToMinutes": "From Weeks to Minutes",
-      "fromWeeksToMinutesDescription": "Empower your team to act on opportunities and address challenges with unprecedented speed. Get the insights you need in minutes, not weeks.",
-      "aiPoweredConversations": "AI-Powered Conversations",
-      "aiPoweredConversationsDescription": "A simple and intuitive interface makes it easy for any user to ask data questions and get quality answers they can trust."
     },
     "useCases": {
       "title": "Questions we've already <accent>answered</accent>.",

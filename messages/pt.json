@@ -302,7 +302,7 @@
         },
         {
           "title": "Ele recomenda.",
-          "description": "O que fazer, sobre o quê, e quanto dinheiro está em jogo."
+          "description": "Não um gráfico para interpretar: o que fazer, sobre o quê, e quanto dinheiro está em jogo."
         },
         {
           "title": "Continue.",
@@ -316,18 +316,6 @@
       "description": "Por isso a Nivii roda dentro do seu perímetro, aprende o que cada definição significa na sua empresa e organiza seus dados antes de responder. Nada sai da sua nuvem, e nada espera os dados ficarem perfeitos.",
       "cta": "Ver Enterprise",
       "cardLabel": "Dentro da sua nuvem"
-    },
-    "product": {
-      "title": "Análise, não apenas dashboards",
-      "description": "Sua equipe precisa de insights acionáveis, não de mais dashboards para interpretar. A IA Generativa da Nivii vai além da visualização para fornecer análises claras, confiáveis e precisas para que você possa tomar decisões com confiança.",
-      "securelyConnected": "Conexão Segura",
-      "securelyConnectedDescription": "Integra-se de forma transparente e segura com suas fontes de dados existentes, mantendo a integridade e a confidencialidade de suas informações.",
-      "knowsYourBusiness": "Conhece o seu Negócio",
-      "knowsYourBusinessDescription": "Nossa IA é adaptada para entender seus KPIs e terminologia específicos, fornecendo respostas com reconhecimento de contexto que são imediatamente relevantes.",
-      "fromWeeksToMinutes": "De Semanas a Minutos",
-      "fromWeeksToMinutesDescription": "Capacite sua equipe para agir sobre oportunidades e enfrentar desafios com uma velocidade sem precedentes. Obtenha os insights de que precisa em minutos, não em semanas.",
-      "aiPoweredConversations": "Conversas com IA",
-      "aiPoweredConversationsDescription": "Uma interface simples e intuitiva torna fácil para qualquer usuário fazer perguntas sobre dados e obter respostas de qualidade em que pode confiar."
     },
     "useCases": {
       "title": "Perguntas que já <accent>respondemos</accent>.",

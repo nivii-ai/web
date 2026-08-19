@@ -302,7 +302,7 @@
         },
         {
           "title": "Recomienda.",
-          "description": "Qué hacer, sobre qué, y cuánta plata hay en juego."
+          "description": "No un gráfico para interpretar: qué hacer, sobre qué, y cuánta plata hay en juego."
         },
         {
           "title": "Seguí.",
@@ -316,18 +316,6 @@
       "description": "Por eso Nivii corre dentro de tu perímetro, aprende qué significa cada definición en tu empresa y ordena tus datos antes de responder. Nada sale de tu nube, y nada espera a que los datos estén perfectos.",
       "cta": "Ver Enterprise",
       "cardLabel": "Dentro de tu nube"
-    },
-    "product": {
-      "title": "Análisis, no solo dashboards",
-      "description": "Tu equipo necesita información útil y procesable, no más dashboards que interpretar. La IA Generativa de Nivii va más allá de la visualización para proporcionar análisis claros, fiables y precisos para que puedas tomar decisiones con confianza.",
-      "securelyConnected": "Conexión Segura",
-      "securelyConnectedDescription": "Se integra de forma transparente y segura con tus fuentes de datos existentes, manteniendo la integridad y confidencialidad de tu información.",
-      "knowsYourBusiness": "Conoce tu Negocio",
-      "knowsYourBusinessDescription": "Nuestra IA está diseñada para entender tus KPIs y terminología específicos, proporcionando respuestas contextualizadas que son inmediatamente relevantes.",
-      "fromWeeksToMinutes": "De Semanas a Minutos",
-      "fromWeeksToMinutesDescription": "Capacita a tu equipo para actuar sobre oportunidades y abordar desafíos con una velocidad sin precedentes. Obtén la información que necesitas en minutos, no en semanas.",
-      "aiPoweredConversations": "Conversaciones con IA",
-      "aiPoweredConversationsDescription": "Una interfaz simple e intuitiva facilita que cualquier usuario haga preguntas sobre datos y obtenga respuestas de calidad en las que puede confiar."
     },
     "useCases": {
       "title": "Preguntas que ya <accent>respondimos</accent>.",
