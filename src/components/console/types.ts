@@ -26,4 +26,6 @@ export interface Scenario {
   queries: Query[];
   answer: Answer;
   recommendation: string;
+  /** La repregunta dentro de la misma conversación. */
+  nextTurn?: { question: string; answer: Answer };
 }

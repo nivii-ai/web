@@ -1,5 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Answer } from "@/components/console/answer";
+import { ConsoleShell } from "@/components/console/console-shell";
+import { Recommendation } from "@/components/console/recommendation";
 import { QuestionBubble } from "@/components/console/question-bubble";
 import { StreamInfo } from "@/components/console/stream-info";
 import type { Scenario } from "@/components/console/types";
@@ -15,34 +17,28 @@ export async function ConsoleStage() {
 
   return (
     <div className="min-w-0 lg:perspective-[1200px]">
-      <div className="rounded-bezel bg-surface-sunken p-1.5 shadow-ambient-lg ring-1 ring-hairline lg:rotate-y-[-12deg] lg:shadow-tilt">
-        <div className="flex min-h-[27rem] flex-col gap-4 rounded-core bg-background p-6">
-          <div
-            className="fade-word"
-            style={{ animationDelay: `${QUESTION_AT}s` }}
-          >
-            <QuestionBubble>{scenario.question}</QuestionBubble>
-          </div>
-
-          <div className="relative h-5">
-            {scenario.queries.map((query, i) => (
-              <StreamInfo
-                key={query.question}
-                text={query.question}
-                className="console-info absolute inset-x-0 top-0"
-                style={{ animationDelay: `${INFO_AT + i * INFO_STEP}s` }}
-              />
-            ))}
-          </div>
-
-          <Answer
-            answer={scenario.answer}
-            recommendation={scenario.recommendation}
-            delay={answerAt}
-            compact
-          />
+      <ConsoleShell className="lg:rotate-y-[-12deg] lg:shadow-tilt">
+        <div
+          className="fade-word"
+          style={{ animationDelay: `${QUESTION_AT}s` }}
+        >
+          <QuestionBubble>{scenario.question}</QuestionBubble>
         </div>
-      </div>
+
+        <div className="relative h-5">
+          {scenario.queries.map((query, i) => (
+            <StreamInfo
+              key={query.question}
+              text={query.question}
+              className="console-info absolute inset-x-0 top-0"
+              style={{ animationDelay: `${INFO_AT + i * INFO_STEP}s` }}
+            />
+          ))}
+        </div>
+
+        <Answer answer={scenario.answer} delay={answerAt} compact />
+        <Recommendation text={scenario.recommendation} delay={answerAt + 2.7} />
+      </ConsoleShell>
     </div>
   );
 }

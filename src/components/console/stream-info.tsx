@@ -6,15 +6,21 @@ interface StreamInfoProps {
   text: string;
   className?: string;
   style?: React.CSSProperties;
+  /** Terminado: el spinner deja lugar a un punto verde. */
+  done?: boolean;
 }
 
-export function StreamInfo({ text, className, style }: StreamInfoProps) {
+export function StreamInfo({ text, className, style, done }: StreamInfoProps) {
   return (
     <p
-      className={`flex items-start gap-1.5 text-code text-ink-muted italic ${className ?? ""}`}
+      className={`flex items-center gap-2 text-code text-ink-muted italic ${className ?? ""}`}
       style={style}
     >
-      <RingSpinner />
+      {done ? (
+        <span className="size-2.5 shrink-0 rounded-full bg-brand-green" />
+      ) : (
+        <RingSpinner />
+      )}
       <span>{text}</span>
     </p>
   );

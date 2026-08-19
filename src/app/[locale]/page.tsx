@@ -2,6 +2,7 @@ import { Careers } from "@/components/home/careers";
 import { Clients } from "@/components/home/clients";
 import { Faq } from "@/components/home/faq";
 import { Hero } from "@/components/home/hero";
+import { HowItWorks } from "@/components/home/how-it-works";
 import { Mission } from "@/components/home/mission";
 import { Product } from "@/components/home/product";
 import { Team } from "@/components/home/team";
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <Hero />
         <Clients />
+        <HowItWorks />
         <Product />
         <UseCases />
         <Faq />

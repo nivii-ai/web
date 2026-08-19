@@ -113,8 +113,85 @@
           "followUp": "Quer que eu separe o efeito por categoria, para ver onde o desconto de fato gerou volume incremental?"
         },
         "recommendation": "Interrompa os descontos automáticos nas três categorias em que a margem caiu mais de 5 pontos sem crescimento de unidades: Calçado urbano, Agasalhos e Acessórios. Juntas concentram $712M de faturamento e 4,2 pontos da queda de margem, cerca de $101M de resultado. Comece por Agasalhos, que já está com 61% das unidades vendidas com desconto e estoque da temporada passada sem liquidar."
+      },
+      {
+        "id": "quiebres",
+        "question": "Quais produtos ficaram sem estoque esta semana?",
+        "queries": [
+          {
+            "question": "Estoque diário por SKU, últimos 7 dias",
+            "rows": 1240,
+            "seconds": 7.8
+          },
+          {
+            "question": "Vendas perdidas estimadas por dia sem estoque",
+            "rows": 18,
+            "seconds": 5.2
+          }
+        ],
+        "answer": {
+          "title": "Rupturas da semana",
+          "lead": "Três SKUs ficaram sem estoque mais da metade da semana e explicam $18,4M em vendas perdidas.",
+          "table": {
+            "columns": [
+              "Produto",
+              "Dias sem estoque",
+              "Venda perdida"
+            ],
+            "rows": [
+              [
+                "Casaco leve sem capuz",
+                5,
+                "$9,1M"
+              ],
+              [
+                "Tênis urbano branco 40",
+                4,
+                "$6,2M"
+              ],
+              [
+                "Pack meias x3 preto",
+                4,
+                "$3,1M"
+              ]
+            ]
+          }
+        },
+        "recommendation": "Reponha os três SKUs antes de sexta: concentram 78% da venda perdida da semana e todos têm estoque disponível no centro de distribuição.",
+        "nextTurn": {
+          "question": "E se repormos do centro de distribuição, quanto recuperamos?",
+          "answer": {
+            "title": "Recuperável com reposição",
+            "lead": "O estoque disponível no centro recupera $14,3M dos $18,4M perdidos.",
+            "table": {
+              "columns": [
+                "Produto",
+                "Estoque no centro",
+                "Recuperável"
+              ],
+              "rows": [
+                [
+                  "Casaco leve sem capuz",
+                  "410 u",
+                  "$9,1M"
+                ],
+                [
+                  "Tênis urbano branco 40",
+                  "180 u",
+                  "$5,2M"
+                ],
+                [
+                  "Pack meias x3 preto",
+                  "0 u",
+                  "—"
+                ]
+              ]
+            }
+          }
+        }
       }
-    ]
+    ],
+    "ready": "Resposta pronta"
   },
   "home": {
     "hero": {
@@ -126,6 +203,32 @@
     "clients": {
       "title": "Empresas que confiam em nós",
       "logoPending": "Logo pendente"
+    },
+    "howItWorks": {
+      "title": "Uma pergunta. Uma decisão.",
+      "description": "Sem SQL, sem chamados, sem esperar alguém ter tempo. Estes são os cinco momentos entre o que você precisa saber e o que vai fazer.",
+      "steps": [
+        {
+          "title": "Pergunte com suas palavras",
+          "description": "Do jeito que você perguntaria a alguém do seu time. Sem SQL, sem chamados, sem esperar a próxima sprint."
+        },
+        {
+          "title": "Trabalha sobre seus dados",
+          "description": "Cruza seus sistemas, aprende o que “margem” significa na sua empresa e faz o trabalho que ninguém tem tempo de fazer."
+        },
+        {
+          "title": "Responde, e mostra como",
+          "description": "O número, e de onde saiu. Você pode discutir a resposta porque consegue ver o raciocínio."
+        },
+        {
+          "title": "Diz o que fazer",
+          "description": "Não um gráfico para interpretar: uma ação concreta, sobre qual produto, e quanto dinheiro está em jogo."
+        },
+        {
+          "title": "E a conversa continua",
+          "description": "Você repergunta e não recomeça do zero. Como alguém que realmente conhece seu negócio."
+        }
+      ]
     },
     "product": {
       "title": "Análise, não apenas dashboards",

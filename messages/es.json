@@ -113,8 +113,85 @@
           "followUp": "¿Querés que separe el efecto por categoría, para ver dónde el descuento sí generó volumen incremental?"
         },
         "recommendation": "Frená los descuentos automáticos en las tres categorías donde el margen cayó más de 5 puntos sin que crecieran las unidades: Calzado urbano, Abrigo y Accesorios. Concentran $712M de facturación y 4,2 puntos de la caída de margen, unos $101M de resultado. Empezá por Abrigo, que ya va con 61% de las unidades vendidas con descuento y stock de la temporada pasada sin liquidar."
+      },
+      {
+        "id": "quiebres",
+        "question": "¿Qué productos se quedaron sin stock esta semana?",
+        "queries": [
+          {
+            "question": "Stock diario por SKU, últimos 7 días",
+            "rows": 1240,
+            "seconds": 7.8
+          },
+          {
+            "question": "Ventas perdidas estimadas por día sin stock",
+            "rows": 18,
+            "seconds": 5.2
+          }
+        ],
+        "answer": {
+          "title": "Quiebres de la semana",
+          "lead": "Tres SKU estuvieron sin stock más de la mitad de la semana y explican $18,4M de ventas perdidas.",
+          "table": {
+            "columns": [
+              "Producto",
+              "Días sin stock",
+              "Venta perdida"
+            ],
+            "rows": [
+              [
+                "Abrigo liviano s/ capucha",
+                5,
+                "$9,1M"
+              ],
+              [
+                "Zapatilla urbana blanca 40",
+                4,
+                "$6,2M"
+              ],
+              [
+                "Pack medias x3 negro",
+                4,
+                "$3,1M"
+              ]
+            ]
+          }
+        },
+        "recommendation": "Reponé los tres SKU antes del viernes: concentran el 78% de la venta perdida de la semana y los tres tienen stock disponible en el depósito central.",
+        "nextTurn": {
+          "question": "¿Y si reponemos desde el depósito central, cuánto recuperamos?",
+          "answer": {
+            "title": "Recuperable con reposición",
+            "lead": "Con el stock disponible en el depósito se recuperan $14,3M de los $18,4M perdidos.",
+            "table": {
+              "columns": [
+                "Producto",
+                "Stock en depósito",
+                "Recuperable"
+              ],
+              "rows": [
+                [
+                  "Abrigo liviano s/ capucha",
+                  "410 u",
+                  "$9,1M"
+                ],
+                [
+                  "Zapatilla urbana blanca 40",
+                  "180 u",
+                  "$5,2M"
+                ],
+                [
+                  "Pack medias x3 negro",
+                  "0 u",
+                  "—"
+                ]
+              ]
+            }
+          }
+        }
       }
-    ]
+    ],
+    "ready": "Respuesta lista"
   },
   "home": {
     "hero": {
@@ -126,6 +203,32 @@
     "clients": {
       "title": "Empresas que confían en nosotros",
       "logoPending": "Logo pendiente"
+    },
+    "howItWorks": {
+      "title": "Una pregunta. Una decisión.",
+      "description": "Sin SQL, sin tickets, sin esperar a que alguien tenga tiempo. Estos son los cinco momentos que separan lo que necesitás saber de lo que vas a hacer.",
+      "steps": [
+        {
+          "title": "Preguntá en tu idioma",
+          "description": "Como se lo preguntarías a alguien de tu equipo. Sin SQL, sin tickets, sin esperar al próximo sprint."
+        },
+        {
+          "title": "Trabaja sobre tus datos",
+          "description": "Cruza tus sistemas, aprende qué significa “margen” en tu empresa y hace el trabajo que nadie tiene tiempo de hacer."
+        },
+        {
+          "title": "Responde, y muestra cómo",
+          "description": "El número, y de dónde salió. Podés discutir la respuesta porque podés ver el razonamiento."
+        },
+        {
+          "title": "Te dice qué hacer",
+          "description": "No un gráfico para interpretar: una acción concreta, sobre qué producto, y cuánta plata hay en juego."
+        },
+        {
+          "title": "Y la conversación sigue",
+          "description": "Repreguntás y no empieza de cero. Como alguien que de verdad conoce tu negocio."
+        }
+      ]
     },
     "product": {
       "title": "Análisis, no solo dashboards",

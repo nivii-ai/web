@@ -113,8 +113,85 @@
           "followUp": "Want me to break the effect down by category, to see where discounting did drive incremental volume?"
         },
         "recommendation": "Stop automatic discounting in the three categories where margin fell more than 5 points without unit growth: Urban footwear, Outerwear and Accessories. Together they hold $712M of revenue and 4.2 points of the margin drop, about $101M of result. Start with Outerwear, already running at 61% of units sold on discount with last season's stock still unsold."
+      },
+      {
+        "id": "quiebres",
+        "question": "Which products ran out of stock this week?",
+        "queries": [
+          {
+            "question": "Daily stock by SKU, last 7 days",
+            "rows": 1240,
+            "seconds": 7.8
+          },
+          {
+            "question": "Estimated lost sales per day out of stock",
+            "rows": 18,
+            "seconds": 5.2
+          }
+        ],
+        "answer": {
+          "title": "This week's stockouts",
+          "lead": "Three SKUs were out of stock more than half the week and account for $18.4M in lost sales.",
+          "table": {
+            "columns": [
+              "Product",
+              "Days out",
+              "Lost sales"
+            ],
+            "rows": [
+              [
+                "Light jacket, no hood",
+                5,
+                "$9.1M"
+              ],
+              [
+                "White urban sneaker 40",
+                4,
+                "$6.2M"
+              ],
+              [
+                "Black sock 3-pack",
+                4,
+                "$3.1M"
+              ]
+            ]
+          }
+        },
+        "recommendation": "Restock all three before Friday: they hold 78% of the week's lost sales and all three have stock available in the central warehouse.",
+        "nextTurn": {
+          "question": "And if we restock from the central warehouse, how much do we recover?",
+          "answer": {
+            "title": "Recoverable by restocking",
+            "lead": "The stock sitting in the warehouse recovers $14.3M of the $18.4M lost.",
+            "table": {
+              "columns": [
+                "Product",
+                "Warehouse stock",
+                "Recoverable"
+              ],
+              "rows": [
+                [
+                  "Light jacket, no hood",
+                  "410 u",
+                  "$9.1M"
+                ],
+                [
+                  "White urban sneaker 40",
+                  "180 u",
+                  "$5.2M"
+                ],
+                [
+                  "Black sock 3-pack",
+                  "0 u",
+                  "—"
+                ]
+              ]
+            }
+          }
+        }
       }
-    ]
+    ],
+    "ready": "Answer ready"
   },
   "home": {
     "hero": {
@@ -126,6 +203,32 @@
     "clients": {
       "title": "Companies that trust us",
       "logoPending": "Logo pending"
+    },
+    "howItWorks": {
+      "title": "One question. One decision.",
+      "description": "No SQL, no tickets, no waiting for someone to free up. These are the five moments between what you need to know and what you'll do about it.",
+      "steps": [
+        {
+          "title": "Ask in your own words",
+          "description": "The way you'd ask someone on your team. No SQL, no tickets, no waiting for the next sprint."
+        },
+        {
+          "title": "It works on your data",
+          "description": "It joins your systems, learns what “margin” means at your company, and does the work nobody has time for."
+        },
+        {
+          "title": "It answers, and shows how",
+          "description": "The number, and where it came from. You can argue with the answer because you can see the reasoning."
+        },
+        {
+          "title": "It tells you what to do",
+          "description": "Not a chart to interpret: a specific action, on a specific product, with the money at stake."
+        },
+        {
+          "title": "And the conversation continues",
+          "description": "Ask again and it doesn't start over. Like someone who actually knows your business."
+        }
+      ]
     },
     "product": {
       "title": "Analysis, not just dashboards",
