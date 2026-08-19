@@ -26,10 +26,7 @@ export function DemoForm() {
   const [errors, setErrors] = useState<Partial<Record<Field, boolean>>>({});
 
   const validate = (data: FormData): Partial<Record<Field, boolean>> => ({
-    name: String(data.get("name") ?? "")
-      .trim()
-      .split(/\s+/)
-      .filter(Boolean).length < 2,
+    name: !String(data.get("name") ?? "").trim(),
     email: !EMAIL.test(String(data.get("email") ?? "").trim()),
     company: !String(data.get("company") ?? "").trim(),
   });

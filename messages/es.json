@@ -33,7 +33,7 @@
       "Si preferís empezar sin costo, Beacon tiene un piloto gratuito."
     ],
     "form": {
-      "name": "Nombre y apellido",
+      "name": "Nombre",
       "email": "Email de trabajo",
       "company": "Empresa",
       "question": "¿Qué pregunta te gustaría poder responder?",
@@ -44,7 +44,7 @@
       "successBody": "Mientras tanto, si querés ver el detalle de arquitectura y seguridad, está en la página de Enterprise.",
       "error": "Hubo un error al enviar tu solicitud. Escribinos a contact@nivii.ai y lo resolvemos.",
       "errors": {
-        "name": "Escribí tu nombre y apellido.",
+        "name": "Escribí tu nombre.",
         "email": "Ingresá un email de trabajo válido.",
         "company": "Contanos en qué empresa trabajás."
       }

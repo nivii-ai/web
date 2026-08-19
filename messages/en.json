@@ -33,7 +33,7 @@
       "If you'd rather start at no cost, Beacon comes with a free pilot."
     ],
     "form": {
-      "name": "Full name",
+      "name": "Name",
       "email": "Work email",
       "company": "Company",
       "question": "What question would you like to be able to answer?",
@@ -44,7 +44,7 @@
       "successBody": "In the meantime, the architecture and security detail lives on the Enterprise page.",
       "error": "Something went wrong. Write to contact@nivii.ai and we'll sort it out.",
       "errors": {
-        "name": "Enter your full name.",
+        "name": "Enter your name.",
         "email": "Enter a valid work email.",
         "company": "Tell us where you work."
       }
