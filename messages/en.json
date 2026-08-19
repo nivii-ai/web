@@ -924,8 +924,7 @@
         "Model-agnostic",
         "Encryption at rest and in transit",
         "No data shared across clients"
-      ],
-      "compliance": "Architecture aligned with SOC 2 and HIPAA controls. Formal certifications in progress."
+      ]
     },
     "faq": {
       "eyebrow": "FAQ",

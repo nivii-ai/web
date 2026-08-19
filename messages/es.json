@@ -924,8 +924,7 @@
         "Agnóstico al modelo",
         "Cifrado en reposo y en tránsito",
         "Sin datos compartidos entre clientes"
-      ],
-      "compliance": "Arquitectura alineada con los controles de SOC 2 y HIPAA. Certificaciones formales en proceso."
+      ]
     },
     "faq": {
       "eyebrow": "Preguntas frecuentes",

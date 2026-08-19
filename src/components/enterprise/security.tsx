@@ -52,7 +52,6 @@ export async function Security() {
               </li>
             ))}
           </ul>
-          <p className="mt-10 text-code text-panel-ink/60">{t("compliance")}</p>
         </Reveal>
       </div>
     </section>

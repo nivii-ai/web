@@ -924,8 +924,7 @@
         "Agnóstico ao modelo",
         "Criptografia em repouso e em trânsito",
         "Sem dados compartilhados entre clientes"
-      ],
-      "compliance": "Arquitetura alinhada aos controles de SOC 2 e HIPAA. Certificações formais em andamento."
+      ]
     },
     "faq": {
       "eyebrow": "Perguntas frequentes",
