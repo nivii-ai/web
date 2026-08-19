@@ -1,30 +1,32 @@
-import { getMessages, getTranslations } from "next-intl/server";
-import * as motion from "motion/react-client";
 import Image from "next/image";
+import { getMessages, getTranslations } from "next-intl/server";
+import { Reveal } from "@/components/ui/reveal";
+
+type Member = {
+  name: string;
+  photo: string;
+  role: string;
+  bio: string[];
+  linkedin?: string;
+};
 
 export async function Team() {
   const t = await getTranslations("home.team");
   const messages = await getMessages();
-  const members = messages.home.team.members as {
-    name: string;
-    photo: string;
-    role: string;
-    bio: string[];
-    linkedin?: string;
-  }[];
+  const members = messages.home.team.members as Member[];
+
   return (
-    <section id="team" className="py-16 scroll-m-28">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-balance text-3xl font-bold lg:text-4xl mb-6">
-          {t("title")}
-        </h2>
-        <p className="text-lg text-gray-700 mb-12  max-w-2xl mx-auto">
-          {t("description")}
-        </p>
-        <div className="flex flex-wrap justify-center gap-8 lg:gap-12 mb-8 lg:mb-16">
-          {members.map((member, index) => {
-            const CardWrapper = member.linkedin ? "a" : "div";
-            const cardProps = member.linkedin
+    <section id="team" className="scroll-m-28 px-6 py-32 lg:px-12">
+      <div className="mx-auto max-w-7xl">
+        <Reveal className="max-w-3xl">
+          <h2 className="text-display-l text-ink">{t("title")}</h2>
+          <p className="mt-6 text-body-l text-ink-muted">{t("description")}</p>
+        </Reveal>
+
+        <ul className="mt-20 grid gap-x-16 gap-y-14 lg:grid-cols-2">
+          {members.map((member, i) => {
+            const Wrapper = member.linkedin ? "a" : "div";
+            const props = member.linkedin
               ? {
                   href: member.linkedin,
                   target: "_blank",
@@ -33,54 +35,36 @@ export async function Team() {
               : {};
 
             return (
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.5,
-                  ease: "easeOut",
-                  delay: 0.2 * index,
-                }}
-                key={member.name}
-                className="flex flex-shrink-0 max-w-sm w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-2rem)]"
-              >
-                <CardWrapper
-                  {...cardProps}
-                  className={`group bg-white rounded-3xl p-6 lg:p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 flex flex-col h-full min-h-[450px] ${
-                    member.linkedin ? "cursor-pointer" : ""
-                  }`}
-                >
-                  <div className="relative mb-6">
-                    <div className="w-40 h-40 mx-auto rounded-full overflow-hidden ring-3 ring-brand-green group-hover:ring-brand-green-dark transition-all">
-                      <Image
-                        src={member.photo}
-                        alt={member.name}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        width={250}
-                        height={250}
-                      />
-                    </div>
+              <Reveal as="li" key={member.name} order={i}>
+                <Wrapper {...props} className="group flex items-start gap-6">
+                  <div className="w-32 shrink-0 overflow-hidden rounded-xl bg-surface-sunken">
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      width={240}
+                      height={300}
+                      className="aspect-4/5 w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    />
                   </div>
 
-                  <div className="text-center flex-grow flex flex-col">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">
-                      {member.name}
-                    </h3>
-                    <p className="text-brand-green font-bold mb-4">
+                  <div>
+                    <h3 className="text-heading text-ink">{member.name}</h3>
+                    <p className="mt-0.5 text-body-s font-medium text-brand-green">
                       {member.role}
                     </p>
-                    <ul className="text-gray-600 text-sm leading-relaxed text-left mb-2 flex flex-col gap-2 flex-grow">
-                      {member.bio.map((paragraph, index) => (
-                        <li key={index}>{paragraph}</li>
+                    <div className="mt-3 flex flex-col gap-2">
+                      {member.bio.map((line) => (
+                        <p key={line} className="text-body-s text-ink-muted">
+                          {line}
+                        </p>
                       ))}
-                    </ul>
+                    </div>
                   </div>
-                </CardWrapper>
-              </motion.div>
+                </Wrapper>
+              </Reveal>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );
