@@ -1,97 +1,59 @@
-import { cn } from "@/lib/utils";
-import * as motion from "motion/react-client";
-import { UseCaseCard } from "../ui/use-case-card";
-import {
-  Briefcase,
-  ChartScatter,
-  Factory,
-  Landmark,
-  Users,
-} from "lucide-react";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
+import { Reveal } from "@/components/ui/reveal";
+import { Stat } from "./stat";
+
+type Case = { stat: string; title: string; description: string };
 
 export async function UseCases() {
   const t = await getTranslations("home.useCases");
-  const locale = (await getLocale()) || "en";
-
-  const useCases = [
-    {
-      icon: <ChartScatter className="size-5 scroll-m-28" />,
-      title: t("marketing.title"),
-      desc: t("marketing.description"),
-      shortDesc: t("marketing.shortDescription"),
-      img: `/marketing_${locale}.jpeg`,
-      gridLayout: "col-span-1 md:col-start-1 md:col-span-3 lg:col-start-3",
-    },
-    {
-      icon: <Briefcase className="size-5" />,
-      title: t("sales.title"),
-      desc: t("sales.description"),
-      shortDesc: t("sales.shortDescription"),
-      img: `/sales_${locale}.jpeg`,
-      gridLayout:
-        "col-span-1 md:col-start-4 md:col-span-4 lg:col-span-2 lg:col-start-1 lg:row-start-1",
-    },
-    {
-      icon: <Factory className="size-5" />,
-      title: t("operations.title"),
-      desc: t("operations.description"),
-      shortDesc: t("operations.shortDescription"),
-      img: `/operations_${locale}.jpeg`,
-      gridLayout:
-        "col-span-1 md:col-span-4 lg:col-span-3 lg:col-start-1 lg:row-start-2",
-    },
-    {
-      icon: <Users className="size-5" />,
-      title: t("hr.title"),
-      desc: t("hr.description"),
-      shortDesc: t("hr.shortDescription"),
-      img: `/hr_${locale}.jpeg`,
-      gridLayout: "col-span-1 md:col-span-3 lg:col-span-2 lg:col-start-6",
-    },
-    {
-      icon: <Landmark className="size-5" />,
-      title: t("finance.title"),
-      desc: t("finance.description"),
-      shortDesc: t("finance.shortDescription"),
-      img: `/financial_${locale}.jpeg`,
-      gridLayout: "col-span-1 md:col-start-2 md:col-span-5 lg:col-span-4",
-    },
-  ];
+  const cases = t.raw("cases") as Case[];
 
   return (
-    <section id="use-cases" className="relative py-12">
-      <div className="mx-auto px-6">
-        <div className="container text-center mx-auto mb-16">
-          <h2 className="text-balance text-3xl font-bold lg:text-4xl tracking-tight text-foreground">
-            {t("title")}
+    <section id="use-cases" className="scroll-m-28 px-6 py-24 lg:px-12">
+      <div className="mx-auto max-w-7xl">
+        <Reveal className="max-w-2xl">
+          <h2 className="text-display-l text-ink">
+            {t.rich("title", {
+              accent: (chunks) => (
+                <span className="text-brand-green-dark">{chunks}</span>
+              ),
+            })}
           </h2>
-          <p className="mt-6 text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto text-pretty">
-            {t("description")}
-          </p>
-        </div>
+          <p className="mt-5 text-body-l text-ink-muted">{t("description")}</p>
+        </Reveal>
 
-        <div className="w-full lg:container relative grid grid-cols-1 md:grid-cols-7 auto-rows-auto md:auto-rows-[1fr] gap-4 max-w-sm md:max-w-2xl lg:max-w-4xl mx-auto">
-          {useCases.map((item) => (
-            <motion.div
+        <div className="mt-14 grid gap-4 lg:grid-cols-3">
+          <Reveal
+            className="rounded-bezel bg-brand-green-tint p-8 lg:col-span-2 lg:row-span-2 lg:flex lg:flex-col lg:justify-center lg:p-12"
+            order={0}
+          >
+            <h3 className="max-w-xl text-display-m text-ink">
+              {t("cleaning.title")}
+            </h3>
+            <p className="mt-5 max-w-xl text-body-l text-ink-text">
+              {t("cleaning.description")}
+            </p>
+          </Reveal>
+
+          {cases.map((item, i) => (
+            <Reveal
               key={item.title}
-              className={cn(
-                "flex items-center justify-center w-full",
-                item.gridLayout
-              )}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.8 }}
+              className="flex flex-col rounded-bezel border border-hairline p-8"
+              order={i + 1}
             >
-              <UseCaseCard
-                title={item.title}
-                description={item.desc}
-                shortDescription={item.shortDesc}
-                image={item.img}
-                icon={item.icon}
-              />
-            </motion.div>
+              {item.stat ? (
+                <Stat value={item.stat} />
+              ) : (
+                // Reserva el renglón del número para que las tarjetas alineen.
+                <span aria-hidden className="block font-display text-display-m">
+                  &nbsp;
+                </span>
+              )}
+              <h3 className="mt-4 text-heading text-ink">{item.title}</h3>
+              <p className="mt-2 text-body-s text-ink-muted">
+                {item.description}
+              </p>
+            </Reveal>
           ))}
         </div>
       </div>

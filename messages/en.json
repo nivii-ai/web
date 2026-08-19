@@ -330,33 +330,39 @@
       "aiPoweredConversationsDescription": "A simple and intuitive interface makes it easy for any user to ask data questions and get quality answers they can trust."
     },
     "useCases": {
-      "title": "Use Cases",
-      "description": "Nivii is transforming how teams across industries leverage their data to drive growth, efficiency, and innovation.",
-      "marketing": {
-        "title": "Marketing",
-        "shortDescription": "Instantly understand campaign performance.",
-        "description": "Instantly understand campaign performance, identify your most profitable customer segments, and optimize your marketing spend. Ask Nivii which channels are delivering the highest ROI, and get an answer in seconds."
+      "title": "Questions we've already <accent>answered</accent>.",
+      "description": "None of these answers needed clean data to start.",
+      "cleaning": {
+        "title": "Your messy data is the starting point.",
+        "description": "Nobody has it ready. Loose spreadsheets, systems that don't talk to each other, definitions that change depending on who you ask. Nivii puts your most reliable sources to work first, so the first answer arrives in weeks instead of at the end of a data project that never ends."
       },
-      "sales": {
-        "title": "Sales",
-        "shortDescription": "Equip your sales team with the right information at the right time.",
-        "description": "Equip your sales team with the right information at the right time. Nivii can identify cross-sell and upsell opportunities, highlight at-risk accounts, and ensure your team is pitching the most relevant products to each client."
-      },
-      "operations": {
-        "title": "Operations",
-        "shortDescription": "Streamline your operations with real-time insights.",
-        "description": "Streamline your operations by getting immediate insights into supply chain bottlenecks, production inefficiencies, and resource allocation. Nivii helps you make data-driven decisions to improve efficiency and reduce costs."
-      },
-      "hr": {
-        "title": "HR",
-        "shortDescription": "Uncover hidden signals in your employee data.",
-        "description": "Uncover the hidden signals in your employee data. With Nivii, you can identify trends in employee attrition, understand the drivers of satisfaction, and make proactive decisions to build a stronger, more engaged workforce."
-      },
-      "finance": {
-        "title": "Finance",
-        "shortDescription": "Gain a deeper understanding of your financial data.",
-        "description": "Gain a deeper understanding of your financial data. Nivii can help you analyze cash flow, identify cost-saving opportunities, and optimize your budgeting process."
-      }
+      "cases": [
+        {
+          "stat": "19% → −2.5%",
+          "title": "The growth that wasn't",
+          "description": "Revenue was growing double digits. Once inflation was stripped out, the business had shrunk."
+        },
+        {
+          "stat": "+44%",
+          "title": "The best rep isn't the one who sells most",
+          "description": "The revenue ranking changed completely once each person was compared against peers on the same floor, shift and day."
+        },
+        {
+          "stat": "1% → 30%",
+          "title": "The 1% holding up the business",
+          "description": "A tiny group of customers drove nearly a third of everything transacted, buried in the rest because nobody measured them differently."
+        },
+        {
+          "stat": "+50%",
+          "title": "Capital asleep in the warehouse",
+          "description": "More than half the stock hadn't moved in six months. Money sitting on shelves instead of in the bank."
+        },
+        {
+          "stat": "",
+          "title": "The demand nobody recorded",
+          "description": "What people asked for didn't match what was on hand. Sales were lost without leaving a trace in any report."
+        }
+      ]
     },
     "faq": {
       "title": "Frequently Asked Questions",
