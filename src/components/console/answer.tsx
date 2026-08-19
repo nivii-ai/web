@@ -1,6 +1,7 @@
 // Espeja la anatomía de una respuesta de wald-face: título, línea en negrita,
 // tabla, alerta y conclusión. Sin markdown en runtime: el
 // contenido lo escribimos nosotros y viene estructurado.
+import { AnswerChart } from "./answer-chart";
 import { FadeWords } from "./fade-words";
 import type { Answer as AnswerData } from "./types";
 
@@ -13,7 +14,7 @@ interface AnswerProps {
 }
 
 export function Answer({ answer, delay, compact = false }: AnswerProps) {
-  const { title, lead, table, alert, conclusion, followUp } = answer;
+  const { title, lead, table, chart, alert, conclusion, followUp } = answer;
 
   return (
     <div className="flex flex-col gap-3">
@@ -61,6 +62,15 @@ export function Answer({ answer, delay, compact = false }: AnswerProps) {
               ))}
             </tbody>
           </table>
+        </div>
+      ) : null}
+
+      {chart ? (
+        <div
+          className="fade-word"
+          style={{ animationDelay: `${delay + 1.3}s` }}
+        >
+          <AnswerChart spec={chart} />
         </div>
       ) : null}
 

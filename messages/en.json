@@ -189,6 +189,86 @@
             }
           }
         }
+      },
+      {
+        "id": "participacion-agro",
+        "question": "Where did we lose share to generics this season?",
+        "queries": [
+          {
+            "question": "Sales by region and product line, 24/25 and 25/26 seasons",
+            "rows": 4820,
+            "seconds": 14.2
+          },
+          {
+            "question": "Average price per litre, ours vs. generic, by distributor",
+            "rows": 1960,
+            "seconds": 11.6
+          }
+        ],
+        "answer": {
+          "title": "Share by region, 25/26 season",
+          "lead": "We lost 6.4 points in the core region, and 78% of that drop sits in three herbicides.",
+          "table": {
+            "columns": [
+              "Region",
+              "Share",
+              "Season change",
+              "Hectares"
+            ],
+            "rows": [
+              [
+                "Core region",
+                "31.2%",
+                "−6.4 pp",
+                "1.84M"
+              ],
+              [
+                "Southern Córdoba",
+                "44.8%",
+                "−1.1 pp",
+                "0.96M"
+              ],
+              [
+                "Northwest",
+                "52.3%",
+                "+2.7 pp",
+                "0.61M"
+              ]
+            ]
+          },
+          "chart": {
+            "title": "Core region share, by month",
+            "unit": "%",
+            "points": [
+              {
+                "label": "Sep",
+                "value": 37.6
+              },
+              {
+                "label": "Oct",
+                "value": 36.9
+              },
+              {
+                "label": "Nov",
+                "value": 34.2
+              },
+              {
+                "label": "Dec",
+                "value": 32.5
+              },
+              {
+                "label": "Jan",
+                "value": 31.8
+              },
+              {
+                "label": "Feb",
+                "value": 31.2,
+                "display": "31.2%"
+              }
+            ]
+          }
+        },
+        "recommendation": "Revisit the core region price list before the next distributor order: those three herbicides hold $2,140M of season revenue and every point of share recovered is worth about $67M."
       }
     ],
     "ready": "Answer ready"
@@ -229,6 +309,13 @@
           "description": "The conversation doesn't end at the first answer."
         }
       ]
+    },
+    "enterprise": {
+      "eyebrow": "Nivii Enterprise",
+      "title": "Enterprise AI is a <accent>trust</accent> decision first.",
+      "description": "That's why Nivii runs inside your perimeter, learns what each definition means at your company, and puts your data in order before it answers. Nothing leaves your cloud, and nothing waits for the data to be perfect.",
+      "cta": "See Enterprise",
+      "cardLabel": "Inside your cloud"
     },
     "product": {
       "title": "Analysis, not just dashboards",

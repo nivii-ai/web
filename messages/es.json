@@ -189,6 +189,86 @@
             }
           }
         }
+      },
+      {
+        "id": "participacion-agro",
+        "question": "¿En qué zonas perdimos participación frente a los genéricos esta campaña?",
+        "queries": [
+          {
+            "question": "Ventas por zona y línea de producto, campañas 24/25 y 25/26",
+            "rows": 4820,
+            "seconds": 14.2
+          },
+          {
+            "question": "Precio promedio por litro, propio vs. genérico, por distribuidor",
+            "rows": 1960,
+            "seconds": 11.6
+          }
+        ],
+        "answer": {
+          "title": "Participación por zona, campaña 25/26",
+          "lead": "Perdimos 6,4 puntos en el núcleo húmedo, y el 78% de esa caída está en tres herbicidas.",
+          "table": {
+            "columns": [
+              "Zona",
+              "Participación",
+              "Var. campaña",
+              "Hectáreas"
+            ],
+            "rows": [
+              [
+                "Núcleo húmedo",
+                "31,2%",
+                "−6,4 pp",
+                "1,84M"
+              ],
+              [
+                "Córdoba sur",
+                "44,8%",
+                "−1,1 pp",
+                "0,96M"
+              ],
+              [
+                "NOA",
+                "52,3%",
+                "+2,7 pp",
+                "0,61M"
+              ]
+            ]
+          },
+          "chart": {
+            "title": "Participación en el núcleo húmedo, por mes",
+            "unit": "%",
+            "points": [
+              {
+                "label": "Sep",
+                "value": 37.6
+              },
+              {
+                "label": "Oct",
+                "value": 36.9
+              },
+              {
+                "label": "Nov",
+                "value": 34.2
+              },
+              {
+                "label": "Dic",
+                "value": 32.5
+              },
+              {
+                "label": "Ene",
+                "value": 31.8
+              },
+              {
+                "label": "Feb",
+                "value": 31.2,
+                "display": "31,2%"
+              }
+            ]
+          }
+        },
+        "recommendation": "Revisá la lista del núcleo húmedo antes del próximo pedido de distribuidores: esos tres herbicidas concentran $2.140M de facturación de campaña y cada punto de participación recuperado vale unos $67M."
       }
     ],
     "ready": "Respuesta lista"
@@ -229,6 +309,13 @@
           "description": "La conversación no se corta en la primera respuesta."
         }
       ]
+    },
+    "enterprise": {
+      "eyebrow": "Nivii Enterprise",
+      "title": "La IA empresarial es, ante todo, una decisión de <accent>confianza</accent>.",
+      "description": "Por eso Nivii corre dentro de tu perímetro, aprende qué significa cada definición en tu empresa y ordena tus datos antes de responder. Nada sale de tu nube, y nada espera a que los datos estén perfectos.",
+      "cta": "Ver Enterprise",
+      "cardLabel": "Dentro de tu nube"
     },
     "product": {
       "title": "Análisis, no solo dashboards",

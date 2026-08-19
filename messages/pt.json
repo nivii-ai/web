@@ -189,6 +189,86 @@
             }
           }
         }
+      },
+      {
+        "id": "participacion-agro",
+        "question": "Em quais regiões perdemos participação para os genéricos nesta safra?",
+        "queries": [
+          {
+            "question": "Vendas por região e linha de produto, safras 24/25 e 25/26",
+            "rows": 4820,
+            "seconds": 14.2
+          },
+          {
+            "question": "Preço médio por litro, próprio vs. genérico, por distribuidor",
+            "rows": 1960,
+            "seconds": 11.6
+          }
+        ],
+        "answer": {
+          "title": "Participação por região, safra 25/26",
+          "lead": "Perdemos 6,4 pontos na região central, e 78% dessa queda está em três herbicidas.",
+          "table": {
+            "columns": [
+              "Região",
+              "Participação",
+              "Var. safra",
+              "Hectares"
+            ],
+            "rows": [
+              [
+                "Região central",
+                "31,2%",
+                "−6,4 pp",
+                "1,84M"
+              ],
+              [
+                "Sul de Córdoba",
+                "44,8%",
+                "−1,1 pp",
+                "0,96M"
+              ],
+              [
+                "Noroeste",
+                "52,3%",
+                "+2,7 pp",
+                "0,61M"
+              ]
+            ]
+          },
+          "chart": {
+            "title": "Participação na região central, por mês",
+            "unit": "%",
+            "points": [
+              {
+                "label": "Set",
+                "value": 37.6
+              },
+              {
+                "label": "Out",
+                "value": 36.9
+              },
+              {
+                "label": "Nov",
+                "value": 34.2
+              },
+              {
+                "label": "Dez",
+                "value": 32.5
+              },
+              {
+                "label": "Jan",
+                "value": 31.8
+              },
+              {
+                "label": "Fev",
+                "value": 31.2,
+                "display": "31,2%"
+              }
+            ]
+          }
+        },
+        "recommendation": "Revise a tabela de preços da região central antes do próximo pedido dos distribuidores: esses três herbicidas concentram $2.140M de faturamento de safra e cada ponto de participação recuperado vale cerca de $67M."
       }
     ],
     "ready": "Resposta pronta"
@@ -229,6 +309,13 @@
           "description": "A conversa não termina na primeira resposta."
         }
       ]
+    },
+    "enterprise": {
+      "eyebrow": "Nivii Enterprise",
+      "title": "A IA empresarial é, antes de tudo, uma decisão de <accent>confiança</accent>.",
+      "description": "Por isso a Nivii roda dentro do seu perímetro, aprende o que cada definição significa na sua empresa e organiza seus dados antes de responder. Nada sai da sua nuvem, e nada espera os dados ficarem perfeitos.",
+      "cta": "Ver Enterprise",
+      "cardLabel": "Dentro da sua nuvem"
     },
     "product": {
       "title": "Análise, não apenas dashboards",

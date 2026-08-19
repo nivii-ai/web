@@ -348,26 +348,30 @@
   }
 }
 
-body {
-  font-family: var(--font-sans);
-  color: var(--color-ink-text);
-}
+/* En `base`, no sueltas: lo no-capado le gana a las utilidades de Tailwind sin
+   importar la especificidad, y estas reglas pisaban `text-*` en cada titular. */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink-text);
+  }
 
-:focus-visible {
-  outline: 2px solid var(--color-brand-green);
-  outline-offset: 3px;
-  border-radius: 2px;
-}
+  :focus-visible {
+    outline: 2px solid var(--color-brand-green);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
 
-h1,
-h2,
-h3 {
-  font-family: var(--font-display);
-  font-optical-sizing: auto;
-  color: var(--color-ink);
-}
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    color: var(--color-ink);
+  }
 
-table,
-.tabular {
-  font-variant-numeric: tabular-nums;
+  table,
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
 }
