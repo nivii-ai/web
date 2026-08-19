@@ -41,15 +41,18 @@ export async function Security() {
           ))}
         </ul>
 
-        <Reveal order={stats.length + 1} className="mt-16">
-          <ul className="flex flex-wrap gap-x-10 gap-y-3">
+        <Reveal order={stats.length + 1} className="mt-20">
+          <ul className="grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-5">
             {checklist.map((item) => (
-              <li key={item} className="text-body-s text-panel-ink/70">
+              <li
+                key={item}
+                className="border-t border-panel-hairline pt-4 text-body-s text-panel-ink/70"
+              >
                 {item}
               </li>
             ))}
           </ul>
-          <p className="mt-8 text-code text-panel-ink/50">{t("compliance")}</p>
+          <p className="mt-10 text-code text-panel-ink/60">{t("compliance")}</p>
         </Reveal>
       </div>
     </section>

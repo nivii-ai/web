@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 
-type Pillar = { label: string; title: string; description: string };
+type Pillar = { title: string; description: string };
 
 export async function Product() {
   const t = await getTranslations("enterprise.product");
@@ -25,7 +25,7 @@ export async function Product() {
           description={t("description")}
         />
 
-        <ol className="mt-16 grid gap-x-12 gap-y-10 lg:grid-cols-3">
+        <ol className="mt-14 grid gap-x-12 gap-y-10 lg:grid-cols-3">
           {pillars.map((pillar, i) => (
             <Reveal
               as="li"
@@ -33,12 +33,7 @@ export async function Product() {
               order={i + 1}
               className="border-t border-panel-hairline pt-6"
             >
-              <p className="font-mono text-code text-brand-green">
-                {pillar.label}
-              </p>
-              <h3 className="mt-4 text-heading text-panel-ink">
-                {pillar.title}
-              </h3>
+              <h3 className="text-heading text-panel-ink">{pillar.title}</h3>
               <p className="mt-3 text-body-s text-panel-ink/60">
                 {pillar.description}
               </p>

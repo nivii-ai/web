@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Answer } from "@/components/console/answer";
 import { ConsoleChoreography } from "@/components/console/console-choreography";
+import { ConsoleShell } from "@/components/console/console-shell";
 import { QuestionBubble } from "@/components/console/question-bubble";
 import { Recommendation } from "@/components/console/recommendation";
 import { StreamInfo } from "@/components/console/stream-info";
@@ -24,11 +25,7 @@ export async function EnterpriseHero() {
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-16">
           <div>
-            <p className="text-eyebrow font-medium text-panel-ink/60 uppercase">
-              {t("eyebrow")}
-            </p>
-
-            <h1 className="mt-6 text-display-xl text-panel-ink">
+            <h1 className="text-display-xl text-panel-ink">
               {t.rich("title", {
                 accent: (chunks) => (
                   <span className="text-brand-green italic">{chunks}</span>
@@ -57,12 +54,16 @@ export async function EnterpriseHero() {
             </div>
 
             <p className="mt-5 text-body-s text-panel-ink/60">{t("note")}</p>
+
+            <p className="mt-8 text-body-s text-panel-ink/60">
+              {sectors.join(" · ")}
+            </p>
           </div>
 
           {/* La UI clara del producto flotando sobre el panel, como en el banner. */}
           <div className="min-w-0 lg:perspective-[1200px]">
-            <ConsoleChoreography className="rounded-bezel bg-white/10 p-1.5 ring-1 ring-panel-hairline lg:rotate-y-[-12deg]">
-              <div className="flex flex-col gap-4 rounded-core bg-background p-6">
+            <ConsoleChoreography>
+              <ConsoleShell tone="dark" className="lg:rotate-y-[-12deg]">
                 <div
                   className="fade-word"
                   style={{ animationDelay: `${QUESTION_AT}s` }}
@@ -86,22 +87,9 @@ export async function EnterpriseHero() {
                   text={scenario.recommendation}
                   delay={answerAt + 3.2}
                 />
-              </div>
+              </ConsoleShell>
             </ConsoleChoreography>
           </div>
-        </div>
-
-        <div className="mt-20 border-t border-panel-hairline pt-8">
-          <p className="text-eyebrow font-medium text-panel-ink/50 uppercase">
-            {t("sectorsLabel")}
-          </p>
-          <ul className="mt-5 flex flex-wrap gap-x-10 gap-y-3">
-            {sectors.map((sector) => (
-              <li key={sector} className="text-body-s text-panel-ink/70">
-                {sector}
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </section>

@@ -773,13 +773,11 @@
       "description": "Nivii Enterprise despliega un agente de inteligencia de decisiones sobre tus datos, dentro de tu propio perímetro. Piloto en vivo en unas 12 semanas: sin ROI, no hay contrato."
     },
     "hero": {
-      "eyebrow": "Nivii Enterprise",
       "title": "Un agente de decisión que corre <accent>dentro de tu propia nube</accent>.",
       "description": "Aprende cómo funciona tu negocio, trabaja con los datos desordenados que ya tenés y devuelve análisis confiable con una recomendación clara. Tus datos nunca salen de tu perímetro.",
       "cta": "Solicitar una demo",
       "secondary": "Ver arquitectura y seguridad",
       "note": "Piloto en vivo sobre tus datos reales en unas 12 semanas, al costo.",
-      "sectorsLabel": "Operaciones intensivas en datos",
       "sectors": [
         "Acero y metales",
         "Agro",
@@ -795,17 +793,14 @@
       "description": "La mayoría de los proyectos de analítica terminan en más gráficos y una factura que no se corta. Acá desplegamos un agente de decisión sobre tus propios datos, dentro de tu propio entorno, y entrenamos a tu equipo para operarlo en el camino. El atajo a una capacidad que construir de cero lleva entre 18 y 24 meses.",
       "pillars": [
         {
-          "label": "Semana 12",
           "title": "Primero lo comprobás",
           "description": "Un piloto en vivo sobre tus datos reales, al costo, antes de que firmes nada."
         },
         {
-          "label": "Mes 4",
           "title": "En producción, en tu nube",
           "description": "El agente corre dentro de tu perímetro, con tu equipo entrenado en paralelo."
         },
         {
-          "label": "Mes 12",
           "title": "Tu equipo lo opera solo",
           "description": "Arquitectura, prompts y documentación transferidos. Sin dependencia forzada."
         }

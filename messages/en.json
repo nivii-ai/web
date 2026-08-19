@@ -773,13 +773,11 @@
       "description": "Nivii Enterprise deploys a decision-intelligence agent on your data, inside your own perimeter. Live pilot in about 12 weeks: no ROI, no contract."
     },
     "hero": {
-      "eyebrow": "Nivii Enterprise",
       "title": "A decision agent that runs <accent>inside your own cloud</accent>.",
       "description": "It learns how your business works, takes on the messy data you already have and returns trustworthy analysis with a clear recommendation. Your data never leaves your perimeter.",
       "cta": "Request a demo",
       "secondary": "See architecture and security",
       "note": "A live pilot on your real data in about 12 weeks, at cost.",
-      "sectorsLabel": "Data-heavy operations",
       "sectors": [
         "Steel & metals",
         "Agriculture",
@@ -795,17 +793,14 @@
       "description": "Most analytics projects end in more charts and a bill that never stops. Here we deploy a decision agent on your own data, inside your own environment, and train your team to run it along the way. The shortcut to a capability that takes 18 to 24 months to build from scratch.",
       "pillars": [
         {
-          "label": "Week 12",
           "title": "You prove it first",
           "description": "A live pilot on your real data, at cost, before you sign anything."
         },
         {
-          "label": "Month 4",
           "title": "In production, in your cloud",
           "description": "The agent runs inside your perimeter, with your team trained alongside."
         },
         {
-          "label": "Month 12",
           "title": "Your team runs it alone",
           "description": "Architecture, prompts and documentation handed over. No forced dependency."
         }

@@ -28,13 +28,17 @@ export async function EnterpriseCta() {
             {t("button")}
           </Link>
         </div>
+      </Reveal>
 
-        <p className="mx-auto mt-16 max-w-xl text-body-s text-panel-ink/60">
-          {t("bridge")}
-        </p>
+      {/* La salida lateral a Beacon sale del eje del CTA para no competir con él. */}
+      <Reveal
+        order={1}
+        className="mx-auto mt-24 flex max-w-7xl flex-wrap items-center justify-between gap-6 border-t border-panel-hairline pt-10"
+      >
+        <p className="max-w-xl text-body-s text-panel-ink/60">{t("bridge")}</p>
         <Link
           href="/beacon"
-          className="group mt-4 inline-flex items-center gap-2 text-body-s text-panel-ink/60 transition-colors hover:text-panel-ink"
+          className="group inline-flex items-center gap-2 text-body-s text-panel-ink/60 transition-colors hover:text-panel-ink"
         >
           {t("bridgeLink")}
           <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />

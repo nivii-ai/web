@@ -59,7 +59,7 @@ export async function HowItWorks() {
           </Reveal>
 
           <Reveal order={steps.length + 3} className="mt-10">
-            <h3 className="text-eyebrow font-medium text-panel-ink/50 uppercase">
+            <h3 className="text-eyebrow font-medium text-panel-ink/60 uppercase">
               {t("modelTitle")}
             </h3>
             <ul className="mt-5">
