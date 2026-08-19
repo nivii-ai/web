@@ -405,12 +405,14 @@
       "note": "Sin costo. Sin tarjeta. Con tus propios datos."
     },
     "mission": {
-      "title": "Nuestra Misión",
-      "description": [
-        "No importa cuánto se invierta en datos, demasiadas decisiones se toman sin mirar lo que dicen. A veces es porque lleva demasiado tiempo; a menudo porque muchos no tienen las habilidades para el análisis.",
-        "¿Cuánto se pierde cuando un representante de ventas ofrece el producto equivocado? ¿A cuánto riesgo se expone tu empresa sin una claridad financiera instantánea? ¿Cuánto se desperdicia en la rotación de empleados cuando las señales estaban allí, pero ocultas detrás de dashboards?",
-        "Construimos Nivii para resolver esto. Creemos que tu equipo necesita análisis fiables, no más gráficos. Necesitan información para pasar a la acción de inmediato."
-      ]
+      "label": "Nuestra misión",
+      "lead": "No importa cuánto inviertas en datos: demasiadas decisiones se siguen tomando sin mirar lo que dicen.",
+      "questions": [
+        "¿Cuánto se pierde cuando un vendedor ofrece el producto equivocado?",
+        "¿Cuánto riesgo corre tu empresa sin claridad financiera al instante?",
+        "¿Cuánta rotación estaba a la vista en las señales, enterrada detrás de un dashboard?"
+      ],
+      "close": "Construimos Nivii para cerrar esa brecha: análisis confiable y <accent>una recomendación clara</accent>, lista para accionar."
     },
     "team": {
       "title": "Conoce al equipo",

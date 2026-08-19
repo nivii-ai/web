@@ -1,35 +1,47 @@
-import { cn } from "@/lib/utils";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
+import { Reveal } from "@/components/ui/reveal";
 
 export async function Mission() {
   const t = await getTranslations("home.mission");
-  const messages = await getMessages();
-
-  const missionDescription = messages.home.mission.description as string[];
+  const questions = t.raw("questions") as string[];
 
   return (
-    <section id="mission" className="py-16 scroll-m-28">
-      <div className=" relative max-w-3xl mx-auto px-6">
-        <div className="absolute opacity-5 top-20 -left-44 bg-[url('/goal.svg')] bg-no-repeat bg-contain w-2xs  md:w-2xl h-full" />
-        <div className="text-left mx-auto mb-16">
-          <h2 className="text-balance text-3xl font-bold lg:text-5xl tracking-tight text-brand-green">
-            {t("title")}
-          </h2>
-          <div>
-            {missionDescription.map((paragraph, index) => (
-              <p
-                key={index}
-                className={cn(
-                  "mt-6 font-medium text-xl text-gray-700 leading-relaxed",
-                  {
-                    "font-bold": index === missionDescription.length - 1,
-                  }
-                )}
+    <section
+      id="mission"
+      className="scroll-m-28 bg-surface-sunken px-6 py-32 lg:px-12 lg:py-40"
+    >
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[12rem_minmax(0,1fr)] lg:gap-24">
+        <p className="text-eyebrow font-medium text-ink-muted uppercase lg:sticky lg:top-32 lg:self-start">
+          {t("label")}
+        </p>
+
+        <div className="max-w-3xl">
+          <Reveal>
+            <p className="text-display-m text-ink">{t("lead")}</p>
+          </Reveal>
+
+          <ul className="mt-12">
+            {questions.map((question, i) => (
+              <Reveal
+                key={question}
+                as="li"
+                order={i + 1}
+                className="border-t border-hairline py-6 text-body-l text-ink-muted"
               >
-                {paragraph}
-              </p>
+                {question}
+              </Reveal>
             ))}
-          </div>
+          </ul>
+
+          <Reveal order={questions.length + 1} className="mt-16">
+            <p className="text-display-l text-ink">
+              {t.rich("close", {
+                accent: (chunks) => (
+                  <span className="text-brand-green italic">{chunks}</span>
+                ),
+              })}
+            </p>
+          </Reveal>
         </div>
       </div>
     </section>

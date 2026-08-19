@@ -405,12 +405,14 @@
       "note": "No cost. No card. On your own data."
     },
     "mission": {
-      "title": "Our Mission",
-      "description": [
-        "No matter how much is invested in data, too many decisions are made without looking at what it says. Sometimes it's because it takes too long; often because many don't have the skills for analysis.",
-        "How much is lost when a sales rep pitches the wrong product? How much risk is your company exposed to without instant financial clarity? How much is wasted in employee attrition when the signals were there, but obscured behind dashboards?",
-        "We built Nivii to solve this. We believe your team needs trustworthy analysis, not more charts. They need insights to move to action immediately."
-      ]
+      "label": "Our mission",
+      "lead": "However much you invest in data, too many decisions are still made without looking at what it says.",
+      "questions": [
+        "How much is lost when a rep pitches the wrong product?",
+        "How much risk does a company carry without financial clarity on the spot?",
+        "How much attrition was visible in the signals, buried behind a dashboard?"
+      ],
+      "close": "We built Nivii to close that gap: trustworthy analysis and <accent>a clear recommendation</accent>, ready to act on."
     },
     "team": {
       "title": "Meet the Team",
