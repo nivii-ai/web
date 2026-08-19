@@ -835,7 +835,8 @@
         }
       ],
       "roiTitle": "No ROI, no contract",
-      "roiBody": "The pilot runs at cost and works roughly 95% like the production system. The business case has to write itself before you sign.",
+      "roiStat": "~95%",
+      "roiBody": "That is how close the pilot runs to the production system, and it runs at cost. The business case has to write itself before you sign.",
       "modelTitle": "Commercial model",
       "modelItems": [
         "A one-time build, then fixed-term support.",

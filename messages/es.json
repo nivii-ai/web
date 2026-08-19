@@ -835,7 +835,8 @@
         }
       ],
       "roiTitle": "Sin ROI, no hay contrato",
-      "roiBody": "El piloto se hace al costo y funciona cerca del 95% igual que el sistema en producción. El caso de negocio tiene que escribirse solo antes de que firmes.",
+      "roiStat": "~95%",
+      "roiBody": "Así de parecido al sistema en producción funciona el piloto, y se hace al costo. El caso de negocio tiene que escribirse solo antes de que firmes.",
       "modelTitle": "Modelo comercial",
       "modelItems": [
         "Un único build y después soporte a plazo fijo.",

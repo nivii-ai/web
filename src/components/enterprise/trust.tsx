@@ -4,7 +4,10 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 export async function Trust() {
   const t = await getTranslations("enterprise.trust");
-  const items = t.raw("items") as { title: string; description: string }[];
+  const [lead, ...rest] = t.raw("items") as {
+    title: string;
+    description: string;
+  }[];
 
   return (
     <section
@@ -22,12 +25,22 @@ export async function Trust() {
           })}
         />
 
-        <ul className="mt-16 grid gap-x-12 gap-y-10 lg:grid-cols-3">
-          {items.map((item, i) => (
+        <Reveal
+          order={1}
+          className="mt-14 rounded-bezel bg-white/[0.04] p-8 lg:p-12"
+        >
+          <h3 className="text-display-m text-panel-ink">{lead.title}</h3>
+          <p className="mt-5 max-w-2xl text-body-l text-panel-ink/70">
+            {lead.description}
+          </p>
+        </Reveal>
+
+        <ul className="mt-14 grid gap-x-12 gap-y-10 lg:grid-cols-2">
+          {rest.map((item, i) => (
             <Reveal
               as="li"
               key={item.title}
-              order={i + 1}
+              order={i + 2}
               className="border-t border-panel-hairline pt-6"
             >
               <h3 className="text-heading text-panel-ink">{item.title}</h3>
