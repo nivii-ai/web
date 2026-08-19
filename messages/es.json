@@ -613,8 +613,7 @@
       "eyebrow": "El piloto",
       "title": "Antes de pagar nada, lo probás <accent>con tus propios datos</accent>",
       "description": "Dos reuniones de una hora, sin costo y sin compromiso. Todo el piloto queda listo en menos de una semana.",
-      "badgePilot": "Piloto · gratis",
-      "badgeRunning": "En marcha · abono mensual sin permanencia",
+      "terms": "El piloto no tiene costo. Si avanzás, es un abono mensual fijo, sin permanencia forzada.",
       "steps": [
         {
           "title": "Firmamos un NDA y tus datos quedan en un clean room aislado",

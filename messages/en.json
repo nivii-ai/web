@@ -613,8 +613,7 @@
       "eyebrow": "The pilot",
       "title": "Before paying anything, you try it <accent>on your own data</accent>",
       "description": "Two one-hour meetings, at no cost and with no commitment. The whole pilot is ready in under a week.",
-      "badgePilot": "Pilot · free",
-      "badgeRunning": "Running · monthly fee, no lock-in",
+      "terms": "The pilot is free. If you move forward, it is a flat monthly fee with no lock-in.",
       "steps": [
         {
           "title": "We sign an NDA and your data goes into an isolated clean room",

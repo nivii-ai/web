@@ -23,13 +23,8 @@ export async function Pilot() {
             description={t("description")}
           />
 
-          <Reveal order={1} className="mt-10 flex flex-col items-start gap-3">
-            <span className="rounded-full bg-brand-green-tint px-3 py-1 text-body-s font-medium text-brand-green-dark">
-              {t("badgePilot")}
-            </span>
-            <span className="rounded-full border border-hairline px-3 py-1 text-body-s text-ink-muted">
-              {t("badgeRunning")}
-            </span>
+          <Reveal order={1} className="mt-8 border-t border-hairline pt-6">
+            <p className="text-body-s text-ink-muted">{t("terms")}</p>
           </Reveal>
         </div>
 
@@ -39,10 +34,13 @@ export async function Pilot() {
               as="li"
               key={step.title}
               order={i + 2}
-              className="relative border-t border-hairline py-8 ps-16 last:border-b"
+              className="relative border-t border-hairline py-8 ps-12 last:border-b"
             >
-              <span className="absolute start-0 top-8 flex size-10 items-center justify-center rounded-full bg-surface-sunken font-display text-body-s font-semibold text-brand-green-dark">
-                {i + 1}
+              <span
+                aria-hidden
+                className="absolute start-0 top-9 font-mono text-code text-ink-muted"
+              >
+                {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="text-heading text-ink">{step.title}</h3>
               <p className="mt-3 text-body-l text-ink-muted">

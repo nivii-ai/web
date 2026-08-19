@@ -29,12 +29,12 @@ export async function BeaconCta() {
           </Link>
         </div>
 
-        <p className="mx-auto mt-16 max-w-xl border-t border-hairline pt-10 text-body-s text-ink-muted">
+        <p className="mx-auto mt-16 max-w-xl text-body-s text-ink-muted">
           {t("bridge")}
         </p>
         <Link
           href="/enterprise"
-          className="group mt-4 inline-flex items-center gap-2 text-body-s font-semibold text-ink transition-colors hover:text-brand-green"
+          className="group mt-4 inline-flex items-center gap-2 text-body-s text-ink-muted transition-colors hover:text-ink"
         >
           {t("bridgeLink")}
           <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />

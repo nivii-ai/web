@@ -17,7 +17,7 @@ export async function Faq() {
       id="faq"
       className="scroll-m-28 border-t border-hairline px-6 py-24 lg:px-12 lg:py-32"
     >
-      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:gap-24">
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] lg:gap-24">
         <SectionHeading
           eyebrow={t("eyebrow")}
           title={t("title")}

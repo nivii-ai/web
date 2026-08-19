@@ -16,11 +16,7 @@ export async function BeaconHero() {
     <section className="hero-band relative isolate overflow-hidden px-6 pt-32 pb-24 lg:px-12 lg:pt-40 lg:pb-32">
       <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2 lg:gap-16">
         <div>
-          <span className="inline-flex items-center rounded-full bg-brand-green-tint px-3 py-1 text-eyebrow font-medium text-brand-green-dark uppercase">
-            {t("eyebrow")}
-          </span>
-
-          <h1 className="mt-6 text-display-xl text-ink">
+          <h1 className="text-display-xl text-ink">
             {t.rich("title", {
               accent: (chunks) => (
                 <span className="text-brand-green italic">{chunks}</span>
