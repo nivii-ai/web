@@ -15,7 +15,11 @@ export async function Pilot() {
         <div className="lg:sticky lg:top-32 lg:self-start">
           <SectionHeading
             eyebrow={t("eyebrow")}
-            title={t("title")}
+            title={t.rich("title", {
+            accent: (chunks) => (
+              <span className="text-brand-green italic">{chunks}</span>
+            ),
+          })}
             description={t("description")}
           />
 

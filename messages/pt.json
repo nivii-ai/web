@@ -499,7 +499,7 @@
     },
     "notChatbot": {
       "eyebrow": "Por que um chat genérico não basta",
-      "title": "O ChatGPT não resolve isso, e não somos só nós dizendo",
+      "title": "O ChatGPT não resolve isso, e <accent>não somos só nós dizendo</accent>",
       "description": "Conectar um modelo de linguagem direto a um banco de dados não basta para responder perguntas de negócio com confiança. A Anthropic, empresa por trás do Claude, documentou isso publicamente sobre a própria analítica interna.",
       "statFrom": "21%",
       "statTo": "95%",
@@ -519,7 +519,7 @@
           "description": "Às vezes o dado certo está ali, mas perdido entre milhares de tabelas e consultas. Sem curadoria, procurar é como achar uma agulha no palheiro."
         }
       ],
-      "source": "Fonte: Anthropic, “How Anthropic enables self-service data analytics with Claude”."
+      "source": "Fonte: Anthropic, <link>“How Anthropic enables self-service data analytics with Claude”</link>."
     },
     "examples": {
       "eyebrow": "Exemplos reais",
@@ -611,7 +611,7 @@
     },
     "pilot": {
       "eyebrow": "O piloto",
-      "title": "Antes de pagar nada, você testa com seus próprios dados",
+      "title": "Antes de pagar nada, você testa <accent>com seus próprios dados</accent>",
       "description": "Duas reuniões de uma hora, sem custo e sem compromisso. Todo o piloto fica pronto em menos de uma semana.",
       "badgePilot": "Piloto · grátis",
       "badgeRunning": "Em operação · mensalidade sem fidelidade",

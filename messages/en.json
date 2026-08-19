@@ -499,7 +499,7 @@
     },
     "notChatbot": {
       "eyebrow": "Why a generic chat is not enough",
-      "title": "ChatGPT does not solve this, and it is not only us saying it",
+      "title": "ChatGPT does not solve this, and <accent>it is not only us saying it</accent>",
       "description": "Wiring a language model straight into a database is not enough to answer business questions with confidence. Anthropic, the company behind Claude, documented this publicly about its own internal analytics.",
       "statFrom": "21%",
       "statTo": "95%",
@@ -519,7 +519,7 @@
           "description": "Sometimes the right number is there, but lost among thousands of tables and queries. Without curation, finding it is a needle in a haystack."
         }
       ],
-      "source": "Source: Anthropic, “How Anthropic enables self-service data analytics with Claude”."
+      "source": "Source: Anthropic, <link>“How Anthropic enables self-service data analytics with Claude”</link>."
     },
     "examples": {
       "eyebrow": "Real examples",
@@ -611,7 +611,7 @@
     },
     "pilot": {
       "eyebrow": "The pilot",
-      "title": "Before paying anything, you try it on your own data",
+      "title": "Before paying anything, you try it <accent>on your own data</accent>",
       "description": "Two one-hour meetings, at no cost and with no commitment. The whole pilot is ready in under a week.",
       "badgePilot": "Pilot · free",
       "badgeRunning": "Running · monthly fee, no lock-in",

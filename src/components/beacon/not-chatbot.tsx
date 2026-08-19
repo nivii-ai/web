@@ -3,6 +3,9 @@ import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "./section-heading";
 
+const SOURCE_URL =
+  "https://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude";
+
 export async function NotChatbot() {
   const t = await getTranslations("beacon.notChatbot");
   const cards = t.raw("cards") as { title: string; description: string }[];
@@ -15,7 +18,11 @@ export async function NotChatbot() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading
           eyebrow={t("eyebrow")}
-          title={t("title")}
+          title={t.rich("title", {
+            accent: (chunks) => (
+              <span className="text-brand-green italic">{chunks}</span>
+            ),
+          })}
           description={t("description")}
         />
 
@@ -51,7 +58,20 @@ export async function NotChatbot() {
           ))}
         </ul>
 
-        <p className="mt-12 text-code text-ink-muted">{t("source")}</p>
+        <p className="mt-12 text-code text-ink-muted">
+          {t.rich("source", {
+            link: (chunks) => (
+              <a
+                href={SOURCE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline decoration-hairline underline-offset-4 transition-colors hover:text-ink"
+              >
+                {chunks}
+              </a>
+            ),
+          })}
+        </p>
       </div>
     </section>
   );
