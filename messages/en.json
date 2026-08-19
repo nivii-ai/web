@@ -484,6 +484,237 @@
       "secondary": "CIO, CTO or CDO? See the architecture and security overview"
     }
   },
+  "beacon": {
+    "meta": {
+      "title": "Nivii Beacon — the analyst that sorts your data and finds where the margin goes",
+      "description": "Beacon runs in Nivii's cloud: hand over your data as it is and get business answers in plain language. Free pilot, ready in under a week."
+    },
+    "hero": {
+      "eyebrow": "Nivii Beacon",
+      "title": "Every month margin slips away. <accent>Beacon finds it.</accent>",
+      "description": "A commercial intelligence analyst that cross-references pricing, mix, stock and sales performance to show you where you are losing money. Without cleaning up your data or hiring a team first.",
+      "cta": "Book your free pilot",
+      "secondary": "See how it works",
+      "note": "No cost. No credit card. On your own data, in an isolated environment."
+    },
+    "notChatbot": {
+      "eyebrow": "Why a generic chat is not enough",
+      "title": "ChatGPT does not solve this, and it is not only us saying it",
+      "description": "Wiring a language model straight into a database is not enough to answer business questions with confidence. Anthropic, the company behind Claude, documented this publicly about its own internal analytics.",
+      "statFrom": "21%",
+      "statTo": "95%",
+      "statLead": "That is how low the accuracy of a model connected raw to a database was at first.",
+      "statBody": "The difference came from business context layers, clear definitions and constant validation — exactly what Beacon builds before answering your first question.",
+      "cards": [
+        {
+          "title": "It does not know which number is the right one",
+          "description": "The same concept — “margin”, “active customer” — lives in several different tables. A generic chat picks one source and answers with the same confidence whether it is right or wrong."
+        },
+        {
+          "title": "It works with stale information",
+          "description": "Your data and your definitions change all the time. Without a process that keeps them current, the model keeps answering with what it knew months ago."
+        },
+        {
+          "title": "It cannot find what already exists",
+          "description": "Sometimes the right number is there, but lost among thousands of tables and queries. Without curation, finding it is a needle in a haystack."
+        }
+      ],
+      "source": "Source: Anthropic, “How Anthropic enables self-service data analytics with Claude”."
+    },
+    "examples": {
+      "eyebrow": "Real examples",
+      "title": "The kind of question Beacon answers",
+      "description": "Questions we have already answered with real data from different companies, every case anonymized. None of this required perfect or real-time data: cross-referencing what already existed was enough.",
+      "items": [
+        {
+          "question": "How much did we really grow, net of inflation?",
+          "metric": "19% → -2.5%",
+          "title": "The growth that was not there",
+          "description": "Revenue had grown 19% year over year. Net of inflation it had actually fallen 2.5%. Effective margin was sliding too, as discounts kept growing."
+        },
+        {
+          "question": "Who actually sells well, and not just by volume?",
+          "metric": "+44%",
+          "title": "The best sellers, hidden in plain sight",
+          "description": "The ranking by total sales did not match the ranking by real performance. Comparing each rep against peers in the same store, shift and day, someone ranked 55th by sales turned out to be 10th by actual performance. Replacing a low performer with a high one produced +26% at the counter and +44% across the other positions."
+        },
+        {
+          "question": "Which customers really hold up the business?",
+          "metric": "1% → 30%",
+          "title": "The 1% that holds up the business",
+          "description": "A group of barely 1% of customers generated close to 30% of everything transacted, blended into the rest of the base because nobody measured them differently. Identifying them opened the door to differential treatment."
+        },
+        {
+          "question": "How much capital is sitting still in stock?",
+          "metric": "+50%",
+          "title": "Money parked on shelves and in warehouses",
+          "description": "More than half the stock had not turned over in six months, or had no sales in a year. With a clearance policy by stock age, that company could free up a significant amount of immobilized capital."
+        }
+      ],
+      "extraTitle": "One more insight: the demand nobody was watching",
+      "extraBody": "Comparing what people actually asked for against what actually sold surfaced specific sizes where stock was not matched to real demand. Those were sales being lost without anyone noticing.",
+      "cta": "See what it finds in your data"
+    },
+    "howItWorks": {
+      "eyebrow": "How it works",
+      "title": "You do not need to clean your data or run your own infrastructure",
+      "description": "Beacon runs entirely in Nivii's cloud. You hand over the data as it is, at whatever frequency you have, and we sort it, cross-reference it and train the agent to answer in plain language.",
+      "cards": [
+        {
+          "title": "Runs in Nivii's cloud",
+          "description": "No servers, no in-house IT, no maintenance: we operate the infrastructure."
+        },
+        {
+          "title": "Messy data, exactly as it is",
+          "description": "Spreadsheets, point of sale, an ERP that talks to nothing else: that is precisely the starting point we solve."
+        },
+        {
+          "title": "A flat monthly fee",
+          "description": "No lock-in contracts, and well below hiring a full-time data analyst or building your own team."
+        },
+        {
+          "title": "Answers, not another dashboard",
+          "description": "You ask in plain language and it answers with the number and, when it applies, with the recommendation."
+        }
+      ],
+      "tableTitle": "The real cost of solving it on your own",
+      "tableDescription": "Before building your own team, it is worth comparing it against what a Beacon pilot takes.",
+      "columnOwn": "Your own data team",
+      "columnBeacon": "Nivii Beacon",
+      "rows": [
+        {
+          "label": "Time to the first useful answer",
+          "own": "Months: finding, hiring and training someone",
+          "beacon": "Under a week, with a pilot at no cost"
+        },
+        {
+          "label": "If that person leaves",
+          "own": "The knowledge leaves with them",
+          "beacon": "It stays in Beacon, not with one person"
+        },
+        {
+          "label": "Infrastructure maintenance",
+          "own": "Your team owns it",
+          "beacon": "Nivii owns it"
+        },
+        {
+          "label": "Cost",
+          "own": "Salary, payroll taxes and tooling, twelve months a year",
+          "beacon": "Flat monthly fee, no lock-in"
+        },
+        {
+          "label": "What you need to start",
+          "own": "Clean data and a defined process",
+          "beacon": "Your data as it is today"
+        }
+      ]
+    },
+    "pilot": {
+      "eyebrow": "The pilot",
+      "title": "Before paying anything, you try it on your own data",
+      "description": "Two one-hour meetings, at no cost and with no commitment. The whole pilot is ready in under a week.",
+      "badgePilot": "Pilot · free",
+      "badgeRunning": "Running · monthly fee, no lock-in",
+      "steps": [
+        {
+          "title": "We sign an NDA and your data goes into an isolated clean room",
+          "description": "The NDA is part of the pilot terms and bars Nivii from sharing your information externally. The clean room is a separate, exclusive environment: your data is never mixed with anyone else's and is deleted at the end if you do not move forward."
+        },
+        {
+          "title": "Meeting 1: understanding the data",
+          "description": "One hour. We review together what information you have available and which business questions we can answer with it."
+        },
+        {
+          "title": "Nivii sorts and analyzes your data",
+          "description": "Internal work: cleaning, connecting sources and training the agent on your real information."
+        },
+        {
+          "title": "Meeting 2: reviewing the answers",
+          "description": "One hour. We show you, on your own data, the real answers Beacon can give your team every day. That is where you decide whether to move forward."
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Who it is for",
+      "title": "Built for growing companies, whatever the industry",
+      "description": "It is used by companies with an active commercial team. If you generate commercial data every day, it applies.",
+      "groups": [
+        {
+          "title": "If you are the CEO or owner",
+          "items": [
+            "You make pricing, product mix or expansion decisions with partial or outdated information.",
+            "The “real” report lives in the heads of two or three people, spread across several spreadsheets.",
+            "You have neither the time nor the team for a data project, and you do not need one for this pilot."
+          ]
+        },
+        {
+          "title": "If you run sales or operations",
+          "items": [
+            "You build reports by hand because the information exists, but it is disconnected across systems.",
+            "You want to bring the CEO an answer, not one more spreadsheet.",
+            "You already tried a BI tool and it ended up being another dashboard nobody opens."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Before booking your pilot",
+      "items": [
+        {
+          "question": "Is this the same as using ChatGPT or Claude directly?",
+          "answer": "No. Beacon is the layer that securely connects a language model to your real business data, sorts it and trains the agent to answer with your information, not with what the model knows in general."
+        },
+        {
+          "question": "What happens to my data during the pilot?",
+          "answer": "Before anything is shared we sign an NDA: it is part of the pilot terms and bars Nivii from sharing your data externally. From there it is loaded into an isolated clean room, exclusive to your company. It is never shared or mixed with other clients' data, and it is deleted at the end of the pilot if you do not move forward."
+        },
+        {
+          "question": "Do I need clean, organized data before starting?",
+          "answer": "No. That is precisely the problem we solve. You hand us the data as it is — in spreadsheets, in your ERP, in your point of sale — and Beacon sorts it out."
+        },
+        {
+          "question": "Do I need real-time data for this to work?",
+          "answer": "No. Beacon works with whatever refresh frequency you have: daily, weekly or in batches. Most commercial decisions are not made minute by minute, they are made with the best picture available — and that picture is already enough to find where margin is leaking."
+        },
+        {
+          "question": "How much does Beacon cost?",
+          "answer": "It is defined in the conversation after the pilot, based on the volume and complexity of your operation. It is a flat monthly fee, well below hiring a full-time data analyst, and with no lock-in contracts."
+        },
+        {
+          "question": "Is there any commitment to run the pilot?",
+          "answer": "None. The two meetings are free and imply no commitment to hire."
+        },
+        {
+          "question": "How do you guarantee the accuracy of the answers?",
+          "answer": "Beacon works on your already-sorted data, not the open web, and shows its work: what it queried, from which source and with what logic each answer was built. When a number is a benchmark and not your own data, it says so."
+        },
+        {
+          "question": "Do you connect to my ERP, point of sale or management system?",
+          "answer": "Yes. Beacon connects to the systems you already use — point of sale, ERP, spreadsheets and more — and works with your data where it lives. Data scattered across several systems is the starting point, not an obstacle."
+        },
+        {
+          "question": "Is it a subscription, or is it mine at some point?",
+          "answer": "It is a monthly fee: Beacon runs in Nivii's cloud and you access the answers while you are subscribed, with no lock-in. If your company later needs the agent running in its own cloud, that is the Nivii Enterprise path: a different product, built for another scale of operation."
+        },
+        {
+          "question": "Does my data live in Nivii's cloud? How safe is that?",
+          "answer": "Yes, that is the Beacon model: we hand you the simplicity of not running your own infrastructure. In exchange, your data lives in an isolated environment exclusive to your company, encrypted at rest and in transit, and is never mixed with another client's. If you would rather your data never leave your own perimeter, that is the Nivii Enterprise architecture."
+        },
+        {
+          "question": "How long until we see value beyond the pilot?",
+          "answer": "The pilot already shows you real answers about your business in under a week. Once the subscription starts there is no months-long curve: Beacon keeps answering on refreshed data and taking on the new questions your team brings."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start with your own data, <accent>at no cost</accent>.",
+      "description": "Two one-hour meetings. No commitment. You will see, on your own information, what Beacon can answer.",
+      "button": "Book your free pilot",
+      "bridge": "For enterprise-scale analysis, in your own cloud and with the code in your name, see Nivii Enterprise.",
+      "bridgeLink": "See Nivii Enterprise"
+    }
+  },
   "careers": {
     "title": "Join",
     "titleHighlight": "our team",

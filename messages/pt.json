@@ -484,6 +484,237 @@
       "secondary": "CIO, CTO ou CDO? Veja a arquitetura e a segurança"
     }
   },
+  "beacon": {
+    "meta": {
+      "title": "Nivii Beacon — o analista que organiza seus dados e encontra onde a margem se perde",
+      "description": "O Beacon roda na nuvem da Nivii: você entrega os dados como estão e recebe respostas de negócio em linguagem simples. Piloto gratuito, pronto em menos de uma semana."
+    },
+    "hero": {
+      "eyebrow": "Nivii Beacon",
+      "title": "Todo mês escapa margem. <accent>O Beacon encontra.</accent>",
+      "description": "Um analista de inteligência comercial que cruza preços, mix, estoque e desempenho do time de vendas para mostrar onde você está perdendo dinheiro. Sem precisar organizar seus dados nem montar um time.",
+      "cta": "Reserve seu piloto gratuito",
+      "secondary": "Ver como funciona",
+      "note": "Sem custo. Sem cartão. Com seus próprios dados, em um ambiente isolado."
+    },
+    "notChatbot": {
+      "eyebrow": "Por que um chat genérico não basta",
+      "title": "O ChatGPT não resolve isso, e não somos só nós dizendo",
+      "description": "Conectar um modelo de linguagem direto a um banco de dados não basta para responder perguntas de negócio com confiança. A Anthropic, empresa por trás do Claude, documentou isso publicamente sobre a própria analítica interna.",
+      "statFrom": "21%",
+      "statTo": "95%",
+      "statLead": "Foi essa a precisão inicial de um modelo conectado cru a um banco de dados.",
+      "statBody": "A diferença veio de camadas de contexto de negócio, definições claras e validação constante: exatamente o que o Beacon constrói antes de responder sua primeira pergunta.",
+      "cards": [
+        {
+          "title": "Não sabe qual é o dado certo",
+          "description": "Um mesmo conceito — “margem”, “cliente ativo” — vive em várias tabelas diferentes. Um chat genérico escolhe uma fonte e responde com a mesma confiança, esteja certo ou errado."
+        },
+        {
+          "title": "Trabalha com informação velha",
+          "description": "Seus dados e suas definições mudam o tempo todo. Sem um processo que os mantenha atualizados, o modelo segue respondendo com o que sabia meses atrás."
+        },
+        {
+          "title": "Não encontra o que já existe",
+          "description": "Às vezes o dado certo está ali, mas perdido entre milhares de tabelas e consultas. Sem curadoria, procurar é como achar uma agulha no palheiro."
+        }
+      ],
+      "source": "Fonte: Anthropic, “How Anthropic enables self-service data analytics with Claude”."
+    },
+    "examples": {
+      "eyebrow": "Exemplos reais",
+      "title": "O tipo de pergunta que o Beacon responde",
+      "description": "Perguntas que já respondemos com dados reais de diferentes empresas, todos os casos anonimizados. Nada disso exigiu dados perfeitos nem em tempo real: bastou cruzar bem o que já existia.",
+      "items": [
+        {
+          "question": "Quanto crescemos de verdade, descontando a inflação?",
+          "metric": "19% → -2,5%",
+          "title": "O crescimento que não era crescimento",
+          "description": "O faturamento havia crescido 19% ano a ano. Descontando a inflação, na verdade havia caído 2,5%. A margem efetiva também vinha caindo à medida que os descontos aumentavam."
+        },
+        {
+          "question": "Quem vende bem de verdade, e não só por volume?",
+          "metric": "+44%",
+          "title": "Os melhores vendedores, escondidos",
+          "description": "O ranking por vendas totais não coincidia com o de melhor desempenho. Comparando cada vendedor com seus pares na mesma loja, turno e dia, alguém na 55ª posição por vendas era o 10º por desempenho real. Substituir alguém de baixo desempenho por um de alto gerou +26% no balcão e +44% nas demais posições."
+        },
+        {
+          "question": "Quais clientes realmente sustentam o negócio?",
+          "metric": "1% → 30%",
+          "title": "O 1% que sustenta o negócio",
+          "description": "Um grupo de apenas 1% dos clientes gerava cerca de 30% de tudo o que era transacionado, misturado ao resto da base porque ninguém os media de forma diferente. Identificá-los abriu a porta para um tratamento diferencial."
+        },
+        {
+          "question": "Quanto capital está parado em estoque?",
+          "metric": "+50%",
+          "title": "Dinheiro parado em gôndolas e depósitos",
+          "description": "Mais da metade do estoque estava há mais de seis meses sem girar, ou não tinha vendas havia um ano. Com uma política de liquidação por idade de estoque, essa empresa podia liberar um volume significativo de capital imobilizado."
+        }
+      ],
+      "extraTitle": "Mais um insight: a demanda que ninguém estava olhando",
+      "extraBody": "Comparando o que as pessoas realmente pediam com o que efetivamente vendia, apareceram tamanhos específicos em que o estoque não estava ajustado à demanda real. Eram vendas sendo perdidas sem que ninguém percebesse.",
+      "cta": "Ver o que ele encontra nos seus dados"
+    },
+    "howItWorks": {
+      "eyebrow": "Como funciona",
+      "title": "Você não precisa limpar seus dados nem ter infraestrutura própria",
+      "description": "O Beacon roda inteiramente na nuvem da Nivii. Você entrega os dados como estão, na frequência que tiver, e nós organizamos, cruzamos e treinamos o agente para responder em linguagem simples.",
+      "cards": [
+        {
+          "title": "Roda na nuvem da Nivii",
+          "description": "Sem servidores, sem TI própria, sem manutenção: a infraestrutura é operada por nós."
+        },
+        {
+          "title": "Dados bagunçados, do jeito que estão",
+          "description": "Planilhas, PDV, ERP sem conexão entre si: esse é exatamente o ponto de partida que resolvemos."
+        },
+        {
+          "title": "Uma mensalidade fixa",
+          "description": "Sem fidelidade forçada, e muito abaixo de contratar um analista de dados full-time ou montar um time próprio."
+        },
+        {
+          "title": "Respostas, não mais um dashboard",
+          "description": "Você pergunta em linguagem simples e ele responde com o número e, quando cabe, com a recomendação."
+        }
+      ],
+      "tableTitle": "O custo real de resolver por conta própria",
+      "tableDescription": "Antes de montar um time próprio, vale comparar com o que leva um piloto do Beacon.",
+      "columnOwn": "Time de dados próprio",
+      "columnBeacon": "Nivii Beacon",
+      "rows": [
+        {
+          "label": "Tempo até a primeira resposta útil",
+          "own": "Meses: procurar, contratar e treinar alguém",
+          "beacon": "Menos de uma semana, com um piloto sem custo"
+        },
+        {
+          "label": "Se essa pessoa sair",
+          "own": "O conhecimento vai embora com ela",
+          "beacon": "Fica no Beacon, não depende de uma só pessoa"
+        },
+        {
+          "label": "Manutenção da infraestrutura",
+          "own": "Fica com o seu time",
+          "beacon": "Fica com a Nivii"
+        },
+        {
+          "label": "Custo",
+          "own": "Salário, encargos e ferramentas, os doze meses do ano",
+          "beacon": "Mensalidade fixa, sem fidelidade forçada"
+        },
+        {
+          "label": "O que você precisa para começar",
+          "own": "Dados limpos e um processo já definido",
+          "beacon": "Seus dados como estão, hoje"
+        }
+      ]
+    },
+    "pilot": {
+      "eyebrow": "O piloto",
+      "title": "Antes de pagar nada, você testa com seus próprios dados",
+      "description": "Duas reuniões de uma hora, sem custo e sem compromisso. Todo o piloto fica pronto em menos de uma semana.",
+      "badgePilot": "Piloto · grátis",
+      "badgeRunning": "Em operação · mensalidade sem fidelidade",
+      "steps": [
+        {
+          "title": "Assinamos um NDA e seus dados ficam em um clean room isolado",
+          "description": "O NDA faz parte dos termos do piloto e impede a Nivii de compartilhar sua informação externamente. O clean room é um ambiente separado e exclusivo: seus dados não se misturam com os de ninguém e são eliminados ao final, se você não seguir."
+        },
+        {
+          "title": "Reunião 1: entendimento dos dados",
+          "description": "Uma hora. Revisamos juntos que informação você tem disponível e quais perguntas de negócio podemos responder com ela."
+        },
+        {
+          "title": "A Nivii organiza e analisa seus dados",
+          "description": "Trabalho interno: limpeza, conexão de fontes e treinamento do agente sobre sua informação real."
+        },
+        {
+          "title": "Reunião 2: revisão das respostas",
+          "description": "Uma hora. Mostramos, com seus próprios dados, as respostas reais que o Beacon pode dar ao seu time todos os dias. É aí que você decide se avança."
+        }
+      ]
+    },
+    "audience": {
+      "eyebrow": "Para quem é",
+      "title": "Pensado para empresas em crescimento, seja qual for o setor",
+      "description": "É usado por empresas com um time comercial ativo. Se você gera dados comerciais todos os dias, se aplica.",
+      "groups": [
+        {
+          "title": "Se você é CEO ou dono",
+          "items": [
+            "Toma decisões de preço, mix de produtos ou expansão com informação parcial ou atrasada.",
+            "O relatório “real” vive na cabeça de duas ou três pessoas, espalhado por várias planilhas.",
+            "Não tem tempo nem time para entrar em um projeto de dados, e não precisa disso para este piloto."
+          ]
+        },
+        {
+          "title": "Se você lidera comercial ou operações",
+          "items": [
+            "Monta relatórios à mão porque a informação existe, mas está desconectada entre sistemas.",
+            "Quer levar ao CEO uma resposta, não mais uma planilha.",
+            "Já testou alguma ferramenta de BI e virou mais um painel que ninguém abre."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Perguntas frequentes",
+      "title": "Antes de reservar seu piloto",
+      "items": [
+        {
+          "question": "É o mesmo que usar o ChatGPT ou o Claude diretamente?",
+          "answer": "Não. O Beacon é a camada que conecta um modelo de linguagem aos seus dados reais de negócio de forma segura, organiza esses dados e treina o agente para responder com a sua informação, não com o que o modelo sabe em geral."
+        },
+        {
+          "question": "O que acontece com meus dados durante o piloto?",
+          "answer": "Antes de compartilhar qualquer coisa assinamos um NDA: faz parte dos termos do piloto e proíbe a Nivii de compartilhar seus dados externamente. A partir daí eles são carregados em um clean room isolado, exclusivo da sua empresa. Não são compartilhados nem misturados com os de outros clientes, e são eliminados ao final do piloto se você não seguir."
+        },
+        {
+          "question": "Preciso ter os dados limpos ou organizados antes de começar?",
+          "answer": "Não. Esse é justamente o problema que resolvemos. Você entrega os dados como estão — em planilhas, no seu ERP, no seu PDV — e o Beacon se encarrega de organizá-los."
+        },
+        {
+          "question": "Preciso de dados em tempo real para isso funcionar?",
+          "answer": "Não. O Beacon trabalha com a frequência de atualização que você tiver: diária, semanal ou em lote. A maioria das decisões comerciais não é tomada minuto a minuto, e sim com a melhor foto disponível — e essa foto já basta para encontrar onde a margem está se perdendo."
+        },
+        {
+          "question": "Quanto custa o Beacon?",
+          "answer": "É definido na conversa após o piloto, em função do volume e da complexidade da sua operação. É uma mensalidade fixa, muito abaixo de contratar um analista de dados full-time, e sem contratos de fidelidade forçada."
+        },
+        {
+          "question": "Existe algum compromisso para fazer o piloto?",
+          "answer": "Nenhum. As duas reuniões não têm custo e não implicam nenhum compromisso de contratação."
+        },
+        {
+          "question": "Como vocês garantem a precisão das respostas?",
+          "answer": "O Beacon trabalha sobre seus dados já organizados, não sobre a web aberta, e mostra o trabalho: o que consultou, de qual fonte e com que lógica montou cada resposta. Quando um número é um benchmark e não o seu dado, ele deixa claro."
+        },
+        {
+          "question": "Vocês se conectam ao meu ERP, PDV ou sistema de gestão?",
+          "answer": "Sim. O Beacon se conecta aos sistemas que você já usa — PDV, ERP, planilhas e mais — e trabalha com seus dados onde eles estão. Estarem dispersos entre vários sistemas é o ponto de partida, não um obstáculo."
+        },
+        {
+          "question": "É uma assinatura, ou em algum momento é meu?",
+          "answer": "É uma mensalidade: o Beacon roda na nuvem da Nivii e você acessa as respostas enquanto estiver assinando, sem fidelidade forçada. Se mais adiante sua empresa precisar do agente rodando na própria nuvem, esse é o caminho do Nivii Enterprise: um produto diferente, pensado para outra escala de operação."
+        },
+        {
+          "question": "Meus dados ficam na nuvem da Nivii? Quão seguro é isso?",
+          "answer": "Sim, esse é o modelo do Beacon: entregamos a simplicidade de não operar infraestrutura própria. Em troca, seus dados vivem em um ambiente isolado e exclusivo da sua empresa, criptografado em repouso e em trânsito, e nunca se misturam com os de outro cliente. Se você prefere que seus dados nunca saiam do seu perímetro, essa é a arquitetura do Nivii Enterprise."
+        },
+        {
+          "question": "Quanto tempo até ver valor, além do piloto?",
+          "answer": "O piloto já mostra respostas reais sobre o seu negócio em menos de uma semana. Depois que a assinatura começa não há uma curva de meses: o Beacon segue respondendo sobre dados atualizados e incorporando as novas perguntas que o seu time trouxer."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Comece com seus próprios dados, <accent>sem custo</accent>.",
+      "description": "Duas reuniões de uma hora. Sem compromisso. Você vai ver, com sua própria informação, o que o Beacon consegue responder.",
+      "button": "Reserve seu piloto gratuito",
+      "bridge": "Para análise em escala enterprise, na sua própria nuvem e com o código no seu nome, conheça o Nivii Enterprise.",
+      "bridgeLink": "Ver Nivii Enterprise"
+    }
+  },
   "careers": {
     "title": "Junte-se",
     "titleHighlight": "ao nosso time",
