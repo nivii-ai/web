@@ -26,7 +26,7 @@ export function TimelineSteps({
   const ref = useRef<HTMLDivElement>(null);
   const progress = useMotionValue(0);
   const [active, setActive] = useState(0);
-  // La consola arranca desmontada para que lo primero que se anime sea la pregunta.
+  // La consola está vacía hasta el primer paso: lo que se anima es la pregunta.
   const [started, setStarted] = useState(false);
   const prefersReducedMotion = useReducedMotion();
   const [moving, setMoving] = useState(false);
@@ -95,11 +95,10 @@ export function TimelineSteps({
             transition={prefersReducedMotion ? { duration: 0 } : spring}
             className="pointer-events-auto w-[46%]"
           >
-            {started ? (
-              <ConsoleShell scrollable innerRef={pane}>
-                {shown}
-              </ConsoleShell>
-            ) : null}
+            {/* La consola está desde el principio; lo que espera es el contenido. */}
+            <ConsoleShell scrollable innerRef={pane}>
+              {started ? shown : null}
+            </ConsoleShell>
           </motion.div>
         </div>
       </div>
