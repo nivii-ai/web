@@ -69,7 +69,7 @@ export function ParticleField({
           y: seed(i + 99) * height,
           vx: (seed(i + 7) - 0.5) * SPEED,
           vy: -SPEED * (0.3 + seed(i + 31) * 0.7),
-          r: 0.4 + depth * 0.9,
+          r: 0.6 + depth * 1.3,
           depth,
           alpha: 0.05 + seed(i + 71) * 0.15,
           phase: seed(i + 17) * Math.PI * 2,
@@ -94,7 +94,7 @@ export function ParticleField({
         }
 
         // Las grandes llevan halo; las chicas quedan como puntos limpios.
-        if (p.r > 1.1) {
+        if (p.r > 1.4) {
           const glow = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r * 8);
           glow.addColorStop(0, green);
           glow.addColorStop(1, "transparent");
