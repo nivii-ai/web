@@ -263,6 +263,13 @@
   animation: word-fade-in 450ms ease both;
 }
 
+/* El rebote del scroll deja ver el fondo del documento: en las páginas oscuras
+   tiene que ser el panel, no el blanco del resto del sitio. */
+html:has(.page-dark) {
+  background-color: var(--color-panel);
+  color-scheme: dark;
+}
+
 /* En las páginas oscuras el header se re-tinta redefiniendo los tokens que ya
    usan sus utilidades, en vez de duplicar cada regla. */
 body:has(.page-dark) .site-header {
