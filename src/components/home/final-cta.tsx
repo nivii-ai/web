@@ -26,7 +26,7 @@ export async function FinalCta() {
         </div>
 
         <Link
-          href="/enterprise/#seguridad"
+          href="/enterprise/#security"
           className="group mt-8 inline-flex items-center gap-2 text-body-s text-ink-muted transition-colors hover:text-ink"
         >
           {t("secondary")}

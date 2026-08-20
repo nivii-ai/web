@@ -45,7 +45,7 @@ export async function BeaconBanner() {
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <Link
-              href="/beacon#piloto"
+              href="/beacon#pilot"
               className="rounded-lg bg-brand-green px-4 py-2 text-body-s font-semibold text-white transition-all duration-100 hover:bg-brand-green-dark active:scale-[0.97]"
             >
               {t("cta")}

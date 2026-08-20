@@ -45,7 +45,7 @@ export async function EnterpriseHero() {
                 {t("cta")}
               </Link>
               <Link
-                href="/enterprise#seguridad"
+                href="/enterprise#security"
                 className="group inline-flex items-center gap-2 rounded-lg border border-panel-hairline px-4 py-2 text-body-s font-semibold text-panel-ink transition-all duration-100 hover:bg-white/5 active:scale-[0.97]"
               >
                 {t("secondary")}

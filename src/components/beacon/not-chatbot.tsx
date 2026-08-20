@@ -11,7 +11,7 @@ export async function NotChatbot() {
 
   return (
     <section
-      id="no-es-un-chatbot"
+      id="not-a-chatbot"
       className="scroll-m-28 border-t border-hairline bg-surface-sunken px-6 py-24 lg:px-12 lg:py-32"
     >
       <div className="mx-auto max-w-7xl">

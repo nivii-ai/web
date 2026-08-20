@@ -37,7 +37,7 @@ export async function BeaconHero() {
               {t("cta")}
             </Link>
             <Link
-              href="/beacon#como-funciona"
+              href="/beacon#how-it-works"
               className="group inline-flex items-center gap-2 rounded-lg border border-hairline px-4 py-2 text-body-s font-semibold text-ink transition-all duration-100 hover:bg-surface-sunken active:scale-[0.97]"
             >
               {t("secondary")}
