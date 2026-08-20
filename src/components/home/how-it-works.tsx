@@ -45,7 +45,7 @@ export async function HowItWorks() {
   return (
     <section
       id="how-it-works"
-      className="scroll-m-28 bg-surface-sunken px-6 py-24 lg:px-12"
+      className="scroll-m-28 overflow-x-clip bg-surface-sunken px-6 py-24 lg:px-12"
     >
       <div className="mx-auto max-w-7xl">
         <Reveal className="max-w-2xl">
