@@ -12,10 +12,15 @@ export async function HowItWorks() {
   const c = await getTranslations("console");
   const scenario = (c.raw("scenarios") as Scenario[])[1];
   const steps = t.raw("steps") as { title: string; description: string }[];
-  const nextTurn = scenario.nextTurn;
 
   // Una pieza por paso: se acumulan, no se rearman.
   const pieces = [
+    <StreamInfo
+      key="cleaning"
+      className="fade-word"
+      text={c("cleaning")}
+      done
+    />,
     <div key="question" className="fade-word">
       <QuestionBubble>{scenario.question}</QuestionBubble>
     </div>,
@@ -26,20 +31,6 @@ export async function HowItWorks() {
     />,
     <Answer key="answer" answer={scenario.answer} delay={0} compact />,
     <Recommendation key="recommendation" text={scenario.recommendation} />,
-    nextTurn ? (
-      <div key="next" className="flex flex-col gap-4">
-        <div className="fade-word">
-          <QuestionBubble>{nextTurn.question}</QuestionBubble>
-        </div>
-        <StreamInfo
-          className="fade-word"
-          style={{ animationDelay: "0.6s" }}
-          text={c("ready")}
-          done
-        />
-        <Answer answer={nextTurn.answer} delay={0.8} compact />
-      </div>
-    ) : null,
   ];
 
   return (
@@ -57,7 +48,12 @@ export async function HowItWorks() {
           steps={steps}
           pieces={pieces}
           readyLine={
-            <StreamInfo key="ready" className="fade-word" text={c("ready")} done />
+            <StreamInfo
+              key="ready"
+              className="fade-word"
+              text={c("ready")}
+              done
+            />
           }
         />
       </div>

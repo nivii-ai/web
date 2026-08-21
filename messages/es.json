@@ -375,7 +375,8 @@
         "recommendation": "Arrancá la liquidación por antigüedad con las referencias de más de doce meses: son $71M a precio de costo y ocupan el 38% del depósito."
       }
     ],
-    "ready": "Respuesta lista"
+    "ready": "Respuesta lista",
+    "cleaning": "3 sistemas cruzados · 8.940 filas revisadas · 214 códigos duplicados resueltos"
   },
   "home": {
     "hero": {
@@ -390,8 +391,12 @@
     },
     "howItWorks": {
       "title": "Preguntá. Y ya está.",
-      "description": "Sin esperar el reporte. Sin interpretar el gráfico. Sin dudar del número.",
+      "description": "Sin un proyecto de datos antes. Sin esperar el reporte. Sin dudar del número.",
       "steps": [
+        {
+          "title": "Ordena.",
+          "description": "Antes de la primera pregunta, los agentes de limpieza cruzan tus fuentes, resuelven los duplicados y eligen el dato confiable de cada una. Ese trabajo es nuestro, no un proyecto tuyo."
+        },
         {
           "title": "Preguntá.",
           "description": "En tu idioma, como se lo dirías a alguien de tu equipo."
@@ -407,10 +412,6 @@
         {
           "title": "Recomienda.",
           "description": "No un gráfico para interpretar: qué hacer, sobre qué, y cuánta plata hay en juego."
-        },
-        {
-          "title": "Seguí.",
-          "description": "La conversación no se corta en la primera respuesta."
         }
       ]
     },

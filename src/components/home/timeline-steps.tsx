@@ -48,13 +48,16 @@ export function TimelineSteps({
     if (next !== active) setActive(next);
   });
 
-  // La línea de trabajo pasa a "respuesta lista" cuando llega la respuesta.
+  // La línea de búsqueda pasa a "respuesta lista" cuando llega la respuesta.
+  const SEARCHING = 2;
   const shown = pieces
     .slice(0, active + 1)
-    .map((piece, i) => (i === 1 && active >= 2 ? readyLine : piece));
+    .map((piece, i) =>
+      i === SEARCHING && active > SEARCHING ? readyLine : piece,
+    );
 
   return (
-    <div ref={ref} className="relative pb-16">
+    <div ref={ref} className="relative mt-20 pb-16 lg:mt-28">
       <ScrollBinder
         targetRef={ref}
         offset={["start start", "end end"]}

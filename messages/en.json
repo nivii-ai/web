@@ -375,7 +375,8 @@
         "recommendation": "Start the clearance by stock age with SKUs older than twelve months: that is $71M at cost and 38% of the warehouse."
       }
     ],
-    "ready": "Answer ready"
+    "ready": "Answer ready",
+    "cleaning": "3 systems cross-referenced · 8,940 rows reviewed · 214 duplicate codes resolved"
   },
   "home": {
     "hero": {
@@ -390,15 +391,19 @@
     },
     "howItWorks": {
       "title": "Just ask. That's it.",
-      "description": "No waiting for the report. No interpreting the chart. No second-guessing the number.",
+      "description": "No data project first. No waiting for the report. No second-guessing the number.",
       "steps": [
         {
-          "title": "Ask.",
-          "description": "In your own words, the way you'd ask someone on your team."
+          "title": "It sorts.",
+          "description": "Before the first question, cleaning agents cross-reference your sources, resolve duplicates and pick the reliable number in each one. That work is ours, not a project of yours."
+        },
+        {
+          "title": "You ask.",
+          "description": "In your own words, the way you would ask someone on your team."
         },
         {
           "title": "It searches.",
-          "description": "Across every system you run, even the ones that don't talk to each other."
+          "description": "Across all your systems, even the ones that do not talk to each other."
         },
         {
           "title": "It answers.",
@@ -407,10 +412,6 @@
         {
           "title": "It recommends.",
           "description": "Not a chart to interpret: what to do, on what, and how much money is at stake."
-        },
-        {
-          "title": "Keep going.",
-          "description": "The conversation doesn't end at the first answer."
         }
       ]
     },

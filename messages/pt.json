@@ -375,7 +375,8 @@
         "recommendation": "Comece a liquidação por idade de estoque pelas referências com mais de doze meses: são $71M a preço de custo e ocupam 38% do depósito."
       }
     ],
-    "ready": "Resposta pronta"
+    "ready": "Resposta pronta",
+    "cleaning": "3 sistemas cruzados · 8.940 linhas revisadas · 214 códigos duplicados resolvidos"
   },
   "home": {
     "hero": {
@@ -390,27 +391,27 @@
     },
     "howItWorks": {
       "title": "Pergunte. E pronto.",
-      "description": "Sem esperar o relatório. Sem interpretar o gráfico. Sem duvidar do número.",
+      "description": "Sem um projeto de dados antes. Sem esperar o relatório. Sem duvidar do número.",
       "steps": [
         {
-          "title": "Pergunte.",
-          "description": "Com suas palavras, do jeito que perguntaria a alguém do seu time."
+          "title": "Organiza.",
+          "description": "Antes da primeira pergunta, os agentes de limpeza cruzam suas fontes, resolvem duplicidades e escolhem o dado confiável de cada uma. Esse trabalho é nosso, não um projeto seu."
         },
         {
-          "title": "Ele busca.",
+          "title": "Pergunte.",
+          "description": "Na sua língua, como você pediria a alguém do seu time."
+        },
+        {
+          "title": "Busca.",
           "description": "Em todos os seus sistemas, mesmo os que não conversam entre si."
         },
         {
-          "title": "Ele responde.",
+          "title": "Responde.",
           "description": "Com o número e de onde ele saiu."
         },
         {
-          "title": "Ele recomenda.",
+          "title": "Recomenda.",
           "description": "Não um gráfico para interpretar: o que fazer, sobre o quê, e quanto dinheiro está em jogo."
-        },
-        {
-          "title": "Continue.",
-          "description": "A conversa não termina na primeira resposta."
         }
       ]
     },
