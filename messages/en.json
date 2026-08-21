@@ -461,29 +461,29 @@
       },
       "cases": [
         {
-          "stat": "19% → −2.5%",
-          "title": "The growth that wasn't",
-          "description": "Revenue was growing double digits. Once inflation was stripped out, the business had shrunk."
+          "stat": "12 days",
+          "title": "The failure gave notice. Nobody listened",
+          "description": "At an industrial plant, 17 breakdowns had flagged degradation before they broke. Between the warning and the shutdown sat 12 days of margin, written into work orders nobody cross-checked."
         },
         {
-          "stat": "+44%",
-          "title": "The best rep isn't the one who sells most",
-          "description": "The revenue ranking changed completely once each person was compared against peers on the same floor, shift and day."
+          "stat": "×36",
+          "title": "Ask before you pitch",
+          "description": "Across 1,842 sales calls, the ones that established role, region and need before pitching converted 36 times more often: 76% against 2.1%."
+        },
+        {
+          "stat": "19% → −2.5%",
+          "title": "The growth that wasn't",
+          "description": "Revenue was growing double digits and the team was celebrating. Once inflation was stripped out, the business had shrunk."
         },
         {
           "stat": "1% → 30%",
           "title": "The 1% holding up the business",
-          "description": "A tiny group of customers drove nearly a third of everything transacted, buried in the rest because nobody measured them differently."
+          "description": "A handful of customers drove nearly a third of everything transacted, buried in the rest because nobody measured them differently."
         },
         {
           "stat": "+50%",
           "title": "Capital asleep in the warehouse",
           "description": "More than half the stock hadn't moved in six months. Money sitting on shelves instead of in the bank."
-        },
-        {
-          "stat": "",
-          "title": "The demand nobody recorded",
-          "description": "What people asked for didn't match what was on hand. Sales were lost without leaving a trace in any report."
         }
       ]
     },
@@ -612,30 +612,30 @@
         {
           "question": "How much did we really grow, net of inflation?",
           "metric": "19% → -2.5%",
-          "title": "The growth that was not there",
-          "description": "Revenue had grown 19% year over year. Net of inflation it had actually fallen 2.5%. Effective margin was sliding too, as discounts kept growing."
+          "title": "The growth that wasn't there",
+          "description": "Revenue was up 19% year over year and the team was celebrating. Net of inflation the business had shrunk 2.5%. Effective margin had been sliding for months, covered up by discounts nobody added up."
         },
         {
           "question": "Who actually sells well, and not just by volume?",
           "metric": "+44%",
           "title": "The best sellers, hidden in plain sight",
-          "description": "The ranking by total sales did not match the ranking by real performance. Comparing each rep against peers in the same store, shift and day, someone ranked 55th by sales turned out to be 10th by actual performance. Replacing a low performer with a high one produced +26% at the counter and +44% across the other positions."
+          "description": "Someone ranked 55th by revenue was 10th by real performance: compared against peers in the same store, shift and day, the ranking flipped. Replacing a low performer with a high one produced +26% at the counter and +44% across the other positions."
         },
         {
           "question": "Which customers really hold up the business?",
           "metric": "1% → 30%",
           "title": "The 1% that holds up the business",
-          "description": "A group of barely 1% of customers generated close to 30% of everything transacted, blended into the rest of the base because nobody measured them differently. Identifying them opened the door to differential treatment."
+          "description": "One percent of customers generated close to 30% of everything transacted, blended into the rest of the base because nobody measured them differently. Nobody knew which accounts could not be lost."
         },
         {
           "question": "How much capital is sitting still in stock?",
           "metric": "+50%",
           "title": "Money parked on shelves and in warehouses",
-          "description": "More than half the stock had not turned over in six months, or had no sales in a year. With a clearance policy by stock age, that company could free up a significant amount of immobilized capital."
+          "description": "More than half the stock hadn't turned over in six months, and part of it hadn't sold a single unit in a year. With a clearance policy by stock age, that is capital back in the till this quarter."
         }
       ],
-      "extraTitle": "One more insight: the demand nobody was watching",
-      "extraBody": "Comparing what people actually asked for against what actually sold surfaced specific sizes where stock was not matched to real demand. Those were sales being lost without anyone noticing.",
+      "extraTitle": "One more insight: three questions before the pitch",
+      "extraBody": "Across 1,842 sales calls, the ones that established role, region and need before pitching converted 36 times more often than the ones that opened with the promotion: 76% against 2.1%. Three out of four calls never got around to asking.",
       "cta": "See what it finds in your data"
     },
     "howItWorks": {
@@ -903,28 +903,28 @@
     },
     "useCases": {
       "eyebrow": "Use cases",
-      "title": "Built for large, data-heavy operations",
-      "description": "The questions change with the operation, but the pattern repeats: the data already exists, scattered, and the decision cannot wait for the next report.",
+      "title": "The questions change by industry. The pattern doesn't.",
+      "description": "In every large operation the data already exists, scattered across systems that don't talk to each other. What's missing isn't more information: it's someone to cross-reference it before the decision expires.",
       "items": [
         {
           "title": "Industrial maintenance",
-          "description": "It reads maintenance and sensor data to flag at-risk equipment and preventive-maintenance gaps before they turn into unplanned downtime."
+          "description": "At an industrial plant, the agent cross-referenced 24 months of SAP notifications and work orders: 17 breakdowns had flagged degradation before they broke, with an average of 12 days to intervene. On the equipment with the highest corrective cost, the ratio of repairing to preventing was 26 to 1. None of it was new data: it was written down and nobody cross-checked it."
         },
         {
           "title": "Commercial effectiveness",
-          "description": "It turns scattered commercial data into next-best-action guidance reps can use in the field, with the right offer for each customer."
+          "description": "Across 1,842 calls from a field sales team, the ones that established role, region and need before pitching converted 36 times more often. And 45% of what the team logged as an objection was not an objection at all: it was a mistargeted lead."
         },
         {
           "title": "Workforce & HR",
-          "description": "It surfaces the signals hidden in workforce data while there is still time to act, before a key resignation lands."
+          "description": "A key resignation gives notice months ahead, scattered across absences, team changes and surveys nobody cross-references. The agent surfaces the signal while there is still time to act."
         },
         {
           "title": "Supply chain",
-          "description": "It forecasts demand and stock with the data you already have, turning fragmented information into forecasts planners can trust."
+          "description": "It forecasts demand and stock with the sources you already have, imperfect ones included, and shows the assumption behind every number so the planner can argue with it."
         },
         {
           "title": "Distribution & sell-through",
-          "description": "It connects distribution and sell-through data into answers you can act on today: what is moving, where and why."
+          "description": "What's moving, where and why, without waiting for the channel to report. The read arrives while the campaign can still be corrected."
         },
         {
           "title": "Energy operations",

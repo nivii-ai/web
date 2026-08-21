@@ -461,29 +461,29 @@
       },
       "cases": [
         {
-          "stat": "19% → −2,5%",
-          "title": "O crescimento que não era",
-          "description": "O faturamento crescia dois dígitos. Descontada a inflação, o negócio havia encolhido."
+          "stat": "12 dias",
+          "title": "A falha avisou e ninguém escutou",
+          "description": "Em uma planta industrial, 17 quebras já tinham dado sinal de degradação antes de romper. Entre o aviso e a parada havia 12 dias de margem, escritos em ordens que ninguém cruzava."
         },
         {
-          "stat": "+44%",
-          "title": "O melhor vendedor não é o que mais vende",
-          "description": "O ranking por faturamento mudava completamente ao comparar cada pessoa com seus pares da mesma loja, turno e dia."
+          "stat": "×36",
+          "title": "Perguntar antes de oferecer",
+          "description": "Em 1.842 ligações de venda, as que levantavam papel, região e necessidade antes de oferecer convertiam 36 vezes mais: 76% contra 2,1%."
+        },
+        {
+          "stat": "19% → −2,5%",
+          "title": "O crescimento que não era",
+          "description": "O faturamento crescia dois dígitos e o time comemorava. Descontada a inflação, o negócio havia encolhido."
         },
         {
           "stat": "1% → 30%",
           "title": "O 1% que sustenta o negócio",
-          "description": "Um grupo mínimo de clientes concentrava quase um terço do transacionado, misturado ao resto porque ninguém o media de forma diferente."
+          "description": "Um punhado de clientes concentrava quase um terço do transacionado, misturado ao resto porque ninguém o media de forma diferente."
         },
         {
           "stat": "+50%",
-          "title": "Capital parado no depósito",
-          "description": "Mais da metade do estoque estava há seis meses sem girar. Dinheiro parado na prateleira, não no banco."
-        },
-        {
-          "stat": "",
-          "title": "A demanda que ninguém registrou",
-          "description": "O que as pessoas pediam não batia com o que havia disponível. Perdiam-se vendas sem deixar rastro em nenhum relatório."
+          "title": "Capital adormecido no depósito",
+          "description": "Mais da metade do estoque estava há seis meses sem girar. Dinheiro parado na prateleira em vez de no caixa."
         }
       ]
     },
@@ -613,29 +613,29 @@
           "question": "Quanto crescemos de verdade, descontando a inflação?",
           "metric": "19% → -2,5%",
           "title": "O crescimento que não era crescimento",
-          "description": "O faturamento havia crescido 19% ano a ano. Descontando a inflação, na verdade havia caído 2,5%. A margem efetiva também vinha caindo à medida que os descontos aumentavam."
+          "description": "O faturamento crescia 19% ano a ano e o time comemorava. Descontada a inflação, o negócio havia encolhido 2,5%. A margem efetiva vinha caindo havia meses, encoberta por descontos que ninguém somava."
         },
         {
           "question": "Quem vende bem de verdade, e não só por volume?",
           "metric": "+44%",
           "title": "Os melhores vendedores, escondidos",
-          "description": "O ranking por vendas totais não coincidia com o de melhor desempenho. Comparando cada vendedor com seus pares na mesma loja, turno e dia, alguém na 55ª posição por vendas era o 10º por desempenho real. Substituir alguém de baixo desempenho por um de alto gerou +26% no balcão e +44% nas demais posições."
+          "description": "Alguém na 55ª posição por faturamento era o 10º por desempenho real: comparado com seus pares da mesma loja, turno e dia, o ranking virou. Substituir uma posição de baixo desempenho por uma de alto gerou +26% no balcão e +44% nas demais posições."
         },
         {
           "question": "Quais clientes realmente sustentam o negócio?",
           "metric": "1% → 30%",
           "title": "O 1% que sustenta o negócio",
-          "description": "Um grupo de apenas 1% dos clientes gerava cerca de 30% de tudo o que era transacionado, misturado ao resto da base porque ninguém os media de forma diferente. Identificá-los abriu a porta para um tratamento diferencial."
+          "description": "1% dos clientes gerava cerca de 30% de tudo o que era transacionado, misturado ao resto da base porque ninguém os media de forma diferente. Ninguém sabia quem não se podia perder."
         },
         {
           "question": "Quanto capital está parado em estoque?",
           "metric": "+50%",
           "title": "Dinheiro parado em gôndolas e depósitos",
-          "description": "Mais da metade do estoque estava há mais de seis meses sem girar, ou não tinha vendas havia um ano. Com uma política de liquidação por idade de estoque, essa empresa podia liberar um volume significativo de capital imobilizado."
+          "description": "Mais da metade do estoque estava há seis meses sem girar e uma parte não vendia uma unidade havia um ano. Com uma política de liquidação por idade de estoque, isso é capital que volta ao caixa neste trimestre."
         }
       ],
-      "extraTitle": "Mais um insight: a demanda que ninguém estava olhando",
-      "extraBody": "Comparando o que as pessoas realmente pediam com o que efetivamente vendia, apareceram tamanhos específicos em que o estoque não estava ajustado à demanda real. Eram vendas sendo perdidas sem que ninguém percebesse.",
+      "extraTitle": "Mais um insight: três perguntas antes de oferecer",
+      "extraBody": "Em 1.842 ligações de venda, as que levantavam papel, região e necessidade antes de oferecer convertiam 36 vezes mais do que as que abriam com a promoção: 76% contra 2,1%. Três de cada quatro ligações nunca chegavam a perguntar.",
       "cta": "Ver o que ele encontra nos seus dados"
     },
     "howItWorks": {
@@ -903,28 +903,28 @@
     },
     "useCases": {
       "eyebrow": "Casos de uso",
-      "title": "Feito para operações grandes e intensivas em dados",
-      "description": "As perguntas mudam conforme a operação, mas o padrão se repete: o dado já existe, disperso, e a decisão não pode esperar o próximo relatório.",
+      "title": "As perguntas mudam conforme a indústria. O padrão, não.",
+      "description": "Em toda operação grande o dado já existe, disperso entre sistemas que não conversam. O que falta não é mais informação: é alguém que o cruze antes de a decisão vencer.",
       "items": [
         {
           "title": "Manutenção industrial",
-          "description": "Lê dados de manutenção e de sensores para marcar equipamentos em risco e lacunas de manutenção preventiva antes que virem uma parada não planejada."
+          "description": "Em uma planta industrial, o agente cruzou 24 meses de avisos e ordens do SAP: 17 quebras já tinham dado sinal de degradação antes de romper, com 12 dias em média para intervir. No equipamento de maior custo corretivo, a relação entre reparar e prevenir era de 26 para 1. Nenhum dado era novo: estava escrito e ninguém cruzava."
         },
         {
           "title": "Efetividade comercial",
-          "description": "Transforma dados comerciais dispersos em recomendações de próxima melhor ação que o vendedor usa em campo, com a oferta certa para cada cliente."
+          "description": "Em 1.842 ligações de um time de venda de campo, as que levantavam papel, região e necessidade antes de oferecer convertiam 36 vezes mais. E 45% do que era registrado como objeção não era objeção: era um lead mal direcionado."
         },
         {
           "title": "Pessoas e RH",
-          "description": "Revela os sinais escondidos nos dados do seu time enquanto ainda dá para agir, antes que chegue um pedido de demissão importante."
+          "description": "O pedido de demissão importante avisa meses antes, espalhado entre ausências, mudanças de time e pesquisas que ninguém cruza. O agente levanta o sinal enquanto ainda dá para agir."
         },
         {
           "title": "Cadeia de suprimentos",
-          "description": "Projeta demanda e estoque com os dados que você já tem, transformando informação fragmentada em previsões em que os planejadores confiam."
+          "description": "Projeta demanda e estoque com as fontes que você já tem, imperfeitas incluídas, e mostra a premissa por trás de cada número para o planejador poder discutir."
         },
         {
           "title": "Distribuição e sell-through",
-          "description": "Conecta dados de distribuição e sell-through em respostas acionáveis hoje: o que gira, onde e por quê."
+          "description": "O que gira, onde e por quê, sem esperar o relatório do canal. A leitura chega enquanto a campanha ainda pode ser corrigida."
         },
         {
           "title": "Operações de energia",
