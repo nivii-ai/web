@@ -61,8 +61,9 @@ export async function EnterpriseHero() {
           </div>
 
           {/* La UI clara del producto flotando sobre el panel, como en el banner. */}
-          <div className="min-w-0 lg:perspective-[1200px]">
-            <ConsoleChoreography>
+          <div className="min-w-0">
+            {/* La perspectiva tiene que estar en el padre directo de la carcasa. */}
+            <ConsoleChoreography className="lg:perspective-[1200px]">
               <ConsoleShell tone="dark" className="lg:rotate-y-[-12deg]">
                 <div
                   className="fade-word"
