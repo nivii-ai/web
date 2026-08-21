@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Check } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { DemoForm } from "@/components/demo-form";
+import { pageMetadata } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -11,8 +12,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("demo");
-  return { title: t("metaTitle"), description: t("description") };
+  const t = await getTranslations("demo.meta");
+  return pageMetadata({
+    title: t("title"),
+    description: t("description"),
+    locale,
+  });
 }
 
 export function generateStaticParams() {

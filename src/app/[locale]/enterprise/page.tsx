@@ -8,6 +8,7 @@ import { Product } from "@/components/enterprise/product";
 import { Security } from "@/components/enterprise/security";
 import { Trust } from "@/components/enterprise/trust";
 import { UseCases } from "@/components/enterprise/use-cases";
+import { pageMetadata } from "@/lib/metadata";
 import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -18,7 +19,11 @@ export async function generateMetadata({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("enterprise.meta");
-  return { title: t("title"), description: t("description") };
+  return pageMetadata({
+    title: t("title"),
+    description: t("description"),
+    locale,
+  });
 }
 
 export function generateStaticParams() {

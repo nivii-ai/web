@@ -23,9 +23,12 @@
     "demo": "Solicitar Demo"
   },
   "demo": {
+    "meta": {
+      "title": "Solicitar demo",
+      "description": "Meia hora de trabalho real sobre os seus próprios dados: traga uma pergunta de negócio e veja a resposta que o agente devolve. Sem apresentação enlatada."
+    },
     "label": "Solicitar Demo",
     "title": "Traga uma pergunta. Mostramos <accent>o que o agente faz</accent> com ela.",
-    "metaTitle": "Solicitar demo",
     "description": "Uma sessão de trabalho de 30 minutos, sobre os seus dados e dentro do seu ambiente. Sem apresentação enlatada.",
     "reassurance": [
       "Meia hora, com alguém da equipe que construiu o produto.",
@@ -1044,6 +1047,10 @@
     }
   },
   "careers": {
+    "meta": {
+      "title": "Junte-se ao time",
+      "description": "Construímos agentes de decisão que rodam dentro da nuvem de grandes operações industriais e comerciais. Veja as posições abertas na Nivii."
+    },
     "title": "Junte-se",
     "titleHighlight": "ao nosso time",
     "description": "Estamos em uma missão para capacitar empresas com insights acionáveis. Se você é apaixonado por dados, IA e inovação, adoraríamos conhecer você.",
@@ -1122,7 +1129,8 @@
           "quickInfo": {
             "location": "Buenos Aires (Híbrido)",
             "department": "Decision Science"
-          }
+          },
+          "metaDescription": "Decision Science na Nivii: garantir que os agentes devolvam respostas profundas e úteis sobre os dados reais de cada cliente. Posição aberta."
         }
       ]
     },

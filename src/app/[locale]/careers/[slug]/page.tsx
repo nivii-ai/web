@@ -3,10 +3,12 @@ import { ArrowLeft, ArrowUpRight, SearchX } from "lucide-react";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/ui/reveal";
+import { pageMetadata } from "@/lib/metadata";
 
 type Position = {
   slug: string;
   title: string;
+  metaDescription: string;
   location: string;
   applicationUrl?: string;
   aboutNivii?: string[];
@@ -54,10 +56,11 @@ export async function generateMetadata({
   const position = await findPosition(slug);
   if (!position) return {};
 
-  return {
+  return pageMetadata({
     title: position.title,
-    description: position.aboutRole[0],
-  };
+    description: position.metaDescription,
+    locale,
+  });
 }
 
 function Bullets({ items }: { items: string[] }) {

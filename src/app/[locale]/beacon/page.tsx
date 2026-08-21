@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { pageMetadata } from "@/lib/metadata";
 import { Audience } from "@/components/beacon/audience";
 import { BeaconCta } from "@/components/beacon/cta";
 import { Examples } from "@/components/beacon/examples";
@@ -18,7 +19,11 @@ export async function generateMetadata({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("beacon.meta");
-  return { title: t("title"), description: t("description") };
+  return pageMetadata({
+    title: t("title"),
+    description: t("description"),
+    locale,
+  });
 }
 
 export function generateStaticParams() {

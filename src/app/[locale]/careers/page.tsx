@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/ui/reveal";
+import { pageMetadata } from "@/lib/metadata";
 
 type Position = {
   slug: string;
@@ -17,11 +18,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("careers");
-  return {
-    title: `${t("title")} ${t("titleHighlight")}`,
+  const t = await getTranslations("careers.meta");
+  return pageMetadata({
+    title: t("title"),
     description: t("description"),
-  };
+    locale,
+  });
 }
 
 export default async function Careers({
