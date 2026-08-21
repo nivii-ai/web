@@ -376,7 +376,37 @@
       }
     ],
     "ready": "Answer ready",
-    "cleaning": "3 systems cross-referenced · 8,940 rows reviewed · 214 duplicate codes resolved"
+    "preparation": {
+      "title": "Preparing sources",
+      "sources": [
+        {
+          "name": "Daily sales (point of sale)",
+          "detail": "8,940 rows · 98% complete"
+        },
+        {
+          "name": "Stock by store (ERP)",
+          "detail": "1,240 rows · 91% complete"
+        },
+        {
+          "name": "Prices and discounts (spreadsheet)",
+          "detail": "612 rows · 87% complete"
+        }
+      ],
+      "stats": [
+        {
+          "value": "214",
+          "label": "duplicate codes resolved"
+        },
+        {
+          "value": "37",
+          "label": "date formats normalized"
+        },
+        {
+          "value": "3",
+          "label": "definitions of “sale” unified"
+        }
+      ]
+    }
   },
   "home": {
     "hero": {

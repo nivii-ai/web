@@ -376,7 +376,37 @@
       }
     ],
     "ready": "Respuesta lista",
-    "cleaning": "3 sistemas cruzados · 8.940 filas revisadas · 214 códigos duplicados resueltos"
+    "preparation": {
+      "title": "Preparando fuentes",
+      "sources": [
+        {
+          "name": "Ventas diarias (punto de venta)",
+          "detail": "8.940 filas · 98% completo"
+        },
+        {
+          "name": "Stock por sucursal (sistema de gestión)",
+          "detail": "1.240 filas · 91% completo"
+        },
+        {
+          "name": "Precios y descuentos (planilla)",
+          "detail": "612 filas · 87% completo"
+        }
+      ],
+      "stats": [
+        {
+          "value": "214",
+          "label": "códigos duplicados resueltos"
+        },
+        {
+          "value": "37",
+          "label": "formatos de fecha normalizados"
+        },
+        {
+          "value": "3",
+          "label": "definiciones de «venta» unificadas"
+        }
+      ]
+    }
   },
   "home": {
     "hero": {

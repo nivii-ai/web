@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
+  AnimatePresence,
   motion,
   useMotionValue,
   useMotionValueEvent,
@@ -18,16 +19,17 @@ export function TimelineSteps({
   steps,
   pieces,
   readyLine,
+  preparation,
 }: {
   steps: Step[];
   pieces: React.ReactNode[];
   readyLine: React.ReactNode;
+  /** Lo que muestra la pantalla en el primer paso, antes de la conversación. */
+  preparation: React.ReactNode;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const progress = useMotionValue(0);
   const [active, setActive] = useState(0);
-  // La consola está vacía hasta el primer paso: lo que se anima es la pregunta.
-  const [started, setStarted] = useState(false);
   const prefersReducedMotion = useReducedMotion();
   const pane = useRef<HTMLDivElement>(null);
   const mobilePane = useRef<HTMLDivElement>(null);
@@ -43,17 +45,16 @@ export function TimelineSteps({
   }, [active, prefersReducedMotion]);
 
   useMotionValueEvent(progress, "change", (value) => {
-    if (value > 0.02 && !started) setStarted(true);
     const next = Math.min(steps.length - 1, Math.floor(value * steps.length));
     if (next !== active) setActive(next);
   });
 
-  // La línea de búsqueda pasa a "respuesta lista" cuando llega la respuesta.
-  const SEARCHING = 2;
+  // El primer paso es la preparación: las piezas de la conversación empiezan en el segundo.
+  const SEARCHING = 1;
   const shown = pieces
-    .slice(0, active + 1)
+    .slice(0, active)
     .map((piece, i) =>
-      i === SEARCHING && active > SEARCHING ? readyLine : piece,
+      i === SEARCHING && active > SEARCHING + 1 ? readyLine : piece,
     );
 
   return (
@@ -83,10 +84,21 @@ export function TimelineSteps({
             drift={1}
             className="pointer-events-none absolute -inset-x-24 -inset-y-20 -z-10 h-[calc(100%+10rem)] w-[calc(100%+12rem)] [mask-image:radial-gradient(closest-side,black_60%,transparent)]"
           />
-          {/* La consola está desde el principio; lo que espera es el contenido. */}
+          {/* La misma pantalla cambia de modo: preparación primero, conversación después. */}
           <div className="pointer-events-auto">
             <ConsoleShell scrollable innerRef={pane}>
-              {started ? shown : null}
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.div
+                  key={active === 0 ? "preparation" : "conversation"}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: prefersReducedMotion ? 0 : 0.25 }}
+                  className="flex flex-col gap-4"
+                >
+                  {active === 0 ? preparation : shown}
+                </motion.div>
+              </AnimatePresence>
             </ConsoleShell>
           </div>
         </div>
@@ -116,10 +128,14 @@ export function TimelineSteps({
               {step.description}
             </p>
 
-            {i === steps.length - 1 ? (
+            {/* En mobile cada paso muestra su propia pantalla, sin sticky. */}
+            {i === 0 || i === steps.length - 1 ? (
               <div className="mt-8 text-left lg:hidden">
-                <ConsoleShell scrollable innerRef={mobilePane}>
-                  {shown}
+                <ConsoleShell
+                  scrollable
+                  innerRef={i === 0 ? undefined : mobilePane}
+                >
+                  {i === 0 ? preparation : shown}
                 </ConsoleShell>
               </div>
             ) : null}

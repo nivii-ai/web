@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Answer } from "@/components/console/answer";
 import { QuestionBubble } from "@/components/console/question-bubble";
 import { Recommendation } from "@/components/console/recommendation";
+import { PreparationPanel } from "@/components/console/preparation-panel";
 import { StreamInfo } from "@/components/console/stream-info";
 import type { Scenario } from "@/components/console/types";
 import { Reveal } from "@/components/ui/reveal";
@@ -15,12 +16,6 @@ export async function HowItWorks() {
 
   // Una pieza por paso: se acumulan, no se rearman.
   const pieces = [
-    <StreamInfo
-      key="cleaning"
-      className="fade-word"
-      text={c("cleaning")}
-      done
-    />,
     <div key="question" className="fade-word">
       <QuestionBubble>{scenario.question}</QuestionBubble>
     </div>,
@@ -47,6 +42,7 @@ export async function HowItWorks() {
         <TimelineSteps
           steps={steps}
           pieces={pieces}
+          preparation={<PreparationPanel />}
           readyLine={
             <StreamInfo
               key="ready"

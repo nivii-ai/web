@@ -376,7 +376,37 @@
       }
     ],
     "ready": "Resposta pronta",
-    "cleaning": "3 sistemas cruzados · 8.940 linhas revisadas · 214 códigos duplicados resolvidos"
+    "preparation": {
+      "title": "Preparando fontes",
+      "sources": [
+        {
+          "name": "Vendas diárias (PDV)",
+          "detail": "8.940 linhas · 98% completo"
+        },
+        {
+          "name": "Estoque por loja (ERP)",
+          "detail": "1.240 linhas · 91% completo"
+        },
+        {
+          "name": "Preços e descontos (planilha)",
+          "detail": "612 linhas · 87% completo"
+        }
+      ],
+      "stats": [
+        {
+          "value": "214",
+          "label": "códigos duplicados resolvidos"
+        },
+        {
+          "value": "37",
+          "label": "formatos de data normalizados"
+        },
+        {
+          "value": "3",
+          "label": "definições de “venda” unificadas"
+        }
+      ]
+    }
   },
   "home": {
     "hero": {
