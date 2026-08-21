@@ -44,7 +44,7 @@ export async function HowItWorks() {
                     {t(PHASE_AT[i])}
                   </p>
                 ) : null}
-                <p className="font-mono text-code text-brand-green">
+                <p className="font-mono text-code font-medium text-brand-green">
                   {step.when}
                 </p>
                 <p className="text-body-l text-panel-ink/70">
