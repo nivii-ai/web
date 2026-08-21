@@ -933,29 +933,65 @@
       ]
     },
     "security": {
-      "eyebrow": "Prova e segurança",
+      "eyebrow": "Arquitetura e segurança",
       "title": "As empresas confiam na Nivii porque <accent>a arquitetura merece</accent>.",
+      "description": "O deployment é dedicado, dentro da sua conta de AWS, Azure, GCP ou SAP BTP. Não existe tenant compartilhado: nenhum dado de outro cliente fica ao lado do seu, e seu time vê quais imagens rodam, que tráfego sai e quais recursos são consumidos.",
       "stats": [
         {
-          "value": "12 semanas",
-          "description": "até o primeiro piloto sobre seus dados reais, não trimestres."
-        },
-        {
           "value": "100%",
-          "description": "dentro da sua própria nuvem: seus dados ficam no seu perímetro."
+          "description": "dentro da sua própria nuvem, em Kubernetes, com GitOps e charts versionados que seu time pode auditar."
         },
         {
-          "value": "Somente leitura",
-          "description": "o piloto trabalha sobre um extrato, sem tocar nos seus sistemas produtivos."
+          "value": "Um egress",
+          "description": "a chamada ao modelo, e nada mais. Ela é eliminada se sua política exigir."
+        },
+        {
+          "value": "Zero",
+          "description": "telemetria para a infraestrutura da Nivii: logs, métricas e traces ficam no seu cluster."
         }
       ],
-      "checklist": [
-        "Roda na sua nuvem",
-        "Seu próprio SSO",
-        "Agnóstico ao modelo",
-        "Criptografia em repouso e em trânsito",
-        "Sem dados compartilhados entre clientes"
-      ]
+      "egress": {
+        "title": "O único dado que sai do perímetro é o que vai para o modelo.",
+        "description": "Vale dizer com clareza. A inferência viaja por TLS até Anthropic, OpenAI ou Google, com retenção desativada onde o provedor permite e contratos que proíbem treinar com dados de API. Todo o resto fica dentro da sua conta: os dados, os logs, as métricas e até o trace de cada prompt, guardado dentro do seu próprio cluster.",
+        "note": "Se sua política não admite nem essa chamada, o provedor público é substituído por modelos hospedados na sua nuvem: Bedrock, Azure OpenAI, Vertex AI ou SAP AI Foundry. É uma mudança de configuração, não um redesenho."
+      },
+      "controls": [
+        {
+          "title": "Identidade federada",
+          "description": "SSO contra o IdP corporativo por SAML 2.0 ou OIDC: Entra ID, Okta, Google Workspace, ADFS, Ping. As políticas de MFA e de bloqueio continuam sendo suas, e quando alguém sai da empresa perde o acesso no mesmo momento."
+        },
+        {
+          "title": "Permissões por área",
+          "description": "Cada pessoa vê apenas os dados das áreas a que pertence. A permissão é derivada do token, não do que o request pede, e no Postgres o isolamento desce até o pool de conexões. Dá para afinar por planta, região ou sensibilidade de coluna."
+        },
+        {
+          "title": "Criptografia com suas chaves",
+          "description": "Volumes, banco e buckets criptografados com KMS, e TLS 1.3 no ingress. Se sua política exigir, o deployment usa suas próprias CMK: rotacioná-las ou revogá-las basta para cortar o acesso aos dados."
+        },
+        {
+          "title": "Segredos fora do código",
+          "description": "Credenciais de banco, API keys e client secrets nunca ficam no repositório, nas imagens ou na máquina de um desenvolvedor. São criptografados contra a chave do seu próprio cluster, e só esse cluster consegue descriptografá-los."
+        },
+        {
+          "title": "Rede fechada por padrão",
+          "description": "Os pods não têm IP público e as NetworkPolicies limitam a saída de cada namespace a uma allowlist. Um workload comprometido não tem para onde exfiltrar."
+        },
+        {
+          "title": "Auditoria consultável",
+          "description": "Cada consulta, login e mudança de permissão fica registrada com usuário, área e dataset. Seus admins consultam pela plataforma e exportam para o SIEM corporativo: Splunk, Datadog ou Elastic."
+        }
+      ],
+      "onRequest": {
+        "label": "E se o seu time de segurança pedir:",
+        "items": [
+          "mTLS pod a pod",
+          "pen-test conjunto antes da produção",
+          "SBOM e relatório de vulnerabilidades",
+          "deployment air-gapped",
+          "masking de PII na interface e nos prompts",
+          "acesso just-in-time"
+        ]
+      }
     },
     "faq": {
       "eyebrow": "Perguntas frequentes",
@@ -975,7 +1011,11 @@
         },
         {
           "question": "Nossos dados saem em algum momento do nosso ambiente?",
-          "answer": "Não. A Nivii roda dentro da sua própria nuvem e seus dados ficam dentro do seu perímetro. A única chamada de saída é para o provedor do modelo, e até isso pode ser eliminado com modelos in-cloud como Bedrock, Azure OpenAI, Vertex AI ou SAP AI Foundry."
+          "answer": "Não. A Nivii roda dentro da sua própria nuvem e seus dados ficam dentro do seu perímetro. A única chamada de saída é para o provedor do modelo, por TLS e com retenção desativada onde o provedor permite; até isso é eliminado com modelos in-cloud como Bedrock, Azure OpenAI, Vertex AI ou SAP AI Foundry. A observabilidade também não sai: logs, métricas e traces de prompts vivem no seu cluster, sem exportar nada para Sentry, Datadog ou Grafana Cloud."
+        },
+        {
+          "question": "Quem da Nivii pode ver nossos dados em produção?",
+          "answer": "Ninguém, a menos que você nos convide. O acesso do time da Nivii ao cluster é habilitado de forma explícita, autenticado contra o IAM da sua empresa — sem credenciais nossas circulando — e auditado no seu próprio plano de controle, com CloudTrail ou equivalente. Você revoga quando quiser, e o papel de suporte interno pode ser desabilitado sem que a plataforma pare de funcionar."
         },
         {
           "question": "E se nossos dados não estiverem limpos?",
