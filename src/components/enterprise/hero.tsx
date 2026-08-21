@@ -80,6 +80,13 @@ export async function EnterpriseHero() {
                       style={{ animationDelay: `${INFO_AT + i * INFO_STEP}s` }}
                     />
                   ))}
+
+                  <StreamInfo
+                    className="console-info absolute inset-x-0 top-0"
+                    style={{ animationDelay: `${answerAt}s` }}
+                    text={c("ready")}
+                    done
+                  />
                 </div>
 
                 <Answer answer={scenario.answer} delay={answerAt} compact />
