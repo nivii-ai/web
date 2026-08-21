@@ -440,8 +440,8 @@
           "description": "Con el número y de dónde salió."
         },
         {
-          "title": "Recomienda.",
-          "description": "No un gráfico para interpretar: qué hacer, sobre qué, y cuánta plata hay en juego."
+          "title": "Accioná.",
+          "description": "La respuesta llega con la recomendación: qué hacer, sobre qué, y cuánta plata hay en juego. Se decide en la misma pantalla, no en la próxima reunión."
         }
       ]
     },

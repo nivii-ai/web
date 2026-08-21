@@ -440,8 +440,8 @@
           "description": "Com o número e de onde ele saiu."
         },
         {
-          "title": "Recomenda.",
-          "description": "Não um gráfico para interpretar: o que fazer, sobre o quê, e quanto dinheiro está em jogo."
+          "title": "Aja.",
+          "description": "A resposta chega com a recomendação: o que fazer, sobre o quê, e quanto dinheiro está em jogo. Decide-se na mesma tela, não na próxima reunião."
         }
       ]
     },
