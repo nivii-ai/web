@@ -15,6 +15,9 @@ const TEXT_FIELDS = [
   { name: "company", type: "text", autoComplete: "organization" },
 ] as const;
 
+const isInvalid = (field: Field, value: string) =>
+  field === "email" ? !EMAIL.test(value.trim()) : !value.trim();
+
 const field =
   "mt-2 w-full rounded-lg border bg-background px-3 py-2.5 text-body-s text-ink transition-colors focus:border-brand-green focus:outline-none";
 
@@ -25,27 +28,27 @@ export function DemoForm() {
   );
   const [errors, setErrors] = useState<Partial<Record<Field, boolean>>>({});
 
-  const validate = (data: FormData): Partial<Record<Field, boolean>> => ({
-    name: !String(data.get("name") ?? "").trim(),
-    email: !EMAIL.test(String(data.get("email") ?? "").trim()),
-    company: !String(data.get("company") ?? "").trim(),
-  });
-
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const data = new FormData(event.currentTarget);
-    const found = validate(data);
+    const read = (name: string) => String(data.get(name) ?? "").trim();
+
+    const found = {
+      name: isInvalid("name", read("name")),
+      email: isInvalid("email", read("email")),
+      company: isInvalid("company", read("company")),
+    };
     setErrors(found);
     if (Object.values(found).some(Boolean)) return;
 
     setStatus("sending");
     try {
       await sendDemoRequest({
-        name: String(data.get("name") ?? ""),
-        email: String(data.get("email") ?? ""),
-        company: String(data.get("company") ?? ""),
-        question: String(data.get("question") ?? ""),
+        name: read("name"),
+        email: read("email"),
+        company: read("company"),
+        question: read("question"),
       });
       setStatus("sent");
     } catch {
@@ -76,12 +79,11 @@ export function DemoForm() {
             autoComplete={autoComplete}
             aria-invalid={errors[name] ?? false}
             aria-describedby={errors[name] ? `${name}-error` : undefined}
-            onBlur={(e) =>
-              setErrors((prev) => ({
-                ...prev,
-                [name]: validate(new FormData(e.currentTarget.form!))[name],
-              }))
-            }
+            onBlur={(event) => {
+              // Leer acá: React deja currentTarget en null antes de que corra el updater.
+              const invalid = isInvalid(name, event.currentTarget.value);
+              setErrors((prev) => ({ ...prev, [name]: invalid }));
+            }}
             className={`${field} ${errors[name] ? "border-danger" : "border-hairline"}`}
           />
           {errors[name] ? (
