@@ -492,7 +492,7 @@
       "partners": "Nuestros partners"
     },
     "howItWorks": {
-      "title": "Preguntá. Y ya está.",
+      "title": "Preguntá.",
       "description": "Sin un proyecto de datos antes. Sin esperar el reporte. Sin dudar del número.",
       "steps": [
         {
@@ -513,7 +513,7 @@
         },
         {
           "title": "Accioná.",
-          "description": "La respuesta llega con la recomendación: qué hacer, sobre qué, y cuánta plata hay en juego. Se decide en la misma pantalla, no en la próxima reunión."
+          "description": "La respuesta llega con la recomendación: qué hacer, sobre qué, y cuánto dinero hay en juego. Se decide en la misma pantalla, no en la próxima reunión."
         }
       ]
     },
