@@ -1,12 +1,14 @@
 import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { cn } from "@/lib/utils";
 
-type Pillar = { title: string; description: string };
+type Step = { title: string; description: string };
+type Phase = { label: string; steps: Step[]; terms: string[] };
 
 export async function Product() {
   const t = await getTranslations("enterprise.product");
-  const pillars = t.raw("pillars") as Pillar[];
+  const phases = t.raw("phases") as Phase[];
 
   return (
     <section
@@ -25,21 +27,69 @@ export async function Product() {
           description={t("description")}
         />
 
-        <ol className="mt-14 grid gap-x-12 gap-y-10 lg:grid-cols-3">
-          {pillars.map((pillar, i) => (
-            <Reveal
-              as="li"
-              key={pillar.title}
-              order={i + 1}
-              className="border-t border-panel-hairline pt-6"
-            >
-              <h3 className="text-heading text-panel-ink">{pillar.title}</h3>
-              <p className="mt-3 text-body-s text-panel-ink/60">
-                {pillar.description}
-              </p>
-            </Reveal>
-          ))}
-        </ol>
+        <div className="mt-16 grid gap-x-16 gap-y-14 lg:grid-cols-2">
+          {phases.map((phase, phaseIndex) => {
+            const firstStep = phases
+              .slice(0, phaseIndex)
+              .reduce((total, previous) => total + previous.steps.length, 0);
+            // El tramo de producción es el que compromete: ahí la regla se tiñe.
+            const committed = phaseIndex > 0;
+
+            return (
+              <Reveal key={phase.label} order={phaseIndex + 1}>
+                <p className="text-eyebrow font-medium text-panel-ink/60 uppercase">
+                  {phase.label}
+                </p>
+
+                {/* Sin separación horizontal: los borde-superior de cada paso se
+                    encadenan y se leen como una sola regla de tiempo. */}
+                <ol className="mt-6 grid gap-y-10 sm:grid-cols-3 sm:grid-rows-[auto_auto_1fr] sm:gap-y-0">
+                  {phase.steps.map((step, i) => (
+                    <li
+                      key={step.title}
+                      className={cn(
+                        // subgrid alinea número, título y texto entre pasos
+                        // aunque los títulos ocupen distinta cantidad de líneas.
+                        "relative border-t pt-6 sm:row-span-3 sm:grid sm:grid-rows-subgrid sm:pe-6",
+                        committed
+                          ? "border-brand-green/60"
+                          : "border-panel-hairline",
+                      )}
+                    >
+                      <span
+                        aria-hidden
+                        className={cn(
+                          "absolute -top-1 start-0 size-2 rounded-full",
+                          committed ? "bg-brand-green" : "bg-panel-ink/30",
+                        )}
+                      />
+                      <p className="font-mono text-code font-medium text-brand-green">
+                        {String(firstStep + i + 1).padStart(2, "0")}
+                      </p>
+                      <h3 className="mt-2 text-heading text-panel-ink">
+                        {step.title}
+                      </h3>
+                      <p className="mt-2 text-body-s text-panel-ink/60">
+                        {step.description}
+                      </p>
+                    </li>
+                  ))}
+                </ol>
+
+                <ul className="mt-10">
+                  {phase.terms.map((term) => (
+                    <li
+                      key={term}
+                      className="border-t border-panel-hairline py-3.5 text-body-s text-panel-ink/70"
+                    >
+                      {term}
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

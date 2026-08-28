@@ -874,58 +874,51 @@
     "product": {
       "eyebrow": "What it is",
       "title": "Not a dashboard. <accent>Not a rental either.</accent>",
-      "description": "Most analytics projects end in more charts and a bill that never stops. Nivii deploys a decision agent on your own data, inside your own environment, and trains your team to run it along the way. The shortcut to a capability that takes 18 to 24 months to build from scratch.",
-      "pillars": [
+      "description": "Most analytics projects end in more charts and a bill that never stops. Nivii deploys a decision agent on your own data, inside your own environment, and trains your team to run it along the way. It is the shortcut to a capability that takes 18 to 24 months to build from scratch, and you put it to the test before signing anything: no ROI, no contract.",
+      "phases": [
         {
-          "title": "You prove it first",
-          "description": "A live pilot on your real data, at cost, before you sign anything."
+          "label": "Pilot · 12 weeks · at cost",
+          "steps": [
+            {
+              "title": "NDA and kickoff",
+              "description": "We sign the agreement and you hand over a read-only extract of your data."
+            },
+            {
+              "title": "Building the pilot",
+              "description": "A live pilot on your real data, solving one concrete use case."
+            },
+            {
+              "title": "Go / no-go decision",
+              "description": "Tuning workshops with your team and a week of testing, up to the call on moving ahead."
+            }
+          ],
+          "terms": [
+            "At cost, on Nivii's cloud",
+            "No commitment to continue"
+          ]
         },
         {
-          "title": "In production, in your cloud",
-          "description": "The agent runs inside your perimeter, with your team trained alongside."
-        },
-        {
-          "title": "Your team runs it alone",
-          "description": "Architecture, prompts and documentation handed over. No forced dependency."
+          "label": "Production · 12 months · in your own cloud",
+          "steps": [
+            {
+              "title": "Rollout",
+              "description": "In production inside your own cloud within four months, with your team running the agent."
+            },
+            {
+              "title": "Maintenance and tuning",
+              "description": "Fixed-term support, with the agent sharpening on real usage."
+            },
+            {
+              "title": "Hand over or continue",
+              "description": "Full handover: architecture, prompts, documentation and a team already trained."
+            }
+          ],
+          "terms": [
+            "A single upfront setup",
+            "Fixed-term support",
+            "No recurring per-seat licences"
+          ]
         }
-      ]
-    },
-    "howItWorks": {
-      "eyebrow": "How it works",
-      "title": "Prove it in a pilot before signing anything",
-      "description": "Building this capability in-house usually takes 18 to 24 months. The pilot puts real answers on your own data in front of you in about 12 weeks.",
-      "phasePilot": "Pilot · ~12 weeks · at cost, in Nivii's cloud",
-      "phaseProduction": "Production · in your own cloud",
-      "steps": [
-        {
-          "when": "Start",
-          "description": "NDA and letter of intent. You hand over a read-only extract of your data."
-        },
-        {
-          "when": "Week 10",
-          "description": "A live pilot on your real data, solving one concrete use case."
-        },
-        {
-          "when": "Weeks 11–12",
-          "description": "Fine-tuning workshops with your team and a testing week, up to the go / no-go decision."
-        },
-        {
-          "when": "Month 4",
-          "description": "In production inside your own cloud, with your team operating the agent."
-        },
-        {
-          "when": "Month 12",
-          "description": "Full handover: architecture, prompts, documentation and a team already trained."
-        }
-      ],
-      "roiTitle": "No ROI, no contract",
-      "roiStat": "~95%",
-      "roiBody": "That is how close the pilot runs to the production system, and it runs at cost. The business case has to write itself before you sign.",
-      "modelTitle": "Commercial model",
-      "modelItems": [
-        "A one-time build, then fixed-term support.",
-        "No recurring per-seat license fees.",
-        "Knowledge transfer from day one, not at the end."
       ]
     },
     "trust": {

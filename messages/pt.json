@@ -874,58 +874,51 @@
     "product": {
       "eyebrow": "O que é",
       "title": "Não é um dashboard. <accent>Nem um aluguel.</accent>",
-      "description": "A maioria dos projetos de analytics termina em mais gráficos e uma fatura que não acaba. A Nivii implanta um agente de decisão sobre os seus próprios dados, dentro do seu próprio ambiente, e treina o seu time para operá-lo no caminho. O atalho para uma capacidade que construir do zero leva de 18 a 24 meses.",
-      "pillars": [
+      "description": "A maioria dos projetos de analytics termina em mais gráficos e uma fatura que não acaba. A Nivii implanta um agente de decisão sobre os seus próprios dados, dentro do seu próprio ambiente, e treina o seu time para operá-lo no caminho. É o atalho para uma capacidade que construir do zero leva de 18 a 24 meses, e você coloca à prova antes de assinar nada: sem ROI, não há contrato.",
+      "phases": [
         {
-          "title": "Primeiro você comprova",
-          "description": "Um piloto ao vivo sobre seus dados reais, a custo, antes de assinar qualquer coisa."
+          "label": "Piloto · 12 semanas · a custo",
+          "steps": [
+            {
+              "title": "NDA e kickoff",
+              "description": "Assinamos o acordo e você entrega um extrato somente leitura dos seus dados."
+            },
+            {
+              "title": "Construção do piloto",
+              "description": "Um piloto ao vivo sobre seus dados reais, resolvendo um caso de uso concreto."
+            },
+            {
+              "title": "Decisão de go / no go",
+              "description": "Workshops de ajuste com seu time e uma semana de testes, até decidir se avança."
+            }
+          ],
+          "terms": [
+            "A custo, na nuvem da Nivii",
+            "Sem compromisso de continuidade"
+          ]
         },
         {
-          "title": "Em produção, na sua nuvem",
-          "description": "O agente roda dentro do seu perímetro, com o seu time treinado em paralelo."
-        },
-        {
-          "title": "Seu time opera sozinho",
-          "description": "Arquitetura, prompts e documentação transferidos. Sem dependência forçada."
+          "label": "Produção · 12 meses · na sua própria nuvem",
+          "steps": [
+            {
+              "title": "Implementação",
+              "description": "Em produção dentro da sua própria nuvem em quatro meses, com seu time operando o agente."
+            },
+            {
+              "title": "Manutenção e melhoria",
+              "description": "Suporte a prazo fixo, com o agente se afinando sobre o uso real."
+            },
+            {
+              "title": "Hand over ou continuar",
+              "description": "Transferência completa: arquitetura, prompts, documentação e um time já capacitado."
+            }
+          ],
+          "terms": [
+            "Um único setup inicial",
+            "Suporte a prazo fixo",
+            "Sem licenças recorrentes por usuário"
+          ]
         }
-      ]
-    },
-    "howItWorks": {
-      "eyebrow": "Como funciona",
-      "title": "Comprove em um piloto antes de assinar nada",
-      "description": "Construir essa capacidade internamente costuma levar de 18 a 24 meses. O piloto coloca respostas reais sobre os seus próprios dados na sua frente em cerca de 12 semanas.",
-      "phasePilot": "Piloto · ~12 semanas · a custo, na nuvem da Nivii",
-      "phaseProduction": "Produção · na sua própria nuvem",
-      "steps": [
-        {
-          "when": "Início",
-          "description": "NDA e carta de intenção. Você entrega um extrato somente leitura dos seus dados."
-        },
-        {
-          "when": "Semana 10",
-          "description": "Um piloto ao vivo sobre seus dados reais, resolvendo um caso de uso concreto."
-        },
-        {
-          "when": "Semanas 11 e 12",
-          "description": "Workshops de ajuste com o seu time e uma semana de testes, até a decisão de avançar ou não."
-        },
-        {
-          "when": "Mês 4",
-          "description": "Em produção dentro da sua própria nuvem, com o seu time operando o agente."
-        },
-        {
-          "when": "Mês 12",
-          "description": "Transferência completa: arquitetura, prompts, documentação e um time já capacitado."
-        }
-      ],
-      "roiTitle": "Sem ROI, não há contrato",
-      "roiStat": "~95%",
-      "roiBody": "É assim que o piloto se aproxima do sistema em produção, e é feito a custo. O caso de negócio precisa se escrever sozinho antes de você assinar.",
-      "modelTitle": "Modelo comercial",
-      "modelItems": [
-        "Um único build e depois suporte a prazo fixo.",
-        "Sem licenças recorrentes por usuário.",
-        "Transferência de conhecimento desde o primeiro dia, não no final."
       ]
     },
     "trust": {
