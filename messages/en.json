@@ -43,7 +43,7 @@
       "questionHint": "Optional, but it's what makes the session worth having.",
       "submit": "Request demo",
       "submitting": "Sending…",
-      "successTitle": "Done. We'll write to you within 24 hours.",
+      "successTitle": "Done. We'll write to you within 24\u00a0hours.",
       "successBody": "In the meantime, the architecture and security detail lives on the Enterprise page.",
       "error": "Something went wrong. Write to contact@nivii.ai and we'll sort it out.",
       "errors": {
@@ -63,12 +63,12 @@
         "question": "How much did we really grow, once you strip out inflation?",
         "queries": [
           {
-            "question": "Monthly revenue, gross and net of discounts, 2024 and 2025",
+            "question": "Monthly revenue, gross and net of discounts, 2024\u00a0and\u00a02025",
             "rows": 24,
             "seconds": 9.4
           },
           {
-            "question": "Consumer price index by month, 2024 and 2025",
+            "question": "Consumer price index by month, 2024\u00a0and\u00a02025",
             "rows": 24,
             "seconds": 6.1
           },
@@ -105,13 +105,13 @@
                 "Gross margin",
                 "41.2%",
                 "37.8%",
-                "−3.4 pp"
+                "−3.4\u00a0pp"
               ],
               [
                 "Units sold on discount",
                 "28%",
                 "41%",
-                "+13 pp"
+                "+13\u00a0pp"
               ]
             ]
           },
@@ -122,14 +122,14 @@
           "conclusion": "Bottom line: volume grew, but it was bought with price. The growth showing on the revenue dashboard never reached the result.",
           "followUp": "Want me to break the effect down by category, to see where discounting did drive incremental volume?"
         },
-        "recommendation": "Stop automatic discounting in the three categories where margin fell more than 5 points without unit growth: Urban footwear, Outerwear and Accessories. Together they hold $712M of revenue and 4.2 points of the margin drop, about $101M of result. Start with Outerwear, already running at 61% of units sold on discount with last season's stock still unsold."
+        "recommendation": "Stop automatic discounting in the three categories where margin fell more than 5\u00a0points without unit growth: Urban footwear, Outerwear and Accessories. Together they hold $712M of revenue and 4.2\u00a0points of the margin drop, about $101M of result. Start with Outerwear, already running at 61% of units sold on discount with last season's stock still unsold."
       },
       {
         "id": "quiebres",
         "question": "Which products ran out of stock this week?",
         "queries": [
           {
-            "question": "Daily stock by SKU, last 7 days",
+            "question": "Daily stock by SKU, last 7\u00a0days",
             "rows": 1240,
             "seconds": 7.8
           },
@@ -229,11 +229,11 @@
             },
             {
               "highlight": "Reduced operating hours:",
-              "text": "on November 18 the store opened 8 hours against the usual 12 (−33%)."
+              "text": "on November 18 the store opened 8\u00a0hours against the usual 12 (−33%)."
             },
             {
               "highlight": "Stockouts on 2 top products:",
-              "text": "“Sugar-Free Alfajor 9-pack” and “Sugar-Free Alfajor, loose” were out of stock all 3 days, and they rank 2nd and 5th in sales."
+              "text": "“Sugar-Free Alfajor 9-pack” and “Sugar-Free Alfajor, loose” were out of stock all 3\u00a0days, and they rank 2nd and 5th in sales."
             }
           ],
           "table": {
@@ -302,13 +302,13 @@
         "question": "Where is my margin going this month?",
         "queries": [
           {
-            "question": "Margin by category and discounts approved at the register, last 30 days",
+            "question": "Margin by category and discounts approved at the register, last 30\u00a0days",
             "rows": 86,
             "seconds": 6.4
           }
         ],
         "answer": {
-          "title": "Margin leak, last 30 days",
+          "title": "Margin leak, last 30\u00a0days",
           "lead": "71% of the drop sits in two categories, and almost all of it in discounts approved at the counter.",
           "table": {
             "columns": [
@@ -321,19 +321,19 @@
               [
                 "Beverages",
                 "22.4%",
-                "−4.1 pp",
+                "−4.1\u00a0pp",
                 "11.8%"
               ],
               [
                 "Cleaning",
                 "28.9%",
-                "−2.6 pp",
+                "−2.6\u00a0pp",
                 "7.4%"
               ],
               [
                 "Grocery",
                 "31.5%",
-                "−0.3 pp",
+                "−0.3\u00a0pp",
                 "2.1%"
               ]
             ]
@@ -351,7 +351,7 @@
             "seconds": 15.3
           },
           {
-            "question": "Restocking vs. sales by category, last 6 months",
+            "question": "Restocking vs. sales by category, last 6\u00a0months",
             "rows": 3120,
             "seconds": 9.7
           }
@@ -396,7 +396,7 @@
       },
       {
         "id": "riesgo-jubilacion",
-        "question": "How many critical roles are at retirement risk in the next 12 months?",
+        "question": "How many critical roles are at retirement risk in the next 12\u00a0months?",
         "queries": [
           {
             "question": "Headcount by area, hierarchy level and eligibility date",
@@ -409,8 +409,8 @@
           "lead": "Critical, immediate succession risk across several operating areas.",
           "findings": [
             {
-              "highlight": "6 employees in critical positions",
-              "text": "are at retirement risk within the next 12 months."
+              "highlight": "6\u00a0employees in critical positions",
+              "text": "are at retirement risk within the next 12\u00a0months."
             },
             {
               "highlight": "5 of those 6 (83%) are already eligible",
@@ -422,7 +422,7 @@
             }
           ],
           "chart": {
-            "title": "Possible exits, cumulative over 12 months",
+            "title": "Possible exits, cumulative over 12\u00a0months",
             "points": [
               {
                 "label": "Q1",
@@ -439,7 +439,7 @@
               {
                 "label": "Q4",
                 "value": 6,
-                "display": "6 roles"
+                "display": "6\u00a0roles"
               }
             ]
           }
@@ -453,15 +453,15 @@
       "sources": [
         {
           "name": "Daily sales (point of sale)",
-          "detail": "8,940 rows · 98% complete"
+          "detail": "8,940\u00a0rows · 98% complete"
         },
         {
           "name": "Stock by store (ERP)",
-          "detail": "1,240 rows · 91% complete"
+          "detail": "1,240\u00a0rows · 91% complete"
         },
         {
           "name": "Prices and discounts (spreadsheet)",
-          "detail": "612 rows · 87% complete"
+          "detail": "612\u00a0rows · 87% complete"
         }
       ],
       "stats": [
@@ -533,14 +533,14 @@
       },
       "cases": [
         {
-          "stat": "12 days",
+          "stat": "12\u00a0days",
           "title": "The failure gave notice. Nobody listened",
-          "description": "At an industrial plant, 17 breakdowns had flagged degradation before they broke. Between the warning and the shutdown sat 12 days of margin, written into work orders nobody cross-checked."
+          "description": "At an industrial plant, 17\u00a0breakdowns had flagged degradation before they broke. Between the warning and the shutdown sat 12\u00a0days of margin, written into work orders nobody cross-checked."
         },
         {
           "stat": "×36",
           "title": "Ask before you pitch",
-          "description": "Across 1,842 sales calls, the ones that established role, region and need before pitching converted 36 times more often: 76% against 2.1%."
+          "description": "Across 1,842 sales calls, the ones that established role, region and need before pitching converted 36\u00a0times more often: 76% against 2.1%."
         },
         {
           "stat": "19% → −2.5%",
@@ -576,7 +576,7 @@
           "role": "Chairman of the Board",
           "bio": [
             "Former Accenture Senior Managing Director and member of the Global Management Committee",
-            "Growth and Strategy roles in India, China, Japan, Singapore and Latam from 2022 to 2024, leading Argentina and the Hispanic South America region since 2013"
+            "Growth and Strategy roles in India, China, Japan, Singapore and Latam from 2022\u00a0to\u00a02024, leading Argentina and the Hispanic South America region since 2013"
           ],
           "linkedin": "https://www.linkedin.com/in/sergiokaufman/"
         },
@@ -585,8 +585,8 @@
           "photo": "/dani.jpeg",
           "role": "CEO & Co-Founder",
           "bio": [
-            "4 years as the Managing Director for Data & AI at Accenture Argentina managing up to 270 members organization",
-            "10 years as Google Head of Data & AI for Argentina and later for SPLATAM"
+            "4\u00a0years as the Managing Director for Data & AI at Accenture Argentina managing up to 270 members organization",
+            "10\u00a0years as Google Head of Data & AI for Argentina and later for SPLATAM"
           ],
           "linkedin": "https://www.linkedin.com/in/daniel-stilerman/"
         },
@@ -595,7 +595,7 @@
           "photo": "/alex.jpeg",
           "role": "CTO & Co-Founder",
           "bio": [
-            "+8 years as Sr. and Lead Machine Learning Engineer in Israeli high-tech, scaling ML and AI production-grade models from research to market",
+            "+8\u00a0years as Sr. and Lead Machine Learning Engineer in Israeli high-tech, scaling ML and AI production-grade models from research to market",
             "MSc in Software Engineering"
           ],
           "linkedin": "https://www.linkedin.com/in/alexingberg/"
@@ -606,7 +606,7 @@
           "role": "CBO & Co-Founder",
           "bio": [
             "Data Scientist turned Sales Executive",
-            "+7 years at Google UK advising C & B Level in EMEA",
+            "+7\u00a0years at Google UK advising C & B Level in EMEA",
             "Decision Science (Analytics) professor for Google worldwide"
           ],
           "linkedin": "https://www.linkedin.com/in/alan-hazan-41784a51/"
@@ -617,7 +617,7 @@
           "role": "COO",
           "bio": [
             "Former Accenture Senior Managing Director and regional lead of the Energy, Natural Resources & Oil & Gas practice for Hispanic South America",
-            "+40 years of executive experience in management consulting, business strategy, operations and digital transformation, leading technology projects for major Latin American companies"
+            "+40\u00a0years of executive experience in management consulting, business strategy, operations and digital transformation, leading technology projects for major Latin American companies"
           ],
           "linkedin": "https://www.linkedin.com/in/claudio-goldman/"
         }
@@ -696,7 +696,7 @@
         }
       ],
       "extraTitle": "One more insight: three questions before the pitch",
-      "extraBody": "Across 1,842 sales calls, the ones that established role, region and need before pitching converted 36 times more often than the ones that opened with the promotion: 76% against 2.1%. Three out of four calls never got around to asking.",
+      "extraBody": "Across 1,842 sales calls, the ones that established role, region and need before pitching converted 36\u00a0times more often than the ones that opened with the promotion: 76% against 2.1%. Three out of four calls never got around to asking.",
       "cta": "See what it finds in your data"
     },
     "howItWorks": {
@@ -862,22 +862,22 @@
   "enterprise": {
     "meta": {
       "title": "Nivii Enterprise — a decision agent that runs inside your own cloud",
-      "description": "Nivii Enterprise deploys a decision-intelligence agent on your data, inside your own perimeter. Live pilot in about 12 weeks: no ROI, no contract."
+      "description": "Nivii Enterprise deploys a decision-intelligence agent on your data, inside your own perimeter. Live pilot in about 12\u00a0weeks: no ROI, no contract."
     },
     "hero": {
       "title": "A decision agent that runs <accent>inside your own cloud</accent>.",
       "description": "It learns how your business works, takes on the messy data you already have and delivers trustworthy analysis with a clear recommendation. Your data never leaves your perimeter.",
       "cta": "Request a demo",
       "secondary": "See architecture and security",
-      "note": "A live pilot on your real data in 12 weeks, at cost."
+      "note": "A live pilot on your real data in 12\u00a0weeks, at cost."
     },
     "product": {
       "eyebrow": "What it is",
       "title": "Not a dashboard. <accent>Not a rental either.</accent>",
-      "description": "Most analytics projects end in more charts and a bill that never stops. Nivii deploys a decision agent on your own data, inside your own environment, and trains your team to run it along the way. It is the shortcut to a capability that takes 18 to 24 months to build from scratch, and you put it to the test before signing anything: no ROI, no contract.",
+      "description": "Most analytics projects end in more charts and a bill that never stops. Nivii deploys a decision agent on your own data, inside your own environment, and trains your team to run it along the way. It is the shortcut to a capability that takes 18\u00a0to\u00a024\u00a0months to build from scratch, and you put it to the test before signing anything: no ROI, no contract.",
       "phases": [
         {
-          "label": "Pilot · 12 weeks · at cost",
+          "label": "Pilot · 12\u00a0weeks · at cost",
           "steps": [
             {
               "title": "NDA and kickoff",
@@ -898,7 +898,7 @@
           ]
         },
         {
-          "label": "Production · 12 months · in your own cloud",
+          "label": "Production · 12\u00a0months · in your own cloud",
           "steps": [
             {
               "title": "Rollout",
@@ -954,11 +954,11 @@
       "items": [
         {
           "title": "Industrial maintenance",
-          "description": "At an industrial plant, the agent cross-referenced 38 months of notifications and work orders stored in SAP: 23 breakdowns had flagged degradation before they broke, with an average of 16 days to intervene. On the equipment with the highest corrective cost, the ratio of repairing to preventing was 29 to 1. None of it was new data: it was written down and nobody cross-checked it."
+          "description": "At an industrial plant, the agent cross-referenced 38\u00a0months of notifications and work orders stored in SAP: 23\u00a0breakdowns had flagged degradation before they broke, with an average of 16\u00a0days to intervene. On the equipment with the highest corrective cost, the ratio of repairing to preventing was 29\u00a0to\u00a01. None of it was new data: it was written down and nobody cross-checked it."
         },
         {
           "title": "Sales",
-          "description": "Across 1,842 calls from a field sales team, the ones that established role, region and need before pitching converted 36 times more often. And 45% of what the team logged as an objection was not an objection at all: it was a mistargeted lead."
+          "description": "Across 1,842\u00a0calls from a field sales team, the ones that established role, region and need before pitching converted 36\u00a0times more often. And 45% of what the team logged as an objection was not an objection at all: it was a mistargeted lead."
         },
         {
           "title": "People / HR",
@@ -1069,7 +1069,7 @@
         },
         {
           "question": "How long until we see value?",
-          "answer": "About 12 weeks to a live pilot on your real data, and it works roughly 95% like the production system. From there you are in production in your own cloud by month 4, and by month 12 your team runs the agent on its own. The pilot is not a proof of concept: it is the real product, already most of the way there."
+          "answer": "About 12\u00a0weeks to a live pilot on your real data, and it works roughly 95% like the production system. From there you are in production in your own cloud by month 4, and by month 12 your team runs the agent on its own. The pilot is not a proof of concept: it is the real product, already most of the way there."
         },
         {
           "question": "What do we commit to for the pilot?",

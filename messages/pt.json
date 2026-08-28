@@ -29,7 +29,7 @@
     },
     "label": "Solicitar Demo",
     "title": "Traga uma pergunta. Mostramos <accent>o que o agente faz</accent> com ela.",
-    "description": "Uma sessão de trabalho de 30 minutos, sobre os seus dados e dentro do seu ambiente. Sem apresentação enlatada.",
+    "description": "Uma sessão de trabalho de 30\u00a0minutos, sobre os seus dados e dentro do seu ambiente. Sem apresentação enlatada.",
     "reassurance": [
       "Meia hora, com alguém da equipe que construiu o produto.",
       "Seus dados não precisam estar organizados: esse é o ponto de partida.",
@@ -43,7 +43,7 @@
       "questionHint": "Opcional, mas é o que faz a sessão valer a pena.",
       "submit": "Solicitar demo",
       "submitting": "Enviando…",
-      "successTitle": "Pronto. Escrevemos para você em até 24 horas.",
+      "successTitle": "Pronto. Escrevemos para você em até 24\u00a0horas.",
       "successBody": "Enquanto isso, o detalhe de arquitetura e segurança está na página da Enterprise.",
       "error": "Houve um erro ao enviar. Escreva para contact@nivii.ai e resolvemos.",
       "errors": {
@@ -63,12 +63,12 @@
         "question": "Quanto crescemos de verdade, descontando a inflação?",
         "queries": [
           {
-            "question": "Faturamento mensal bruto e líquido de descontos, 2024 e 2025",
+            "question": "Faturamento mensal bruto e líquido de descontos, 2024\u00a0e\u00a02025",
             "rows": 24,
             "seconds": 9.4
           },
           {
-            "question": "Índice de preços ao consumidor por mês, 2024 e 2025",
+            "question": "Índice de preços ao consumidor por mês, 2024\u00a0e\u00a02025",
             "rows": 24,
             "seconds": 6.1
           },
@@ -105,13 +105,13 @@
                 "Margem bruta",
                 "41,2%",
                 "37,8%",
-                "−3,4 pp"
+                "−3,4\u00a0pp"
               ],
               [
                 "Unidades vendidas com desconto",
                 "28%",
                 "41%",
-                "+13 pp"
+                "+13\u00a0pp"
               ]
             ]
           },
@@ -122,14 +122,14 @@
           "conclusion": "Conclusão: o volume cresceu, mas foi comprado com preço. O crescimento que aparece no painel de faturamento não chegou ao resultado.",
           "followUp": "Quer que eu separe o efeito por categoria, para ver onde o desconto de fato gerou volume incremental?"
         },
-        "recommendation": "Interrompa os descontos automáticos nas três categorias em que a margem caiu mais de 5 pontos sem crescimento de unidades: Calçado urbano, Agasalhos e Acessórios. Juntas concentram $712M de faturamento e 4,2 pontos da queda de margem, cerca de $101M de resultado. Comece por Agasalhos, que já está com 61% das unidades vendidas com desconto e estoque da temporada passada sem liquidar."
+        "recommendation": "Interrompa os descontos automáticos nas três categorias em que a margem caiu mais de 5\u00a0pontos sem crescimento de unidades: Calçado urbano, Agasalhos e Acessórios. Juntas concentram $712M de faturamento e 4,2\u00a0pontos da queda de margem, cerca de $101M de resultado. Comece por Agasalhos, que já está com 61% das unidades vendidas com desconto e estoque da temporada passada sem liquidar."
       },
       {
         "id": "quiebres",
         "question": "Quais produtos ficaram sem estoque esta semana?",
         "queries": [
           {
-            "question": "Estoque diário por SKU, últimos 7 dias",
+            "question": "Estoque diário por SKU, últimos 7\u00a0dias",
             "rows": 1240,
             "seconds": 7.8
           },
@@ -229,11 +229,11 @@
             },
             {
               "highlight": "Horas de operação reduzidas:",
-              "text": "em 18 de novembro a loja abriu 8 horas contra as 12 habituais (−33%)."
+              "text": "em 18 de novembro a loja abriu 8\u00a0horas contra as 12 habituais (−33%)."
             },
             {
-              "highlight": "Ruptura de estoque em 2 produtos top:",
-              "text": "“Alfajor Sem Açúcar 9 un.” e “Alfajor Sem Açúcar avulso” ficaram sem estoque nos 3 dias, e são o 2º e o 5º mais vendidos."
+              "highlight": "Ruptura de estoque em 2\u00a0produtos top:",
+              "text": "“Alfajor Sem Açúcar 9 un.” e “Alfajor Sem Açúcar avulso” ficaram sem estoque nos 3\u00a0dias, e são o 2º e o 5º mais vendidos."
             }
           ],
           "table": {
@@ -302,13 +302,13 @@
         "question": "Para onde está indo a minha margem este mês?",
         "queries": [
           {
-            "question": "Margem por categoria e descontos autorizados no caixa, últimos 30 dias",
+            "question": "Margem por categoria e descontos autorizados no caixa, últimos 30\u00a0dias",
             "rows": 86,
             "seconds": 6.4
           }
         ],
         "answer": {
-          "title": "Vazamento de margem, últimos 30 dias",
+          "title": "Vazamento de margem, últimos 30\u00a0dias",
           "lead": "71% da queda está em duas categorias, e quase tudo em descontos autorizados no balcão.",
           "table": {
             "columns": [
@@ -321,19 +321,19 @@
               [
                 "Bebidas",
                 "22,4%",
-                "−4,1 pp",
+                "−4,1\u00a0pp",
                 "11,8%"
               ],
               [
                 "Limpeza",
                 "28,9%",
-                "−2,6 pp",
+                "−2,6\u00a0pp",
                 "7,4%"
               ],
               [
                 "Mercearia",
                 "31,5%",
-                "−0,3 pp",
+                "−0,3\u00a0pp",
                 "2,1%"
               ]
             ]
@@ -351,7 +351,7 @@
             "seconds": 15.3
           },
           {
-            "question": "Reposições vs. vendas por categoria, últimos 6 meses",
+            "question": "Reposições vs. vendas por categoria, últimos 6\u00a0meses",
             "rows": 3120,
             "seconds": 9.7
           }
@@ -396,7 +396,7 @@
       },
       {
         "id": "riesgo-jubilacion",
-        "question": "Quantos cargos críticos estão em risco de aposentadoria nos próximos 12 meses?",
+        "question": "Quantos cargos críticos estão em risco de aposentadoria nos próximos 12\u00a0meses?",
         "queries": [
           {
             "question": "Quadro por área, nível hierárquico e data de elegibilidade",
@@ -409,8 +409,8 @@
           "lead": "Risco de sucessão crítico e imediato em várias áreas operacionais.",
           "findings": [
             {
-              "highlight": "6 funcionários em posições críticas",
-              "text": "estão em risco de aposentadoria nos próximos 12 meses."
+              "highlight": "6\u00a0funcionários em posições críticas",
+              "text": "estão em risco de aposentadoria nos próximos 12\u00a0meses."
             },
             {
               "highlight": "5 desses 6 (83%) já podem se aposentar",
@@ -418,11 +418,11 @@
             },
             {
               "highlight": "Qualidade concentra o maior risco:",
-              "text": "2 posições críticas, ambas Team Leader."
+              "text": "2\u00a0posições críticas, ambas Team Leader."
             }
           ],
           "chart": {
-            "title": "Saídas possíveis acumuladas, próximos 12 meses",
+            "title": "Saídas possíveis acumuladas, próximos 12\u00a0meses",
             "points": [
               {
                 "label": "T1",
@@ -439,7 +439,7 @@
               {
                 "label": "T4",
                 "value": 6,
-                "display": "6 cargos"
+                "display": "6\u00a0cargos"
               }
             ]
           }
@@ -453,15 +453,15 @@
       "sources": [
         {
           "name": "Vendas diárias (PDV)",
-          "detail": "8.940 linhas · 98% completo"
+          "detail": "8.940\u00a0linhas · 98% completo"
         },
         {
           "name": "Estoque por loja (ERP)",
-          "detail": "1.240 linhas · 91% completo"
+          "detail": "1.240\u00a0linhas · 91% completo"
         },
         {
           "name": "Preços e descontos (planilha)",
-          "detail": "612 linhas · 87% completo"
+          "detail": "612\u00a0linhas · 87% completo"
         }
       ],
       "stats": [
@@ -533,14 +533,14 @@
       },
       "cases": [
         {
-          "stat": "12 dias",
+          "stat": "12\u00a0dias",
           "title": "A falha avisou e ninguém escutou",
-          "description": "Em uma planta industrial, 17 quebras já tinham dado sinal de degradação antes de romper. Entre o aviso e a parada havia 12 dias de margem, escritos em ordens que ninguém cruzava."
+          "description": "Em uma planta industrial, 17\u00a0quebras já tinham dado sinal de degradação antes de romper. Entre o aviso e a parada havia 12\u00a0dias de margem, escritos em ordens que ninguém cruzava."
         },
         {
           "stat": "×36",
           "title": "Perguntar antes de oferecer",
-          "description": "Em 1.842 ligações de venda, as que levantavam papel, região e necessidade antes de oferecer convertiam 36 vezes mais: 76% contra 2,1%."
+          "description": "Em 1.842\u00a0ligações de venda, as que levantavam papel, região e necessidade antes de oferecer convertiam 36\u00a0vezes mais: 76% contra 2,1%."
         },
         {
           "stat": "19% → −2,5%",
@@ -585,8 +585,8 @@
           "photo": "/dani.jpeg",
           "role": "CEO e Co-Fundador",
           "bio": [
-            "4 anos como Diretor Gerente de Data & AI na Accenture Argentina gerenciando até 270 membros da organização",
-            "10 anos como chefe de Data & AI do Google para Argentina e depois para Splatam"
+            "4\u00a0anos como Diretor Gerente de Data & AI na Accenture Argentina gerenciando até 270 membros da organização",
+            "10\u00a0anos como chefe de Data & AI do Google para Argentina e depois para Splatam"
           ],
           "linkedin": "https://www.linkedin.com/in/daniel-stilerman/"
         },
@@ -595,7 +595,7 @@
           "photo": "/alex.jpeg",
           "role": "CTO e Co-Fundador",
           "bio": [
-            "+8 anos como Sr. e Lead Machine Learning Engineer no setor high-tech israelense, escalando modelos de ML e IA production-grade desde research até o mercado",
+            "+8\u00a0anos como Sr. e Lead Machine Learning Engineer no setor high-tech israelense, escalando modelos de ML e IA production-grade desde research até o mercado",
             "MSc em Engenharia de Software"
           ],
           "linkedin": "https://www.linkedin.com/in/alexingberg/"
@@ -606,7 +606,7 @@
           "role": "CBO & Co-Founder",
           "bio": [
             "Cientista de Dados transformado em Executivo de Vendas",
-            "+7 anos na Google UK aconselhando nível C & B na EMEA",
+            "+7\u00a0anos na Google UK aconselhando nível C & B na EMEA",
             "Professor de Decision Science (Analytics) para Google mundialmente"
           ],
           "linkedin": "https://www.linkedin.com/in/alan-hazan-41784a51/"
@@ -617,7 +617,7 @@
           "role": "COO",
           "bio": [
             "Ex-Senior Managing Director e líder regional da Accenture com foco na indústria de Resources e Oil & Gas para a região Hispânica da América do Sul",
-            "+40 anos de experiência executiva em management consulting, estratégia de negócios, operação e transformação digital, liderando projetos de tecnologia para as principais empresas da América Latina"
+            "+40\u00a0anos de experiência executiva em management consulting, estratégia de negócios, operação e transformação digital, liderando projetos de tecnologia para as principais empresas da América Latina"
           ],
           "linkedin": "https://www.linkedin.com/in/claudio-goldman/"
         }
@@ -625,7 +625,7 @@
     },
     "cta": {
       "title": "Veja a Nivii responder uma pergunta real. <accent>Sobre os seus próprios dados.</accent>",
-      "description": "Traga uma pergunta de negócio que hoje você não consegue responder a tempo. Em uma sessão de 30 minutos mostramos o que o agente faz com ela, sobre os seus dados e dentro do seu ambiente.",
+      "description": "Traga uma pergunta de negócio que hoje você não consegue responder a tempo. Em uma sessão de 30\u00a0minutos mostramos o que o agente faz com ela, sobre os seus dados e dentro do seu ambiente.",
       "secondary": "CIO, CTO ou CDO? Veja a arquitetura e a segurança"
     }
   },
@@ -696,7 +696,7 @@
         }
       ],
       "extraTitle": "Mais um insight: três perguntas antes de oferecer",
-      "extraBody": "Em 1.842 ligações de venda, as que levantavam papel, região e necessidade antes de oferecer convertiam 36 vezes mais do que as que abriam com a promoção: 76% contra 2,1%. Três de cada quatro ligações nunca chegavam a perguntar.",
+      "extraBody": "Em 1.842\u00a0ligações de venda, as que levantavam papel, região e necessidade antes de oferecer convertiam 36\u00a0vezes mais do que as que abriam com a promoção: 76% contra 2,1%. Três de cada quatro ligações nunca chegavam a perguntar.",
       "cta": "Ver o que ele encontra nos seus dados"
     },
     "howItWorks": {
@@ -862,22 +862,22 @@
   "enterprise": {
     "meta": {
       "title": "Nivii Enterprise — um agente de decisão dentro da sua própria nuvem",
-      "description": "O Nivii Enterprise implanta um agente de inteligência de decisão sobre seus dados, dentro do seu perímetro. Piloto ao vivo em cerca de 12 semanas: sem ROI, não há contrato."
+      "description": "O Nivii Enterprise implanta um agente de inteligência de decisão sobre seus dados, dentro do seu perímetro. Piloto ao vivo em cerca de 12\u00a0semanas: sem ROI, não há contrato."
     },
     "hero": {
       "title": "Um agente de decisão que roda <accent>dentro da sua própria nuvem</accent>.",
       "description": "Ele aprende como o seu negócio funciona, trabalha com os dados bagunçados que você já tem e entrega análise confiável com uma recomendação clara. Seus dados nunca saem do seu perímetro.",
       "cta": "Solicitar uma demo",
       "secondary": "Ver arquitetura e segurança",
-      "note": "Um piloto ao vivo sobre seus dados reais em 12 semanas, a custo."
+      "note": "Um piloto ao vivo sobre seus dados reais em 12\u00a0semanas, a custo."
     },
     "product": {
       "eyebrow": "O que é",
       "title": "Não é um dashboard. <accent>Nem um aluguel.</accent>",
-      "description": "A maioria dos projetos de analytics termina em mais gráficos e uma fatura que não acaba. A Nivii implanta um agente de decisão sobre os seus próprios dados, dentro do seu próprio ambiente, e treina o seu time para operá-lo no caminho. É o atalho para uma capacidade que construir do zero leva de 18 a 24 meses, e você coloca à prova antes de assinar nada: sem ROI, não há contrato.",
+      "description": "A maioria dos projetos de analytics termina em mais gráficos e uma fatura que não acaba. A Nivii implanta um agente de decisão sobre os seus próprios dados, dentro do seu próprio ambiente, e treina o seu time para operá-lo no caminho. É o atalho para uma capacidade que construir do zero leva de 18 a 24\u00a0meses, e você coloca à prova antes de assinar nada: sem ROI, não há contrato.",
       "phases": [
         {
-          "label": "Piloto · 12 semanas · a custo",
+          "label": "Piloto · 12\u00a0semanas · a custo",
           "steps": [
             {
               "title": "NDA e kickoff",
@@ -898,7 +898,7 @@
           ]
         },
         {
-          "label": "Produção · 12 meses · na sua própria nuvem",
+          "label": "Produção · 12\u00a0meses · na sua própria nuvem",
           "steps": [
             {
               "title": "Implementação",
@@ -954,11 +954,11 @@
       "items": [
         {
           "title": "Manutenção industrial",
-          "description": "Em uma planta industrial, o agente cruzou 38 meses de avisos e ordens armazenadas no SAP: 23 quebras já tinham dado sinal de degradação antes de romper, com 16 dias em média para intervir. No equipamento de maior custo corretivo, a relação entre reparar e prevenir era de 29 para 1. Nenhum dado era novo: estava escrito e ninguém cruzava."
+          "description": "Em uma planta industrial, o agente cruzou 38\u00a0meses de avisos e ordens armazenadas no SAP: 23\u00a0quebras já tinham dado sinal de degradação antes de romper, com 16\u00a0dias em média para intervir. No equipamento de maior custo corretivo, a relação entre reparar e prevenir era de 29\u00a0para\u00a01. Nenhum dado era novo: estava escrito e ninguém cruzava."
         },
         {
           "title": "Comercial",
-          "description": "Em 1.842 ligações de um time de venda de campo, as que levantavam papel, região e necessidade antes de oferecer convertiam 36 vezes mais. E 45% do que era registrado como objeção não era objeção: era um lead mal direcionado."
+          "description": "Em 1.842\u00a0ligações de um time de venda de campo, as que levantavam papel, região e necessidade antes de oferecer convertiam 36\u00a0vezes mais. E 45% do que era registrado como objeção não era objeção: era um lead mal direcionado."
         },
         {
           "title": "People / RH",
@@ -1069,7 +1069,7 @@
         },
         {
           "question": "Quanto tempo até vermos valor?",
-          "answer": "Cerca de 12 semanas até um piloto ao vivo sobre seus dados reais, e ele funciona perto de 95% como o sistema em produção. De lá você está em produção na sua própria nuvem no mês 4, e no mês 12 o seu time opera o agente por conta própria. O piloto não é uma prova de conceito: é o produto real, já quase pronto."
+          "answer": "Cerca de 12\u00a0semanas até um piloto ao vivo sobre seus dados reais, e ele funciona perto de 95% como o sistema em produção. De lá você está em produção na sua própria nuvem no mês 4, e no mês 12 o seu time opera o agente por conta própria. O piloto não é uma prova de conceito: é o produto real, já quase pronto."
         },
         {
           "question": "Com o que nos comprometemos para o piloto?",
@@ -1083,7 +1083,7 @@
     },
     "cta": {
       "title": "Traga uma pergunta de negócio que hoje você <accent>não consegue responder a tempo</accent>.",
-      "description": "Em uma sessão de trabalho de 30 minutos mostramos o que o agente faz com ela, sobre os seus dados e dentro do seu ambiente.",
+      "description": "Em uma sessão de trabalho de 30\u00a0minutos mostramos o que o agente faz com ela, sobre os seus dados e dentro do seu ambiente.",
       "button": "Solicitar uma demo",
       "bridge": "Sua operação é menor e não precisa de infraestrutura própria? O Beacon resolve o mesmo a partir da nuvem da Nivii, com um piloto gratuito.",
       "bridgeLink": "Ver Nivii Beacon"

@@ -29,7 +29,7 @@
     },
     "label": "Solicitar Demo",
     "title": "Traé una pregunta. Te mostramos <accent>qué hace el agente</accent> con ella.",
-    "description": "Una sesión de trabajo de 30 minutos, sobre tus datos y dentro de tu entorno. Sin presentación enlatada.",
+    "description": "Una sesión de trabajo de 30\u00a0minutos, sobre tus datos y dentro de tu entorno. Sin presentación enlatada.",
     "reassurance": [
       "Media hora, con una persona del equipo que construyó el producto.",
       "No hace falta que tus datos estén ordenados: ese es el punto de partida.",
@@ -43,7 +43,7 @@
       "questionHint": "Opcional, pero es lo que hace que la sesión valga la pena.",
       "submit": "Solicitar demo",
       "submitting": "Enviando…",
-      "successTitle": "Listo. Te escribimos en las próximas 24 horas.",
+      "successTitle": "Listo. Te escribimos en las próximas 24\u00a0horas.",
       "successBody": "Mientras tanto, si querés ver el detalle de arquitectura y seguridad, está en la página de Enterprise.",
       "error": "Hubo un error al enviar tu solicitud. Escribinos a contact@nivii.ai y lo resolvemos.",
       "errors": {
@@ -63,12 +63,12 @@
         "question": "¿Cuánto crecimos en serio, descontando inflación?",
         "queries": [
           {
-            "question": "Facturación mensual bruta y neta de descuentos, 2024 y 2025",
+            "question": "Facturación mensual bruta y neta de descuentos, 2024\u00a0y\u00a02025",
             "rows": 24,
             "seconds": 9.4
           },
           {
-            "question": "Índice de precios al consumidor por mes, 2024 y 2025",
+            "question": "Índice de precios al consumidor por mes, 2024\u00a0y\u00a02025",
             "rows": 24,
             "seconds": 6.1
           },
@@ -105,13 +105,13 @@
                 "Margen bruto",
                 "41,2%",
                 "37,8%",
-                "−3,4 pp"
+                "−3,4\u00a0pp"
               ],
               [
                 "Unidades vendidas con descuento",
                 "28%",
                 "41%",
-                "+13 pp"
+                "+13\u00a0pp"
               ]
             ]
           },
@@ -122,14 +122,14 @@
           "conclusion": "Conclusión: el volumen creció, pero se compró con precio. El crecimiento que se ve en el tablero de facturación no llegó al resultado.",
           "followUp": "¿Querés que separe el efecto por categoría, para ver dónde el descuento sí generó volumen incremental?"
         },
-        "recommendation": "Frená los descuentos automáticos en las tres categorías donde el margen cayó más de 5 puntos sin que crecieran las unidades: Calzado urbano, Abrigo y Accesorios. Concentran $712M de facturación y 4,2 puntos de la caída de margen, unos $101M de resultado. Empezá por Abrigo, que ya va con 61% de las unidades vendidas con descuento y stock de la temporada pasada sin liquidar."
+        "recommendation": "Frená los descuentos automáticos en las tres categorías donde el margen cayó más de 5\u00a0puntos sin que crecieran las unidades: Calzado urbano, Abrigo y Accesorios. Concentran $712M de facturación y 4,2\u00a0puntos de la caída de margen, unos $101M de resultado. Empezá por Abrigo, que ya va con 61% de las unidades vendidas con descuento y stock de la temporada pasada sin liquidar."
       },
       {
         "id": "quiebres",
         "question": "¿Qué productos se quedaron sin stock esta semana?",
         "queries": [
           {
-            "question": "Stock diario por SKU, últimos 7 días",
+            "question": "Stock diario por SKU, últimos 7\u00a0días",
             "rows": 1240,
             "seconds": 7.8
           },
@@ -229,11 +229,11 @@
             },
             {
               "highlight": "Horas operativas reducidas:",
-              "text": "el 18 de noviembre el local abrió 8 horas contra las 12 habituales (−33%)."
+              "text": "el 18 de noviembre el local abrió 8\u00a0horas contra las 12 habituales (−33%)."
             },
             {
-              "highlight": "Quiebre de stock en 2 productos top:",
-              "text": "«Alfajor Sin Azúcar x9 Un» y «Alfajor Sin Azúcar Suelto» estuvieron sin stock los 3 días, y son el 2° y el 5° más vendidos."
+              "highlight": "Quiebre de stock en 2\u00a0productos top:",
+              "text": "«Alfajor Sin Azúcar x9 Un» y «Alfajor Sin Azúcar Suelto» estuvieron sin stock los 3\u00a0días, y son el 2° y el 5° más vendidos."
             }
           ],
           "table": {
@@ -302,13 +302,13 @@
         "question": "¿Dónde se me está yendo el margen este mes?",
         "queries": [
           {
-            "question": "Margen por categoría y descuentos autorizados en caja, últimos 30 días",
+            "question": "Margen por categoría y descuentos autorizados en caja, últimos 30\u00a0días",
             "rows": 86,
             "seconds": 6.4
           }
         ],
         "answer": {
-          "title": "Fuga de margen, últimos 30 días",
+          "title": "Fuga de margen, últimos 30\u00a0días",
           "lead": "El 71% de la caída está en dos categorías, y casi toda en descuentos autorizados en el mostrador.",
           "table": {
             "columns": [
@@ -321,19 +321,19 @@
               [
                 "Bebidas",
                 "22,4%",
-                "−4,1 pp",
+                "−4,1\u00a0pp",
                 "11,8%"
               ],
               [
                 "Limpieza",
                 "28,9%",
-                "−2,6 pp",
+                "−2,6\u00a0pp",
                 "7,4%"
               ],
               [
                 "Almacén",
                 "31,5%",
-                "−0,3 pp",
+                "−0,3\u00a0pp",
                 "2,1%"
               ]
             ]
@@ -351,7 +351,7 @@
             "seconds": 15.3
           },
           {
-            "question": "Reposiciones vs. ventas por categoría, últimos 6 meses",
+            "question": "Reposiciones vs. ventas por categoría, últimos 6\u00a0meses",
             "rows": 3120,
             "seconds": 9.7
           }
@@ -396,7 +396,7 @@
       },
       {
         "id": "riesgo-jubilacion",
-        "question": "¿Cuántos puestos críticos están en riesgo por jubilación en los próximos 12 meses?",
+        "question": "¿Cuántos puestos críticos están en riesgo por jubilación en los próximos 12\u00a0meses?",
         "queries": [
           {
             "question": "Dotación por área, nivel jerárquico y fecha de elegibilidad",
@@ -409,8 +409,8 @@
           "lead": "Riesgo de sucesión crítico e inmediato en varias áreas operativas.",
           "findings": [
             {
-              "highlight": "6 empleados en posiciones críticas",
-              "text": "están en riesgo de jubilación dentro de los próximos 12 meses."
+              "highlight": "6\u00a0empleados en posiciones críticas",
+              "text": "están en riesgo de jubilación dentro de los próximos 12\u00a0meses."
             },
             {
               "highlight": "5 de esos 6 (83%) ya son elegibles",
@@ -418,11 +418,11 @@
             },
             {
               "highlight": "Calidad concentra el mayor riesgo:",
-              "text": "2 posiciones críticas, ambas Team Leader."
+              "text": "2\u00a0posiciones críticas, ambas Team Leader."
             }
           ],
           "chart": {
-            "title": "Salidas posibles acumuladas, próximos 12 meses",
+            "title": "Salidas posibles acumuladas, próximos 12\u00a0meses",
             "points": [
               {
                 "label": "T1",
@@ -439,7 +439,7 @@
               {
                 "label": "T4",
                 "value": 6,
-                "display": "6 puestos"
+                "display": "6\u00a0puestos"
               }
             ]
           }
@@ -453,15 +453,15 @@
       "sources": [
         {
           "name": "Ventas diarias (punto de venta)",
-          "detail": "8.940 filas · 98% completo"
+          "detail": "8.940\u00a0filas · 98% completo"
         },
         {
           "name": "Stock por sucursal (sistema de gestión)",
-          "detail": "1.240 filas · 91% completo"
+          "detail": "1.240\u00a0filas · 91% completo"
         },
         {
           "name": "Precios y descuentos (planilla)",
-          "detail": "612 filas · 87% completo"
+          "detail": "612\u00a0filas · 87% completo"
         }
       ],
       "stats": [
@@ -533,14 +533,14 @@
       },
       "cases": [
         {
-          "stat": "12 días",
+          "stat": "12\u00a0días",
           "title": "La falla avisó y nadie la escuchó",
-          "description": "En una planta industrial, 17 averías habían dado señal de degradación antes de romper. Entre el aviso y la parada había 12 días de margen, escritos en órdenes que nadie cruzaba."
+          "description": "En una planta industrial, 17\u00a0averías habían dado señal de degradación antes de romper. Entre el aviso y la parada había 12\u00a0días de margen, escritos en órdenes que nadie cruzaba."
         },
         {
           "stat": "×36",
           "title": "Preguntar antes de ofrecer",
-          "description": "Sobre 1.842 llamadas de venta, las que relevaban rol, zona y necesidad antes de ofrecer derivaban 36 veces más: 76% contra 2,1%."
+          "description": "Sobre 1.842\u00a0llamadas de venta, las que relevaban rol, zona y necesidad antes de ofrecer derivaban 36\u00a0veces más: 76% contra 2,1%."
         },
         {
           "stat": "19% → −2,5%",
@@ -576,7 +576,7 @@
           "role": "Chairman of the Board",
           "bio": [
             "Ex Senior Managing Director de Accenture y miembro del Global Management Committee",
-            "Roles de Crecimiento y Estrategia en India, China, Japón, Singapur y Latam de 2022 a 2024, liderando Argentina y la región Hispana de América del Sur desde 2013"
+            "Roles de Crecimiento y Estrategia en India, China, Japón, Singapur y Latam de 2022\u00a0a\u00a02024, liderando Argentina y la región Hispana de América del Sur desde 2013"
           ],
           "linkedin": "https://www.linkedin.com/in/sergiokaufman/"
         },
@@ -585,8 +585,8 @@
           "photo": "/dani.jpeg",
           "role": "CEO & Co-Founder",
           "bio": [
-            "4 años como Managing Director de Data & AI en Accenture Argentina gestionando hasta 270 miembros de organización",
-            "10 años como Google Head of Data & AI para Argentina y luego para SPLATAM"
+            "4\u00a0años como Managing Director de Data & AI en Accenture Argentina gestionando hasta 270 miembros de organización",
+            "10\u00a0años como Google Head of Data & AI para Argentina y luego para SPLATAM"
           ],
           "linkedin": "https://www.linkedin.com/in/daniel-stilerman/"
         },
@@ -595,7 +595,7 @@
           "photo": "/alex.jpeg",
           "role": "CTO & Co-Founder",
           "bio": [
-            "+8 años como Sr. y Lead Machine Learning Engineer en el sector high-tech israelí, escalando modelos de ML e IA production-grade desde research hasta el mercado",
+            "+8\u00a0años como Sr. y Lead Machine Learning Engineer en el sector high-tech israelí, escalando modelos de ML e IA production-grade desde research hasta el mercado",
             "MSc en Ingeniería de Software"
           ],
           "linkedin": "https://www.linkedin.com/in/alexingberg/"
@@ -606,7 +606,7 @@
           "role": "CBO & Co-Founder",
           "bio": [
             "Data Scientist convertido en Ejecutivo de Ventas",
-            "+7 años en Google UK asesorando a nivel C & B en EMEA",
+            "+7\u00a0años en Google UK asesorando a nivel C & B en EMEA",
             "Profesor de Decision Science (Analytics) para Google mundialmente"
           ],
           "linkedin": "https://www.linkedin.com/in/alan-hazan-41784a51/"
@@ -617,7 +617,7 @@
           "role": "COO",
           "bio": [
             "Ex Senior Managing Director y líder regional de Accenture con foco en la industria de Resources y Oil & Gas para la región Hispana de América del Sur",
-            "+40 años de experiencia ejecutiva en management consulting, estrategia de negocios, operación y transformación digital, liderando proyectos tecnológicos para las principales compañías de América Latina"
+            "+40\u00a0años de experiencia ejecutiva en management consulting, estrategia de negocios, operación y transformación digital, liderando proyectos tecnológicos para las principales compañías de América Latina"
           ],
           "linkedin": "https://www.linkedin.com/in/claudio-goldman/"
         }
@@ -625,7 +625,7 @@
     },
     "cta": {
       "title": "Mirá a Nivii responder una pregunta real. <accent>Sobre tus propios datos.</accent>",
-      "description": "Traé una pregunta de negocio que hoy no logres responder a tiempo. En una sesión de 30 minutos te mostramos qué hace el agente con ella, sobre tus datos y dentro de tu entorno.",
+      "description": "Traé una pregunta de negocio que hoy no logres responder a tiempo. En una sesión de 30\u00a0minutos te mostramos qué hace el agente con ella, sobre tus datos y dentro de tu entorno.",
       "secondary": "¿CIO, CTO o CDO? Mirá la arquitectura y la seguridad"
     }
   },
@@ -696,7 +696,7 @@
         }
       ],
       "extraTitle": "Un insight más: tres preguntas antes de ofrecer",
-      "extraBody": "Sobre 1.842 llamadas de venta, las que relevaban rol, zona y necesidad antes de ofrecer derivaban 36 veces más que las que abrían con la promoción: 76% contra 2,1%. Tres de cada cuatro llamadas nunca llegaban a preguntar.",
+      "extraBody": "Sobre 1.842\u00a0llamadas de venta, las que relevaban rol, zona y necesidad antes de ofrecer derivaban 36\u00a0veces más que las que abrían con la promoción: 76% contra 2,1%. Tres de cada cuatro llamadas nunca llegaban a preguntar.",
       "cta": "Ver qué encuentra en tus datos"
     },
     "howItWorks": {
@@ -862,22 +862,22 @@
   "enterprise": {
     "meta": {
       "title": "Nivii Enterprise — un agente de decisión dentro de tu propia nube",
-      "description": "Nivii Enterprise despliega un agente de inteligencia de decisiones sobre tus datos, dentro de tu propio perímetro. Piloto en vivo en unas 12 semanas: sin ROI, no hay contrato."
+      "description": "Nivii Enterprise despliega un agente de inteligencia de decisiones sobre tus datos, dentro de tu propio perímetro. Piloto en vivo en unas 12\u00a0semanas: sin ROI, no hay contrato."
     },
     "hero": {
       "title": "Un agente de decisión que corre <accent>dentro de tu propia nube</accent>.",
       "description": "Aprende cómo funciona tu negocio, trabaja con los datos desordenados que ya tenés y entrega análisis confiable con una recomendación clara. Tus datos nunca salen de tu perímetro.",
       "cta": "Solicitar una demo",
       "secondary": "Ver arquitectura y seguridad",
-      "note": "Piloto en vivo sobre tus datos reales en 12 semanas, al costo."
+      "note": "Piloto en vivo sobre tus datos reales en 12\u00a0semanas, al costo."
     },
     "product": {
       "eyebrow": "Qué es",
       "title": "No es un dashboard. <accent>Tampoco un alquiler.</accent>",
-      "description": "La mayoría de los proyectos de analítica terminan en más gráficos y una factura que no se corta. Nivii despliega un agente de decisión sobre tus propios datos, dentro de tu propio entorno, y entrena a tu equipo para operarlo en el camino. Es el atajo a una capacidad que construir de cero lleva entre 18 y 24 meses, y lo ponés a prueba antes de firmar nada: sin ROI, no hay contrato.",
+      "description": "La mayoría de los proyectos de analítica terminan en más gráficos y una factura que no se corta. Nivii despliega un agente de decisión sobre tus propios datos, dentro de tu propio entorno, y entrena a tu equipo para operarlo en el camino. Es el atajo a una capacidad que construir de cero lleva entre 18\u00a0y\u00a024\u00a0meses, y lo ponés a prueba antes de firmar nada: sin ROI, no hay contrato.",
       "phases": [
         {
-          "label": "Piloto · 12 semanas · al costo",
+          "label": "Piloto · 12\u00a0semanas · al costo",
           "steps": [
             {
               "title": "NDA y kickoff",
@@ -898,7 +898,7 @@
           ]
         },
         {
-          "label": "Producción · 12 meses · en tu propia nube",
+          "label": "Producción · 12\u00a0meses · en tu propia nube",
           "steps": [
             {
               "title": "Implementación",
@@ -954,11 +954,11 @@
       "items": [
         {
           "title": "Mantenimiento industrial",
-          "description": "En una planta industrial, el agente cruzó 38 meses de avisos y órdenes almacenadas en SAP: 23 averías habían dado señal de degradación antes de romper, con 16 días promedio para intervenir. En el equipo de mayor costo correctivo, la relación entre reparar y prevenir era de 29 a 1. Ningún dato era nuevo: estaba escrito y nadie lo cruzaba."
+          "description": "En una planta industrial, el agente cruzó 38\u00a0meses de avisos y órdenes almacenadas en SAP: 23\u00a0averías habían dado señal de degradación antes de romper, con 16\u00a0días promedio para intervenir. En el equipo de mayor costo correctivo, la relación entre reparar y prevenir era de 29\u00a0a\u00a01. Ningún dato era nuevo: estaba escrito y nadie lo cruzaba."
         },
         {
           "title": "Comercial",
-          "description": "Sobre 1.842 llamadas de un equipo de venta de campo, las que relevaban rol, zona y necesidad antes de ofrecer derivaban 36 veces más. Y el 45% de lo que se registraba como objeción no era una objeción: era un lead mal targeteado."
+          "description": "Sobre 1.842\u00a0llamadas de un equipo de venta de campo, las que relevaban rol, zona y necesidad antes de ofrecer derivaban 36\u00a0veces más. Y el 45% de lo que se registraba como objeción no era una objeción: era un lead mal targeteado."
         },
         {
           "title": "People / RR.HH.",
@@ -1069,7 +1069,7 @@
         },
         {
           "question": "¿Cuánto tardamos en ver valor?",
-          "answer": "Unas 12 semanas hasta un piloto en vivo sobre tus datos reales, y funciona cerca del 95% igual que el sistema en producción. Desde ahí estás en producción en tu propia nube en el mes 4, y en el mes 12 tu equipo opera el agente por su cuenta. El piloto no es una prueba de concepto: es el producto real, ya casi terminado."
+          "answer": "Unas 12\u00a0semanas hasta un piloto en vivo sobre tus datos reales, y funciona cerca del 95% igual que el sistema en producción. Desde ahí estás en producción en tu propia nube en el mes 4, y en el mes 12 tu equipo opera el agente por su cuenta. El piloto no es una prueba de concepto: es el producto real, ya casi terminado."
         },
         {
           "question": "¿A qué nos comprometemos para el piloto?",
@@ -1083,7 +1083,7 @@
     },
     "cta": {
       "title": "Traé una pregunta de negocio que hoy <accent>no logres responder a tiempo</accent>.",
-      "description": "En una sesión de trabajo de 30 minutos te mostramos qué hace el agente con ella, sobre tus datos y dentro de tu entorno.",
+      "description": "En una sesión de trabajo de 30\u00a0minutos te mostramos qué hace el agente con ella, sobre tus datos y dentro de tu entorno.",
       "button": "Solicitar una demo",
       "bridge": "¿Tu operación es más chica y no necesita infraestructura propia? Beacon resuelve lo mismo desde la nube de Nivii, con un piloto gratuito.",
       "bridgeLink": "Ver Nivii Beacon"
