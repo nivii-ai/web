@@ -950,19 +950,19 @@
     "useCases": {
       "eyebrow": "Use cases",
       "title": "The questions change by industry. The pattern doesn't.",
-      "description": "In every large operation the data already exists, scattered across systems that don't talk to each other. What's missing isn't more information: it's someone to cross-reference it before the decision expires.",
+      "description": "In every large operation the data already exists, scattered across systems that don't talk to each other.",
       "items": [
         {
           "title": "Industrial maintenance",
-          "description": "At an industrial plant, the agent cross-referenced 24 months of SAP notifications and work orders: 17 breakdowns had flagged degradation before they broke, with an average of 12 days to intervene. On the equipment with the highest corrective cost, the ratio of repairing to preventing was 26 to 1. None of it was new data: it was written down and nobody cross-checked it."
+          "description": "At an industrial plant, the agent cross-referenced 38 months of notifications and work orders stored in SAP: 23 breakdowns had flagged degradation before they broke, with an average of 16 days to intervene. On the equipment with the highest corrective cost, the ratio of repairing to preventing was 29 to 1. None of it was new data: it was written down and nobody cross-checked it."
         },
         {
-          "title": "Commercial effectiveness",
+          "title": "Sales",
           "description": "Across 1,842 calls from a field sales team, the ones that established role, region and need before pitching converted 36 times more often. And 45% of what the team logged as an objection was not an objection at all: it was a mistargeted lead."
         },
         {
-          "title": "Workforce & HR",
-          "description": "A key resignation gives notice months ahead, scattered across absences, team changes and surveys nobody cross-references. The agent surfaces the signal while there is still time to act."
+          "title": "People / HR",
+          "description": "It consolidates employee information spread across systems, identifies candidates to cover critical roles and cross-references salaries with attrition signals, while the key resignation can still be prevented."
         },
         {
           "title": "Supply chain",

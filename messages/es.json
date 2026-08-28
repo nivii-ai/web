@@ -950,19 +950,19 @@
     "useCases": {
       "eyebrow": "Casos de uso",
       "title": "Las preguntas cambian por industria. El patrón, no.",
-      "description": "En toda operación grande el dato ya existe, disperso entre sistemas que no se hablan. Lo que falta no es más información: es alguien que la cruce antes de que la decisión venza.",
+      "description": "En toda operación grande el dato ya existe, disperso entre sistemas que no se hablan.",
       "items": [
         {
           "title": "Mantenimiento industrial",
-          "description": "En una planta industrial, el agente cruzó 24 meses de avisos y órdenes de SAP: 17 averías habían dado señal de degradación antes de romper, con 12 días promedio para intervenir. En el equipo de mayor costo correctivo, la relación entre reparar y prevenir era de 26 a 1. Ningún dato era nuevo: estaba escrito y nadie lo cruzaba."
+          "description": "En una planta industrial, el agente cruzó 38 meses de avisos y órdenes almacenadas en SAP: 23 averías habían dado señal de degradación antes de romper, con 16 días promedio para intervenir. En el equipo de mayor costo correctivo, la relación entre reparar y prevenir era de 29 a 1. Ningún dato era nuevo: estaba escrito y nadie lo cruzaba."
         },
         {
-          "title": "Efectividad comercial",
+          "title": "Comercial",
           "description": "Sobre 1.842 llamadas de un equipo de venta de campo, las que relevaban rol, zona y necesidad antes de ofrecer derivaban 36 veces más. Y el 45% de lo que se registraba como objeción no era una objeción: era un lead mal targeteado."
         },
         {
-          "title": "Gente y RR.HH.",
-          "description": "La renuncia clave avisa meses antes, repartida entre ausencias, cambios de equipo y encuestas que nadie cruza. El agente levanta la señal mientras todavía se puede actuar."
+          "title": "People / RR.HH.",
+          "description": "Consolida la información de los empleados repartida entre sistemas, identifica candidatos para cubrir los puestos críticos y cruza sueldos con las señales de attrition, mientras la renuncia clave todavía se puede evitar."
         },
         {
           "title": "Cadena de suministro",

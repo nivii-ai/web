@@ -950,19 +950,19 @@
     "useCases": {
       "eyebrow": "Casos de uso",
       "title": "As perguntas mudam conforme a indústria. O padrão, não.",
-      "description": "Em toda operação grande o dado já existe, disperso entre sistemas que não conversam. O que falta não é mais informação: é alguém que o cruze antes de a decisão vencer.",
+      "description": "Em toda operação grande o dado já existe, disperso entre sistemas que não conversam.",
       "items": [
         {
           "title": "Manutenção industrial",
-          "description": "Em uma planta industrial, o agente cruzou 24 meses de avisos e ordens do SAP: 17 quebras já tinham dado sinal de degradação antes de romper, com 12 dias em média para intervir. No equipamento de maior custo corretivo, a relação entre reparar e prevenir era de 26 para 1. Nenhum dado era novo: estava escrito e ninguém cruzava."
+          "description": "Em uma planta industrial, o agente cruzou 38 meses de avisos e ordens armazenadas no SAP: 23 quebras já tinham dado sinal de degradação antes de romper, com 16 dias em média para intervir. No equipamento de maior custo corretivo, a relação entre reparar e prevenir era de 29 para 1. Nenhum dado era novo: estava escrito e ninguém cruzava."
         },
         {
-          "title": "Efetividade comercial",
+          "title": "Comercial",
           "description": "Em 1.842 ligações de um time de venda de campo, as que levantavam papel, região e necessidade antes de oferecer convertiam 36 vezes mais. E 45% do que era registrado como objeção não era objeção: era um lead mal direcionado."
         },
         {
-          "title": "Pessoas e RH",
-          "description": "O pedido de demissão importante avisa meses antes, espalhado entre ausências, mudanças de time e pesquisas que ninguém cruza. O agente levanta o sinal enquanto ainda dá para agir."
+          "title": "People / RH",
+          "description": "Consolida a informação dos funcionários espalhada entre sistemas, identifica candidatos para cobrir os cargos críticos e cruza salários com os sinais de attrition, enquanto o pedido de demissão importante ainda pode ser evitado."
         },
         {
           "title": "Cadeia de suprimentos",
