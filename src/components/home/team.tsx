@@ -20,7 +20,6 @@ export async function Team() {
       <div className="mx-auto max-w-7xl">
         <Reveal className="max-w-3xl">
           <h2 className="text-display-l text-ink">{t("title")}</h2>
-          <p className="mt-6 text-body-l text-ink-muted">{t("description")}</p>
         </Reveal>
 
         <ul className="mt-20 grid gap-x-16 gap-y-14 lg:grid-cols-2">
