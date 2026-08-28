@@ -866,18 +866,10 @@
     },
     "hero": {
       "title": "Um agente de decisão que roda <accent>dentro da sua própria nuvem</accent>.",
-      "description": "Ele aprende como o seu negócio funciona, trabalha com os dados bagunçados que você já tem e devolve análise confiável com uma recomendação clara. Seus dados nunca saem do seu perímetro.",
+      "description": "Ele aprende como o seu negócio funciona, trabalha com os dados bagunçados que você já tem e entrega análise confiável com uma recomendação clara. Seus dados nunca saem do seu perímetro.",
       "cta": "Solicitar uma demo",
       "secondary": "Ver arquitetura e segurança",
-      "note": "Um piloto ao vivo sobre seus dados reais em cerca de 12 semanas, a custo.",
-      "sectors": [
-        "Aço e metais",
-        "Agro",
-        "Óleo e gás",
-        "Manufatura",
-        "CPG",
-        "Energia"
-      ]
+      "note": "Um piloto ao vivo sobre seus dados reais em 12 semanas, a custo."
     },
     "product": {
       "eyebrow": "O que é",

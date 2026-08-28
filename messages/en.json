@@ -866,18 +866,10 @@
     },
     "hero": {
       "title": "A decision agent that runs <accent>inside your own cloud</accent>.",
-      "description": "It learns how your business works, takes on the messy data you already have and returns trustworthy analysis with a clear recommendation. Your data never leaves your perimeter.",
+      "description": "It learns how your business works, takes on the messy data you already have and delivers trustworthy analysis with a clear recommendation. Your data never leaves your perimeter.",
       "cta": "Request a demo",
       "secondary": "See architecture and security",
-      "note": "A live pilot on your real data in about 12 weeks, at cost.",
-      "sectors": [
-        "Steel & metals",
-        "Agriculture",
-        "Oil & gas",
-        "Manufacturing",
-        "CPG",
-        "Energy"
-      ]
+      "note": "A live pilot on your real data in 12 weeks, at cost."
     },
     "product": {
       "eyebrow": "What it is",

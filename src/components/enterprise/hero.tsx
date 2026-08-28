@@ -18,7 +18,6 @@ export async function EnterpriseHero() {
   const c = await getTranslations("console");
   const scenario = (c.raw("scenarios") as Scenario[])[5];
   const answerAt = INFO_AT + scenario.queries.length * INFO_STEP;
-  const sectors = t.raw("sectors") as string[];
 
   return (
     <section className="px-6 pt-32 pb-20 lg:px-12 lg:pt-40 lg:pb-24">
@@ -54,10 +53,6 @@ export async function EnterpriseHero() {
             </div>
 
             <p className="mt-5 text-body-s text-panel-ink/60">{t("note")}</p>
-
-            <p className="mt-8 text-body-s text-panel-ink/60">
-              {sectors.join(" · ")}
-            </p>
           </div>
 
           {/* La UI clara del producto flotando sobre el panel, como en el banner. */}

@@ -866,18 +866,10 @@
     },
     "hero": {
       "title": "Un agente de decisión que corre <accent>dentro de tu propia nube</accent>.",
-      "description": "Aprende cómo funciona tu negocio, trabaja con los datos desordenados que ya tenés y devuelve análisis confiable con una recomendación clara. Tus datos nunca salen de tu perímetro.",
+      "description": "Aprende cómo funciona tu negocio, trabaja con los datos desordenados que ya tenés y entrega análisis confiable con una recomendación clara. Tus datos nunca salen de tu perímetro.",
       "cta": "Solicitar una demo",
       "secondary": "Ver arquitectura y seguridad",
-      "note": "Piloto en vivo sobre tus datos reales en unas 12 semanas, al costo.",
-      "sectors": [
-        "Acero y metales",
-        "Agro",
-        "Oil & Gas",
-        "Manufactura",
-        "CPG",
-        "Energía"
-      ]
+      "note": "Piloto en vivo sobre tus datos reales en 12 semanas, al costo."
     },
     "product": {
       "eyebrow": "Qué es",
