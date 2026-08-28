@@ -988,7 +988,7 @@
           "description": "inside your own cloud, on Kubernetes, with GitOps and versioned charts your team can audit."
         },
         {
-          "value": "One egress",
+          "value": "One data egress",
           "description": "the call to the model, and nothing else. It goes away if your policy requires it."
         },
         {

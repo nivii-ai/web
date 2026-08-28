@@ -988,7 +988,7 @@
           "description": "dentro da sua própria nuvem, em Kubernetes, com GitOps e charts versionados que seu time pode auditar."
         },
         {
-          "value": "Um egress",
+          "value": "Um egress de dados",
           "description": "a chamada ao modelo, e nada mais. Ela é eliminada se sua política exigir."
         },
         {
