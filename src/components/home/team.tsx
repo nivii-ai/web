@@ -22,7 +22,7 @@ export async function Team() {
           <h2 className="text-display-l text-ink">{t("title")}</h2>
         </Reveal>
 
-        <ul className="mt-20 grid gap-x-16 gap-y-14 lg:grid-cols-2">
+        <ul className="mt-12 grid gap-x-16 gap-y-14 lg:grid-cols-2">
           {members.map((member, i) => {
             const Wrapper = member.linkedin ? "a" : "div";
             const props = member.linkedin
