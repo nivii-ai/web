@@ -107,7 +107,7 @@ export function TimelineSteps({
       {steps.map((step, i) => (
         <div
           key={step.title}
-          className="relative flex min-h-[70vh] items-center lg:min-h-[80vh]"
+          className="relative flex min-h-[52vh] items-center lg:min-h-[58vh]"
         >
           <span
             aria-hidden
