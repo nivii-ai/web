@@ -13,7 +13,7 @@ export async function FinalCta() {
         <h2 className="text-display-l text-ink">
           {t.rich("title", {
             accent: (chunks) => (
-              <span className="text-brand-green italic">{chunks}</span>
+              <span className="block text-brand-green italic">{chunks}</span>
             ),
           })}
         </h2>
