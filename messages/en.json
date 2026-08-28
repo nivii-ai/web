@@ -874,7 +874,7 @@
     "product": {
       "eyebrow": "What it is",
       "title": "Not a dashboard. <accent>Not a rental either.</accent>",
-      "description": "Most analytics projects end in more charts and a bill that never stops. Here we deploy a decision agent on your own data, inside your own environment, and train your team to run it along the way. The shortcut to a capability that takes 18 to 24 months to build from scratch.",
+      "description": "Most analytics projects end in more charts and a bill that never stops. Nivii deploys a decision agent on your own data, inside your own environment, and trains your team to run it along the way. The shortcut to a capability that takes 18 to 24 months to build from scratch.",
       "pillars": [
         {
           "title": "You prove it first",
