@@ -980,7 +980,7 @@
     },
     "security": {
       "eyebrow": "Architecture & security",
-      "title": "Enterprises trust Nivii because <accent>the architecture earns it</accent>.",
+      "title": "Enterprises trust Nivii: <accent>the power is in our architecture</accent>.",
       "description": "The deployment is dedicated, inside your own AWS, Azure, GCP or SAP BTP account. There is no shared tenant: no other customer's data sits next to yours, and your team can see which images run, what traffic leaves and what resources are consumed.",
       "stats": [
         {

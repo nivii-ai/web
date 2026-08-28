@@ -980,7 +980,7 @@
     },
     "security": {
       "eyebrow": "Arquitectura y seguridad",
-      "title": "Las empresas confían en Nivii porque <accent>la arquitectura se lo gana</accent>.",
+      "title": "Las empresas confían en Nivii: <accent>el poder radica en nuestra arquitectura</accent>.",
       "description": "El deployment es dedicado dentro de tu cuenta de AWS, Azure, GCP o SAP BTP. No hay tenant compartido: ningún dato de otro cliente vive al lado del tuyo, y tu equipo ve qué imágenes corren, qué tráfico sale y qué recursos se consumen.",
       "stats": [
         {
