@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { LogoMarquee } from "@/components/home/logo-marquee";
 import { Reveal } from "@/components/ui/reveal";
 import { cn } from "@/lib/utils";
 
@@ -30,55 +31,74 @@ export async function Clients() {
       <Reveal className="mx-auto max-w-7xl">
         <p className="text-center text-body-s text-ink-muted">{t("title")}</p>
 
-        {/* Los tres logos entran enteros desde sm. Abajo de eso desbordan y se
-            convierten en cinta; desde ahí quedan quietos y centrados. */}
-        <div className="group mt-3 flex justify-center overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)] sm:[mask-image:none]">
-          <div className="flex w-max shrink-0 animate-marquee group-hover:[--marquee-duration:180s] sm:animate-none">
-            <LogoRow logos={clients} />
-            <LogoRow logos={clients} className="sm:hidden" aria-hidden />
-          </div>
+        {/* La cinta sangra hasta el borde mientras corre; desde sm vuelve al
+            ancho del contenedor porque los logos ya entran. */}
+        <div className="-mx-6 mt-3 sm:mx-0">
+          <LogoMarquee>
+            {clients.map((logo) => (
+              <LogoSlide key={logo.slug} logo={logo} />
+            ))}
+            {/* El set va dos veces: con uno solo Embla no junta ancho para
+                clonar, apaga el loop y la cinta queda quieta. */}
+            {clients.map((logo) => (
+              <LogoSlide
+                key={`${logo.slug}-loop`}
+                logo={logo}
+                className="sm:hidden"
+                aria-hidden
+              />
+            ))}
+          </LogoMarquee>
         </div>
 
         <p className="mt-10 text-center text-body-s text-ink-muted">
           {t("partners")}
         </p>
-        <LogoRow logos={partners} className="mt-3 justify-center" />
+        <ul className="mt-3 flex items-center justify-center">
+          {partners.map((logo) => (
+            <LogoSlide key={logo.slug} logo={logo} as="li" />
+          ))}
+        </ul>
       </Reveal>
     </section>
   );
 }
 
-function LogoRow({
-  logos,
+function LogoSlide({
+  logo,
+  as: Tag = "div",
   className,
   ...props
-}: { logos: Logo[] } & React.HTMLAttributes<HTMLUListElement>) {
+}: {
+  logo: Logo;
+  as?: "div" | "li";
+} & React.HTMLAttributes<HTMLElement>) {
   return (
-    <ul className={cn("flex shrink-0 items-center", className)} {...props}>
-      {logos.map((logo) => (
-        <li
-          key={logo.slug}
-          className="flex h-12 shrink-0 items-center justify-center px-7"
-        >
-          {/* `picture` y no `next/image`: el fallback a PNG es negociación de
-              formato en el markup, algo que el optimizador no expone. */}
-          <picture>
-            {!logo.vector && (
-              <source srcSet={`/${logo.slug}.webp`} type="image/webp" />
-            )}
-            <img
-              src={`/${logo.slug}.${logo.vector ? "svg" : "png"}`}
-              alt={logo.name}
-              loading="lazy"
-              decoding="async"
-              className={cn(
-                logo.size,
-                "w-auto opacity-70 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0",
-              )}
-            />
-          </picture>
-        </li>
-      ))}
-    </ul>
+    <Tag
+      className={cn(
+        "flex h-12 shrink-0 items-center justify-center px-7",
+        className,
+      )}
+      {...props}
+    >
+      {/* `picture` y no `next/image`: el fallback a PNG es negociación de
+          formato en el markup, algo que el optimizador no expone. */}
+      <picture>
+        {!logo.vector && (
+          <source srcSet={`/${logo.slug}.webp`} type="image/webp" />
+        )}
+        <img
+          src={`/${logo.slug}.${logo.vector ? "svg" : "png"}`}
+          alt={logo.name}
+          loading="lazy"
+          decoding="async"
+          className={cn(
+            logo.size,
+            // En el celular no hay hover que revele el color: van a color de entrada.
+            "w-auto object-contain transition duration-300 sm:opacity-70 sm:grayscale sm:hover:opacity-100 sm:hover:grayscale-0",
+          )}
+        />
+      </picture>
+    </Tag>
   );
 }

@@ -80,7 +80,6 @@
 
   --animate-in: fade-in 0.3s ease-out;
   --animate-out: fade-out 0.2s ease-in;
-  --animate-marquee: marquee var(--marquee-duration, 80s) linear infinite;
 
   /* Fade in Keyframes */
   @keyframes fade-in {
@@ -324,14 +323,6 @@ body:has(.page-dark) .site-footer {
   }
 }
 
-/* La cinta lleva el set de logos dos veces: a -50% el segundo queda donde
-   arrancó el primero y el ciclo no se nota. */
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
-
 @keyframes reveal {
   from {
     opacity: 0;
@@ -360,7 +351,6 @@ body:has(.page-dark) .site-footer {
   }
 
   .animate-blink,
-  .animate-marquee,
   [style*="spin-ring"] {
     animation: none !important;
   }
