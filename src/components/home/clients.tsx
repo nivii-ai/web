@@ -32,7 +32,7 @@ export async function Clients() {
 
         {/* Los tres logos entran enteros desde sm. Abajo de eso desbordan y se
             convierten en cinta; desde ahí quedan quietos y centrados. */}
-        <div className="group mt-6 flex justify-center overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)] sm:[mask-image:none]">
+        <div className="group mt-3 flex justify-center overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)] sm:[mask-image:none]">
           <div className="flex w-max shrink-0 animate-marquee group-hover:[--marquee-duration:180s] sm:animate-none">
             <LogoRow logos={clients} />
             <LogoRow logos={clients} className="sm:hidden" aria-hidden />
@@ -42,7 +42,7 @@ export async function Clients() {
         <p className="mt-10 text-center text-body-s text-ink-muted">
           {t("partners")}
         </p>
-        <LogoRow logos={partners} className="mt-5 justify-center" />
+        <LogoRow logos={partners} className="mt-3 justify-center" />
       </Reveal>
     </section>
   );
