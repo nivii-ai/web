@@ -12,9 +12,7 @@ interface Logo {
 }
 
 const clients: Logo[] = [
-  { name: "Ternium", slug: "ternium", size: "h-9" },
   { name: "Despegar", slug: "despegar", size: "h-8" },
-  { name: "Tecpetrol", slug: "tecpetrol", size: "h-14" },
   { name: "Newsan", slug: "newsan", size: "h-6" },
   { name: "Syngenta", slug: "syngenta", size: "h-7", vector: true },
 ];
@@ -28,23 +26,23 @@ export async function Clients() {
   const t = await getTranslations("home.clients");
 
   return (
-    <section id="clients" className="scroll-m-28 px-6 py-16 lg:px-12">
+    <section id="clients" className="scroll-m-28 px-6 py-12 lg:px-12">
       <Reveal className="mx-auto max-w-7xl">
         <p className="text-center text-body-s text-ink-muted">{t("title")}</p>
 
-        {/* Cinco celdas de 11rem entran enteras recién en lg. Hasta ahí desbordan
-            y se convierten en cinta; desde ahí quedan quietas y centradas. */}
-        <div className="group mt-8 flex justify-center overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)] lg:[mask-image:none]">
-          <div className="flex w-max shrink-0 animate-marquee group-hover:[--marquee-duration:180s] lg:animate-none">
+        {/* Los tres logos entran enteros desde sm. Abajo de eso desbordan y se
+            convierten en cinta; desde ahí quedan quietos y centrados. */}
+        <div className="group mt-6 flex justify-center overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)] sm:[mask-image:none]">
+          <div className="flex w-max shrink-0 animate-marquee group-hover:[--marquee-duration:180s] sm:animate-none">
             <LogoRow logos={clients} />
-            <LogoRow logos={clients} className="lg:hidden" aria-hidden />
+            <LogoRow logos={clients} className="sm:hidden" aria-hidden />
           </div>
         </div>
 
-        <p className="mt-14 text-center text-body-s text-ink-muted">
+        <p className="mt-10 text-center text-body-s text-ink-muted">
           {t("partners")}
         </p>
-        <LogoRow logos={partners} className="mt-6 justify-center" />
+        <LogoRow logos={partners} className="mt-5 justify-center" />
       </Reveal>
     </section>
   );
@@ -60,7 +58,7 @@ function LogoRow({
       {logos.map((logo) => (
         <li
           key={logo.slug}
-          className="flex h-16 shrink-0 items-center justify-center px-7"
+          className="flex h-12 shrink-0 items-center justify-center px-7"
         >
           {/* `picture` y no `next/image`: el fallback a PNG es negociación de
               formato en el markup, algo que el optimizador no expone. */}
