@@ -271,9 +271,10 @@ html:has(.page-dark) {
   color-scheme: dark;
 }
 
-/* En las páginas oscuras el header se re-tinta redefiniendo los tokens que ya
-   usan sus utilidades, en vez de duplicar cada regla. */
-body:has(.page-dark) .site-header {
+/* En las páginas oscuras el header y el pie se re-tintan redefiniendo los
+   tokens que ya usan sus utilidades, en vez de duplicar cada regla. */
+body:has(.page-dark) .site-header,
+body:has(.page-dark) .site-footer {
   --color-background: var(--color-panel);
   --color-ink: var(--color-panel-ink);
   --color-ink-muted: color-mix(in srgb, var(--color-panel-ink) 70%, transparent);

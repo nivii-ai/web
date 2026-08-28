@@ -25,7 +25,7 @@ export async function Footer({ locale }: { locale: string }) {
   ];
 
   return (
-    <footer className="mt-auto border-t border-hairline">
+    <footer className="site-footer mt-auto border-t border-hairline">
       <div className="mx-auto max-w-7xl px-6 pt-24 pb-12 lg:px-12">
         <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:pr-8">
