@@ -25,14 +25,15 @@
   "demo": {
     "meta": {
       "title": "Solicitar demo",
-      "description": "Meia hora de trabalho real sobre os seus próprios dados: traga uma pergunta de negócio e veja a resposta que o agente devolve. Sem apresentação enlatada."
+      "description": "Trabalho real sobre os seus próprios dados: traga uma pergunta de negócio e veja a resposta que o agente devolve. Sem apresentação enlatada."
     },
     "label": "Solicitar Demo",
     "title": "Traga uma pergunta. Mostramos <accent>o que o agente faz</accent> com ela.",
-    "description": "Uma sessão de trabalho de 30\u00a0minutos, sobre os seus dados e dentro do seu ambiente. Sem apresentação enlatada.",
+    "description": "Uma sessão de trabalho sobre os seus dados e dentro do seu ambiente. Sem apresentação enlatada.",
     "reassurance": [
-      "Meia hora, com alguém da equipe que construiu o produto.",
-      "Seus dados não precisam estar organizados: esse é o ponto de partida."
+      "Com alguém da equipe que construiu o produto.",
+      "Seus dados não precisam estar organizados: esse é o ponto de partida.",
+      "Você deixa seus dados e escrevemos para combinar. Sem compromisso."
     ],
     "form": {
       "name": "Nome",

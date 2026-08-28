@@ -25,14 +25,15 @@
   "demo": {
     "meta": {
       "title": "Request a demo",
-      "description": "Half an hour of real work on your own data: bring a business question and see the answer the agent returns. No canned deck."
+      "description": "Real work on your own data: bring a business question and see the answer the agent returns. No canned deck."
     },
     "label": "Request a Demo",
     "title": "Bring a question. We'll show you <accent>what the agent does</accent> with it.",
-    "description": "A 30-minute working session on your data, inside your environment. No canned deck.",
+    "description": "A working session on your data, inside your environment. No canned deck.",
     "reassurance": [
-      "Half an hour, with someone from the team that built the product.",
-      "Your data doesn't need to be in order: that's the starting point."
+      "With someone from the team that built the product.",
+      "Your data doesn't need to be in order: that's the starting point.",
+      "Leave us your details and we'll write to set it up. No commitment."
     ],
     "form": {
       "name": "Name",
