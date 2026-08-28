@@ -29,11 +29,11 @@ export async function Clients() {
   return (
     <section id="clients" className="scroll-m-28 px-6 py-12 lg:px-12">
       <Reveal className="mx-auto max-w-7xl">
-        <p className="text-center text-body-s text-ink-muted">{t("title")}</p>
+        <RuledLabel>{t("title")}</RuledLabel>
 
         {/* La cinta sangra hasta el borde mientras corre; desde sm vuelve al
             ancho del contenedor porque los logos ya entran. */}
-        <div className="-mx-6 mt-3 sm:mx-0">
+        <div className="-mx-6 mt-6 sm:mx-0">
           <LogoMarquee>
             {clients.map((logo) => (
               <LogoSlide key={logo.slug} logo={logo} />
@@ -51,16 +51,32 @@ export async function Clients() {
           </LogoMarquee>
         </div>
 
-        <p className="mt-10 text-center text-body-s text-ink-muted">
-          {t("partners")}
-        </p>
-        <ul className="mt-3 flex items-center justify-center">
+        <RuledLabel className="mt-12">{t("partners")}</RuledLabel>
+        <ul className="mt-6 flex items-center justify-center">
           {partners.map((logo) => (
             <LogoSlide key={logo.slug} logo={logo} as="li" />
           ))}
         </ul>
       </Reveal>
     </section>
+  );
+}
+
+/** Rótulo a la izquierda con la regla ocupando el resto del ancho. */
+function RuledLabel({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div className={cn("flex items-center gap-5", className)}>
+      <p className="shrink-0 text-eyebrow font-medium text-ink-muted uppercase">
+        {children}
+      </p>
+      <span aria-hidden className="h-px flex-1 bg-hairline" />
+    </div>
   );
 }
 
