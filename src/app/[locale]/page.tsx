@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { BeaconBanner } from "@/components/home/beacon-banner";
 import { Clients } from "@/components/home/clients";
 import { FinalCta } from "@/components/home/final-cta";
 import { EnterpriseBanner } from "@/components/home/enterprise-banner";
@@ -34,7 +33,6 @@ export default function Home() {
         <HowItWorks />
         <EnterpriseBanner />
         <UseCases />
-        <BeaconBanner />
         <Team />
         <FinalCta />
       </main>

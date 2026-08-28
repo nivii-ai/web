@@ -32,8 +32,7 @@
     "description": "Una sesión de trabajo de 30\u00a0minutos, sobre tus datos y dentro de tu entorno. Sin presentación enlatada.",
     "reassurance": [
       "Media hora, con una persona del equipo que construyó el producto.",
-      "No hace falta que tus datos estén ordenados: ese es el punto de partida.",
-      "Si preferís empezar sin costo, Beacon tiene un piloto gratuito."
+      "No hace falta que tus datos estén ordenados: ese es el punto de partida."
     ],
     "form": {
       "name": "Nombre",

@@ -11,7 +11,6 @@ export async function Footer({ locale }: { locale: string }) {
     {
       heading: t("product"),
       links: [
-        { href: "/beacon", label: h("beacon") },
         { href: "/enterprise", label: h("enterprise") },
         { href: "/#use-cases", label: t("useCases") },
       ],

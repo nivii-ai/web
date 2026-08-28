@@ -8,7 +8,6 @@ import { spring, springSheet } from "@/lib/motion";
 import { useFocusTrap } from "@/hooks/use-focus-trap";
 
 const links = [
-  { href: "/beacon", key: "beacon" },
   { href: "/enterprise", key: "enterprise" },
   { href: "/#use-cases", key: "useCases" },
   { href: "/#team", key: "about" },

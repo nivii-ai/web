@@ -6,7 +6,6 @@ import { MenuMobile } from "./menu-mobile";
 import LanguageSwitch from "./language-switch";
 
 const links = [
-  { href: "/beacon", key: "beacon" },
   { href: "/enterprise", key: "enterprise" },
   { href: "/#use-cases", key: "useCases" },
   { href: "/#team", key: "about" },

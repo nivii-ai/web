@@ -32,8 +32,7 @@
     "description": "A 30-minute working session on your data, inside your environment. No canned deck.",
     "reassurance": [
       "Half an hour, with someone from the team that built the product.",
-      "Your data doesn't need to be in order: that's the starting point.",
-      "If you'd rather start at no cost, Beacon comes with a free pilot."
+      "Your data doesn't need to be in order: that's the starting point."
     ],
     "form": {
       "name": "Name",
