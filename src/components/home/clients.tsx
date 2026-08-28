@@ -28,35 +28,40 @@ export async function Clients() {
 
   return (
     <section id="clients" className="scroll-m-28 px-6 py-12 lg:px-12">
-      <Reveal className="mx-auto max-w-7xl">
-        <RuledLabel>{t("title")}</RuledLabel>
+      {/* Las columnas se reparten 3 a 2, la misma proporción que los logos. */}
+      <Reveal className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[3fr_2fr] lg:items-start lg:gap-16">
+        <div>
+          <RuledLabel>{t("title")}</RuledLabel>
 
-        {/* La cinta sangra hasta el borde mientras corre; desde sm vuelve al
-            ancho del contenedor porque los logos ya entran. */}
-        <div className="-mx-6 mt-6 sm:mx-0">
-          <LogoMarquee>
-            {clients.map((logo) => (
-              <LogoSlide key={logo.slug} logo={logo} />
-            ))}
-            {/* El set va dos veces: con uno solo Embla no junta ancho para
-                clonar, apaga el loop y la cinta queda quieta. */}
-            {clients.map((logo) => (
-              <LogoSlide
-                key={`${logo.slug}-loop`}
-                logo={logo}
-                className="sm:hidden"
-                aria-hidden
-              />
-            ))}
-          </LogoMarquee>
+          {/* La cinta sangra hasta el borde mientras corre; desde sm vuelve al
+              ancho del contenedor porque los logos ya entran. */}
+          <div className="-mx-6 mt-6 sm:mx-0">
+            <LogoMarquee>
+              {clients.map((logo) => (
+                <LogoSlide key={logo.slug} logo={logo} />
+              ))}
+              {/* El set va dos veces: con uno solo Embla no junta ancho para
+                  clonar, apaga el loop y la cinta queda quieta. */}
+              {clients.map((logo) => (
+                <LogoSlide
+                  key={`${logo.slug}-loop`}
+                  logo={logo}
+                  className="sm:hidden"
+                  aria-hidden
+                />
+              ))}
+            </LogoMarquee>
+          </div>
         </div>
 
-        <RuledLabel className="mt-12">{t("partners")}</RuledLabel>
-        <ul className="mt-6 flex items-center justify-center">
-          {partners.map((logo) => (
-            <LogoSlide key={logo.slug} logo={logo} as="li" />
-          ))}
-        </ul>
+        <div>
+          <RuledLabel>{t("partners")}</RuledLabel>
+          <ul className="mt-6 flex items-center justify-center">
+            {partners.map((logo) => (
+              <LogoSlide key={logo.slug} logo={logo} as="li" />
+            ))}
+          </ul>
+        </div>
       </Reveal>
     </section>
   );
