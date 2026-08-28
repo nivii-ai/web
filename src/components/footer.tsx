@@ -19,7 +19,6 @@ export async function Footer({ locale }: { locale: string }) {
     {
       heading: t("company"),
       links: [
-        { href: "/#mission", label: t("about") },
         { href: "/#team", label: t("team") },
         { href: "/careers/", label: t("careers") },
       ],

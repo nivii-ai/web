@@ -567,19 +567,8 @@
       "secondary": "Learn more",
       "note": "No cost. No card. On your own data."
     },
-    "mission": {
-      "label": "Our mission",
-      "lead": "However much you invest in data, too many decisions are still made without looking at what it says.",
-      "questions": [
-        "How much is lost when a rep pitches the wrong product?",
-        "How much risk does a company carry without financial clarity on the spot?",
-        "How much attrition was visible in the signals, buried behind a dashboard?"
-      ],
-      "close": "We built Nivii to close that gap: trustworthy analysis and <accent>a clear recommendation</accent>, ready to act on."
-    },
     "team": {
       "title": "Built by people who've done this at scale.",
-      "description": "Leading Data & AI at Accenture and Google across Latin America, Europe and the Middle East, and shipping production ML in high-tech. The pedigree matters because enterprise AI is a trust decision first.",
       "members": [
         {
           "name": "Sergio Kaufman",
@@ -632,7 +621,8 @@
           ],
           "linkedin": "https://www.linkedin.com/in/claudio-goldman/"
         }
-      ]
+      ],
+      "description": "Leading Data & AI at Accenture and Google across Latin America, Europe and the Middle East, and shipping production ML in high-tech. The pedigree matters because enterprise AI is a trust decision first."
     },
     "cta": {
       "title": "See Nivii answer a real question. <accent>On your own data.</accent>",

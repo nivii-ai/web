@@ -567,19 +567,8 @@
       "secondary": "Saiba mais",
       "note": "Sem custo. Sem cartão. Com seus próprios dados."
     },
-    "mission": {
-      "label": "Nossa missão",
-      "lead": "Não importa quanto você invista em dados: decisões demais continuam sendo tomadas sem olhar o que eles dizem.",
-      "questions": [
-        "Quanto se perde quando um vendedor oferece o produto errado?",
-        "Quanto risco sua empresa corre sem clareza financeira na hora?",
-        "Quanta rotatividade estava visível nos sinais, enterrada atrás de um dashboard?"
-      ],
-      "close": "Construímos a Nivii para fechar essa lacuna: análise confiável e <accent>uma recomendação clara</accent>, pronta para agir."
-    },
     "team": {
       "title": "Construído por gente que já fez isso em escala.",
-      "description": "Liderando Data & AI na Accenture e no Google na América Latina, Europa e Oriente Médio, e levando ML para produção no high-tech. O pedigree importa porque a IA empresarial é, antes de tudo, uma decisão de confiança.",
       "members": [
         {
           "name": "Sergio Kaufman",
@@ -632,7 +621,8 @@
           ],
           "linkedin": "https://www.linkedin.com/in/claudio-goldman/"
         }
-      ]
+      ],
+      "description": "Liderando Data & AI na Accenture e no Google na América Latina, Europa e Oriente Médio, e levando ML para produção no high-tech. O pedigree importa porque a IA empresarial é, antes de tudo, uma decisão de confiança."
     },
     "cta": {
       "title": "Veja a Nivii responder uma pergunta real. <accent>Sobre os seus próprios dados.</accent>",
