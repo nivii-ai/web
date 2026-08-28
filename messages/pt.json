@@ -624,7 +624,7 @@
     },
     "cta": {
       "title": "Veja a Nivii responder uma pergunta real. <accent>Sobre os seus próprios dados.</accent>",
-      "description": "Traga uma pergunta de negócio que hoje você não consegue responder a tempo. Em uma sessão de 30\u00a0minutos mostramos o que o agente faz com ela, sobre os seus dados e dentro do seu ambiente.",
+      "description": "Traga seus dados, mesmo sujos e desorganizados. Mostramos o que a Nivii pode fazer com eles e o potencial que têm para o seu negócio.",
       "secondary": "CIO, CTO ou CDO? Veja a arquitetura e a segurança"
     }
   },
@@ -1082,7 +1082,7 @@
     },
     "cta": {
       "title": "Traga uma pergunta de negócio que hoje você <accent>não consegue responder a tempo</accent>.",
-      "description": "Em uma sessão de trabalho de 30\u00a0minutos mostramos o que o agente faz com ela, sobre os seus dados e dentro do seu ambiente.",
+      "description": "Traga seus dados, mesmo sujos e desorganizados. Mostramos o que a Nivii pode fazer com eles e o potencial que têm para o seu negócio.",
       "button": "Solicitar uma demo",
       "bridge": "Sua operação é menor e não precisa de infraestrutura própria? O Beacon resolve o mesmo a partir da nuvem da Nivii, com um piloto gratuito.",
       "bridgeLink": "Ver Nivii Beacon"
