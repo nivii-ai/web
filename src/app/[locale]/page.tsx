@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Clients } from "@/components/home/clients";
+import { FinalCta } from "@/components/home/final-cta";
 import { EnterpriseBanner } from "@/components/home/enterprise-banner";
 import { Hero } from "@/components/home/hero";
 import { HowItWorks } from "@/components/home/how-it-works";
@@ -33,6 +34,7 @@ export default function Home() {
         <EnterpriseBanner />
         <UseCases />
         <Team />
+        <FinalCta />
       </main>
     </div>
   );

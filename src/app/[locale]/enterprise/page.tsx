@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { EnterpriseCta } from "@/components/enterprise/cta";
 import { Faq } from "@/components/enterprise/faq";
 import { EnterpriseHero } from "@/components/enterprise/hero";
 import { Product } from "@/components/enterprise/product";
@@ -44,6 +45,7 @@ export default async function EnterprisePage({
       <UseCases />
       <Security />
       <Faq />
+      <EnterpriseCta />
     </main>
   );
 }
