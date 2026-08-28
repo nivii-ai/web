@@ -67,7 +67,7 @@ export async function Clients() {
   );
 }
 
-/** Rótulo a la izquierda con la regla ocupando el resto del ancho. */
+/** Rótulo centrado, con la regla partida a los dos lados. */
 function RuledLabel({
   children,
   className,
@@ -77,6 +77,7 @@ function RuledLabel({
 }) {
   return (
     <div className={cn("flex items-center gap-5", className)}>
+      <span aria-hidden className="h-px flex-1 bg-hairline" />
       <p className="shrink-0 text-eyebrow font-medium text-ink-muted uppercase">
         {children}
       </p>
