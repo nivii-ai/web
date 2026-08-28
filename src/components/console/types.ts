@@ -17,10 +17,17 @@ export interface ChartSpec {
   points: { label: string; value: number; display?: string }[];
 }
 
+/** Un hallazgo de la lista: `highlight` va en negrita, delante del resto. */
+export interface Finding {
+  highlight?: string;
+  text: string;
+}
+
 export interface Answer {
   title: string;
   /** La línea en negrita que responde, con los números clave. */
   lead: string;
+  findings?: Finding[];
   table?: AnswerTable;
   alert?: { title: string; body: string };
   chart?: ChartSpec;

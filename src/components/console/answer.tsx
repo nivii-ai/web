@@ -14,7 +14,8 @@ interface AnswerProps {
 }
 
 export function Answer({ answer, delay, compact = false }: AnswerProps) {
-  const { title, lead, table, chart, alert, conclusion, followUp } = answer;
+  const { title, lead, findings, table, chart, alert, conclusion, followUp } =
+    answer;
 
   return (
     <div className="flex flex-col gap-3">
@@ -28,6 +29,25 @@ export function Answer({ answer, delay, compact = false }: AnswerProps) {
       <p className="text-body-s font-semibold text-ink">
         <FadeWords text={lead} delay={delay + 0.3} />
       </p>
+
+      {findings ? (
+        <ul className="flex flex-col gap-1.5 text-body-s text-ink-text">
+          {findings.map((finding, i) => (
+            <li
+              key={finding.text}
+              className="fade-word relative ps-4 before:absolute before:start-0 before:top-[0.6em] before:size-1 before:rounded-full before:bg-ink-muted"
+              style={{ animationDelay: `${delay + 0.6 + i * 0.15}s` }}
+            >
+              {finding.highlight ? (
+                <strong className="font-semibold text-ink">
+                  {finding.highlight}{" "}
+                </strong>
+              ) : null}
+              {finding.text}
+            </li>
+          ))}
+        </ul>
+      ) : null}
 
       {table ? (
         <div

@@ -201,84 +201,101 @@
         }
       },
       {
-        "id": "participacion-agro",
-        "question": "Where did we lose share to generics this season?",
+        "id": "ventas-feriado",
+        "question": "Why did sales drop this week?",
         "queries": [
           {
-            "question": "Sales by region and product line, 24/25 and 25/26 seasons",
-            "rows": 4820,
-            "seconds": 14.2
+            "question": "Sales by day and store, November 11–20",
+            "rows": 5240,
+            "seconds": 12.4
           },
           {
-            "question": "Average price per litre, ours vs. generic, by distributor",
-            "rows": 1960,
-            "seconds": 11.6
+            "question": "Operating hours and stockouts by product",
+            "rows": 1870,
+            "seconds": 9.8
           }
         ],
         "answer": {
-          "title": "Share by region, 25/26 season",
-          "lead": "We lost 6.4 points in the core region, and 78% of that drop sits in three herbicides.",
+          "title": "Sales drop from a holiday and stockouts",
+          "lead": "Sales fell mainly because of the national holiday on Monday, November 18, which sharply cut that day's operation.",
+          "findings": [
+            {
+              "highlight": "Total revenue drop: −27.2%,",
+              "text": "from $12.1M to $8.4M comparing Nov 18–20 against Nov 11–13."
+            },
+            {
+              "highlight": "Monday the 18th accounts for 74% of the weekly loss",
+              "text": "(−$2.7M of −$3.7M total), with sales down 55% that day."
+            },
+            {
+              "highlight": "Reduced operating hours:",
+              "text": "on November 18 the store opened 8 hours against the usual 12 (−33%)."
+            },
+            {
+              "highlight": "Stockouts on 2 top products:",
+              "text": "“Sugar-Free Alfajor 9-pack” and “Sugar-Free Alfajor, loose” were out of stock all 3 days, and they rank 2nd and 5th in sales."
+            }
+          ],
           "table": {
             "columns": [
-              "Region",
-              "Share",
-              "Season change",
-              "Hectares"
+              "Day",
+              "Revenue",
+              "Chg. vs. prior week",
+              "Hours"
             ],
             "rows": [
               [
-                "Core region",
-                "31.2%",
-                "−6.4 pp",
-                "1.84M"
+                "Mon 18",
+                "$2.2M",
+                "−55%",
+                "8"
               ],
               [
-                "Southern Córdoba",
-                "44.8%",
-                "−1.1 pp",
-                "0.96M"
+                "Tue 19",
+                "$3.0M",
+                "−17%",
+                "12"
               ],
               [
-                "Northwest",
-                "52.3%",
-                "+2.7 pp",
-                "0.61M"
+                "Wed 20",
+                "$3.2M",
+                "−11%",
+                "12"
               ]
             ]
           },
           "chart": {
-            "title": "Core region share, by month",
-            "unit": "%",
+            "title": "Daily revenue, November 11–20",
             "points": [
               {
-                "label": "Sep",
-                "value": 37.6
+                "label": "Mon 11",
+                "value": 4.9
               },
               {
-                "label": "Oct",
-                "value": 36.9
+                "label": "Tue 12",
+                "value": 3.6
               },
               {
-                "label": "Nov",
-                "value": 34.2
+                "label": "Wed 13",
+                "value": 3.6
               },
               {
-                "label": "Dec",
-                "value": 32.5
+                "label": "Mon 18",
+                "value": 2.2
               },
               {
-                "label": "Jan",
-                "value": 31.8
+                "label": "Tue 19",
+                "value": 3
               },
               {
-                "label": "Feb",
-                "value": 31.2,
-                "display": "31.2%"
+                "label": "Wed 20",
+                "value": 3.2,
+                "display": "$3.2M"
               }
             ]
           }
         },
-        "recommendation": "Revisit the core region price list before the next distributor order: those three herbicides hold $2,140M of season revenue and every point of share recovered is worth about $67M."
+        "recommendation": "Restock both sugar-free alfajores before the next long weekend and add hours on the following holiday: Monday the 18th alone explains $2.7M of the $3.7M lost."
       },
       {
         "id": "fuga-margen",
@@ -376,6 +393,58 @@
           "conclusion": "Almost all of the period's growth comes from three categories that kept being restocked at the same rate as the ones that do turn over."
         },
         "recommendation": "Start the clearance by stock age with SKUs older than twelve months: that is $71M at cost and 38% of the warehouse."
+      },
+      {
+        "id": "riesgo-jubilacion",
+        "question": "How many critical roles are at retirement risk in the next 12 months?",
+        "queries": [
+          {
+            "question": "Headcount by area, hierarchy level and eligibility date",
+            "rows": 3420,
+            "seconds": 11.3
+          }
+        ],
+        "answer": {
+          "title": "Retirement risk in critical roles",
+          "lead": "Critical, immediate succession risk across several operating areas.",
+          "findings": [
+            {
+              "highlight": "6 employees in critical positions",
+              "text": "are at retirement risk within the next 12 months."
+            },
+            {
+              "highlight": "5 of those 6 (83%) are already eligible",
+              "text": "and still working: the highest level of urgency."
+            },
+            {
+              "highlight": "Quality concentrates the most risk:",
+              "text": "2 critical positions, both Team Leaders."
+            }
+          ],
+          "chart": {
+            "title": "Possible exits, cumulative over 12 months",
+            "points": [
+              {
+                "label": "Q1",
+                "value": 2
+              },
+              {
+                "label": "Q2",
+                "value": 3
+              },
+              {
+                "label": "Q3",
+                "value": 5
+              },
+              {
+                "label": "Q4",
+                "value": 6,
+                "display": "6 roles"
+              }
+            ]
+          }
+        },
+        "recommendation": "Start with the two Quality Team Leaders: they are 33% of the risk and have no successor on file."
       }
     ],
     "ready": "Answer ready",

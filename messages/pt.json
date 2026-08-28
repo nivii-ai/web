@@ -201,84 +201,101 @@
         }
       },
       {
-        "id": "participacion-agro",
-        "question": "Em quais regiões perdemos participação para os genéricos nesta safra?",
+        "id": "ventas-feriado",
+        "question": "Por que as vendas caíram esta semana?",
         "queries": [
           {
-            "question": "Vendas por região e linha de produto, safras 24/25 e 25/26",
-            "rows": 4820,
-            "seconds": 14.2
+            "question": "Vendas por dia e loja, 11 a 20 de novembro",
+            "rows": 5240,
+            "seconds": 12.4
           },
           {
-            "question": "Preço médio por litro, próprio vs. genérico, por distribuidor",
-            "rows": 1960,
-            "seconds": 11.6
+            "question": "Horas de operação e rupturas de estoque por produto",
+            "rows": 1870,
+            "seconds": 9.8
           }
         ],
         "answer": {
-          "title": "Participação por região, safra 25/26",
-          "lead": "Perdemos 6,4 pontos na região central, e 78% dessa queda está em três herbicidas.",
+          "title": "Queda de vendas por feriado e ruptura de estoque",
+          "lead": "As vendas caíram principalmente por causa do feriado nacional na segunda-feira, 18 de novembro, que reduziu drasticamente a operação daquele dia.",
+          "findings": [
+            {
+              "highlight": "Queda total de receita: −27,2%,",
+              "text": "de $12,1M para $8,4M comparando 18-20 de novembro com 11-13."
+            },
+            {
+              "highlight": "A segunda-feira 18 concentra 74% da perda semanal",
+              "text": "(−$2,7M de −$3,7M no total), com 55% menos vendas naquele dia."
+            },
+            {
+              "highlight": "Horas de operação reduzidas:",
+              "text": "em 18 de novembro a loja abriu 8 horas contra as 12 habituais (−33%)."
+            },
+            {
+              "highlight": "Ruptura de estoque em 2 produtos top:",
+              "text": "“Alfajor Sem Açúcar 9 un.” e “Alfajor Sem Açúcar avulso” ficaram sem estoque nos 3 dias, e são o 2º e o 5º mais vendidos."
+            }
+          ],
           "table": {
             "columns": [
-              "Região",
-              "Participação",
-              "Var. safra",
-              "Hectares"
+              "Dia",
+              "Receita",
+              "Var. vs. semana anterior",
+              "Horas"
             ],
             "rows": [
               [
-                "Região central",
-                "31,2%",
-                "−6,4 pp",
-                "1,84M"
+                "Seg 18",
+                "$2,2M",
+                "−55%",
+                "8"
               ],
               [
-                "Sul de Córdoba",
-                "44,8%",
-                "−1,1 pp",
-                "0,96M"
+                "Ter 19",
+                "$3,0M",
+                "−17%",
+                "12"
               ],
               [
-                "Noroeste",
-                "52,3%",
-                "+2,7 pp",
-                "0,61M"
+                "Qua 20",
+                "$3,2M",
+                "−11%",
+                "12"
               ]
             ]
           },
           "chart": {
-            "title": "Participação na região central, por mês",
-            "unit": "%",
+            "title": "Receita diária, 11 a 20 de novembro",
             "points": [
               {
-                "label": "Set",
-                "value": 37.6
+                "label": "Seg 11",
+                "value": 4.9
               },
               {
-                "label": "Out",
-                "value": 36.9
+                "label": "Ter 12",
+                "value": 3.6
               },
               {
-                "label": "Nov",
-                "value": 34.2
+                "label": "Qua 13",
+                "value": 3.6
               },
               {
-                "label": "Dez",
-                "value": 32.5
+                "label": "Seg 18",
+                "value": 2.2
               },
               {
-                "label": "Jan",
-                "value": 31.8
+                "label": "Ter 19",
+                "value": 3
               },
               {
-                "label": "Fev",
-                "value": 31.2,
-                "display": "31,2%"
+                "label": "Qua 20",
+                "value": 3.2,
+                "display": "$3,2M"
               }
             ]
           }
         },
-        "recommendation": "Revise a tabela de preços da região central antes do próximo pedido dos distribuidores: esses três herbicidas concentram $2.140M de faturamento de safra e cada ponto de participação recuperado vale cerca de $67M."
+        "recommendation": "Reponha os dois alfajores sem açúcar antes do próximo feriado prolongado e amplie o horário no feriado seguinte: só a segunda-feira 18 explica $2,7M dos $3,7M perdidos."
       },
       {
         "id": "fuga-margen",
@@ -376,6 +393,58 @@
           "conclusion": "Quase todo o crescimento do período vem de três categorias que seguiram sendo repostas na mesma frequência das que giram."
         },
         "recommendation": "Comece a liquidação por idade de estoque pelas referências com mais de doze meses: são $71M a preço de custo e ocupam 38% do depósito."
+      },
+      {
+        "id": "riesgo-jubilacion",
+        "question": "Quantos cargos críticos estão em risco de aposentadoria nos próximos 12 meses?",
+        "queries": [
+          {
+            "question": "Quadro por área, nível hierárquico e data de elegibilidade",
+            "rows": 3420,
+            "seconds": 11.3
+          }
+        ],
+        "answer": {
+          "title": "Risco de aposentadoria em cargos críticos",
+          "lead": "Risco de sucessão crítico e imediato em várias áreas operacionais.",
+          "findings": [
+            {
+              "highlight": "6 funcionários em posições críticas",
+              "text": "estão em risco de aposentadoria nos próximos 12 meses."
+            },
+            {
+              "highlight": "5 desses 6 (83%) já podem se aposentar",
+              "text": "e continuam trabalhando: é o nível de urgência mais alto."
+            },
+            {
+              "highlight": "Qualidade concentra o maior risco:",
+              "text": "2 posições críticas, ambas Team Leader."
+            }
+          ],
+          "chart": {
+            "title": "Saídas possíveis acumuladas, próximos 12 meses",
+            "points": [
+              {
+                "label": "T1",
+                "value": 2
+              },
+              {
+                "label": "T2",
+                "value": 3
+              },
+              {
+                "label": "T3",
+                "value": 5
+              },
+              {
+                "label": "T4",
+                "value": 6,
+                "display": "6 cargos"
+              }
+            ]
+          }
+        },
+        "recommendation": "Comece pelos dois Team Leaders de Qualidade: são 33% do risco e hoje não têm sucessor cadastrado."
       }
     ],
     "ready": "Resposta pronta",

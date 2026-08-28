@@ -201,84 +201,101 @@
         }
       },
       {
-        "id": "participacion-agro",
-        "question": "¿En qué zonas perdimos participación frente a los genéricos esta campaña?",
+        "id": "ventas-feriado",
+        "question": "¿Por qué cayeron las ventas esta semana?",
         "queries": [
           {
-            "question": "Ventas por zona y línea de producto, campañas 24/25 y 25/26",
-            "rows": 4820,
-            "seconds": 14.2
+            "question": "Ventas por día y sucursal, 11 al 20 de noviembre",
+            "rows": 5240,
+            "seconds": 12.4
           },
           {
-            "question": "Precio promedio por litro, propio vs. genérico, por distribuidor",
-            "rows": 1960,
-            "seconds": 11.6
+            "question": "Horas operativas y quiebres de stock por producto",
+            "rows": 1870,
+            "seconds": 9.8
           }
         ],
         "answer": {
-          "title": "Participación por zona, campaña 25/26",
-          "lead": "Perdimos 6,4 puntos en el núcleo húmedo, y el 78% de esa caída está en tres herbicidas.",
+          "title": "Caída de ventas por feriado y stock",
+          "lead": "Las ventas cayeron sobre todo por el feriado nacional del lunes 18 de noviembre, que redujo drásticamente la operación de ese día.",
+          "findings": [
+            {
+              "highlight": "Caída total de ingresos: −27,2%,",
+              "text": "de $12,1M a $8,4M comparando el 18-20 de noviembre contra el 11-13."
+            },
+            {
+              "highlight": "El lunes 18 concentra el 74% de la pérdida semanal",
+              "text": "(−$2,7M de −$3,7M totales), con un 55% menos de ventas ese día."
+            },
+            {
+              "highlight": "Horas operativas reducidas:",
+              "text": "el 18 de noviembre el local abrió 8 horas contra las 12 habituales (−33%)."
+            },
+            {
+              "highlight": "Quiebre de stock en 2 productos top:",
+              "text": "«Alfajor Sin Azúcar x9 Un» y «Alfajor Sin Azúcar Suelto» estuvieron sin stock los 3 días, y son el 2° y el 5° más vendidos."
+            }
+          ],
           "table": {
             "columns": [
-              "Zona",
-              "Participación",
-              "Var. campaña",
-              "Hectáreas"
+              "Día",
+              "Ingresos",
+              "Var. vs. semana previa",
+              "Horas"
             ],
             "rows": [
               [
-                "Núcleo húmedo",
-                "31,2%",
-                "−6,4 pp",
-                "1,84M"
+                "Lun 18",
+                "$2,2M",
+                "−55%",
+                "8"
               ],
               [
-                "Córdoba sur",
-                "44,8%",
-                "−1,1 pp",
-                "0,96M"
+                "Mar 19",
+                "$3,0M",
+                "−17%",
+                "12"
               ],
               [
-                "NOA",
-                "52,3%",
-                "+2,7 pp",
-                "0,61M"
+                "Mié 20",
+                "$3,2M",
+                "−11%",
+                "12"
               ]
             ]
           },
           "chart": {
-            "title": "Participación en el núcleo húmedo, por mes",
-            "unit": "%",
+            "title": "Ingresos diarios, 11 al 20 de noviembre",
             "points": [
               {
-                "label": "Sep",
-                "value": 37.6
+                "label": "Lun 11",
+                "value": 4.9
               },
               {
-                "label": "Oct",
-                "value": 36.9
+                "label": "Mar 12",
+                "value": 3.6
               },
               {
-                "label": "Nov",
-                "value": 34.2
+                "label": "Mié 13",
+                "value": 3.6
               },
               {
-                "label": "Dic",
-                "value": 32.5
+                "label": "Lun 18",
+                "value": 2.2
               },
               {
-                "label": "Ene",
-                "value": 31.8
+                "label": "Mar 19",
+                "value": 3
               },
               {
-                "label": "Feb",
-                "value": 31.2,
-                "display": "31,2%"
+                "label": "Mié 20",
+                "value": 3.2,
+                "display": "$3,2M"
               }
             ]
           }
         },
-        "recommendation": "Revisá la lista del núcleo húmedo antes del próximo pedido de distribuidores: esos tres herbicidas concentran $2.140M de facturación de campaña y cada punto de participación recuperado vale unos $67M."
+        "recommendation": "Repone los dos alfajores sin azúcar antes del próximo fin de semana largo y sumá horas en el feriado siguiente: sólo el lunes 18 explica $2,7M de los $3,7M perdidos."
       },
       {
         "id": "fuga-margen",
@@ -376,6 +393,58 @@
           "conclusion": "Casi todo el crecimiento del período viene de tres categorías que se siguieron reponiendo con la misma frecuencia que las que sí rotan."
         },
         "recommendation": "Arrancá la liquidación por antigüedad con las referencias de más de doce meses: son $71M a precio de costo y ocupan el 38% del depósito."
+      },
+      {
+        "id": "riesgo-jubilacion",
+        "question": "¿Cuántos puestos críticos están en riesgo por jubilación en los próximos 12 meses?",
+        "queries": [
+          {
+            "question": "Dotación por área, nivel jerárquico y fecha de elegibilidad",
+            "rows": 3420,
+            "seconds": 11.3
+          }
+        ],
+        "answer": {
+          "title": "Riesgo de jubilación en puestos críticos",
+          "lead": "Riesgo de sucesión crítico e inmediato en varias áreas operativas.",
+          "findings": [
+            {
+              "highlight": "6 empleados en posiciones críticas",
+              "text": "están en riesgo de jubilación dentro de los próximos 12 meses."
+            },
+            {
+              "highlight": "5 de esos 6 (83%) ya son elegibles",
+              "text": "y siguen trabajando: es el nivel de urgencia más alto."
+            },
+            {
+              "highlight": "Calidad concentra el mayor riesgo:",
+              "text": "2 posiciones críticas, ambas Team Leader."
+            }
+          ],
+          "chart": {
+            "title": "Salidas posibles acumuladas, próximos 12 meses",
+            "points": [
+              {
+                "label": "T1",
+                "value": 2
+              },
+              {
+                "label": "T2",
+                "value": 3
+              },
+              {
+                "label": "T3",
+                "value": 5
+              },
+              {
+                "label": "T4",
+                "value": 6,
+                "display": "6 puestos"
+              }
+            ]
+          }
+        },
+        "recommendation": "Arrancá por los dos Team Leader de Calidad: son el 33% del riesgo y hoy no tienen sucesor cargado."
       }
     ],
     "ready": "Respuesta lista",

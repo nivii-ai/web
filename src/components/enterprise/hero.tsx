@@ -16,7 +16,7 @@ const INFO_STEP = 1.5;
 export async function EnterpriseHero() {
   const t = await getTranslations("enterprise.hero");
   const c = await getTranslations("console");
-  const scenario = (c.raw("scenarios") as Scenario[])[2];
+  const scenario = (c.raw("scenarios") as Scenario[])[5];
   const answerAt = INFO_AT + scenario.queries.length * INFO_STEP;
   const sectors = t.raw("sectors") as string[];
 
