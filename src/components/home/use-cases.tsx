@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/reveal";
+import { cn } from "@/lib/utils";
 import { Stat } from "./stat";
 
 type Case = { stat?: string; title: string; description: string };
@@ -22,7 +23,7 @@ export async function UseCases() {
           <p className="mt-5 text-body-l text-ink-muted">{t("description")}</p>
         </Reveal>
 
-        <div className="mt-14 grid gap-4 lg:grid-cols-3">
+        <div className="mt-14 grid gap-4 lg:grid-cols-3 lg:grid-rows-[1fr_auto]">
           <Reveal
             className="rounded-bezel bg-brand-green-tint p-8 lg:col-span-2 lg:row-span-2 lg:flex lg:flex-col lg:justify-center lg:p-12"
             order={0}
@@ -41,15 +42,10 @@ export async function UseCases() {
               className="flex flex-col rounded-bezel border border-hairline p-8"
               order={i + 1}
             >
-              {item.stat ? (
-                <Stat value={item.stat} />
-              ) : (
-                // Reserva el renglón del número para que las tarjetas alineen.
-                <span aria-hidden className="block font-display text-display-m">
-                  &nbsp;
-                </span>
-              )}
-              <h3 className="mt-4 text-heading text-ink">{item.title}</h3>
+              {item.stat ? <Stat value={item.stat} /> : null}
+              <h3 className={cn("text-heading text-ink", item.stat && "mt-4")}>
+                {item.title}
+              </h3>
               <p className="mt-2 text-body-s text-ink-muted">
                 {item.description}
               </p>

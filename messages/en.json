@@ -956,7 +956,7 @@
           "description": "At an industrial plant, the agent cross-referenced 38\u00a0months of notifications and work orders stored in SAP: 23\u00a0breakdowns had flagged degradation before they broke, with an average of 16\u00a0days to intervene. On the equipment with the highest corrective cost, the ratio of repairing to preventing was 29\u00a0to\u00a01. None of it was new data: it was written down and nobody cross-checked it."
         },
         {
-          "title": "What the dashboard doesn't say",
+          "title": "Sales",
           "description": "The alerts live in the conversation. Dashboards show the numbers. Calls tell the story: friction that hasn't turned into a complaint yet, buying signals that never reach the CRM, shifts in how the brand is perceived."
         },
         {
