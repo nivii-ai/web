@@ -13,7 +13,7 @@ export async function sendDemoRequest(data: {
   });
 
   // La estampa la pone el servidor: el reloj del visitante puede estar corrido.
-  formData.append("submittedAt", new Date().toISOString());
+  formData.append("timestamp", new Date().toISOString());
 
   const response = await fetch(
     "https://hook.us2.make.com/6l17j2fse17polfsq54y0rpjbd56nr3k",
