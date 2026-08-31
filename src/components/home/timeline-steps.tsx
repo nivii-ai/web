@@ -13,7 +13,7 @@ import { ScrollBinder } from "@/components/scroll-binder";
 import { ParticleField } from "@/components/console/particle-field";
 import { spring } from "@/lib/motion";
 
-type Step = { title: string; description: string };
+type Step = { title: React.ReactNode; description: string };
 
 export function TimelineSteps({
   steps,
@@ -106,7 +106,7 @@ export function TimelineSteps({
 
       {steps.map((step, i) => (
         <div
-          key={step.title}
+          key={step.description}
           className="relative flex min-h-[52vh] items-center lg:min-h-[58vh]"
         >
           <span

@@ -496,7 +496,7 @@
       "description": "No cleaning up the data first. No waiting for the report. No second-guessing the number.",
       "steps": [
         {
-          "title": "It sorts.",
+          "title": "<accent>Nivii</accent> sorts.",
           "description": "Before the first question, cleaning agents cross-reference your sources, resolve duplicates and pick the reliable number in each one. That work is ours, not a project of yours."
         },
         {
@@ -504,11 +504,11 @@
           "description": "In your own words, the way you would ask someone on your team."
         },
         {
-          "title": "It searches.",
+          "title": "<accent>Nivii</accent> searches.",
           "description": "Across all your systems, even the ones that do not talk to each other."
         },
         {
-          "title": "It answers.",
+          "title": "<accent>Nivii</accent> answers.",
           "description": "With the number and where it came from."
         },
         {

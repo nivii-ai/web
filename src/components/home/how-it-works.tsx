@@ -12,7 +12,16 @@ export async function HowItWorks() {
   const t = await getTranslations("home.howItWorks");
   const c = await getTranslations("console");
   const scenario = (c.raw("scenarios") as Scenario[])[1];
-  const steps = t.raw("steps") as { title: string; description: string }[];
+  // El título se resuelve acá para que pueda llevar acento; la cinta es cliente
+  // y sólo recibe el nodo ya armado.
+  const steps = (
+    t.raw("steps") as { title: string; description: string }[]
+  ).map((step, i) => ({
+    description: step.description,
+    title: t.rich(`steps.${i}.title`, {
+      accent: (chunks) => <span className="text-brand-green">{chunks}</span>,
+    }),
+  }));
 
   // Una pieza por paso: se acumulan, no se rearman.
   const pieces = [

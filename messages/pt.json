@@ -496,7 +496,7 @@
       "description": "Sem limpar os dados antes. Sem esperar o relatório. Sem duvidar do número.",
       "steps": [
         {
-          "title": "Organiza.",
+          "title": "A <accent>Nivii</accent> organiza.",
           "description": "Antes da primeira pergunta, os agentes de limpeza cruzam suas fontes, resolvem duplicidades e escolhem o dado confiável de cada uma. Esse trabalho é nosso, não um projeto seu."
         },
         {
@@ -504,11 +504,11 @@
           "description": "Na sua língua, como você pediria a alguém do seu time."
         },
         {
-          "title": "Busca.",
+          "title": "A <accent>Nivii</accent> busca.",
           "description": "Em todos os seus sistemas, mesmo os que não conversam entre si."
         },
         {
-          "title": "Responde.",
+          "title": "A <accent>Nivii</accent> responde.",
           "description": "Com o número e de onde ele saiu."
         },
         {
