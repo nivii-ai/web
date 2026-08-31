@@ -32,16 +32,13 @@ export function TimelineSteps({
   const [active, setActive] = useState(0);
   const prefersReducedMotion = useReducedMotion();
   const pane = useRef<HTMLDivElement>(null);
-  const mobilePane = useRef<HTMLDivElement>(null);
 
   // Al llegar una pieza nueva la conversación se sigue sola, como un chat.
   useEffect(() => {
-    for (const node of [pane.current, mobilePane.current]) {
-      node?.scrollTo({
-        top: node.scrollHeight,
-        behavior: prefersReducedMotion ? "auto" : "smooth",
-      });
-    }
+    pane.current?.scrollTo({
+      top: pane.current.scrollHeight,
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+    });
   }, [active, prefersReducedMotion]);
 
   useMotionValueEvent(progress, "change", (value) => {
@@ -51,11 +48,16 @@ export function TimelineSteps({
 
   // El primer paso es la preparación: las piezas de la conversación empiezan en el segundo.
   const SEARCHING = 1;
-  const shown = pieces
-    .slice(0, active)
-    .map((piece, i) =>
-      i === SEARCHING && active > SEARCHING + 1 ? readyLine : piece,
-    );
+  /** Lo que la pantalla muestra en un paso dado: todo lo anterior, acumulado. */
+  const upTo = (step: number) =>
+    step === 0
+      ? preparation
+      : pieces
+          .slice(0, step)
+          .map((piece, i) =>
+            i === SEARCHING && step > SEARCHING + 1 ? readyLine : piece,
+          );
+  const shown = upTo(active);
 
   return (
     <div ref={ref} className="relative mt-20 pb-16 lg:mt-28">
@@ -96,7 +98,7 @@ export function TimelineSteps({
                   transition={{ duration: prefersReducedMotion ? 0 : 0.25 }}
                   className="flex flex-col gap-4"
                 >
-                  {active === 0 ? preparation : shown}
+                  {shown}
                 </motion.div>
               </AnimatePresence>
             </ConsoleShell>
@@ -128,17 +130,12 @@ export function TimelineSteps({
               {step.description}
             </p>
 
-            {/* En mobile cada paso muestra su propia pantalla, sin sticky. */}
-            {i === 0 || i === steps.length - 1 ? (
-              <div className="mt-8 text-left lg:hidden">
-                <ConsoleShell
-                  scrollable
-                  innerRef={i === 0 ? undefined : mobilePane}
-                >
-                  {i === 0 ? preparation : shown}
-                </ConsoleShell>
-              </div>
-            ) : null}
+            {/* Sin sticky que seguir, cada paso lleva su propia pantalla con
+                lo que la conversación mostraba en ese momento. */}
+            <div className="mt-8 text-left lg:hidden">
+              {/* Se ajusta a lo que muestra: en los primeros pasos es una línea. */}
+              <ConsoleShell innerClassName="min-h-0">{upTo(i)}</ConsoleShell>
+            </div>
           </motion.div>
         </div>
       ))}

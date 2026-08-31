@@ -6,6 +6,7 @@ export function ConsoleShell({
   className,
   scrollable = false,
   innerRef,
+  innerClassName,
   tone = "light",
 }: {
   children: React.ReactNode;
@@ -13,6 +14,8 @@ export function ConsoleShell({
   /** Alto fijo y scroll propio, como el panel de conversación de la app. */
   scrollable?: boolean;
   innerRef?: React.Ref<HTMLDivElement>;
+  /** Para pisar el alto cuando la pantalla muestra poco, como en el timeline móvil. */
+  innerClassName?: string;
   /** Sobre el panel oscuro la carcasa se ilumina en vez de proyectar sombra. */
   tone?: "light" | "dark";
 }) {
@@ -33,6 +36,7 @@ export function ConsoleShell({
           scrollable
             ? "no-scrollbar h-[30rem] overflow-y-auto"
             : "min-h-[27rem]",
+          innerClassName,
         )}
       >
         {children}
