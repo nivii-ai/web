@@ -1,17 +1,19 @@
 "use server";
 
 export async function sendDemoRequest(data: {
-  firstName: string;
-  lastName: string;
+  name: string;
   email: string;
   company: string;
-  role: string;
+  question: string;
 }) {
   const formData = new FormData();
 
   Object.entries(data).forEach(([key, value]) => {
     formData.append(key, value ?? "");
   });
+
+  // La estampa la pone el servidor: el reloj del visitante puede estar corrido.
+  formData.append("timestamp", new Date().toISOString());
 
   const response = await fetch(
     "https://hook.us2.make.com/6l17j2fse17polfsq54y0rpjbd56nr3k",

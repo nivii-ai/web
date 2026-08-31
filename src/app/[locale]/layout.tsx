@@ -1,19 +1,37 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import {
+  Bricolage_Grotesque,
+  IBM_Plex_Mono,
+  IBM_Plex_Sans,
+} from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
-const nunito = Nunito({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  variable: "--font-nunito",
+  variable: "--font-bricolage",
+  axes: ["opsz"],
+});
+
+const plexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  variable: "--font-plex-sans",
+  weight: ["400", "500", "600", "700"],
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-plex-mono",
+  weight: ["400", "500", "600"],
 });
 
 import { setRequestLocale } from "next-intl/server";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { MotionProvider } from "@/components/motion-provider";
 
 export async function generateMetadata({
   params,
@@ -80,14 +98,18 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth">
-      <body
-        className={`${nunito.variable} antialiased  min-h-screen flex flex-col`}
-      >
+    // En <html>: los tokens del tema las referencian desde :root.
+    <html
+      lang={locale}
+      className={`${bricolage.variable} ${plexSans.variable} ${plexMono.variable} scroll-smooth`}
+    >
+      <body className="antialiased min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>
-          <Header locale={locale} />
-          {children}
-          <Footer />
+          <MotionProvider>
+            <Header locale={locale} />
+            {children}
+            <Footer locale={locale} />
+          </MotionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

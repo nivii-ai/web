@@ -5,11 +5,10 @@
   },
   "header": {
     "logo": "Nivii",
-    "product": "Producto",
+    "beacon": "Beacon",
+    "enterprise": "Enterprise",
     "useCases": "Casos de Uso",
-    "faq": "Preguntas",
     "about": "Nosotros",
-    "team": "Equipo",
     "careers": "Careers",
     "openMenu": "Abrir Menú",
     "closeMenu": "Cerrar Menú",
@@ -20,105 +19,555 @@
         "en": "Inglés",
         "pt": "Portugués"
       }
-    }
+    },
+    "demo": "Solicitar Demo"
   },
   "demo": {
+    "meta": {
+      "title": "Solicitar demo",
+      "description": "Trabajo real sobre tus propios datos: traés una pregunta de negocio y ves la respuesta que devuelve el agente. Sin presentación enlatada."
+    },
     "label": "Solicitar Demo",
-    "modalTitle": "Solicitar Demo",
-    "modalDescription": "Descubre cómo Nivii puede transformar tu negocio. Completa el formulario para empezar.",
+    "title": "Traé una pregunta. Te mostramos <accent>qué hace el agente</accent> con ella.",
+    "reassurance": [
+      "Con una persona del equipo que construyó el producto.",
+      "No hace falta que tus datos estén ordenados: ese es el punto de partida.",
+      "Nos dejás tus datos y te escribimos para coordinar. Sin compromiso."
+    ],
     "form": {
-      "firstName": "Nombre",
-      "lastName": "Apellido",
-      "email": "Correo Electrónico",
+      "name": "Nombre",
+      "email": "Email de trabajo",
       "company": "Empresa",
-      "role": "Cargo",
-      "submit": "Enviar",
-      "submitting": "Enviando...",
-      "success": "¡Gracias por solicitar una demostración! Nos pondremos en contacto contigo pronto.",
-      "error": "Hubo un error al enviar tu solicitud. Por favor, inténtalo de nuevo o contáctanos directamente."
+      "question": "¿Qué pregunta te gustaría poder responder?",
+      "questionHint": "Opcional, pero es lo que hace que la sesión valga la pena.",
+      "submit": "Solicitar demo",
+      "submitting": "Enviando…",
+      "successTitle": "Listo. Te respondemos lo antes posible.",
+      "successBody": "Mientras tanto, si querés ver el detalle de arquitectura y seguridad, está en la página de Enterprise.",
+      "error": "Hubo un error al enviar tu solicitud. Escribinos a contact@nivii.ai y lo resolvemos.",
+      "errors": {
+        "name": "Escribí tu nombre.",
+        "email": "Ingresá un email de trabajo válido.",
+        "company": "Contanos en qué empresa trabajás."
+      }
+    }
+  },
+  "console": {
+    "rows": "{count} filas",
+    "recommendation": "Recomendación",
+    "chart": "Visualización",
+    "scenarios": [
+      {
+        "id": "crecimiento-real",
+        "question": "¿Cuánto crecimos en serio, descontando inflación?",
+        "queries": [
+          {
+            "question": "Facturación mensual bruta y neta de descuentos, 2024\u00a0y\u00a02025",
+            "rows": 24,
+            "seconds": 9.4
+          },
+          {
+            "question": "Índice de precios al consumidor por mes, 2024\u00a0y\u00a02025",
+            "rows": 24,
+            "seconds": 6.1
+          },
+          {
+            "question": "Margen bruto por mes y participación de unidades vendidas con descuento",
+            "rows": 24,
+            "seconds": 11.2
+          }
+        ],
+        "answer": {
+          "title": "Crecimiento nominal vs. crecimiento real",
+          "lead": "La facturación creció 19,4% interanual, pero descontando inflación el negocio se achicó 2,5%.",
+          "table": {
+            "columns": [
+              "Concepto",
+              "2024",
+              "2025",
+              "Variación"
+            ],
+            "rows": [
+              [
+                "Facturación nominal",
+                "$2.480M",
+                "$2.961M",
+                "+19,4%"
+              ],
+              [
+                "Facturación a precios de 2024",
+                "$2.480M",
+                "$2.417M",
+                "−2,5%"
+              ],
+              [
+                "Margen bruto",
+                "41,2%",
+                "37,8%",
+                "−3,4\u00a0pp"
+              ],
+              [
+                "Unidades vendidas con descuento",
+                "28%",
+                "41%",
+                "+13\u00a0pp"
+              ]
+            ]
+          },
+          "alert": {
+            "title": "Alerta: el descuento se está comiendo el crecimiento",
+            "body": "La proporción de unidades vendidas con descuento pasó de 28% a 41%. Ese salto explica casi toda la caída de margen: sin él, el margen bruto habría cerrado en 40,6%."
+          },
+          "conclusion": "Conclusión: el volumen creció, pero se compró con precio. El crecimiento que se ve en el tablero de facturación no llegó al resultado.",
+          "followUp": "¿Querés que separe el efecto por categoría, para ver dónde el descuento sí generó volumen incremental?"
+        },
+        "recommendation": "Frená los descuentos automáticos en las tres categorías donde el margen cayó más de 5\u00a0puntos sin que crecieran las unidades: Calzado urbano, Abrigo y Accesorios. Concentran $712M de facturación y 4,2\u00a0puntos de la caída de margen, unos $101M de resultado. Empezá por Abrigo, que ya va con 61% de las unidades vendidas con descuento y stock de la temporada pasada sin liquidar."
+      },
+      {
+        "id": "quiebres",
+        "question": "¿Qué productos se quedaron sin stock esta semana?",
+        "queries": [
+          {
+            "question": "Stock diario por SKU, últimos 7\u00a0días",
+            "rows": 1240,
+            "seconds": 7.8
+          },
+          {
+            "question": "Ventas perdidas estimadas por día sin stock",
+            "rows": 18,
+            "seconds": 5.2
+          }
+        ],
+        "answer": {
+          "title": "Quiebres de la semana",
+          "lead": "Tres SKU estuvieron sin stock más de la mitad de la semana y explican $18,4M de ventas perdidas.",
+          "table": {
+            "columns": [
+              "Producto",
+              "Días sin stock",
+              "Venta perdida"
+            ],
+            "rows": [
+              [
+                "Abrigo liviano s/ capucha",
+                5,
+                "$9,1M"
+              ],
+              [
+                "Zapatilla urbana blanca 40",
+                4,
+                "$6,2M"
+              ],
+              [
+                "Pack medias x3 negro",
+                4,
+                "$3,1M"
+              ]
+            ]
+          }
+        },
+        "recommendation": "Reponé los tres SKU antes del viernes: concentran el 78% de la venta perdida de la semana y los tres tienen stock disponible en el depósito central.",
+        "nextTurn": {
+          "question": "¿Y si reponemos desde el depósito central, cuánto recuperamos?",
+          "answer": {
+            "title": "Recuperable con reposición",
+            "lead": "Con el stock disponible en el depósito se recuperan $14,3M de los $18,4M perdidos.",
+            "table": {
+              "columns": [
+                "Producto",
+                "Stock en depósito",
+                "Recuperable"
+              ],
+              "rows": [
+                [
+                  "Abrigo liviano s/ capucha",
+                  "410 u",
+                  "$9,1M"
+                ],
+                [
+                  "Zapatilla urbana blanca 40",
+                  "180 u",
+                  "$5,2M"
+                ],
+                [
+                  "Pack medias x3 negro",
+                  "0 u",
+                  "—"
+                ]
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": "ventas-feriado",
+        "question": "¿Por qué cayeron las ventas esta semana?",
+        "queries": [
+          {
+            "question": "Ventas por día y sucursal, 11 al 20 de noviembre",
+            "rows": 5240,
+            "seconds": 12.4
+          },
+          {
+            "question": "Horas operativas y quiebres de stock por producto",
+            "rows": 1870,
+            "seconds": 9.8
+          }
+        ],
+        "answer": {
+          "title": "Caída de ventas por feriado y stock",
+          "lead": "Las ventas cayeron sobre todo por el feriado nacional del lunes 18 de noviembre, que redujo drásticamente la operación de ese día.",
+          "findings": [
+            {
+              "highlight": "Caída total de ingresos: −27,2%,",
+              "text": "de $12,1M a $8,4M comparando el 18-20 de noviembre contra el 11-13."
+            },
+            {
+              "highlight": "El lunes 18 concentra el 74% de la pérdida semanal",
+              "text": "(−$2,7M de −$3,7M totales), con un 55% menos de ventas ese día."
+            },
+            {
+              "highlight": "Horas operativas reducidas:",
+              "text": "el 18 de noviembre el local abrió 8\u00a0horas contra las 12 habituales (−33%)."
+            },
+            {
+              "highlight": "Quiebre de stock en 2\u00a0productos top:",
+              "text": "«Alfajor Sin Azúcar x9 Un» y «Alfajor Sin Azúcar Suelto» estuvieron sin stock los 3\u00a0días, y son el 2° y el 5° más vendidos."
+            }
+          ],
+          "table": {
+            "columns": [
+              "Día",
+              "Ingresos",
+              "Var. vs. semana previa",
+              "Horas"
+            ],
+            "rows": [
+              [
+                "Lun 18",
+                "$2,2M",
+                "−55%",
+                "8"
+              ],
+              [
+                "Mar 19",
+                "$3,0M",
+                "−17%",
+                "12"
+              ],
+              [
+                "Mié 20",
+                "$3,2M",
+                "−11%",
+                "12"
+              ]
+            ]
+          },
+          "chart": {
+            "title": "Ingresos diarios, 11 al 20 de noviembre",
+            "points": [
+              {
+                "label": "Lun 11",
+                "value": 4.9
+              },
+              {
+                "label": "Mar 12",
+                "value": 3.6
+              },
+              {
+                "label": "Mié 13",
+                "value": 3.6
+              },
+              {
+                "label": "Lun 18",
+                "value": 2.2
+              },
+              {
+                "label": "Mar 19",
+                "value": 3
+              },
+              {
+                "label": "Mié 20",
+                "value": 3.2,
+                "display": "$3,2M"
+              }
+            ]
+          }
+        },
+        "recommendation": "Repone los dos alfajores sin azúcar antes del próximo fin de semana largo y sumá horas en el feriado siguiente: sólo el lunes 18 explica $2,7M de los $3,7M perdidos."
+      },
+      {
+        "id": "fuga-margen",
+        "question": "¿Dónde se me está yendo el margen este mes?",
+        "queries": [
+          {
+            "question": "Margen por categoría y descuentos autorizados en caja, últimos 30\u00a0días",
+            "rows": 86,
+            "seconds": 6.4
+          }
+        ],
+        "answer": {
+          "title": "Fuga de margen, últimos 30\u00a0días",
+          "lead": "El 71% de la caída está en dos categorías, y casi toda en descuentos autorizados en el mostrador.",
+          "table": {
+            "columns": [
+              "Categoría",
+              "Margen",
+              "Var. mes",
+              "Descuento prom."
+            ],
+            "rows": [
+              [
+                "Bebidas",
+                "22,4%",
+                "−4,1\u00a0pp",
+                "11,8%"
+              ],
+              [
+                "Limpieza",
+                "28,9%",
+                "−2,6\u00a0pp",
+                "7,4%"
+              ],
+              [
+                "Almacén",
+                "31,5%",
+                "−0,3\u00a0pp",
+                "2,1%"
+              ]
+            ]
+          }
+        },
+        "recommendation": "Poné un tope de descuento en caja para Bebidas y Limpieza: son $4,3M de margen perdido en el mes y el 84% de los casos superó el 10% sin autorización de un supervisor."
+      },
+      {
+        "id": "stock-inmovilizado",
+        "question": "¿Cuánto capital tengo parado en stock?",
+        "queries": [
+          {
+            "question": "Inventario valorizado por referencia y última venta",
+            "rows": 8940,
+            "seconds": 15.3
+          },
+          {
+            "question": "Reposiciones vs. ventas por categoría, últimos 6\u00a0meses",
+            "rows": 3120,
+            "seconds": 9.7
+          }
+        ],
+        "answer": {
+          "title": "Stock sin rotación, corte de febrero",
+          "lead": "El 54% del inventario valorizado no tuvo ventas en los últimos seis meses: $128M inmovilizados.",
+          "chart": {
+            "title": "Capital inmovilizado, por mes",
+            "unit": "M",
+            "points": [
+              {
+                "label": "Sep",
+                "value": 96.4
+              },
+              {
+                "label": "Oct",
+                "value": 101.2
+              },
+              {
+                "label": "Nov",
+                "value": 108.7
+              },
+              {
+                "label": "Dic",
+                "value": 104.9
+              },
+              {
+                "label": "Ene",
+                "value": 119.5
+              },
+              {
+                "label": "Feb",
+                "value": 128.3,
+                "display": "$128,3M"
+              }
+            ]
+          },
+          "conclusion": "Casi todo el crecimiento del período viene de tres categorías que se siguieron reponiendo con la misma frecuencia que las que sí rotan."
+        },
+        "recommendation": "Arrancá la liquidación por antigüedad con las referencias de más de doce meses: son $71M a precio de costo y ocupan el 38% del depósito."
+      },
+      {
+        "id": "riesgo-jubilacion",
+        "question": "¿Cuántos puestos críticos están en riesgo por jubilación en los próximos 12\u00a0meses?",
+        "queries": [
+          {
+            "question": "Dotación por área, nivel jerárquico y fecha de elegibilidad",
+            "rows": 3420,
+            "seconds": 11.3
+          }
+        ],
+        "answer": {
+          "title": "Riesgo de jubilación en puestos críticos",
+          "lead": "Riesgo de sucesión crítico e inmediato en varias áreas operativas.",
+          "findings": [
+            {
+              "highlight": "6\u00a0empleados en posiciones críticas",
+              "text": "están en riesgo de jubilación dentro de los próximos 12\u00a0meses."
+            },
+            {
+              "highlight": "5 de esos 6 (83%) ya son elegibles",
+              "text": "y siguen trabajando: es el nivel de urgencia más alto."
+            },
+            {
+              "highlight": "Calidad concentra el mayor riesgo:",
+              "text": "2\u00a0posiciones críticas, ambas Team Leader."
+            }
+          ],
+          "chart": {
+            "title": "Salidas posibles acumuladas, próximos 12\u00a0meses",
+            "points": [
+              {
+                "label": "T1",
+                "value": 2
+              },
+              {
+                "label": "T2",
+                "value": 3
+              },
+              {
+                "label": "T3",
+                "value": 5
+              },
+              {
+                "label": "T4",
+                "value": 6,
+                "display": "6\u00a0puestos"
+              }
+            ]
+          }
+        },
+        "recommendation": "Arrancá por los dos Team Leader de Calidad: son el 33% del riesgo y hoy no tienen sucesor cargado."
+      }
+    ],
+    "ready": "Respuesta lista",
+    "preparation": {
+      "title": "Preparando fuentes",
+      "sources": [
+        {
+          "name": "Ventas diarias (punto de venta)",
+          "detail": "8.940\u00a0filas · 98% completo"
+        },
+        {
+          "name": "Stock por sucursal (sistema de gestión)",
+          "detail": "1.240\u00a0filas · 91% completo"
+        },
+        {
+          "name": "Precios y descuentos (planilla)",
+          "detail": "612\u00a0filas · 87% completo"
+        }
+      ],
+      "stats": [
+        {
+          "value": "214",
+          "label": "códigos duplicados resueltos"
+        },
+        {
+          "value": "37",
+          "label": "formatos de fecha normalizados"
+        },
+        {
+          "value": "3",
+          "label": "definiciones de «venta» unificadas"
+        }
+      ]
     }
   },
   "home": {
     "hero": {
       "title": "¿Qué dicen los datos?",
-      "subtitle": "Solo pregunta.",
+      "subtitle": "Solo preguntá.",
       "description": "Nivii es el Agente de IA que se conecta de forma segura a tus datos, entiende tu negocio y responde con el análisis fiable que necesitas para tomar medidas inmediatamente.",
       "seeUseCases": "Ver Casos de Uso"
     },
-    "product": {
-      "title": "Análisis, no solo dashboards",
-      "description": "Tu equipo necesita información útil y procesable, no más dashboards que interpretar. La IA Generativa de Nivii va más allá de la visualización para proporcionar análisis claros, fiables y precisos para que puedas tomar decisiones con confianza.",
-      "securelyConnected": "Conexión Segura",
-      "securelyConnectedDescription": "Se integra de forma transparente y segura con tus fuentes de datos existentes, manteniendo la integridad y confidencialidad de tu información.",
-      "knowsYourBusiness": "Conoce tu Negocio",
-      "knowsYourBusinessDescription": "Nuestra IA está diseñada para entender tus KPIs y terminología específicos, proporcionando respuestas contextualizadas que son inmediatamente relevantes.",
-      "fromWeeksToMinutes": "De Semanas a Minutos",
-      "fromWeeksToMinutesDescription": "Capacita a tu equipo para actuar sobre oportunidades y abordar desafíos con una velocidad sin precedentes. Obtén la información que necesitas en minutos, no en semanas.",
-      "aiPoweredConversations": "Conversaciones con IA",
-      "aiPoweredConversationsDescription": "Una interfaz simple e intuitiva facilita que cualquier usuario haga preguntas sobre datos y obtenga respuestas de calidad en las que puede confiar."
+    "clients": {
+      "title": "Empresas que confían en nosotros",
+      "partners": "Nuestros partners"
     },
-    "useCases": {
-      "title": "Casos de Uso",
-      "description": "Desde marketing hasta finanzas, Nivii proporciona la claridad necesaria para tomar decisiones más inteligentes y rápidas en cada departamento.",
-      "marketing": {
-        "title": "Marketing",
-        "shortDescription": "Comprende al instante el rendimiento de las campañas.",
-        "description": "Comprende al instante el rendimiento de las campañas, identifica tus segmentos de clientes más rentables y optimiza tu inversión en marketing. Pregúntale a Nivii qué canales ofrecen el mayor ROI y obtén una respuesta en segundos."
-      },
-      "sales": {
-        "title": "Ventas",
-        "shortDescription": "Equipa a tu equipo de ventas con la información correcta en el momento adecuado.",
-        "description": "Equipa a tu equipo de ventas con la información correcta en el momento adecuado. Nivii puede identificar oportunidades de venta cruzada y adicional, destacar cuentas en riesgo y asegurar que tu equipo presente los productos más relevantes a cada cliente."
-      },
-      "operations": {
-        "title": "Operaciones",
-        "shortDescription": "Optimiza tus operaciones con información en tiempo real.",
-        "description": "Optimiza tus operaciones obteniendo información inmediata sobre cuellos de botella en la cadena de suministro, ineficiencias de producción y asignación de recursos. Nivii te ayuda a tomar decisiones basadas en datos para mejorar la eficiencia y reducir costos."
-      },
-      "hr": {
-        "title": "RR.HH.",
-        "shortDescription": "Descubre las señales ocultas en los datos de tus empleados.",
-        "description": "Descubre las señales ocultas en los datos de tus empleados. Con Nivii, puedes identificar tendencias en la rotación de personal, comprender los impulsores de la satisfacción y tomar decisiones proactivas para construir una fuerza laboral más fuerte y comprometida."
-      },
-      "finance": {
-        "title": "Finanzas",
-        "shortDescription": "Obtén una claridad instantánea sobre la salud financiera de tu empresa.",
-        "description": "Obtén una claridad instantánea sobre la salud financiera de tu empresa. Nivii te permite hacer preguntas financieras complejas en un lenguaje sencillo, monitorear el flujo de caja en tiempo real e identificar riesgos potenciales antes de que se conviertan en problemas mayores."
-      }
-    },
-    "faq": {
-      "title": "Preguntas Frecuentes",
-      "description": "¿Tienes preguntas? Tenemos respuestas. Aquí están algunas de las cosas más comunes que nos preguntan.",
-      "faqs": [
+    "howItWorks": {
+      "title": "Preguntá.",
+      "description": "Sin limpiar los datos antes. Sin esperar el reporte. Sin dudar del número.",
+      "steps": [
         {
-          "question": "¿Qué pasa si mis datos no están limpios?",
-          "answer": "Este es un escenario muy común y nuestra metodología está diseñada para ello. Ninguna empresa tiene datos perfectos. Empezamos trabajando contigo para identificar las fuentes de datos más fiables y construir \"Domain Data Products\". Esto nos permite limpiar, transformar y utilizar las partes más fiables de tus datos primero, entregando valor e impacto inmediatos mientras se crea una base para la mejora continua de la calidad de los datos."
+          "title": "<accent>Nivii</accent> ordena.",
+          "description": "Antes de la primera pregunta, los agentes de limpieza cruzan tus fuentes, resuelven los duplicados y eligen el dato confiable de cada una. Ese trabajo es nuestro, no un proyecto tuyo."
         },
         {
-          "question": "¿Esto es como ChatGPT/Claude/Gemini?",
-          "answer": "Aunque aprovechamos el poder de los principales Modelos de Lenguaje Grandes (LLMs), Nivii es mucho más que una simple interfaz de chat. Nuestra tecnología principal es una orquesta patentada de agentes de IA especializados. Estos agentes están entrenados en el contexto de tu negocio y trabajan juntos para realizar análisis profundos y precisos. A diferencia de los modelos de propósito general, el objetivo de Nivii no es solo generar texto o gráficos, es entregar información validada y lista para la toma de decisiones."
+          "title": "Preguntá.",
+          "description": "En tu idioma, como se lo dirías a alguien de tu equipo."
         },
         {
-          "question": "¿Cómo aseguran la precisión?",
-          "answer": "La precisión es fundamental, especialmente cuando hay decisiones en juego. Nuestro enfoque de múltiples capas está diseñado para garantizarla. Primero, basamos todo el análisis en tus fuentes de datos más fiables. Segundo, nuestra orquesta de agentes de IA descompone preguntas complejas y asigna el agente correcto a cada parte del análisis. Finalmente, utilizamos un marco de validación patentado, que incluye agentes \"Jueces\", para verificar los resultados, minimizar errores y prevenir las alucinaciones a las que son propensos los modelos de IA generales."
+          "title": "<accent>Nivii</accent> busca.",
+          "description": "En todos tus sistemas, aunque no se hablen entre ellos."
         },
         {
-          "question": "¿Se pueden conectar a SAP/Salesforce/otros?",
-          "answer": "Nos podemos conectar a cualquier fuente de datos siempre que esté disponible en cualquiera de los 3 principales proveedores de nube (AWS, GCP, Azure)."
+          "title": "<accent>Nivii</accent> responde.",
+          "description": "Con el número y de dónde salió."
+        },
+        {
+          "title": "Accioná.",
+          "description": "La respuesta llega con la recomendación: qué hacer, sobre qué, y cuánto dinero hay en juego. Se decide en la misma pantalla, no en la próxima reunión."
         }
       ]
     },
-    "mission": {
-      "title": "Nuestra Misión",
-      "description": [
-        "No importa cuánto se invierta en datos, demasiadas decisiones se toman sin mirar lo que dicen. A veces es porque lleva demasiado tiempo; a menudo porque muchos no tienen las habilidades para el análisis.",
-        "¿Cuánto se pierde cuando un representante de ventas ofrece el producto equivocado? ¿A cuánto riesgo se expone tu empresa sin una claridad financiera instantánea? ¿Cuánto se desperdicia en la rotación de empleados cuando las señales estaban allí, pero ocultas detrás de dashboards?",
-        "Construimos Nivii para resolver esto. Creemos que tu equipo necesita análisis fiables, no más gráficos. Necesitan información para pasar a la acción de inmediato."
+    "enterprise": {
+      "eyebrow": "Enterprise",
+      "title": "La IA empresarial es, ante todo, una decisión de <accent>confianza</accent>.",
+      "description": "Por eso Nivii corre dentro de tu perímetro, aprende qué significa cada definición en tu empresa y ordena tus datos antes de responder. Nada sale de tu nube, y nada espera a que los datos estén perfectos.",
+      "cta": "Saber más",
+      "cardLabel": "Dentro de tu nube"
+    },
+    "useCases": {
+      "title": "Preguntas que ya <accent>respondimos</accent>.",
+      "description": "Ninguna de estas respuestas necesitó datos perfectos para empezar.",
+      "cleaning": {
+        "title": "Tus datos desordenados son el punto de partida.",
+        "description": "Nadie los tiene listos. Excel sueltos, sistemas que no se hablan entre sí, definiciones que cambian según a quién le preguntes. Nivii pone a trabajar primero tus fuentes más confiables, así la primera respuesta llega en semanas y no al final de un proyecto de datos que no termina nunca."
+      },
+      "cases": [
+        {
+          "stat": "12\u00a0días",
+          "title": "La falla avisó y nadie la escuchó",
+          "description": "En una planta industrial, 17\u00a0averías habían dado señal de degradación antes de romper. Entre el aviso y la parada había 12\u00a0días de margen, escritos en órdenes que nadie cruzaba."
+        },
+        {
+          "stat": "Lo que el dashboard no dice",
+          "title": "Las alertas viven en la conversación",
+          "description": "Los dashboards muestran los números. Las llamadas cuentan la historia: fricciones que aún no llegaron a un reclamo, señales de compra que no quedan en el CRM, cambios en la percepción de marca."
+        },
+        {
+          "stat": "19% → −2,5%",
+          "title": "El crecimiento que no era tal",
+          "description": "La facturación crecía a dos dígitos y el equipo lo festejaba. Descontada la inflación, el negocio se había achicado."
+        },
+        {
+          "stat": "1% → 30%",
+          "title": "El 1% que sostiene el negocio",
+          "description": "Un puñado de clientes concentraba casi un tercio de lo transaccionado, mezclado con el resto porque nadie los medía distinto."
+        },
+        {
+          "stat": "+50%",
+          "title": "Capital dormido en el depósito",
+          "description": "Más de la mitad del stock llevaba seis meses sin rotar. Dinero parado en góndola en lugar de en la caja."
+        }
       ]
     },
+    "beacon": {
+      "eyebrow": "Beacon",
+      "title": "Cada mes se te escapa <accent>margen</accent>. Beacon lo encuentra.",
+      "description": "Corre en la nube de Nivii, así que no necesitás servidores ni equipo propio. Le entregás los datos como están —planillas, tu sistema de gestión, el punto de venta— y él los ordena, los cruza y te responde en lenguaje simple.",
+      "cta": "Reservá tu piloto gratuito",
+      "secondary": "Saber más",
+      "note": "Sin costo. Sin tarjeta. Con tus propios datos."
+    },
     "team": {
-      "title": "Conoce al equipo",
-      "description": "Somos un equipo apasionado de innovadores, pensadores y creadores dedicados a revolucionar cómo las empresas interactúan con sus datos.",
+      "title": "Construido por un equipo que ya hizo esto a escala.",
       "members": [
         {
           "name": "Sergio Kaufman",
@@ -126,7 +575,7 @@
           "role": "Chairman of the Board",
           "bio": [
             "Ex Senior Managing Director de Accenture y miembro del Global Management Committee",
-            "Roles de Crecimiento y Estrategia en India, China, Japón, Singapur y Latam de 2022 a 2024, liderando Argentina y la región Hispana de América del Sur desde 2013"
+            "Roles de Crecimiento y Estrategia en India, China, Japón, Singapur y Latam de 2022\u00a0a\u00a02024, liderando Argentina y la región Hispana de América del Sur desde 2013"
           ],
           "linkedin": "https://www.linkedin.com/in/sergiokaufman/"
         },
@@ -135,8 +584,8 @@
           "photo": "/dani.jpeg",
           "role": "CEO & Co-Founder",
           "bio": [
-            "4 años como Managing Director de Data & AI en Accenture Argentina gestionando hasta 270 miembros de organización",
-            "10 años como Google Head of Data & AI para Argentina y luego para SPLATAM"
+            "4\u00a0años como Managing Director de Data & AI en Accenture Argentina gestionando hasta 270 miembros de organización",
+            "10\u00a0años como Google Head of Data & AI para Argentina y luego para SPLATAM"
           ],
           "linkedin": "https://www.linkedin.com/in/daniel-stilerman/"
         },
@@ -145,7 +594,7 @@
           "photo": "/alex.jpeg",
           "role": "CTO & Co-Founder",
           "bio": [
-            "+8 años como Sr. y Lead Machine Learning Engineer en el sector high-tech israelí, escalando modelos de ML e IA production-grade desde research hasta el mercado",
+            "+8\u00a0años como Sr. y Lead Machine Learning Engineer en el sector high-tech israelí, escalando modelos de ML e IA production-grade desde research hasta el mercado",
             "MSc en Ingeniería de Software"
           ],
           "linkedin": "https://www.linkedin.com/in/alexingberg/"
@@ -156,7 +605,7 @@
           "role": "CBO & Co-Founder",
           "bio": [
             "Data Scientist convertido en Ejecutivo de Ventas",
-            "+7 años en Google UK asesorando a nivel C & B en EMEA",
+            "+7\u00a0años en Google UK asesorando a nivel C & B en EMEA",
             "Profesor de Decision Science (Analytics) para Google mundialmente"
           ],
           "linkedin": "https://www.linkedin.com/in/alan-hazan-41784a51/"
@@ -167,19 +616,483 @@
           "role": "COO",
           "bio": [
             "Ex Senior Managing Director y líder regional de Accenture con foco en la industria de Resources y Oil & Gas para la región Hispana de América del Sur",
-            "+40 años de experiencia ejecutiva en management consulting, estrategia de negocios, operación y transformación digital, liderando proyectos tecnológicos para las principales compañías de América Latina"
+            "+40\u00a0años de experiencia ejecutiva en management consulting, estrategia de negocios, operación y transformación digital, liderando proyectos tecnológicos para las principales compañías de América Latina"
           ],
           "linkedin": "https://www.linkedin.com/in/claudio-goldman/"
         }
       ]
     },
-    "careers": {
-      "title": "Únete a nuestro equipo",
-      "description": "Estamos en una misión para empoderar a las empresas con información procesable. Si te apasionan los datos, la IA y la innovación, nos encantaría saber de ti.",
-      "applyNow": "Posiciones Abiertas"
+    "cta": {
+      "title": "Mirá a Nivii responder una pregunta real. <accent>Sobre tus propios datos.</accent>",
+      "description": "Traé tus datos, aunque estén sucios y desordenados. Te mostramos qué puede hacer Nivii con ellos y el potencial que tienen para tu negocio.",
+      "secondary": "¿CIO, CTO o CDO? Mirá la arquitectura y la seguridad"
+    }
+  },
+  "beacon": {
+    "meta": {
+      "title": "Nivii Beacon — el analista que ordena tus datos y te dice dónde se va el margen",
+      "description": "Beacon corre en la nube de Nivii: le entregás los datos como están y responde preguntas de negocio en lenguaje simple. Piloto gratuito, listo en menos de una semana."
+    },
+    "hero": {
+      "eyebrow": "Nivii Beacon",
+      "title": "Cada mes se te escapa margen. <accent>Beacon lo encuentra.</accent>",
+      "description": "Un analista de inteligencia comercial que cruza precios, mix, stock y desempeño del equipo de ventas para mostrarte dónde estás perdiendo plata. Sin que tengas que ordenar tus datos ni armar un equipo.",
+      "cta": "Reservá tu piloto gratuito",
+      "secondary": "Ver cómo funciona",
+      "note": "Sin costo. Sin tarjeta. Con tus propios datos, en un entorno aislado."
+    },
+    "notChatbot": {
+      "eyebrow": "Por qué no alcanza un chat genérico",
+      "title": "ChatGPT no resuelve esto, y <accent>no lo decimos sólo nosotros</accent>",
+      "description": "Conectar un modelo de lenguaje directo a una base de datos no alcanza para responder preguntas de negocio con confianza. Lo documentó públicamente Anthropic, la compañía detrás de Claude, sobre su propia analítica interna.",
+      "stat": "21% → 95%",
+      "statLead": "Así de baja fue al principio la precisión de un modelo conectado en crudo a una base de datos.",
+      "statBody": "La diferencia la hicieron capas de contexto de negocio, definiciones claras y validación constante: exactamente lo que Beacon construye antes de responder tu primera pregunta.",
+      "cards": [
+        {
+          "title": "No sabe cuál es el dato correcto",
+          "description": "Un mismo concepto —«margen», «cliente activo»— vive en varias tablas distintas. Un chat genérico elige una fuente y responde con la misma confianza esté bien o mal."
+        },
+        {
+          "title": "Trabaja con información vieja",
+          "description": "Tus datos y tus definiciones cambian todo el tiempo. Sin un proceso que los mantenga al día, el modelo sigue respondiendo con lo que sabía hace meses."
+        },
+        {
+          "title": "No encuentra lo que ya existe",
+          "description": "A veces el dato correcto está ahí, pero perdido entre miles de tablas y consultas. Sin curación, buscarlo es como encontrar una aguja en un pajar."
+        }
+      ],
+      "source": "Fuente: Anthropic, <link>«How Anthropic enables self-service data analytics with Claude»</link>."
+    },
+    "examples": {
+      "eyebrow": "Ejemplos reales",
+      "title": "El tipo de pregunta que Beacon responde",
+      "description": "Preguntas que ya respondimos con datos reales de distintas empresas, todos los casos anonimizados. Nada de esto necesitó datos perfectos ni en tiempo real: alcanzó con cruzar bien lo que ya existía.",
+      "items": [
+        {
+          "question": "¿Cuánto crecimos en serio, descontando inflación?",
+          "metric": "19% → -2,5%",
+          "title": "El crecimiento que no era tal",
+          "description": "La facturación crecía 19% interanual y el equipo lo festejaba. Descontada la inflación, el negocio se había achicado 2,5%. El margen efectivo venía cayendo hacía meses, tapado por descuentos que nadie sumaba."
+        },
+        {
+          "question": "¿Quién vende bien de verdad, y no sólo por volumen?",
+          "metric": "+44%",
+          "title": "Los mejores vendedores, escondidos",
+          "description": "Alguien en el puesto 55 por facturación era el 10 por desempeño real: comparado contra sus pares del mismo local, turno y día, el ranking se dio vuelta. Reemplazar un puesto de bajo desempeño por uno de alto dejó +26% en mostrador y +44% en el resto de las posiciones."
+        },
+        {
+          "question": "¿Qué clientes sostienen realmente el negocio?",
+          "metric": "1% → 30%",
+          "title": "El 1% que sostiene el negocio",
+          "description": "El 1% de los clientes generaba cerca del 30% de todo lo transaccionado, mezclado con el resto de la base porque nadie los medía distinto. Nadie sabía a quién no se podía perder."
+        },
+        {
+          "question": "¿Cuánto capital tengo parado en stock?",
+          "metric": "+50%",
+          "title": "Plata parada en góndolas y depósitos",
+          "description": "Más de la mitad del stock llevaba seis meses sin rotar y una parte no había vendido una unidad en un año. Con una política de liquidación por antigüedad, eso es capital que vuelve a la caja este trimestre."
+        }
+      ],
+      "extraTitle": "Un insight más: tres preguntas antes de ofrecer",
+      "extraBody": "Sobre 1.842\u00a0llamadas de venta, las que relevaban rol, zona y necesidad antes de ofrecer derivaban 36\u00a0veces más que las que abrían con la promoción: 76% contra 2,1%. Tres de cada cuatro llamadas nunca llegaban a preguntar.",
+      "cta": "Ver qué encuentra en tus datos"
+    },
+    "howItWorks": {
+      "eyebrow": "Cómo funciona",
+      "title": "No necesitás limpiar tus datos ni tener infraestructura propia",
+      "description": "Beacon corre enteramente en la nube de Nivii. Vos entregás los datos como están, con la frecuencia que tengas, y nosotros los ordenamos, los cruzamos y entrenamos al agente para que responda en lenguaje simple.",
+      "cards": [
+        {
+          "title": "Corre en la nube de Nivii",
+          "description": "No necesitás servidores, equipo de IT propio ni mantenimiento: nosotros operamos la infraestructura."
+        },
+        {
+          "title": "Datos desordenados, tal cual están",
+          "description": "Planillas, punto de venta, sistema de gestión sin conectar entre sí: ese es exactamente el punto de partida que resolvemos."
+        },
+        {
+          "title": "Un abono mensual fijo",
+          "description": "Sin permanencia forzada, y muy por debajo de contratar un analista de datos full-time o armar un equipo propio."
+        },
+        {
+          "title": "Respuestas, no otro dashboard",
+          "description": "Le preguntás en lenguaje simple y responde con el número y, cuando corresponde, con la recomendación."
+        }
+      ],
+      "tableTitle": "El costo real de resolverlo por tu cuenta",
+      "tableDescription": "Antes de armar un equipo propio, vale la pena compararlo con lo que te lleva un piloto de Beacon.",
+      "columnOwn": "Equipo de datos propio",
+      "columnBeacon": "Nivii Beacon",
+      "rows": [
+        {
+          "label": "Tiempo hasta la primera respuesta útil",
+          "own": "Meses: buscar, contratar y entrenar a alguien",
+          "beacon": "Menos de una semana, con un piloto sin costo"
+        },
+        {
+          "label": "Si esa persona se va",
+          "own": "El conocimiento se va con ella",
+          "beacon": "Queda en Beacon, no depende de una sola persona"
+        },
+        {
+          "label": "Mantenimiento de la infraestructura",
+          "own": "Lo asume tu equipo",
+          "beacon": "Lo asume Nivii"
+        },
+        {
+          "label": "Costo",
+          "own": "Salario, cargas sociales y herramientas, los doce meses del año",
+          "beacon": "Abono mensual fijo, sin permanencia forzada"
+        },
+        {
+          "label": "Qué necesitás para arrancar",
+          "own": "Datos limpios y un proceso ya definido",
+          "beacon": "Tus datos como están, hoy"
+        }
+      ]
+    },
+    "pilot": {
+      "eyebrow": "El piloto",
+      "title": "Antes de pagar nada, lo probás <accent>con tus propios datos</accent>",
+      "description": "Dos reuniones de una hora, sin costo y sin compromiso. Todo el piloto queda listo en menos de una semana.",
+      "terms": "El piloto no tiene costo. Si avanzás, es un abono mensual fijo, sin permanencia forzada.",
+      "steps": [
+        {
+          "title": "Firmamos un NDA y tus datos quedan en un clean room aislado",
+          "description": "El NDA forma parte de los términos del piloto y le impide a Nivii compartir tu información de manera externa. El clean room es un entorno separado y exclusivo: tus datos no se mezclan con los de nadie y se eliminan al finalizar si no avanzás."
+        },
+        {
+          "title": "Reunión 1: entendimiento de los datos",
+          "description": "Una hora. Revisamos juntos qué información tenés disponible y qué preguntas de negocio podemos responder con ella."
+        },
+        {
+          "title": "Nivii ordena y analiza tus datos",
+          "description": "Trabajo interno: limpieza, conexión de fuentes y entrenamiento del agente sobre tu información real."
+        },
+        {
+          "title": "Reunión 2: revisión de respuestas",
+          "description": "Una hora. Te mostramos, con tus propios datos, las respuestas reales que Beacon puede darle a tu equipo todos los días. Ahí decidís si avanzás."
+        }
+      ],
+      "consoleLabel": "Así se ve la revisión de la reunión 2, con datos reales"
+    },
+    "audience": {
+      "eyebrow": "Para quién es",
+      "title": "Pensado para empresas en crecimiento, sin importar el rubro",
+      "description": "Lo usan empresas con un equipo comercial activo. Si generás datos comerciales todos los días, aplica.",
+      "groups": [
+        {
+          "title": "Si sos CEO o dueño",
+          "items": [
+            "Tomás decisiones de precio, mix de productos o expansión con información parcial o atrasada.",
+            "El reporte «real» vive en la cabeza de dos o tres personas, repartido en varias planillas.",
+            "No tenés tiempo ni equipo para meterte en un proyecto de datos, y no lo necesitás para este piloto."
+          ]
+        },
+        {
+          "title": "Si sos gerente comercial o de operaciones",
+          "items": [
+            "Armás reportes a mano porque la información existe, pero está desconectada entre sistemas.",
+            "Querés poder llevarle al CEO una respuesta, no una planilla más.",
+            "Ya probaste alguna herramienta de BI y terminó siendo otro tablero que nadie abre."
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Antes de reservar tu piloto",
+      "items": [
+        {
+          "question": "¿Es lo mismo que usar ChatGPT o Claude directamente?",
+          "answer": "No. Beacon es la capa que conecta un modelo de lenguaje con tus datos reales de negocio de forma segura, los ordena y entrena al agente para responder con tu información, no con lo que el modelo sabe en general."
+        },
+        {
+          "question": "¿Qué pasa con mis datos durante el piloto?",
+          "answer": "Antes de compartir nada firmamos un NDA: forma parte de los términos del piloto y le prohíbe a Nivii compartir tus datos de manera externa. A partir de ahí se cargan en un clean room aislado, exclusivo para tu empresa. No se comparten ni se mezclan con los de otros clientes, y se eliminan al finalizar el piloto si no avanzás."
+        },
+        {
+          "question": "¿Necesito tener los datos limpios u ordenados antes de empezar?",
+          "answer": "No. Ese es justamente el problema que resolvemos. Nos entregás los datos como están —en planillas, en tu sistema de gestión, en el punto de venta— y Beacon se encarga de ordenarlos."
+        },
+        {
+          "question": "¿Necesito datos en tiempo real para que esto funcione?",
+          "answer": "No. Beacon trabaja con la frecuencia de actualización que tengas: diaria, semanal o por lote. La mayoría de las decisiones comerciales no se toman minuto a minuto, se toman con la mejor foto disponible, y esa foto ya alcanza para encontrar dónde se está perdiendo margen."
+        },
+        {
+          "question": "¿Cuánto cuesta Beacon?",
+          "answer": "Se define en la conversación posterior al piloto, en función del volumen y la complejidad de tu operación. Es un abono mensual fijo, muy por debajo de contratar un analista de datos full-time, y sin contratos de permanencia forzada."
+        },
+        {
+          "question": "¿Hay algún compromiso para hacer el piloto?",
+          "answer": "Ninguno. Las dos reuniones no tienen costo y no implican ningún compromiso de contratación."
+        },
+        {
+          "question": "¿Cómo garantizan la precisión de las respuestas?",
+          "answer": "Beacon trabaja sobre tus datos ya ordenados, no sobre la web abierta, y muestra su trabajo: qué consultó, de qué fuente y con qué lógica armó cada respuesta. Cuando un número es un benchmark y no tu propio dato, lo aclara."
+        },
+        {
+          "question": "¿Se conectan a mi sistema de gestión, punto de venta o ERP?",
+          "answer": "Sí. Beacon se conecta a los sistemas que ya usás —punto de venta, ERP, planillas de cálculo y más— y trabaja con tus datos donde están. Que estén dispersos entre varios sistemas es el punto de partida, no un obstáculo."
+        },
+        {
+          "question": "¿Es una suscripción, o en algún momento es mío?",
+          "answer": "Es un abono mensual: Beacon corre en la nube de Nivii y accedés a las respuestas mientras estés suscripto, sin permanencia forzada. Si más adelante tu empresa necesita el agente corriendo en su propia nube, ese es el camino de Nivii Enterprise: un producto distinto, pensado para otra escala de operación."
+        },
+        {
+          "question": "¿Mis datos quedan en la nube de Nivii? ¿Qué tan seguro es eso?",
+          "answer": "Sí, es el modelo de Beacon: te entregamos la simplicidad de no operar infraestructura propia. A cambio, tus datos viven en un entorno aislado exclusivo para tu empresa, cifrado en reposo y en tránsito, y nunca se mezclan con los de otro cliente. Si preferís que tus datos nunca salgan de tu propio perímetro, esa es la arquitectura de Nivii Enterprise."
+        },
+        {
+          "question": "¿Cuánto tardamos en ver valor, más allá del piloto?",
+          "answer": "El piloto ya te muestra respuestas reales sobre tu negocio en menos de una semana. Una vez que arrancás el abono no hay una curva de meses: Beacon sigue respondiendo sobre datos actualizados y sumando las preguntas nuevas que le vaya planteando tu equipo."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Empezá con tus propios datos, <accent>sin costo</accent>.",
+      "description": "Dos reuniones de una hora. Sin compromiso. Vas a ver, con tu propia información, lo que Beacon puede responder.",
+      "button": "Reservá tu piloto gratuito",
+      "bridge": "Para el análisis a escala enterprise, dentro de tu propia nube y bajo tu gobierno de datos, conocé Nivii Enterprise.",
+      "bridgeLink": "Ver Nivii Enterprise"
+    }
+  },
+  "enterprise": {
+    "meta": {
+      "title": "Nivii Enterprise — un agente de decisión dentro de tu propia nube",
+      "description": "Nivii Enterprise despliega un agente de inteligencia de decisiones sobre tus datos, dentro de tu propio perímetro. Piloto en vivo en unas 12\u00a0semanas: sin ROI, no hay contrato."
+    },
+    "hero": {
+      "title": "Un agente de decisión que corre <accent>dentro de tu propia nube</accent>.",
+      "description": "Aprende cómo funciona tu negocio, trabaja con los datos desordenados que ya tenés y entrega análisis confiable con una recomendación clara. Tus datos nunca salen de tu perímetro.",
+      "cta": "Solicitar una demo",
+      "secondary": "Ver arquitectura y seguridad",
+      "note": "Piloto en vivo sobre tus datos reales en 12\u00a0semanas, al costo."
+    },
+    "product": {
+      "eyebrow": "Qué es",
+      "title": "No es un dashboard. <accent>Tampoco un alquiler.</accent>",
+      "description": "La mayoría de los proyectos de analítica terminan en más gráficos y una factura que no se corta. Nivii despliega un agente de decisión sobre tus propios datos, dentro de tu propio entorno, y entrena a tu equipo para operarlo en el camino. Es el atajo a una capacidad que construir de cero lleva entre 18\u00a0y\u00a024\u00a0meses, y lo ponés a prueba antes de firmar nada: sin ROI, no hay contrato.",
+      "phases": [
+        {
+          "label": "Piloto · 12\u00a0semanas · al costo",
+          "steps": [
+            {
+              "title": "NDA y kickoff",
+              "description": "Firmamos el acuerdo y nos entregás un extracto de sólo lectura de tus datos."
+            },
+            {
+              "title": "Construcción del piloto",
+              "description": "Un piloto en vivo sobre tus datos reales, resolviendo un caso de uso concreto."
+            },
+            {
+              "title": "Decisión de go / no go",
+              "description": "Talleres de ajuste con tu equipo y una semana de pruebas, hasta decidir si se avanza."
+            }
+          ],
+          "terms": [
+            "Al costo, en la nube de Nivii",
+            "Sin compromiso de continuidad"
+          ]
+        },
+        {
+          "label": "Producción · 12\u00a0meses · en tu propia nube",
+          "steps": [
+            {
+              "title": "Implementación",
+              "description": "En producción dentro de tu propia nube en cuatro meses, con tu equipo operando el agente."
+            },
+            {
+              "title": "Mantenimiento y mejora",
+              "description": "Soporte a plazo fijo, con el agente afinándose sobre el uso real."
+            },
+            {
+              "title": "Hand over o continuar",
+              "description": "Transferencia completa: arquitectura, prompts, documentación y un equipo ya capacitado."
+            }
+          ],
+          "terms": [
+            "Un único setup inicial",
+            "Soporte a plazo fijo",
+            "Sin licencias recurrentes por usuario"
+          ]
+        }
+      ]
+    },
+    "trust": {
+      "eyebrow": "Por qué Nivii",
+      "title": "La IA empresarial es, ante todo, <accent>una decisión de confianza</accent>.",
+      "items": [
+        {
+          "title": "Tus datos nunca salen de tu nube",
+          "description": "El despliegue es dentro de tu propio entorno: AWS, GCP, Azure, on-premise o SAP BTP. La única llamada saliente es al proveedor del modelo, y hasta eso se elimina con modelos in-cloud."
+        },
+        {
+          "title": "Habla el idioma de tu negocio",
+          "description": "Aprende tus KPIs y tu terminología, para que «margen» o «cliente activo» signifiquen lo que significan adentro de tu empresa."
+        },
+        {
+          "title": "Los datos desordenados son el punto de partida",
+          "description": "Fuentes desconectadas e imperfectas son lo normal. Agentes dedicados de limpieza ponen a trabajar primero las más confiables: valor en semanas, no un proyecto de datos infinito."
+        },
+        {
+          "title": "De semanas a minutos",
+          "description": "El análisis que antes era pedir datos a tres áreas, un ticket a BI y una semana de espera vuelve en minutos, en lenguaje claro y mostrando la fuente y la lógica."
+        },
+        {
+          "title": "Proactivo, no sólo reactivo",
+          "description": "Levanta el insight antes de que alguien piense en preguntarlo: la señal de falla antes de la parada, el riesgo de rotación antes de la renuncia, la fuga de margen antes del cierre."
+        }
+      ]
+    },
+    "useCases": {
+      "eyebrow": "Casos de uso",
+      "title": "Las preguntas cambian por industria. El patrón, no.",
+      "description": "En toda operación grande el dato ya existe, disperso entre sistemas que no se hablan.",
+      "items": [
+        {
+          "title": "Mantenimiento industrial",
+          "description": "En una planta industrial, el agente cruzó 38\u00a0meses de avisos y órdenes almacenadas en SAP: 23\u00a0averías habían dado señal de degradación antes de romper, con 16\u00a0días promedio para intervenir. En el equipo de mayor costo correctivo, la relación entre reparar y prevenir era de 29\u00a0a\u00a01. Ningún dato era nuevo: estaba escrito y nadie lo cruzaba."
+        },
+        {
+          "title": "Comercial",
+          "description": "Las alertas viven en la conversación. Los dashboards muestran los números. Las llamadas cuentan la historia: fricciones que aún no llegaron a un reclamo, señales de compra que no quedan en el CRM, cambios en la percepción de marca."
+        },
+        {
+          "title": "People / RR.HH.",
+          "description": "Consolida la información de los empleados repartida entre sistemas, identifica candidatos para cubrir los puestos críticos y cruza sueldos con las señales de attrition, mientras la renuncia clave todavía se puede evitar."
+        },
+        {
+          "title": "Cadena de suministro",
+          "description": "Proyecta demanda y stock con las fuentes que ya tenés, imperfectas incluidas, y muestra el supuesto detrás de cada número para que el planificador pueda discutirlo."
+        },
+        {
+          "title": "Distribución y sell-through",
+          "description": "Qué se mueve, dónde y por qué, sin esperar el reporte del canal. La lectura llega mientras la campaña todavía se puede corregir."
+        },
+        {
+          "title": "Operaciones de energía",
+          "description": "Un vertical en desarrollo. Escribinos si querés saber en qué estamos trabajando."
+        }
+      ]
+    },
+    "security": {
+      "eyebrow": "Arquitectura y seguridad",
+      "title": "Las empresas confían en Nivii: <accent>el poder radica en nuestra arquitectura</accent>.",
+      "description": "El deployment es dedicado dentro de tu cuenta de AWS, Azure, GCP o SAP BTP. No hay tenant compartido: ningún dato de otro cliente vive al lado del tuyo, y tu equipo ve qué imágenes corren, qué tráfico sale y qué recursos se consumen.",
+      "stats": [
+        {
+          "value": "100%",
+          "description": "dentro de tu propia nube, sobre Kubernetes, con GitOps y charts versionados que tu equipo puede auditar."
+        },
+        {
+          "value": "Un egress de datos",
+          "description": "la llamada al modelo, y nada más. Se elimina si tu política lo pide."
+        },
+        {
+          "value": "Cero",
+          "description": "telemetría hacia infraestructura de Nivii: logs, métricas y trazas se quedan en tu cluster."
+        }
+      ],
+      "egress": {
+        "title": "El único dato que sale del perímetro es el que va al modelo.",
+        "description": "Conviene decirlo de frente. La inferencia viaja por TLS a Anthropic, OpenAI o Google, con retención desactivada donde el proveedor lo permite y contratos que prohíben entrenar con datos de API. Todo el resto se queda adentro de tu cuenta: los datos, los logs, las métricas y hasta las trazas de cada prompt, que se guardan dentro de tu propio cluster.",
+        "note": "Si tu política no admite ni esa llamada, el proveedor público se reemplaza por modelos hospedados en tu nube: Bedrock, Azure OpenAI, Vertex AI o SAP AI Foundry. Es un cambio de configuración, no un rediseño."
+      },
+      "controls": [
+        {
+          "title": "Identidad federada",
+          "description": "SSO contra tu IdP corporativo por SAML 2.0 u OIDC: Entra ID, Okta, Google Workspace, ADFS, Ping. Las políticas de MFA y de bloqueo siguen siendo tuyas, y cuando alguien deja la empresa pierde el acceso en el mismo momento."
+        },
+        {
+          "title": "Permisos por área",
+          "description": "Cada persona ve sólo los datos de las áreas a las que pertenece. El permiso se deriva del token, no de lo que pide el request, y en Postgres el aislamiento baja hasta el pool de conexiones. Se afina por planta, región o sensibilidad de columna."
+        },
+        {
+          "title": "Cifrado con tus claves",
+          "description": "Volúmenes, base y buckets cifrados con KMS, y TLS 1.3 en el ingress. Si tu política lo exige, el deployment usa tus propias CMK: rotarlas o revocarlas alcanza para cortar el acceso a los datos."
+        },
+        {
+          "title": "Secretos fuera del código",
+          "description": "Credenciales de base, API keys y client secrets nunca viven en el repositorio, en las imágenes ni en la máquina de un desarrollador. Se cifran contra la clave de tu propio cluster, y sólo ese cluster puede descifrarlas."
+        },
+        {
+          "title": "Red cerrada por default",
+          "description": "Los pods no tienen IP pública y las NetworkPolicies limitan la salida de cada namespace a una allowlist. Un workload comprometido no tiene a dónde exfiltrar."
+        },
+        {
+          "title": "Auditoría consultable",
+          "description": "Cada consulta, login y cambio de permisos queda registrado con usuario, área y dataset. Tus admins lo consultan desde la plataforma y lo exportan al SIEM corporativo: Splunk, Datadog o Elastic."
+        }
+      ],
+      "onRequest": {
+        "label": "Y si tu equipo de seguridad lo pide:",
+        "items": [
+          "mTLS pod a pod",
+          "pen-test conjunto antes de producción",
+          "SBOM y reporte de vulnerabilidades",
+          "deployment air-gapped",
+          "masking de PII en la interfaz y en los prompts",
+          "acceso just-in-time"
+        ]
+      }
+    },
+    "faq": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Lo que nos preguntan los equipos técnicos",
+      "items": [
+        {
+          "question": "¿Es como ChatGPT, Claude o Gemini?",
+          "answer": "No, y la diferencia importa. Esos son el motor: modelos de base que construyen unas pocas empresas en el mundo. Nivii es todo lo que rodea al motor: la arquitectura que se conecta de forma segura a tus datos, aprende tu negocio, verifica su propia precisión y devuelve respuestas en las que podés confiar para accionar. Es la misma razón por la que herramientas como Cursor o Harvey son valiosas sin construir sus propios modelos. Y corre dentro de tu propia nube, sobre tus propios datos: algo que un chatbot público no puede hacer."
+        },
+        {
+          "question": "¿Cómo garantizan la precisión?",
+          "answer": "La precisión se diseña, no se asume. El agente trabaja sobre datos gobernados y limpios, no sobre la web abierta, valida sus propias salidas y muestra su trabajo: la consulta, la fuente y la lógica detrás de cada respuesta. Cuando un número es un benchmark y no tu propio dato, lo aclara."
+        },
+        {
+          "question": "¿Se conectan a SAP, Salesforce u otros sistemas?",
+          "answer": "Sí. Nivii se conecta a los sistemas que ya usás —SAP, Salesforce, data warehouses, planillas y más— y trabaja con tus datos donde están, dentro de tu propia nube. Las fuentes desconectadas son el punto de partida, no un obstáculo."
+        },
+        {
+          "question": "¿Nuestros datos salen alguna vez de nuestro entorno?",
+          "answer": "No. Nivii corre dentro de tu propia nube y tus datos se quedan dentro de tu perímetro. La única llamada saliente es al proveedor del modelo, sobre TLS y con retención desactivada donde el proveedor lo permite; hasta eso se elimina con modelos in-cloud como Bedrock, Azure OpenAI, Vertex AI o SAP AI Foundry. La observabilidad tampoco sale: logs, métricas y trazas de prompts viven en tu cluster, sin exportar nada a Sentry, Datadog ni Grafana Cloud."
+        },
+        {
+          "question": "¿Quién de Nivii puede ver nuestros datos en producción?",
+          "answer": "Nadie, salvo que nos invites. El acceso del equipo de Nivii al cluster se habilita de forma explícita, se autentica contra el IAM de tu empresa —sin credenciales nuestras dando vueltas— y queda auditado en tu propio plano de control, con CloudTrail o su equivalente. Lo revocás cuando quieras, y el rol de soporte interno se puede deshabilitar sin que la plataforma deje de funcionar."
+        },
+        {
+          "question": "¿Qué pasa si nuestros datos no están limpios?",
+          "answer": "Los datos de toda empresa están desordenados: ese es nuestro punto de partida, no un obstáculo. Agentes dedicados de limpieza identifican primero tus fuentes más confiables, así obtenés respuestas confiables en semanas mientras la calidad del dato sigue mejorando por debajo."
+        },
+        {
+          "question": "¿Cuánto tardamos en ver valor?",
+          "answer": "Unas 12\u00a0semanas hasta un piloto en vivo sobre tus datos reales, y funciona cerca del 95% igual que el sistema en producción. Desde ahí estás en producción en tu propia nube en el mes 4, y en el mes 12 tu equipo opera el agente por su cuenta. El piloto no es una prueba de concepto: es el producto real, ya casi terminado."
+        },
+        {
+          "question": "¿A qué nos comprometemos para el piloto?",
+          "answer": "A muy poco. El piloto se hace al costo y sobre un extracto de sólo lectura de tus datos, en la nube de Nivii, para que compruebes el valor antes de firmar nada. Nuestra regla es simple: sin ROI, no hay contrato."
+        },
+        {
+          "question": "¿Qué necesita nuestro equipo de IT para sostenerlo?",
+          "answer": "Durante el piloto, nada más que el extracto de sólo lectura. En producción, el agente corre en tu nube con tu propio SSO y tus políticas de acceso; tu equipo se entrena en paralelo durante todo el proceso, así que la operación queda dentro de casa y no depende de nosotros."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Traé una pregunta de negocio que hoy <accent>no logres responder a tiempo</accent>.",
+      "description": "Traé tus datos, aunque estén sucios y desordenados. Te mostramos qué puede hacer Nivii con ellos y el potencial que tienen para tu negocio.",
+      "button": "Solicitar una demo",
+      "bridge": "¿Tu operación es más chica y no necesita infraestructura propia? Beacon resuelve lo mismo desde la nube de Nivii, con un piloto gratuito.",
+      "bridgeLink": "Ver Nivii Beacon"
     }
   },
   "careers": {
+    "meta": {
+      "title": "Únete al equipo",
+      "description": "Construimos agentes de decisión que corren dentro de la nube de operaciones industriales y comerciales grandes. Mirá las posiciones abiertas en Nivii."
+    },
     "title": "Únete",
     "titleHighlight": "a nuestro equipo",
     "description": "Estamos en una misión para potenciar a las empresas con información accionable. Si te apasionan los datos, la IA y la innovación, nos encantaría conocerte.",
@@ -205,7 +1118,12 @@
           "button": "Postularse Ahora"
         },
         "notFoundPositionTitle": "¡Ups! Puesto No Encontrado",
-        "notFoundPositionDescription": "El puesto que estás buscando no existe o ya ha sido cubierto. Por favor, revisa nuestros puestos abiertos para otras oportunidades."
+        "notFoundPositionDescription": "El puesto que estás buscando no existe o ya ha sido cubierto. Por favor, revisa nuestros puestos abiertos para otras oportunidades.",
+        "quickInfoLabels": {
+          "location": "Ubicación",
+          "experience": "Experiencia",
+          "department": "Área"
+        }
       },
       "openPositions": [
         {
@@ -253,16 +1171,17 @@
           "quickInfo": {
             "location": "Buenos Aires (Híbrido)",
             "department": "Decision Science"
-          }
+          },
+          "metaDescription": "Decision Science en Nivii: garantizar que los agentes devuelvan respuestas profundas y útiles sobre los datos reales de cada cliente. Posición abierta."
         }
       ]
-    }
+    },
+    "viewPosition": "Ver puesto"
   },
   "footer": {
-    "description": "Nivii es el Agente de IA que se conecta de forma segura a tus datos, entiende tu negocio y responde con el análisis fiable que necesitas para tomar medidas inmediatamente.",
+    "description": "El analista que ordena tus datos y responde con la decisión, no con el gráfico.",
     "product": "Producto",
     "useCases": "Casos de Uso",
-    "faq": "Preguntas",
     "company": "Compañía",
     "about": "Nosotros",
     "team": "Equipo",

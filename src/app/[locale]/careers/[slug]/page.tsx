@@ -1,235 +1,254 @@
-import { Button } from "@/components/ui/button";
+import type { Metadata } from "next";
+import { ArrowLeft, ArrowUpRight, SearchX } from "lucide-react";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { ChevronLeft, SearchX } from "lucide-react";
-import { getMessages, getTranslations } from "next-intl/server";
+import { Reveal } from "@/components/ui/reveal";
+import { pageMetadata } from "@/lib/metadata";
+
+type Position = {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  location: string;
+  applicationUrl?: string;
+  aboutNivii?: string[];
+  aboutNiviiTitle?: string;
+  aboutRole: string[];
+  aboutRoleTitle?: string;
+  responsibilities: string[];
+  responsibilitiesTitle?: string;
+  requirements: string[];
+  requirementsTitle?: string;
+  bonusPoints?: string[];
+  bonusPointsTitle?: string;
+  benefits: string[];
+  benefitsTitle?: string;
+  quickInfo: {
+    location: string;
+    experience?: string;
+    department: string;
+  };
+};
+
+async function findPosition(slug: string) {
+  const messages = await getMessages();
+  const positions = (messages.careers.positions.openPositions ??
+    []) as Position[];
+
+  return positions.find((position) => position.slug === slug);
+}
+
+function applyHref(position: Position) {
+  return (
+    position.applicationUrl ||
+    `mailto:careers@nivii.ai?subject=Application for ${position.title}`
+  );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+
+  const position = await findPosition(slug);
+  if (!position) return {};
+
+  return pageMetadata({
+    title: position.title,
+    description: position.metaDescription,
+    locale,
+  });
+}
+
+function Bullets({ items }: { items: string[] }) {
+  return (
+    <ul className="mt-6 flex flex-col gap-3">
+      {items.map((item) => (
+        <li key={item} className="flex gap-3 text-body-l text-ink-muted">
+          <span
+            aria-hidden
+            className="mt-[0.65em] size-1.5 shrink-0 rounded-full bg-brand-green"
+          />
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export default async function PositionPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
+  setRequestLocale(locale);
+
   const t = await getTranslations("careers");
-  const messages = await getMessages();
-
-  const openPositions = messages?.careers?.positions?.openPositions || [];
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const position = openPositions.find(
-    (pos: { slug: string }) => pos.slug === slug
-  );
+  const position = await findPosition(slug);
 
   if (!position) {
     return (
-      <div className="container mx-auto px-6 py-20 text-center pt-[152px]">
-        <SearchX className="mx-auto mb-6 text-foreground" size={48} />
-        <h1 className="text-3xl font-bold text-foreground mb-4">
-          {t("positions.page.notFoundPositionTitle")}
-        </h1>
-        <p className="text-gray-700 max-w-xl mx-auto">
-          {t("positions.page.notFoundPositionDescription")}
-        </p>
-      </div>
+      <main className="px-6 pt-40 pb-32 lg:px-12">
+        <div className="mx-auto max-w-xl text-center">
+          <SearchX className="mx-auto size-10 text-ink-muted" />
+          <h1 className="mt-8 text-display-m text-ink">
+            {t("positions.page.notFoundPositionTitle")}
+          </h1>
+          <p className="mt-6 text-body-l text-ink-muted">
+            {t("positions.page.notFoundPositionDescription")}
+          </p>
+          <Link
+            href="/careers/"
+            className="group mt-10 inline-flex items-center gap-2 text-body-s font-semibold text-brand-green"
+          >
+            <ArrowLeft className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
+            {t("positions.page.backToCareers")}
+          </Link>
+        </div>
+      </main>
     );
   }
 
+  const quickInfo = [
+    ["location", position.quickInfo.location],
+    ["experience", position.quickInfo.experience],
+    ["department", position.quickInfo.department],
+  ].filter(([, value]) => Boolean(value)) as [string, string][];
+
+  const sections = [
+    {
+      title: position.aboutNiviiTitle || "About Nivii",
+      paragraphs: position.aboutNivii,
+      level: "h2" as const,
+    },
+    {
+      title: position.aboutRoleTitle || t("positions.page.aboutRole"),
+      paragraphs: position.aboutRole,
+      level: "h2" as const,
+    },
+    {
+      title:
+        position.responsibilitiesTitle || t("positions.page.responsibilities"),
+      items: position.responsibilities,
+      level: "h3" as const,
+    },
+    {
+      title: position.requirementsTitle || t("positions.page.requirements"),
+      items: position.requirements,
+      level: "h3" as const,
+    },
+    {
+      title: position.bonusPointsTitle || t("positions.page.bonusPoints"),
+      items: position.bonusPoints,
+      level: "h3" as const,
+    },
+    {
+      title: position.benefitsTitle || t("positions.page.benefits"),
+      items: position.benefits,
+      level: "h3" as const,
+    },
+  ].filter((section) => section.paragraphs?.length || section.items?.length);
+
   return (
-    <main>
-      <section className="pb-20 pt-[152px] md:pb-32 md:pt-[200px]">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            {/* Breadcrumb */}
-            <nav className="mb-8">
-              <Link
-                href="/careers/"
-                className="text-brand-green hover:text-brand-green-dark transition duration-300"
-              >
-                <ChevronLeft className="inline-block mr-2" size={16} />
-                {t("positions.page.backToCareers")}
-              </Link>
-            </nav>
+    <main className="px-6 pt-32 pb-32 lg:px-12">
+      <div className="mx-auto max-w-7xl">
+        <Link
+          href="/careers/"
+          className="group inline-flex items-center gap-2 text-body-s text-ink-muted transition-colors hover:text-ink"
+        >
+          <ArrowLeft className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
+          {t("positions.page.backToCareers")}
+        </Link>
 
-            {/* Job Header */}
-            <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-                <div>
-                  <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                    {position.title}
-                  </h1>
-                  <p className="text-brand-gray-purple text-lg">
-                    {position.location}
-                  </p>
-                </div>
-                <div className="mt-4 md:mt-0">
-                  <Link
-                    href={
-                      position.applicationUrl ||
-                      `mailto:careers@nivii.ai?subject=Application for ${position.title}`
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button>{t("applyNow")}</Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Job Content */}
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Main Content */}
-              <div className="md:col-span-2">
-                <div className="bg-white rounded-xl shadow-lg p-8">
-                  {/* About Nivii */}
-                  {position.aboutNivii && (
-                    <>
-                      <h2 className="text-2xl font-bold text-foreground mb-6">
-                        {position.aboutNiviiTitle || "About Nivii"}
-                      </h2>
-                      {position.aboutNivii.map((p: string, i: number) => (
-                        <p key={i} className="text-gray-600 mb-6">
-                          {p}
-                        </p>
-                      ))}
-                    </>
-                  )}
-
-                  {/* About Role */}
-                  <h2 className="text-2xl font-bold text-foreground mb-6">
-                    {position.aboutRoleTitle || t("positions.page.aboutRole")}
-                  </h2>
-                  {position.aboutRole.map((p: string, i: number) => (
-                    <p key={i} className="text-gray-600 mb-6">
-                      {p}
-                    </p>
-                  ))}
-
-                  {/* Responsibilities */}
-                  <h3 className="text-xl font-bold text-foreground mb-4">
-                    {position.responsibilitiesTitle ||
-                      t("positions.page.responsibilities")}
-                  </h3>
-                  <ul className="space-y-3 text-gray-600 mb-8">
-                    {position.responsibilities.map(
-                      (item: string, i: number) => (
-                        <li key={i} className="flex items-start">
-                          <span className="text-brand-green mr-3 relative inline-block">
-                            •
-                          </span>
-                          {item}
-                        </li>
-                      )
-                    )}
-                  </ul>
-
-                  {/* Requirements */}
-                  <h3 className="text-xl font-bold text-foreground mb-4">
-                    {position.requirementsTitle ||
-                      t("positions.page.requirements")}
-                  </h3>
-                  <ul className="space-y-2 text-gray-600 mb-8">
-                    {position.requirements.map((item: string, i: number) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-brand-green mr-3 relative inline-block">
-                          •
-                        </span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-
-                  {/* Bonus Points */}
-                  {position.bonusPoints && (
-                    <>
-                      <h3 className="text-xl font-bold text-foreground mb-4">
-                        {position.bonusPointsTitle ||
-                          t("positions.page.bonusPoints")}
-                      </h3>
-                      <ul className="space-y-2 text-gray-600 mb-8">
-                        {position.bonusPoints.map((item: string, i: number) => (
-                          <li key={i} className="flex items-start">
-                            <span className="text-brand-green mr-3 relative inline-block">
-                              •
-                            </span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </>
-                  )}
-
-                  {/* Benefits */}
-                  <h3 className="text-xl font-bold text-foreground mb-4">
-                    {position.benefitsTitle || t("positions.page.benefits")}
-                  </h3>
-                  <ul className="space-y-3 text-gray-600">
-                    {position.benefits.map((item: string, i: number) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-brand-green mr-3 relative inline-block">
-                          •
-                        </span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Sidebar */}
-              <div className="space-y-6">
-                {/* Quick Info */}
-                <div className="bg-white rounded-xl shadow-lg p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-4">
-                    {t("positions.page.quickInfo")}
-                  </h3>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Location:</span>
-                      <span className="font-medium">
-                        {position.quickInfo.location}
-                      </span>
-                    </div>
-                    {position.quickInfo.experience && (
-                      <div className="flex justify-between">
-                        <span className="text-gray-600">Experience:</span>
-                        <span className="font-medium">
-                          {position.quickInfo.experience}
-                        </span>
-                      </div>
-                    )}
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Department:</span>
-                      <span className="font-medium">
-                        {position.quickInfo.department}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Apply CTA */}
-                <div className="rounded-xl p-6 text-gray-700">
-                  <h3 className="text-lg font-semibold mb-2">
-                    {t("positions.page.cta.title")}
-                  </h3>
-                  <p className="text-sm mb-4 opacity-90">
-                    {t("positions.page.cta.description")}
-                  </p>
-                  <Link
-                    href={
-                      position.applicationUrl ||
-                      `mailto:careers@nivii.ai?subject=Application for ${position.title}`
-                    }
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button>{t("positions.page.cta.button")}</Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+        <header className="mt-10 flex flex-wrap items-end justify-between gap-8 border-b border-hairline pb-12">
+          <div>
+            <h1 className="max-w-3xl text-display-l text-ink">
+              {position.title}
+            </h1>
+            <p className="mt-4 text-body-l text-ink-muted">
+              {position.location}
+            </p>
           </div>
+
+          <a
+            href={applyHref(position)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 rounded-lg bg-brand-green px-4 py-2 text-body-s font-semibold text-white transition-all duration-100 hover:bg-brand-green-dark active:scale-[0.97]"
+          >
+            {t("applyNow")}
+            <ArrowUpRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </a>
+        </header>
+
+        <div className="mt-16 grid gap-16 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-24">
+          <article className="flex max-w-3xl flex-col gap-14">
+            {sections.map((section, i) => (
+              <Reveal key={section.title} order={i}>
+                {section.level === "h2" ? (
+                  <h2 className="text-display-m text-ink">{section.title}</h2>
+                ) : (
+                  <h3 className="text-heading text-ink">{section.title}</h3>
+                )}
+
+                {section.paragraphs?.map((paragraph) => (
+                  <p
+                    key={paragraph}
+                    className="mt-6 text-body-l text-ink-muted"
+                  >
+                    {paragraph}
+                  </p>
+                ))}
+
+                {section.items ? <Bullets items={section.items} /> : null}
+              </Reveal>
+            ))}
+          </article>
+
+          <aside className="flex flex-col gap-6 lg:sticky lg:top-32 lg:self-start">
+            <div className="rounded-core border border-hairline p-6">
+              <h2 className="text-eyebrow font-medium text-ink-muted uppercase">
+                {t("positions.page.quickInfo")}
+              </h2>
+              <dl className="mt-5 flex flex-col gap-3">
+                {quickInfo.map(([key, value]) => (
+                  <div
+                    key={key}
+                    className="flex items-baseline justify-between gap-4 border-t border-hairline pt-3 text-body-s first:border-t-0 first:pt-0"
+                  >
+                    <dt className="text-ink-muted">
+                      {t(`positions.page.quickInfoLabels.${key}`)}
+                    </dt>
+                    <dd className="text-end font-medium text-ink">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
+            <div className="rounded-core bg-brand-green-tint p-6">
+              <h2 className="text-heading text-ink">
+                {t("positions.page.cta.title")}
+              </h2>
+              <p className="mt-3 text-body-s text-ink-text">
+                {t("positions.page.cta.description")}
+              </p>
+              <a
+                href={applyHref(position)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group mt-6 inline-flex items-center gap-2 rounded-lg bg-brand-green px-4 py-2 text-body-s font-semibold text-white transition-all duration-100 hover:bg-brand-green-dark active:scale-[0.97]"
+              >
+                {t("positions.page.cta.button")}
+                <ArrowUpRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+            </div>
+          </aside>
         </div>
-      </section>
+      </div>
     </main>
   );
 }

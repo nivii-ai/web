@@ -1,91 +1,144 @@
 "use client";
-import { useState } from "react";
-import { Link } from "@/i18n/navigation";
-import { DemoButton } from "./demo-button";
-import clsx from "clsx";
+
+import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion, type PanInfo } from "motion/react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { spring, springSheet } from "@/lib/motion";
+import { useFocusTrap } from "@/hooks/use-focus-trap";
+
+const links = [
+  { href: "/enterprise", key: "enterprise" },
+  { href: "/#use-cases", key: "useCases" },
+  { href: "/#team", key: "about" },
+  { href: "/careers/", key: "careers" },
+] as const;
+
+const DISMISS_VELOCITY = 300;
+const DISMISS_OFFSET = 120;
 
 export function MenuMobile() {
   const [isOpen, setIsOpen] = useState(false);
+  const exitVelocity = useRef(0);
+  const panelRef = useRef<HTMLDivElement>(null);
   const t = useTranslations("header");
+
+  useFocusTrap(panelRef, isOpen);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  // Cerrar por el signo de la velocidad; la posición sólo decide si el gesto se soltó quieto.
+  const handleDragEnd = (_: unknown, info: PanInfo) => {
+    const flicked = info.velocity.y < -DISMISS_VELOCITY;
+    const settledAbove =
+      Math.abs(info.velocity.y) < DISMISS_VELOCITY &&
+      info.offset.y < -DISMISS_OFFSET;
+
+    if (flicked || settledAbove) {
+      exitVelocity.current = info.velocity.y;
+      setIsOpen(false);
+    }
+  };
 
   return (
     <>
       <button
         type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className="relative flex flex-col justify-between w-10 h-8 lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 cursor-pointer"
+        onClick={() => setIsOpen((open) => !open)}
+        className="relative z-50 flex h-8 w-10 cursor-pointer flex-col justify-between rounded-md p-2 text-ink-muted transition-transform duration-100 active:scale-[0.94] lg:hidden"
         aria-label={isOpen ? t("closeMenu") : t("openMenu")}
+        aria-expanded={isOpen}
       >
-        <div
-          className={`block h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded-2xl w-full ${
-            isOpen ? "rotate-45 translate-y-2" : ""
+        <span
+          className={`block h-0.5 w-full rounded-2xl bg-current transition-transform duration-300 ${
+            isOpen ? "translate-y-2 rotate-45" : ""
           }`}
         />
-        <div
-          className={`block h-0.5 bg-gray-600 transition-opacity duration-300 ease-in-out rounded-2xl w-full ${
+        <span
+          className={`block h-0.5 w-full rounded-2xl bg-current transition-opacity duration-300 ${
             isOpen ? "opacity-0" : "opacity-100"
           }`}
         />
-        <div
-          className={`block h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded-2xl ms-auto ${
-            isOpen ? "-rotate-45 -translate-y-[6px] w-full " : "w-6/8"
+        <span
+          className={`block h-0.5 rounded-2xl bg-current transition-transform duration-300 ${
+            isOpen ? "w-full -translate-y-[6px] -rotate-45" : "ms-auto w-6/8"
           }`}
         />
       </button>
-      <div
-        className={clsx(
-          "lg:hidden text-center basis-full transition-[max-height] duration-700 overflow-hidden",
-          isOpen ? "max-h-[500px]" : "max-h-0"
-        )}
-        aria-hidden={!isOpen}
-      >
-        <div className="space-y-4 px-6 pt-6 pb-4 flex flex-col gap-4 items-center">
-          <Link
-            href="#product"
-            className="block text-gray-600 hover:text-brand-green"
-            onNavigate={() => setIsOpen(false)}
+
+      <AnimatePresence>
+        {isOpen ? (
+          <motion.div
+            ref={panelRef}
+            key="sheet"
+            drag="y"
+            dragConstraints={{ top: -600, bottom: 0 }}
+            dragElastic={{ top: 0, bottom: 0.15 }}
+            onDragEnd={handleDragEnd}
+            initial={{ y: "-100%" }}
+            animate={{ y: 0 }}
+            exit={{
+              y: "-100%",
+              transition: { ...springSheet, velocity: exitVelocity.current },
+            }}
+            transition={springSheet}
+            className="fixed inset-x-0 top-0 z-40 h-dvh touch-none glass lg:hidden"
           >
-            {t("product")}
-          </Link>
-          <Link
-            href="#use-cases"
-            className="block text-gray-600 hover:text-brand-green"
-            onNavigate={() => setIsOpen(false)}
-          >
-            {t("useCases")}
-          </Link>
-          <Link
-            href="#faq"
-            className="block text-gray-600 hover:text-brand-green"
-            onNavigate={() => setIsOpen(false)}
-          >
-            {t("faq")}
-          </Link>
-          <Link
-            href="#about"
-            className="block text-gray-600 hover:text-brand-green"
-            onNavigate={() => setIsOpen(false)}
-          >
-            {t("about")}
-          </Link>
-          <Link
-            href="#team"
-            className="block text-gray-600 hover:text-brand-green"
-            onNavigate={() => setIsOpen(false)}
-          >
-            {t("team")}
-          </Link>
-          <Link
-            href="#careers"
-            className="block text-gray-600 hover:text-brand-green"
-            onNavigate={() => setIsOpen(false)}
-          >
-            {t("careers")}
-          </Link>
-          <DemoButton />
-        </div>
-      </div>
+            <nav className="flex h-full flex-col gap-1 px-6 pt-24">
+              {links.map(({ href, key }, i) => (
+                <motion.div
+                  key={key}
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ ...spring, delay: 0.04 * (i + 1) }}
+                >
+                  <Link
+                    href={href}
+                    className="block py-3 font-display text-display-m text-ink"
+                    onNavigate={() => setIsOpen(false)}
+                  >
+                    {t(key)}
+                  </Link>
+                </motion.div>
+              ))}
+
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ...spring, delay: 0.04 * (links.length + 1) }}
+                className="mt-6"
+              >
+                <Link
+                  href="/demo"
+                  onNavigate={() => setIsOpen(false)}
+                  className="inline-block rounded-lg bg-brand-green px-4 py-2 text-body-s font-semibold text-white transition-all duration-100 active:scale-[0.97]"
+                >
+                  {t("demo")}
+                </Link>
+              </motion.div>
+            </nav>
+
+            <span
+              aria-hidden
+              className="absolute inset-x-0 bottom-3 mx-auto h-1 w-10 rounded-full bg-hairline"
+            />
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </>
   );
 }
