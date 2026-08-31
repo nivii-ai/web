@@ -538,9 +538,8 @@
           "description": "Em uma planta industrial, 17\u00a0quebras já tinham dado sinal de degradação antes de romper. Entre o aviso e a parada havia 12\u00a0dias de margem, escritos em ordens que ninguém cruzava."
         },
         {
-          "stat": "×36",
-          "title": "Perguntar antes de oferecer",
-          "description": "Em 1.842\u00a0ligações de venda, as que levantavam papel, região e necessidade antes de oferecer convertiam 36\u00a0vezes mais: 76% contra 2,1%."
+          "title": "O que o dashboard não diz",
+          "description": "Os alertas vivem na conversa. Os dashboards mostram os números. As ligações contam a história: atritos que ainda não viraram reclamação, sinais de compra que não chegam ao CRM, mudanças na percepção da marca."
         },
         {
           "stat": "19% → −2,5%",
@@ -957,8 +956,8 @@
           "description": "Em uma planta industrial, o agente cruzou 38\u00a0meses de avisos e ordens armazenadas no SAP: 23\u00a0quebras já tinham dado sinal de degradação antes de romper, com 16\u00a0dias em média para intervir. No equipamento de maior custo corretivo, a relação entre reparar e prevenir era de 29\u00a0para\u00a01. Nenhum dado era novo: estava escrito e ninguém cruzava."
         },
         {
-          "title": "Comercial",
-          "description": "Em 1.842\u00a0ligações de um time de venda de campo, as que levantavam papel, região e necessidade antes de oferecer convertiam 36\u00a0vezes mais. E 45% do que era registrado como objeção não era objeção: era um lead mal direcionado."
+          "title": "O que o dashboard não diz",
+          "description": "Os alertas vivem na conversa. Os dashboards mostram os números. As ligações contam a história: atritos que ainda não viraram reclamação, sinais de compra que não chegam ao CRM, mudanças na percepção da marca."
         },
         {
           "title": "People / RH",

@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/reveal";
 import { Stat } from "./stat";
 
-type Case = { stat: string; title: string; description: string };
+type Case = { stat?: string; title: string; description: string };
 
 export async function UseCases() {
   const t = await getTranslations("home.useCases");
