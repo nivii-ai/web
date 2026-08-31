@@ -109,7 +109,7 @@ export function TimelineSteps({
       {steps.map((step, i) => (
         <div
           key={step.description}
-          className="relative flex min-h-[52vh] items-center lg:min-h-[58vh]"
+          className="relative flex items-center py-12 lg:min-h-[58vh] lg:py-0"
         >
           <span
             aria-hidden
