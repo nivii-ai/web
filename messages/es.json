@@ -538,8 +538,9 @@
           "description": "En una planta industrial, 17\u00a0averías habían dado señal de degradación antes de romper. Entre el aviso y la parada había 12\u00a0días de margen, escritos en órdenes que nadie cruzaba."
         },
         {
-          "title": "Lo que el dashboard no dice",
-          "description": "Las alertas viven en la conversación. Los dashboards muestran los números. Las llamadas cuentan la historia: fricciones que aún no llegaron a un reclamo, señales de compra que no quedan en el CRM, cambios en la percepción de marca."
+          "stat": "Lo que el dashboard no dice",
+          "title": "Las alertas viven en la conversación",
+          "description": "Los dashboards muestran los números. Las llamadas cuentan la historia: fricciones que aún no llegaron a un reclamo, señales de compra que no quedan en el CRM, cambios en la percepción de marca."
         },
         {
           "stat": "19% → −2,5%",

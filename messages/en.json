@@ -538,8 +538,9 @@
           "description": "At an industrial plant, 17\u00a0breakdowns had flagged degradation before they broke. Between the warning and the shutdown sat 12\u00a0days of margin, written into work orders nobody cross-checked."
         },
         {
-          "title": "What the dashboard doesn't say",
-          "description": "The alerts live in the conversation. Dashboards show the numbers. Calls tell the story: friction that hasn't turned into a complaint yet, buying signals that never reach the CRM, shifts in how the brand is perceived."
+          "stat": "What the dashboard doesn't say",
+          "title": "The alerts live in the conversation",
+          "description": "Dashboards show the numbers. Calls tell the story: friction that hasn't turned into a complaint yet, buying signals that never reach the CRM, shifts in how the brand is perceived."
         },
         {
           "stat": "19% → −2.5%",
