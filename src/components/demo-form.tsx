@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { sendDemoRequest } from "@/actions/send-demo-request";
 import { Button } from "./ui/button";
@@ -24,7 +25,7 @@ const field =
 export function DemoForm() {
   const t = useTranslations("demo.form");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
-    "idle"
+    "idle",
   );
   const [errors, setErrors] = useState<Partial<Record<Field, boolean>>>({});
 
@@ -57,10 +58,15 @@ export function DemoForm() {
   };
 
   if (status === "sent") {
+    // Sin caja propia: la tarjeta que lo contiene ya es una. El alto mínimo
+    // evita que se desplome al desaparecer el formulario.
     return (
-      <div className="rounded-core bg-brand-green-tint p-8">
+      <div className="flex min-h-[22rem] flex-col justify-center gap-4">
+        <span className="flex size-11 items-center justify-center rounded-full bg-brand-green-tint text-brand-green">
+          <Check className="size-5" />
+        </span>
         <p className="text-heading text-ink">{t("successTitle")}</p>
-        <p className="mt-3 text-body-s text-ink-text">{t("successBody")}</p>
+        <p className="text-body-s text-ink-text">{t("successBody")}</p>
       </div>
     );
   }
@@ -69,7 +75,10 @@ export function DemoForm() {
     <form noValidate onSubmit={handleSubmit} className="flex flex-col gap-5">
       {TEXT_FIELDS.map(({ name, type, autoComplete }) => (
         <div key={name}>
-          <label htmlFor={name} className="text-body-s font-medium text-ink-text">
+          <label
+            htmlFor={name}
+            className="text-body-s font-medium text-ink-text"
+          >
             {t(name)}
           </label>
           <input

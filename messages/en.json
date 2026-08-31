@@ -43,7 +43,7 @@
       "questionHint": "Optional, but it's what makes the session worth having.",
       "submit": "Request demo",
       "submitting": "Sending…",
-      "successTitle": "Done. We'll write to you within 24\u00a0hours.",
+      "successTitle": "Done. We'll get back to you as soon as we can.",
       "successBody": "In the meantime, the architecture and security detail lives on the Enterprise page.",
       "error": "Something went wrong. Write to contact@nivii.ai and we'll sort it out.",
       "errors": {
