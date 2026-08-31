@@ -45,8 +45,6 @@ export default async function DemoPage({
               ),
             })}
           </h1>
-          <p className="mt-6 text-body-l text-ink-muted">{t("description")}</p>
-
           <ul className="mt-12 flex flex-col gap-5">
             {reassurance.map((line) => (
               <li key={line} className="flex gap-3 text-body-s text-ink-text">
