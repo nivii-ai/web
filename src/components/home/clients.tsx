@@ -100,8 +100,6 @@ function LogoSlide({
     <Tag
       className={cn(
         "flex h-12 shrink-0 items-center justify-center px-7",
-        // Con la cinta apagada la fila ya no cabe en la columna de 3fr: los
-        // slides ceden ancho para que la grilla no desborde sobre los partners.
         "sm:min-w-0 sm:shrink sm:px-[clamp(0.875rem,2.2vw,1.75rem)]",
         className,
       )}
