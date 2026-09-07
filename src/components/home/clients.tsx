@@ -15,6 +15,7 @@ interface Logo {
 const clients: Logo[] = [
   { name: "Despegar", slug: "despegar", size: "h-8" },
   { name: "Newsan", slug: "newsan", size: "h-6" },
+  { name: "Satoshi Tango", slug: "satoshitango", size: "h-10" },
   { name: "Syngenta", slug: "syngenta", size: "h-7", vector: true },
 ];
 
@@ -35,7 +36,7 @@ export async function Clients() {
 
           {/* La cinta sangra hasta el borde mientras corre; desde sm vuelve al
               ancho del contenedor porque los logos ya entran. */}
-          <div className="-mx-6 mt-6 sm:mx-0">
+          <div className="-mx-6 mt-6 sm:mx-0 sm:min-w-0">
             <LogoMarquee>
               {clients.map((logo) => (
                 <LogoSlide key={logo.slug} logo={logo} />
@@ -99,6 +100,9 @@ function LogoSlide({
     <Tag
       className={cn(
         "flex h-12 shrink-0 items-center justify-center px-7",
+        // Con la cinta apagada la fila ya no cabe en la columna de 3fr: los
+        // slides ceden ancho para que la grilla no desborde sobre los partners.
+        "sm:min-w-0 sm:shrink sm:px-[clamp(0.875rem,2.2vw,1.75rem)]",
         className,
       )}
       {...props}
@@ -117,7 +121,7 @@ function LogoSlide({
           className={cn(
             logo.size,
             // En el celular no hay hover que revele el color: van a color de entrada.
-            "w-auto object-contain transition duration-300 sm:opacity-70 sm:grayscale sm:hover:opacity-100 sm:hover:grayscale-0",
+            "w-auto object-contain transition duration-300 sm:max-w-full sm:opacity-70 sm:grayscale sm:hover:opacity-100 sm:hover:grayscale-0",
           )}
         />
       </picture>
