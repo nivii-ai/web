@@ -15,8 +15,9 @@ interface Logo {
 const clients: Logo[] = [
   { name: "Despegar", slug: "despegar", size: "h-8" },
   { name: "Newsan", slug: "newsan", size: "h-6" },
-  { name: "Satoshi Tango", slug: "satoshitango", size: "h-10" },
+  { name: "Tecpetrol", slug: "tecpetrol", size: "h-11" },
   { name: "Syngenta", slug: "syngenta", size: "h-7", vector: true },
+  { name: "Satoshi Tango", slug: "satoshitango", size: "h-10" },
 ];
 
 const partners: Logo[] = [
@@ -29,8 +30,8 @@ export async function Clients() {
 
   return (
     <section id="clients" className="scroll-m-28 px-6 py-12 lg:px-12">
-      {/* Las columnas se reparten 3 a 2, la misma proporción que los logos. */}
-      <Reveal className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[3fr_2fr] lg:items-start lg:gap-16">
+      {/* Las columnas se reparten 5 a 2, la misma proporción que los logos. */}
+      <Reveal className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[5fr_2fr] lg:items-start lg:gap-16">
         <div>
           <RuledLabel>{t("title")}</RuledLabel>
 
