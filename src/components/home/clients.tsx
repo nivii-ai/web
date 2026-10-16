@@ -31,7 +31,7 @@ export async function Clients() {
   return (
     <section id="clients" className="scroll-m-28 px-6 py-12 lg:px-12">
       {/* Las columnas se reparten 5 a 2, la misma proporción que los logos. */}
-      <Reveal className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[5fr_2fr] lg:items-start lg:gap-16">
+      <Reveal className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-[5fr_2fr] lg:items-start lg:gap-16">
         <div>
           <RuledLabel>{t("title")}</RuledLabel>
 
