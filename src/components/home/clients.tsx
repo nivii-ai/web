@@ -10,6 +10,8 @@ interface Logo {
   ratio: number;
   /** Fracción del recuadro que tiene tinta (alpha > 50%). */
   ink: number;
+  /** Ajuste a ojo para lo que la tinta mide mal, como un fondo macizo. */
+  scale?: number;
   vector?: boolean;
 }
 
@@ -17,7 +19,8 @@ const clients: Logo[] = [
   { name: "Despegar", slug: "despegar", ratio: 3.67, ink: 0.22 },
   { name: "Newsan", slug: "newsan", ratio: 7.26, ink: 0.36 },
   { name: "Tecpetrol", slug: "tecpetrol", ratio: 1.49, ink: 0.18 },
-  { name: "Ternium", slug: "ternium", ratio: 3.11, ink: 0.84 },
+  // El recuadro gris cuenta como tinta, pero se lee como fondo del texto.
+  { name: "Ternium", slug: "ternium", ratio: 3.11, ink: 0.84, scale: 1.15 },
   { name: "Syngenta", slug: "syngenta", ratio: 3.41, ink: 0.32, vector: true },
   { name: "Satoshi Tango", slug: "satoshitango", ratio: 2.14, ink: 0.25 },
 ];
@@ -30,8 +33,8 @@ const partners: Logo[] = [
 /* A una altura común los logos anchos quedan enormes y los apilados, ilegibles.
    Igualar el área del recuadro lo corrige; la tinta pesa a medias, porque
    igualarla del todo achica de más a los macizos como Ternium. */
-function logoHeight({ ratio, ink }: Logo) {
-  return Math.round(36 / (ratio ** 2 * ink) ** 0.25);
+function logoHeight({ ratio, ink, scale = 1 }: Logo) {
+  return Math.round((36 * scale) / (ratio ** 2 * ink) ** 0.25);
 }
 
 export async function Clients() {
