@@ -6,25 +6,33 @@ import { cn } from "@/lib/utils";
 interface Logo {
   name: string;
   slug: string;
-  /** Altura propia: a una altura común los logos apilados quedan ilegibles y
-      los muy anchos, enormes. Lo que se empareja es el peso óptico. */
-  size: string;
+  /** Ancho sobre alto del archivo, ya recortado al borde. */
+  ratio: number;
+  /** Fracción del recuadro que tiene tinta (alpha > 50%). */
+  ink: number;
   vector?: boolean;
 }
 
 const clients: Logo[] = [
-  { name: "Despegar", slug: "despegar", size: "h-8" },
-  { name: "Newsan", slug: "newsan", size: "h-6" },
-  { name: "Tecpetrol", slug: "tecpetrol", size: "h-11" },
-  { name: "Ternium", slug: "ternium", size: "h-7" },
-  { name: "Syngenta", slug: "syngenta", size: "h-7", vector: true },
-  { name: "Satoshi Tango", slug: "satoshitango", size: "h-10" },
+  { name: "Despegar", slug: "despegar", ratio: 3.67, ink: 0.22 },
+  { name: "Newsan", slug: "newsan", ratio: 7.26, ink: 0.36 },
+  { name: "Tecpetrol", slug: "tecpetrol", ratio: 1.49, ink: 0.18 },
+  { name: "Ternium", slug: "ternium", ratio: 3.11, ink: 0.84 },
+  { name: "Syngenta", slug: "syngenta", ratio: 3.41, ink: 0.32, vector: true },
+  { name: "Satoshi Tango", slug: "satoshitango", ratio: 2.14, ink: 0.25 },
 ];
 
 const partners: Logo[] = [
-  { name: "iQuant", slug: "iquant", size: "h-7" },
-  { name: "PCG", slug: "pcg", size: "h-7" },
+  { name: "iQuant", slug: "iquant", ratio: 3.46, ink: 0.18 },
+  { name: "PCG", slug: "pcg", ratio: 2.4, ink: 0.37 },
 ];
+
+/* A una altura común los logos anchos quedan enormes y los apilados, ilegibles.
+   Igualar el área del recuadro lo corrige; la tinta pesa a medias, porque
+   igualarla del todo achica de más a los macizos como Ternium. */
+function logoHeight({ ratio, ink }: Logo) {
+  return Math.round(36 / (ratio ** 2 * ink) ** 0.25);
+}
 
 export async function Clients() {
   const t = await getTranslations("home.clients");
@@ -32,13 +40,13 @@ export async function Clients() {
   return (
     <section id="clients" className="scroll-m-28 px-6 py-12 lg:px-12">
       {/* Las columnas se reparten 5 a 2, la misma proporción que los logos. */}
-      <Reveal className="mx-auto grid max-w-7xl grid-cols-1 gap-12 lg:grid-cols-[5fr_2fr] lg:items-start lg:gap-16">
+      <Reveal className="mx-auto grid max-w-7xl grid-cols-1 gap-12 xl:grid-cols-[5fr_2fr] xl:items-start xl:gap-16">
         <div>
           <RuledLabel>{t("title")}</RuledLabel>
 
-          {/* La cinta sangra hasta el borde mientras corre; desde sm vuelve al
+          {/* La cinta sangra hasta el borde mientras corre; desde md vuelve al
               ancho del contenedor porque los logos ya entran. */}
-          <div className="-mx-6 mt-6 sm:mx-0 sm:min-w-0">
+          <div className="-mx-6 mt-6 md:mx-0 md:min-w-0">
             <LogoMarquee>
               {clients.map((logo) => (
                 <LogoSlide key={logo.slug} logo={logo} />
@@ -49,7 +57,7 @@ export async function Clients() {
                 <LogoSlide
                   key={`${logo.slug}-loop`}
                   logo={logo}
-                  className="sm:hidden"
+                  className="md:hidden"
                   aria-hidden
                 />
               ))}
@@ -101,8 +109,8 @@ function LogoSlide({
   return (
     <Tag
       className={cn(
-        "flex h-12 shrink-0 items-center justify-center px-7",
-        "sm:min-w-0 sm:shrink sm:px-[clamp(0.875rem,2.2vw,1.75rem)]",
+        "flex h-14 shrink-0 items-center justify-center px-7",
+        "md:min-w-0 md:shrink md:px-[clamp(0.875rem,1.6vw,1.75rem)]",
         className,
       )}
       {...props}
@@ -118,10 +126,10 @@ function LogoSlide({
           alt={logo.name}
           loading="lazy"
           decoding="async"
+          style={{ height: logoHeight(logo) }}
           className={cn(
-            logo.size,
             // En el celular no hay hover que revele el color: van a color de entrada.
-            "w-auto object-contain transition duration-300 sm:max-w-full sm:opacity-70 sm:grayscale sm:hover:opacity-100 sm:hover:grayscale-0",
+            "w-auto object-contain transition duration-300 md:max-w-full md:opacity-70 md:grayscale md:hover:opacity-100 md:hover:grayscale-0",
           )}
         />
       </picture>

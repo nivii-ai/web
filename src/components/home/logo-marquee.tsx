@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 
 /** Desde acá los logos entran enteros: la cinta se apaga y quedan centrados. */
-const FITS = "(min-width: 40rem)";
+const FITS = "(min-width: 48rem)";
 
 export function LogoMarquee({ children }: { children: React.ReactNode }) {
   const [emblaRef] = useEmblaCarousel(
@@ -27,12 +27,12 @@ export function LogoMarquee({ children }: { children: React.ReactNode }) {
 
   return (
     // Los logos se desvanecen contra los bordes en vez de cortarse en seco;
-    // desde sm no hay nada que cortar y la máscara se apaga.
+    // desde md no hay nada que cortar y la máscara se apaga.
     <div
       ref={emblaRef}
-      className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)] sm:[mask-image:none]"
+      className="overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)] md:[mask-image:none]"
     >
-      <div className="flex sm:justify-center">{children}</div>
+      <div className="flex md:justify-center">{children}</div>
     </div>
   );
 }
