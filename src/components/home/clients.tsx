@@ -16,6 +16,7 @@ const clients: Logo[] = [
   { name: "Despegar", slug: "despegar", size: "h-8" },
   { name: "Newsan", slug: "newsan", size: "h-6" },
   { name: "Tecpetrol", slug: "tecpetrol", size: "h-11" },
+  { name: "Ternium", slug: "ternium", size: "h-7" },
   { name: "Syngenta", slug: "syngenta", size: "h-7", vector: true },
   { name: "Satoshi Tango", slug: "satoshitango", size: "h-10" },
 ];
