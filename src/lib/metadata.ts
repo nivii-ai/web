@@ -13,7 +13,7 @@ export function pageMetadata({
   return {
     title,
     description,
-    openGraph: { title, description, locale, type: "website" },
-    twitter: { card: "summary_large_image", title, description },
+    openGraph: { title, description, locale, type: "website", images: "/og.png" },
+    twitter: { card: "summary_large_image", title, description, images: "/og.png" },
   };
 }
