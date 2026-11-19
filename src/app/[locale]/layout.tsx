@@ -50,6 +50,8 @@ export async function generateMetadata({
   };
 
   return {
+    // LinkedIn y compañía sólo aceptan og:image con URL absoluta.
+    metadataBase: new URL("https://nivii.ai"),
     title: metadata.title,
     description: metadata.description,
     openGraph: {
