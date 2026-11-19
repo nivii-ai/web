@@ -24,6 +24,7 @@ const clients: Logo[] = [
 const partners: Logo[] = [
   { name: "iQuant", slug: "iquant", ratio: 3.46, ink: 0.18 },
   { name: "PCG", slug: "pcg", ratio: 2.4, ink: 0.37 },
+  { name: "KPMG", slug: "kpmg", ratio: 2.51, ink: 0.34 },
 ];
 
 function logoHeight({ ratio, ink, scale = 1 }: Logo) {
@@ -65,7 +66,12 @@ export async function Clients() {
           <RuledLabel>{t("partners")}</RuledLabel>
           <ul className="mt-6 flex items-center justify-center">
             {partners.map((logo) => (
-              <LogoSlide key={logo.slug} logo={logo} as="li" />
+              <LogoSlide
+                key={logo.slug}
+                logo={logo}
+                as="li"
+                className="min-w-0 shrink px-3"
+              />
             ))}
           </ul>
         </div>
@@ -125,7 +131,7 @@ function LogoSlide({
           style={{ height: logoHeight(logo) }}
           className={cn(
             // En el celular no hay hover que revele el color: van a color de entrada.
-            "w-auto object-contain transition duration-300 md:max-w-full md:opacity-70 md:grayscale md:hover:opacity-100 md:hover:grayscale-0",
+            "w-auto object-contain transition duration-300 max-w-full md:opacity-70 md:grayscale md:hover:opacity-100 md:hover:grayscale-0",
           )}
         />
       </picture>
